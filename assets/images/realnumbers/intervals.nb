@@ -1,0 +1,1707 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     68083,       1699]
+NotebookOptionsPosition[     62531,       1621]
+NotebookOutlinePosition[     62929,       1637]
+CellTagsIndexPosition[     62886,       1634]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "5"}], "<=", "x", "<", "2"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "8"}], ",", "4"}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "5"}], ",", "2"}], "}"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<m5-2.svg\>\"", ",", "%"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<m5-2.pdf\>\"", ",", "%%"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.892054632423532*^9, 3.8920546324267473`*^9}, {
+  3.892054678944656*^9, 3.892054709863872*^9}, {3.892054763859099*^9, 
+  3.892054862866137*^9}, {3.892055090712048*^9, 3.892055105594746*^9}, {
+  3.89205523264965*^9, 3.8920552984282637`*^9}, {3.8920553459840393`*^9, 
+  3.892055402202751*^9}, {3.892055465764204*^9, 3.892055520583658*^9}, {
+  3.8920556346763077`*^9, 3.89205563491474*^9}, {3.89205577139917*^9, 
+  3.892055785776657*^9}, {3.892056376450609*^9, 3.892056376529676*^9}, {
+  3.892295472804225*^9, 3.8922954783806467`*^9}},
+ CellLabel->
+  "In[900]:=",ExpressionUUID->"47de57aa-81c9-45e1-8ebc-3982f2d6b5a9"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{-5., 1}], PointBox[{2., 1}], 
+     LineBox[{{-5, 1}, {2, 1}}]}, {
+     {PointSize[0.03], PointBox[{2, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{2, 1}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-8., 4.}, {0, 1}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{-5, 
+      FormBox[
+       RowBox[{"-", "5"}], TraditionalForm]}, {2, 
+      FormBox["2", TraditionalForm]}}, {{-5, 
+      FormBox[
+       RowBox[{"-", "5"}], TraditionalForm]}, {2, 
+      FormBox["2", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{{3.892055241961362*^9, 3.892055298982663*^9}, {
+   3.89205538786229*^9, 3.892055402585004*^9}, {3.892055492985469*^9, 
+   3.892055521006531*^9}, 3.892055635189481*^9, {3.892055775191121*^9, 
+   3.892055786230301*^9}, 3.892056376855074*^9, 3.892295479762151*^9},
+ CellLabel->
+  "Out[901]=",ExpressionUUID->"d364628c-f46d-497f-a775-3ad980971096"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"-", "1"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<", "x", "<", "b"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "-", "1"}], ",", 
+      RowBox[{"b", "+", "1"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "b", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab1.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab1.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<=", "x", "<", "b"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "-", "1"}], ",", 
+      RowBox[{"b", "+", "1"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "b", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab2.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab2.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<", "x", "<=", "b"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "-", "1"}], ",", 
+      RowBox[{"b", "+", "1"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "b", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab3.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab3.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<=", "x", "<=", "b"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "-", "1"}], ",", 
+      RowBox[{"b", "+", "1"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "b", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab4.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab4.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<", "x"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab5.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab5.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"x", "<", "a"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab6.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab6.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<=", "x"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab7.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab7.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"x", "<=", "a"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab8.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab8.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{"True", ",", "x", ",", 
+   RowBox[{"PlotRange", "->", "All"}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", "0", "}"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "1"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab9.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<ab9.pdf\>\"", ",", "%%"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.89205580649498*^9, 3.892056013993702*^9}, {
+  3.892056061356646*^9, 3.892056145843919*^9}, {3.8920561784071198`*^9, 
+  3.8920562028135157`*^9}, {3.89205631068548*^9, 3.8920563142878103`*^9}, {
+  3.892056532420187*^9, 3.8920566154420633`*^9}, {3.892295488650649*^9, 
+  3.892295492122532*^9}, {3.8922955228170023`*^9, 3.892295570131352*^9}},
+ CellLabel->
+  "In[925]:=",ExpressionUUID->"24f5cd56-7804-4599-8019-b4a7f4af6edb"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{-1., 1}], PointBox[{3., 1}], 
+     LineBox[{{-1, 1}, {3, 1}}]}, {
+     {PointSize[0.03], PointBox[{-1, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{-1, 1}]}}, {
+     {PointSize[0.03], PointBox[{3, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{3, 1}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-2., 4.}, {0, 1}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295571578979*^9},
+ CellLabel->
+  "Out[927]=",ExpressionUUID->"d77632b4-e8f9-4479-919d-37cf123d8990"],
+
+Cell[BoxData["\<\"ab1.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295571683032*^9},
+ CellLabel->
+  "Out[928]=",ExpressionUUID->"903d9be9-8698-41c7-8d0d-339943a29f43"],
+
+Cell[BoxData["\<\"ab1.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295571973258*^9},
+ CellLabel->
+  "Out[929]=",ExpressionUUID->"16688904-5fb6-497f-9ff3-ebd73a13a1ba"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{-1., 1}], PointBox[{3., 1}], 
+     LineBox[{{-1, 1}, {3, 1}}]}, {
+     {PointSize[0.03], PointBox[{3, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{3, 1}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-2., 4.}, {0, 1}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295572008895*^9},
+ CellLabel->
+  "Out[930]=",ExpressionUUID->"91a7b1fd-0637-44f4-bc32-87b324a33ade"],
+
+Cell[BoxData["\<\"ab2.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.8922955721113377`*^9},
+ CellLabel->
+  "Out[931]=",ExpressionUUID->"f6d09ea8-9240-499a-beb9-fa7ec271f054"],
+
+Cell[BoxData["\<\"ab2.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295572424879*^9},
+ CellLabel->
+  "Out[932]=",ExpressionUUID->"13f59bf7-8ce7-40f3-8ec5-f843f7b0c9cb"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{-1., 1}], PointBox[{3., 1}], 
+     LineBox[{{-1, 1}, {3, 1}}]}, {
+     {PointSize[0.03], PointBox[{-1, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{-1, 1}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-2., 4.}, {0, 1}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295572460157*^9},
+ CellLabel->
+  "Out[933]=",ExpressionUUID->"7e03ba71-12ac-411f-b0c4-480ba9692bfd"],
+
+Cell[BoxData["\<\"ab3.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295572586692*^9},
+ CellLabel->
+  "Out[934]=",ExpressionUUID->"3e0b0bc4-b5c4-4c2d-99a0-37e0a7fa1754"],
+
+Cell[BoxData["\<\"ab3.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295572886116*^9},
+ CellLabel->
+  "Out[935]=",ExpressionUUID->"a3df91a8-d668-4971-aaaa-b2d5300556d7"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {PointBox[{-1., 1}], PointBox[{3., 1}], 
+    LineBox[{{-1, 1}, {3, 1}}]}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-2., 4.}, {0, 1}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.8922955729334183`*^9},
+ CellLabel->
+  "Out[936]=",ExpressionUUID->"44835d6a-2ffa-4562-81fa-509384d1ef5e"],
+
+Cell[BoxData["\<\"ab4.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295573071797*^9},
+ CellLabel->
+  "Out[937]=",ExpressionUUID->"0e596143-42b1-45ba-9106-8af8874b3da6"],
+
+Cell[BoxData["\<\"ab4.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295573364359*^9},
+ CellLabel->
+  "Out[938]=",ExpressionUUID->"25973f85-399e-4b2d-bd88-d03fd0043788"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{-1., 1}], 
+     {Arrowheads[0.04], 
+      ArrowBox[{{-1, 1}, Scaled[{0.08, 0}, {-0.5, 1}]}]}}, {
+     {PointSize[0.03], PointBox[{-1, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{-1, 1}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-1.5, -0.5}, {0, 1}},
+  PlotRangePadding->{{
+     Scaled[0.1], 
+     Scaled[0.1]}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.89229557339247*^9},
+ CellLabel->
+  "Out[939]=",ExpressionUUID->"12849f8a-b3d2-4f5b-91e2-7e74cf37fcf5"],
+
+Cell[BoxData["\<\"ab5.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.89229557349244*^9},
+ CellLabel->
+  "Out[940]=",ExpressionUUID->"b7556ffd-4aa1-4fb3-8807-53021146c081"],
+
+Cell[BoxData["\<\"ab5.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.8922955737691183`*^9},
+ CellLabel->
+  "Out[941]=",ExpressionUUID->"fda25f4a-78d3-49a1-9f96-8f1f556c7919"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{-1., 1}], 
+     {Arrowheads[0.04], ArrowBox[{{-1, 1}, Scaled[{-0.08, 0}, {-1.5, 1}]}]}}, {
+     {PointSize[0.03], PointBox[{-1, 1}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{-1, 1}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-1.5, -0.5}, {0, 1}},
+  PlotRangePadding->{{
+     Scaled[0.1], 
+     Scaled[0.1]}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295573796218*^9},
+ CellLabel->
+  "Out[942]=",ExpressionUUID->"c8f21e4e-731d-4eb9-a714-9a374dcf56d4"],
+
+Cell[BoxData["\<\"ab6.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295573912462*^9},
+ CellLabel->
+  "Out[943]=",ExpressionUUID->"58b41685-02e6-47d4-a30d-1c3711149b62"],
+
+Cell[BoxData["\<\"ab6.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295574237302*^9},
+ CellLabel->
+  "Out[944]=",ExpressionUUID->"8324cc10-46ad-40ae-bc52-75f228ec7f84"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {PointBox[{-1., 1}], 
+    {Arrowheads[0.04], ArrowBox[{{-1, 1}, Scaled[{0.08, 0}, {-0.5, 1}]}]}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-1.5, -0.5}, {0, 1}},
+  PlotRangePadding->{{
+     Scaled[0.1], 
+     Scaled[0.1]}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295574268794*^9},
+ CellLabel->
+  "Out[945]=",ExpressionUUID->"37457128-f22c-4f20-b53b-1308cf6cff44"],
+
+Cell[BoxData["\<\"ab7.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295574369459*^9},
+ CellLabel->
+  "Out[946]=",ExpressionUUID->"42c7f1c2-7935-4150-af98-70acd12e5d13"],
+
+Cell[BoxData["\<\"ab7.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295574636655*^9},
+ CellLabel->
+  "Out[947]=",ExpressionUUID->"ff1d5d16-2eba-406e-afd0-653b6d17c3ba"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {PointBox[{-1., 1}], 
+    {Arrowheads[0.04], ArrowBox[{{-1, 1}, Scaled[{-0.08, 0}, {-1.5, 1}]}]}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-1.5, -0.5}, {0, 1}},
+  PlotRangePadding->{{
+     Scaled[0.1], 
+     Scaled[0.1]}, {0, 1}},
+  Ticks->{{{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {-1, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295574669832*^9},
+ CellLabel->
+  "Out[948]=",ExpressionUUID->"fd738af4-923a-4669-8998-39fc7912417b"],
+
+Cell[BoxData["\<\"ab8.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295574775831*^9},
+ CellLabel->
+  "Out[949]=",ExpressionUUID->"94bab765-d63a-4847-a8ba-ef9281c580b6"],
+
+Cell[BoxData["\<\"ab8.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295575073667*^9},
+ CellLabel->
+  "Out[950]=",ExpressionUUID->"23a96638-89a8-499c-a9e9-c6849cebdbab"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], 
+   {Arrowheads[{-0.04, 0.04}], 
+    ArrowBox[{Scaled[{-0.08, 0}, {-3., 1}], Scaled[{0.08, 0}, {3., 1}]}]}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-3., 3.}, {0, 1}},
+  PlotRangePadding->{{
+     Scaled[0.1], 
+     Scaled[0.1]}, {0, 1}},
+  Ticks->{{{0, 
+      FormBox["0", TraditionalForm]}}, {{0, 
+      FormBox["0", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.8922955751137323`*^9},
+ CellLabel->
+  "Out[951]=",ExpressionUUID->"d4003b85-43b6-474c-be63-91f82f50df5c"],
+
+Cell[BoxData["\<\"ab9.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.8922955752437363`*^9},
+ CellLabel->
+  "Out[952]=",ExpressionUUID->"3b8cd78b-ac22-487b-abf7-9b50d5a95741"],
+
+Cell[BoxData["\<\"ab9.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892055847059051*^9, {3.892055880052648*^9, 3.8920560145617657`*^9}, {
+   3.892056061728982*^9, 3.892056146215268*^9}, 3.89205620323042*^9, 
+   3.892056314610618*^9, {3.892056538707329*^9, 3.892056615827147*^9}, 
+   3.892295493277029*^9, 3.892295575546335*^9},
+ CellLabel->
+  "Out[953]=",ExpressionUUID->"f85378e8-269c-4d98-8911-c6a6ae56932e"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.892056206196341*^9, 
+  3.892056206854368*^9}},ExpressionUUID->"1fb2dcf8-b0bd-4c89-a847-\
+c6586aa6a40c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"NumberLinePlot", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "3"}], "<=", "x", "<=", "1"}], ",", 
+     RowBox[{"0", "<", "x"}]}], "}"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "4"}], ",", "2"}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", "0", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+       RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", 
+    RowBox[{"{", 
+     RowBox[{"0.5", ",", "0.75"}], "}"}]}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}], ",", 
+   RowBox[{"PlotRangePadding", "->", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<union1.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<union1.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "3"}], "<=", "x"}], "}"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "4"}], ",", "2"}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", "0", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+       RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"PlotRangePadding", "->", "1"}], ",", 
+   RowBox[{"Spacings", "->", "0.5"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<union2.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<union2.pdf\>\"", ",", "%%"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.892056847304307*^9, 3.892057057055764*^9}, 
+   3.8920573193318043`*^9, {3.892058230749489*^9, 3.892058407263617*^9}, {
+   3.892295579190302*^9, 3.8922955869889393`*^9}},
+ CellLabel->
+  "In[954]:=",ExpressionUUID->"509de848-fea8-4406-87af-2f09c8604a2e"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+    0.005], {PointBox[{-3., 0.5}], PointBox[{1., 0.5}], 
+     LineBox[{{-3, 0.5}, {1, 0.5}}]}}, 
+   {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.03], Thickness[
+    0.005], {{PointBox[{0., 1.25}], 
+      {Arrowheads[0.04], 
+       ArrowBox[{{0, 1.25}, Scaled[{0.08, 0}, {2., 1.25}]}]}}, {
+      {PointSize[0.03], PointBox[{0, 1.25}]}, 
+      {GrayLevel[1], PointSize[0.027], PointBox[{0, 1.25}]}}}}},
+  AspectRatio->NCache[Rational[1, 5]/GoldenRatio, 0.12360679774997896`],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-4., 2.}, {0, 1.25}},
+  PlotRangePadding->{{1, 1}, {1, 1}},
+  Ticks->{{{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}, {{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{{3.8920568707971582`*^9, 3.8920569353097687`*^9}, {
+   3.892056966511633*^9, 3.892057007435082*^9}, {3.8920570383333693`*^9, 
+   3.892057057677353*^9}, {3.892058231430602*^9, 3.892058407663143*^9}, 
+   3.8922955878843937`*^9},
+ CellLabel->
+  "Out[954]=",ExpressionUUID->"67ea2f02-7bb4-4d21-8823-bfc6f964b5d1"],
+
+Cell[BoxData["\<\"union1.svg\"\>"], "Output",
+ CellChangeTimes->{{3.8920568707971582`*^9, 3.8920569353097687`*^9}, {
+   3.892056966511633*^9, 3.892057007435082*^9}, {3.8920570383333693`*^9, 
+   3.892057057677353*^9}, {3.892058231430602*^9, 3.892058407663143*^9}, 
+   3.892295587991884*^9},
+ CellLabel->
+  "Out[955]=",ExpressionUUID->"e8381c9f-dadc-4ac0-b177-48e6b129fc03"],
+
+Cell[BoxData["\<\"union1.pdf\"\>"], "Output",
+ CellChangeTimes->{{3.8920568707971582`*^9, 3.8920569353097687`*^9}, {
+   3.892056966511633*^9, 3.892057007435082*^9}, {3.8920570383333693`*^9, 
+   3.892057057677353*^9}, {3.892058231430602*^9, 3.892058407663143*^9}, 
+   3.8922955883008957`*^9},
+ CellLabel->
+  "Out[956]=",ExpressionUUID->"e765d2a9-d613-4cc8-8adf-f9cf83a84250"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {PointBox[{-3., 0.5}], 
+    {Arrowheads[0.04], ArrowBox[{{-3, 0.5}, Scaled[{0.08, 0}, {2., 0.5}]}]}}},
+  
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-4., 2.}, {0, 0.5}},
+  PlotRangePadding->{{1, 1}, {1, 1}},
+  Ticks->{{{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}, {{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{{3.8920568707971582`*^9, 3.8920569353097687`*^9}, {
+   3.892056966511633*^9, 3.892057007435082*^9}, {3.8920570383333693`*^9, 
+   3.892057057677353*^9}, {3.892058231430602*^9, 3.892058407663143*^9}, 
+   3.8922955883317413`*^9},
+ CellLabel->
+  "Out[957]=",ExpressionUUID->"d18bc302-a188-4b6d-bbfe-80d095378562"],
+
+Cell[BoxData["\<\"union2.svg\"\>"], "Output",
+ CellChangeTimes->{{3.8920568707971582`*^9, 3.8920569353097687`*^9}, {
+   3.892056966511633*^9, 3.892057007435082*^9}, {3.8920570383333693`*^9, 
+   3.892057057677353*^9}, {3.892058231430602*^9, 3.892058407663143*^9}, 
+   3.8922955884424467`*^9},
+ CellLabel->
+  "Out[958]=",ExpressionUUID->"87da7eaa-0bb6-4532-81dd-37ae9fdaa847"],
+
+Cell[BoxData["\<\"union2.pdf\"\>"], "Output",
+ CellChangeTimes->{{3.8920568707971582`*^9, 3.8920569353097687`*^9}, {
+   3.892056966511633*^9, 3.892057007435082*^9}, {3.8920570383333693`*^9, 
+   3.892057057677353*^9}, {3.892058231430602*^9, 3.892058407663143*^9}, 
+   3.892295588731269*^9},
+ CellLabel->
+  "Out[959]=",ExpressionUUID->"03e99e39-8c5f-4f0f-973c-1b2aead5a4aa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"NumberLinePlot", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", "<", "x", "<=", "1"}], "}"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "4"}], ",", "2"}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", "0", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+       RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"PlotRangePadding", "->", "1"}], ",", 
+   RowBox[{"Spacings", "->", "0.75"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<intersection.svg\>\"", ",", "%"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<intersection.pdf\>\"", ",", "%%"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.892057323938588*^9, 3.892057347957814*^9}, 
+   3.8920585131761923`*^9, {3.892058553234518*^9, 3.892058573292644*^9}, {
+   3.89229559336769*^9, 3.892295599077137*^9}},
+ CellLabel->
+  "In[960]:=",ExpressionUUID->"9e3fc10b-118c-4d7e-8bf6-0259602f6bd6"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+   0.005], {{PointBox[{0., 0.75}], PointBox[{1., 0.75}], 
+     LineBox[{{0, 0.75}, {1, 0.75}}]}, {
+     {PointSize[0.03], PointBox[{0, 0.75}]}, 
+     {GrayLevel[1], PointSize[0.027], PointBox[{0, 0.75}]}}}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-4., 2.}, {0, 0.75}},
+  PlotRangePadding->{{1, 1}, {1, 1}},
+  Ticks->{{{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}, {{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{
+  3.892057352347164*^9, 3.89205742250943*^9, 3.892058513910995*^9, {
+   3.892058567354529*^9, 3.8920585738073807`*^9}, 3.892295600091361*^9},
+ CellLabel->
+  "Out[960]=",ExpressionUUID->"53bea806-343b-40b5-be2f-20babfe0cf32"],
+
+Cell[BoxData["\<\"intersection.svg\"\>"], "Output",
+ CellChangeTimes->{
+  3.892057352347164*^9, 3.89205742250943*^9, 3.892058513910995*^9, {
+   3.892058567354529*^9, 3.8920585738073807`*^9}, 3.892295600188066*^9},
+ CellLabel->
+  "Out[961]=",ExpressionUUID->"7bcd20df-85e1-4a29-9da3-208c395e7900"],
+
+Cell[BoxData["\<\"intersection.pdf\"\>"], "Output",
+ CellChangeTimes->{
+  3.892057352347164*^9, 3.89205742250943*^9, 3.892058513910995*^9, {
+   3.892058567354529*^9, 3.8920585738073807`*^9}, 3.892295600487464*^9},
+ CellLabel->
+  "Out[962]=",ExpressionUUID->"7d93479b-8e88-499e-839f-48a8fb36fc84"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"NumberLinePlot", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "<=", 
+      RowBox[{"-", "3"}]}], ",", 
+     RowBox[{"0", "<", "x", "<=", "1"}]}], "}"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "4"}], ",", "All"}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", "0", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+       RowBox[{"PointSize", "[", "0.03", "]"}]}], "}"}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", 
+    RowBox[{"{", 
+     RowBox[{"0.5", ",", "0.75"}], "}"}]}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<intersection2.svg\>\"", ",", "%"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<intersection2.pdf\>\"", ",", "%%"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.892057741928892*^9, 3.89205777733556*^9}, 
+   3.892058508651998*^9, {3.892295604102839*^9, 3.892295607252453*^9}},
+ CellLabel->
+  "In[963]:=",ExpressionUUID->"0742bca2-fc67-4b85-86a3-bc7d6dada921"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.03], Thickness[
+    0.005], {PointBox[{-3., 0.5}], 
+     {Arrowheads[0.04], 
+      ArrowBox[{{-3, 0.5}, Scaled[{-0.08, 0}, {-4., 0.5}]}]}}}, 
+   {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.03], Thickness[
+    0.005], {{PointBox[{0., 1.25}], PointBox[{1., 1.25}], 
+      LineBox[{{0, 1.25}, {1, 1.25}}]}, {
+      {PointSize[0.03], PointBox[{0, 1.25}]}, 
+      {GrayLevel[1], PointSize[0.027], PointBox[{0, 1.25}]}}}}},
+  AspectRatio->NCache[Rational[1, 5]/GoldenRatio, 0.12360679774997896`],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-4., 1.}, {0, 1.25}},
+  PlotRangePadding->{{
+     Scaled[0.1], 
+     Scaled[0.1]}, {0, 1}},
+  Ticks->{{{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}, {{-3, 
+      FormBox[
+       RowBox[{"-", "3"}], TraditionalForm]}, {0, 
+      FormBox["0", TraditionalForm]}, {1, 
+      FormBox["1", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{{3.892057753474564*^9, 3.892057777725013*^9}, 
+   3.892058516212496*^9, 3.8920585893333273`*^9, 3.892295607706317*^9},
+ CellLabel->
+  "Out[963]=",ExpressionUUID->"916e06e7-7ce9-4858-91c4-29ce0b3db77e"],
+
+Cell[BoxData["\<\"intersection2.svg\"\>"], "Output",
+ CellChangeTimes->{{3.892057753474564*^9, 3.892057777725013*^9}, 
+   3.892058516212496*^9, 3.8920585893333273`*^9, 3.892295607819165*^9},
+ CellLabel->
+  "Out[964]=",ExpressionUUID->"c8237a04-2982-404d-ac88-3f735a9d2604"],
+
+Cell[BoxData["\<\"intersection2.pdf\"\>"], "Output",
+ CellChangeTimes->{{3.892057753474564*^9, 3.892057777725013*^9}, 
+   3.892058516212496*^9, 3.8920585893333273`*^9, 3.8922956081387453`*^9},
+ CellLabel->
+  "Out[965]=",ExpressionUUID->"628ff0e5-b667-4ba6-a0a8-cb61a57d3835"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<=", "x", "<=", "b"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "-", "1"}], ",", 
+      RowBox[{"b", "+", "1"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "x", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "0", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.01", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.02", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "0"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}], ",", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", 
+     RowBox[{"Inset", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"Abs", "[", "x", "]"}], "]"}], ",", "18"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"b", "/", "2"}], ",", 
+         RowBox[{"-", "2"}]}], "}"}]}], "]"}], "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<absolute.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<absolute.pdf\>\"", ",", "%%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NumberLinePlot", "[", 
+  RowBox[{
+   RowBox[{"a", "<=", "x", "<=", "b"}], ",", "x", ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "-", "1"}], ",", 
+      RowBox[{"b", "+", "1"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "->", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "a", "]"}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", 
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"TraditionalForm", "[", "b", "]"}], "]"}]}], "}"}]}], "}"}],
+      "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Thickness", "[", "0.01", "]"}], ",", 
+      RowBox[{"PointSize", "[", "0.02", "]"}]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "->", 
+    RowBox[{"HoldForm", "[", "Reals", "]"}]}], ",", 
+   RowBox[{"Spacings", "->", "0"}], ",", 
+   RowBox[{"AxesStyle", "->", 
+    RowBox[{"Directive", "[", "16", "]"}]}], ",", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", 
+     RowBox[{"Inset", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"HoldForm", "[", 
+          RowBox[{"Abs", "[", 
+           RowBox[{"a", "-", "b"}], "]"}], "]"}], ",", "18"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"b", "/", "2"}], ",", 
+         RowBox[{"-", "2"}]}], "}"}]}], "]"}], "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<distance.svg\>\"", ",", "%"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<distance.pdf\>\"", ",", "%%"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.892069287911867*^9, 3.892069552034952*^9}, {
+  3.8920695906050463`*^9, 3.89206959339791*^9}, {3.892069630901003*^9, 
+  3.892069643889043*^9}, {3.892069696440015*^9, 3.892069746281802*^9}, {
+  3.892069781603483*^9, 3.892069807494483*^9}, {3.8920708641355677`*^9, 
+  3.8920709081713533`*^9}, {3.892295615283963*^9, 3.892295622591034*^9}},
+ CellLabel->
+  "In[966]:=",ExpressionUUID->"a8d3f041-e5a8-4261-ad42-cf7bea3c408a"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.02], Thickness[
+   0.01], {PointBox[{0., 0}], PointBox[{3., 0}], LineBox[{{0, 0}, {3, 0}}]}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  Epilog->{
+    InsetBox[
+     BoxData[
+      FormBox[
+       StyleBox[
+        TagBox[
+         TemplateBox[{"x"}, "Abs"], HoldForm], 18, StripOnInput -> False], 
+       TraditionalForm]], 
+     NCache[{
+       Rational[3, 2], -2}, {1.5, -2}]]},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-1., 4.}, {0, 0}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{0, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["x", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["0", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{0, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["x", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["0", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{{3.8920693784611597`*^9, 3.892069386548123*^9}, {
+   3.892069418826233*^9, 3.892069423827989*^9}, {3.892069454639358*^9, 
+   3.892069552379937*^9}, 3.89206960025931*^9, {3.892069637296771*^9, 
+   3.892069644794202*^9}, {3.892069699324071*^9, 3.892069746502378*^9}, {
+   3.892069796986931*^9, 3.892069808009145*^9}, 3.892070812745853*^9, {
+   3.892070867028509*^9, 3.892070908676013*^9}, 3.892295622880644*^9},
+ CellLabel->
+  "Out[968]=",ExpressionUUID->"5b6ddb83-8de5-49af-9558-c58123f7c593"],
+
+Cell[BoxData["\<\"absolute.svg\"\>"], "Output",
+ CellChangeTimes->{{3.8920693784611597`*^9, 3.892069386548123*^9}, {
+   3.892069418826233*^9, 3.892069423827989*^9}, {3.892069454639358*^9, 
+   3.892069552379937*^9}, 3.89206960025931*^9, {3.892069637296771*^9, 
+   3.892069644794202*^9}, {3.892069699324071*^9, 3.892069746502378*^9}, {
+   3.892069796986931*^9, 3.892069808009145*^9}, 3.892070812745853*^9, {
+   3.892070867028509*^9, 3.892070908676013*^9}, 3.892295622991104*^9},
+ CellLabel->
+  "Out[969]=",ExpressionUUID->"6c1924e4-37bc-4ad1-911a-2c7c27c28152"],
+
+Cell[BoxData["\<\"absolute.pdf\"\>"], "Output",
+ CellChangeTimes->{{3.8920693784611597`*^9, 3.892069386548123*^9}, {
+   3.892069418826233*^9, 3.892069423827989*^9}, {3.892069454639358*^9, 
+   3.892069552379937*^9}, 3.89206960025931*^9, {3.892069637296771*^9, 
+   3.892069644794202*^9}, {3.892069699324071*^9, 3.892069746502378*^9}, {
+   3.892069796986931*^9, 3.892069808009145*^9}, 3.892070812745853*^9, {
+   3.892070867028509*^9, 3.892070908676013*^9}, 3.8922956232726383`*^9},
+ CellLabel->
+  "Out[970]=",ExpressionUUID->"cebbee22-f77d-4c48-84ec-4ff7687d1822"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.02], Thickness[
+   0.01], {PointBox[{0., 0}], PointBox[{3., 0}], LineBox[{{0, 0}, {3, 0}}]}},
+  AspectRatio->NCache[Rational[1, 10]/GoldenRatio, 0.06180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+      TemplateBox[{}, "Reals"], HoldForm], TraditionalForm]},
+  AxesOrigin->{Automatic, Automatic},
+  AxesStyle->Directive[16],
+  Epilog->{
+    InsetBox[
+     BoxData[
+      FormBox[
+       StyleBox[
+        TagBox[
+         TemplateBox[{
+           RowBox[{"a", "-", "b"}]}, "Abs"], HoldForm], 18, StripOnInput -> 
+        False], TraditionalForm]], 
+     NCache[{
+       Rational[3, 2], -2}, {1.5, -2}]]},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  ImagePadding->All,
+  PlotRange->{{-1., 4.}, {0, 0}},
+  PlotRangePadding->{{0., 0.}, {0, 1}},
+  Ticks->{{{0, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}, {{0, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["a", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}, {3, 
+      FormBox[
+       TagBox[
+        TagBox[
+         FormBox["b", TraditionalForm], TraditionalForm, Editable -> True], 
+        HoldForm], TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{{3.8920693784611597`*^9, 3.892069386548123*^9}, {
+   3.892069418826233*^9, 3.892069423827989*^9}, {3.892069454639358*^9, 
+   3.892069552379937*^9}, 3.89206960025931*^9, {3.892069637296771*^9, 
+   3.892069644794202*^9}, {3.892069699324071*^9, 3.892069746502378*^9}, {
+   3.892069796986931*^9, 3.892069808009145*^9}, 3.892070812745853*^9, {
+   3.892070867028509*^9, 3.892070908676013*^9}, 3.892295623297203*^9},
+ CellLabel->
+  "Out[973]=",ExpressionUUID->"80f7194d-b5b5-4aa3-8cf8-3dae0b563580"],
+
+Cell[BoxData["\<\"distance.svg\"\>"], "Output",
+ CellChangeTimes->{{3.8920693784611597`*^9, 3.892069386548123*^9}, {
+   3.892069418826233*^9, 3.892069423827989*^9}, {3.892069454639358*^9, 
+   3.892069552379937*^9}, 3.89206960025931*^9, {3.892069637296771*^9, 
+   3.892069644794202*^9}, {3.892069699324071*^9, 3.892069746502378*^9}, {
+   3.892069796986931*^9, 3.892069808009145*^9}, 3.892070812745853*^9, {
+   3.892070867028509*^9, 3.892070908676013*^9}, 3.892295623392325*^9},
+ CellLabel->
+  "Out[974]=",ExpressionUUID->"7ae56295-0d24-4141-a310-dd3bd7ba7ca2"],
+
+Cell[BoxData["\<\"distance.pdf\"\>"], "Output",
+ CellChangeTimes->{{3.8920693784611597`*^9, 3.892069386548123*^9}, {
+   3.892069418826233*^9, 3.892069423827989*^9}, {3.892069454639358*^9, 
+   3.892069552379937*^9}, 3.89206960025931*^9, {3.892069637296771*^9, 
+   3.892069644794202*^9}, {3.892069699324071*^9, 3.892069746502378*^9}, {
+   3.892069796986931*^9, 3.892069808009145*^9}, 3.892070812745853*^9, {
+   3.892070867028509*^9, 3.892070908676013*^9}, 3.892295623631608*^9},
+ CellLabel->
+  "Out[975]=",ExpressionUUID->"23431c9e-5ede-4051-9f34-3f7bc39f982b"]
+}, Open  ]]
+},
+WindowSize->{808, 747},
+WindowMargins->{{Automatic, 270}, {-14, Automatic}},
+FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5c398fb3-46ae-47fb-a4fd-2177cb33061d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1794, 44, 136, "Input",ExpressionUUID->"47de57aa-81c9-45e1-8ebc-3982f2d6b5a9"],
+Cell[2377, 68, 1325, 31, 60, "Output",ExpressionUUID->"d364628c-f46d-497f-a775-3ad980971096"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3739, 104, 11192, 296, 1165, "Input",ExpressionUUID->"24f5cd56-7804-4599-8019-b4a7f4af6edb"],
+Cell[14934, 402, 1879, 48, 60, "Output",ExpressionUUID->"d77632b4-e8f9-4479-919d-37cf123d8990"],
+Cell[16816, 452, 409, 7, 34, "Output",ExpressionUUID->"903d9be9-8698-41c7-8d0d-339943a29f43"],
+Cell[17228, 461, 409, 7, 34, "Output",ExpressionUUID->"16688904-5fb6-497f-9ff3-ebd73a13a1ba"],
+Cell[17640, 470, 1774, 46, 60, "Output",ExpressionUUID->"91a7b1fd-0637-44f4-bc32-87b324a33ade"],
+Cell[19417, 518, 411, 7, 34, "Output",ExpressionUUID->"f6d09ea8-9240-499a-beb9-fa7ec271f054"],
+Cell[19831, 527, 409, 7, 34, "Output",ExpressionUUID->"13f59bf7-8ce7-40f3-8ec5-f843f7b0c9cb"],
+Cell[20243, 536, 1776, 46, 60, "Output",ExpressionUUID->"7e03ba71-12ac-411f-b0c4-480ba9692bfd"],
+Cell[22022, 584, 409, 7, 34, "Output",ExpressionUUID->"3e0b0bc4-b5c4-4c2d-99a0-37e0a7fa1754"],
+Cell[22434, 593, 409, 7, 34, "Output",ExpressionUUID->"a3df91a8-d668-4971-aaaa-b2d5300556d7"],
+Cell[22846, 602, 1670, 44, 60, "Output",ExpressionUUID->"44835d6a-2ffa-4562-81fa-509384d1ef5e"],
+Cell[24519, 648, 409, 7, 34, "Output",ExpressionUUID->"0e596143-42b1-45ba-9106-8af8874b3da6"],
+Cell[24931, 657, 409, 7, 34, "Output",ExpressionUUID->"25973f85-399e-4b2d-bd88-d03fd0043788"],
+Cell[25343, 666, 1841, 49, 60, "Output",ExpressionUUID->"12849f8a-b3d2-4f5b-91e2-7e74cf37fcf5"],
+Cell[27187, 717, 408, 7, 34, "Output",ExpressionUUID->"b7556ffd-4aa1-4fb3-8807-53021146c081"],
+Cell[27598, 726, 411, 7, 34, "Output",ExpressionUUID->"fda25f4a-78d3-49a1-9f96-8f1f556c7919"],
+Cell[28012, 735, 1836, 48, 60, "Output",ExpressionUUID->"c8f21e4e-731d-4eb9-a714-9a374dcf56d4"],
+Cell[29851, 785, 409, 7, 34, "Output",ExpressionUUID->"58b41685-02e6-47d4-a30d-1c3711149b62"],
+Cell[30263, 794, 409, 7, 34, "Output",ExpressionUUID->"8324cc10-46ad-40ae-bc52-75f228ec7f84"],
+Cell[30675, 803, 1727, 46, 60, "Output",ExpressionUUID->"37457128-f22c-4f20-b53b-1308cf6cff44"],
+Cell[32405, 851, 409, 7, 34, "Output",ExpressionUUID->"42c7f1c2-7935-4150-af98-70acd12e5d13"],
+Cell[32817, 860, 409, 7, 34, "Output",ExpressionUUID->"ff1d5d16-2eba-406e-afd0-653b6d17c3ba"],
+Cell[33229, 869, 1728, 46, 60, "Output",ExpressionUUID->"fd738af4-923a-4669-8998-39fc7912417b"],
+Cell[34960, 917, 409, 7, 34, "Output",ExpressionUUID->"94bab765-d63a-4847-a8ba-ef9281c580b6"],
+Cell[35372, 926, 409, 7, 34, "Output",ExpressionUUID->"23a96638-89a8-499c-a9e9-c6849cebdbab"],
+Cell[35784, 935, 1154, 29, 60, "Output",ExpressionUUID->"d4003b85-43b6-474c-be63-91f82f50df5c"],
+Cell[36941, 966, 411, 7, 34, "Output",ExpressionUUID->"3b8cd78b-ac22-487b-abf7-9b50d5a95741"],
+Cell[37355, 975, 409, 7, 34, "Output",ExpressionUUID->"f85378e8-269c-4d98-8911-c6a6ae56932e"]
+}, Open  ]],
+Cell[37779, 985, 152, 3, 30, "Input",ExpressionUUID->"1fb2dcf8-b0bd-4c89-a847-c6586aa6a40c"],
+Cell[CellGroupData[{
+Cell[37956, 992, 2684, 69, 304, "Input",ExpressionUUID->"509de848-fea8-4406-87af-2f09c8604a2e"],
+Cell[40643, 1063, 1596, 37, 68, "Output",ExpressionUUID->"67ea2f02-7bb4-4d21-8823-bfc6f964b5d1"],
+Cell[42242, 1102, 372, 6, 34, "Output",ExpressionUUID->"e8381c9f-dadc-4ac0-b177-48e6b129fc03"],
+Cell[42617, 1110, 374, 6, 34, "Output",ExpressionUUID->"e765d2a9-d613-4cc8-8adf-f9cf83a84250"],
+Cell[42994, 1118, 1301, 32, 52, "Output",ExpressionUUID->"d18bc302-a188-4b6d-bbfe-80d095378562"],
+Cell[44298, 1152, 374, 6, 34, "Output",ExpressionUUID->"87da7eaa-0bb6-4532-81dd-37ae9fdaa847"],
+Cell[44675, 1160, 372, 6, 34, "Output",ExpressionUUID->"03e99e39-8c5f-4f0f-973c-1b2aead5a4aa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45084, 1171, 1423, 35, 157, "Input",ExpressionUUID->"9e3fc10b-118c-4d7e-8bf6-0259602f6bd6"],
+Cell[46510, 1208, 1309, 32, 52, "Output",ExpressionUUID->"53bea806-343b-40b5-be2f-20babfe0cf32"],
+Cell[47822, 1242, 296, 5, 34, "Output",ExpressionUUID->"7bcd20df-85e1-4a29-9da3-208c395e7900"],
+Cell[48121, 1249, 296, 5, 34, "Output",ExpressionUUID->"7d93479b-8e88-499e-839f-48a8fb36fc84"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48454, 1259, 1453, 38, 136, "Input",ExpressionUUID->"0742bca2-fc67-4b85-86a3-bc7d6dada921"],
+Cell[49910, 1299, 1522, 37, 81, "Output",ExpressionUUID->"916e06e7-7ce9-4858-91c4-29ce0b3db77e"],
+Cell[51435, 1338, 273, 4, 34, "Output",ExpressionUUID->"c8237a04-2982-404d-ac88-3f735a9d2604"],
+Cell[51711, 1344, 275, 4, 34, "Output",ExpressionUUID->"628ff0e5-b667-4ba6-a0a8-cb61a57d3835"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52023, 1353, 4103, 112, 388, "Input",ExpressionUUID->"a8d3f041-e5a8-4261-ad42-cf7bea3c408a"],
+Cell[56129, 1467, 2050, 54, 53, "Output",ExpressionUUID->"5b6ddb83-8de5-49af-9558-c58123f7c593"],
+Cell[58182, 1523, 559, 8, 34, "Output",ExpressionUUID->"6c1924e4-37bc-4ad1-911a-2c7c27c28152"],
+Cell[58744, 1533, 561, 8, 34, "Output",ExpressionUUID->"cebbee22-f77d-4c48-84ec-4ff7687d1822"],
+Cell[59308, 1543, 2083, 55, 53, "Output",ExpressionUUID->"80f7194d-b5b5-4aa3-8cf8-3dae0b563580"],
+Cell[61394, 1600, 559, 8, 34, "Output",ExpressionUUID->"7ae56295-0d24-4141-a310-dd3bd7ba7ca2"],
+Cell[61956, 1610, 559, 8, 82, "Output",ExpressionUUID->"23431c9e-5ede-4051-9f34-3f7bc39f982b"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,350 @@
+<chapter xml:id="chapter-exponents" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Exponents</title>
+  
+<section xml:id="section-negative-exponents">
+    <title>Negative Exponents <m>x^{-n}</m></title>
+    <!-- <introduction><p>
+         <video youtube="R1fomuDHwn4"/>     
+    </p></introduction>
+    -->
+    
+    <p>A positive integer exponent indicates repeated multiplication. For instance, 
+    <me>2^4 = \underbrace{2\cdot 2\cdot 2\cdot 2}_{\text{4 factors of 2}} = 16.</me>
+    </p>
+
+    <definition><title>Positive Integer Exponents</title>
+        <statement><p>Suppose <m>n = 1,2,3,4,\ldots</m> is a positive integer. We define
+        <me>a^n  = \underbrace{a \cdot a \cdot \cdot \cdots \cdot a}_{\text{$n$ factors of $a$}}.</me>
+        In particular, <m>a^1  = a</m>.</p></statement>
+    </definition>
+    
+  <p>When multiplying powers with the same base, you should add the exponents. For example,
+  <me>2^3 \cdot 2^4 = \underbrace{2\cdot 2\cdot 2}_{\text{3 factors}} \cdot \underbrace{2\cdot 2\cdot 2\cdot 2}_{\text{4 factors}} = 2^{3+4} = 2^7.</me></p>
+  
+    <principle xml:id="principle-multiplying-powers">
+        <title>Multiplying Powers with Same Base</title>
+        <statement><p>
+          <me>\boxed{a^n\cdot a^m  = a^{n+m}.}</me></p>
+        </statement>
+    </principle>
+
+    <p>What would happen if one of the exponents was zero? For example, according to our law of exponents above,
+    <me>2^0\cdot 2^4 = 2^{0+4} = 2^4.</me>
+    So that multiplying by <m>2^0</m> didn't change the other factor; it's as if we were multiplying by one! In fact, we will define <m>2^0 = 1</m>.</p>
+      
+    <definition>
+      <title>Zero Exponent</title>
+      <statement>
+        <p>Suppose <m>a\neq 0</m> is a non-zero real number. We define
+      <me>a^0  = 1.</me>
+      Note that we leave undefined the expression <m>0^0</m>.</p>
+      </statement>
+    </definition>
+
+    <p>When dividing powers of the same base, you should subtract the exponents. For example,
+    <me>\frac{2^6}{2^2} = \frac{2\cdot 2\cdot 2\cdot 2\cdot 2\cdot 2}{2\cdot 2} = 2^{6-2} =2^4.</me></p>
+    
+    <principle>
+      <title>Dividing Powers with Same Base</title>
+      <statement>
+        <p>Suppose <m>a\neq 0</m> is a non-zero real number. Then
+          <me>\frac{a^n}{a^m} = a^{n-m}.</me>
+        </p>
+      </statement>
+    </principle>
+      
+    <p>What would happen if one of the exponents was negative? It should be consistent with the above laws of exponents. Consider,
+        
+      <me>2^{-1} \cdot 2^3 = 2^{-1+3} = 2^{2}.</me>
+      Observe that multiplying by 
+      <m>2^{-1}</m>
+      had the effect of cutting 
+      <m>2^3</m>
+      in half. This suggests that 
+      <m>2^{-1}</m>
+      is the same as the reciprocal of two, that is
+      <me>2^{-1} = \frac{1}{2}.</me>
+      In general, we define the opposite exponent to mean the reciprocal.</p>
+
+    <definition>
+      <title>Negative Integer Exponents</title>
+      <statement><p>Suppose <m>a\neq 0</m> is a non-zero real number. We define
+        <me>a^{-n} = \frac{1}{a^n}</me></p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>Evaluate each of the following expressions without using a calculator. Be sure to apply the correct <xref ref="principle-pemdas">order of operations</xref>.
+
+          <ol marker="a" cols="3">
+            <li>
+              <m>\displaystyle -2^4</m></li>
+            <li>
+              <m>\displaystyle (-2)^4</m>
+            </li>
+            <li>
+              <m>\displaystyle 2^{-4}</m>
+            </li>
+            <li>
+              <m>\displaystyle \frac{1}{2^{-4}}</m>
+            </li>
+            <li>
+              <m>\displaystyle \frac{1}{-2^{4}}</m>
+            </li>
+            <li>
+              <m>\displaystyle 1-2^{4}</m>
+            </li>
+          </ol></p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a">
+            <li>Apply the exponent before multiplying by 
+              <m>-1</m>
+              <me>-2^4 = - 16.</me></li>
+            <li>This is an 
+              <em>even</em>
+              power of a negative number
+            
+              <me>(-2)^4 = (-2)(-2)(-2)(-2) = + 16 = 16.</me></li>
+            <li>A negative exponent is equivalent to the reciprocal
+            
+              <me>2^{-4} = \frac{1}{2^4} = \frac{1}{16}.</me></li>
+            <li>This applies for a power in the denominator as well
+            
+              <me>\frac{1}{2^{-4}} = 2^4 = 16.</me></li>
+            <li>Apply the exponent before multiplying by 
+              <m>-1</m>
+              or dividing 
+            
+              <me>\frac{1}{-2^{4}} = \frac{1}{-16} = - \frac{1}{16}.</me></li>
+            <li>Apply the exponent before subtracting
+            
+              <me>1-2^{4} = 1 - 16 = -15.</me></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+</section>
+
+<section xml:id="section-scientific-notation">
+      <title>Scientific Notation</title>
+      <p>A number in the form 
+        <m>a \times 10^n</m>
+        with 
+        <m>1 \leq |a| \lt 10</m>
+        is said to be in 
+        <term>scientific notation</term>. For example,
+        
+        <me>4.25 \times 10^{7} = 42500000, \quad -9\times 10^{-4} = -0.0009</me>
+        are both in scientific notation. We can use properties of exponents to conveniently multiple and divide.</p>
+
+
+      <example><title>Multiplying in Scientific Notation</title>
+        <p>
+          <md>
+            <mrow>\left(4.25\times 10^7\right) \times \left(-9\times 10^{-4}\right)
+            \amp=\quad -4.25\times 9.1\times 10^7\times 10^{-4}</mrow>
+            <mrow>\amp=\quad -38.675 \times 10^{7-4}</mrow>
+            <mrow>\amp=\quad -38.675 \times 10^{3}</mrow>
+            <mrow>\amp=\quad -3.8675 \times 10^{1}\times 10^{3}</mrow>
+            <mrow>\amp=\quad -3.8675 \times 10^{4}</mrow></md>
+      </p></example>
+      <example><title>Dividing in Scientific Notation</title>
+        <p>
+          <md>
+            <mrow>\frac{4.25\times 10^7}{-9.1\times 10^{-4}}
+                    \amp\approx\quad -0.467 \times 10^{7-(-4)}</mrow>
+              <mrow>\amp\approx\quad -0.467 \times 10^{11}</mrow>
+              <mrow>\amp\approx\quad -4.67 \times 10^{-1}\times 10^{11}</mrow>
+              <mrow>\amp\approx\quad -4.67 \times 10^{10}</mrow>
+          </md>
+        </p>
+      </example>
+</section>
+
+<section xml:id="section-rational-exponents">
+    <title>Rational Exponents 
+      <m>x^{m/n}</m></title>
+    <!-- <video youtube="TKdkS3opFR4"/> -->
+
+     <p>When taking a power of a power, you should multiply the exponents. For example,
+      <me>\left(2^2\right)^3 = 2^2\cdot 2^2\cdot 2^2 = 2^{3\cdot 2}=2^6.</me>
+      This is the same as
+      <me>\left(2^3\right)^2 = 2^3\cdot 2^3 = 2^{2\cdot 3}=2^6.</me></p>
+      
+    <principle>
+      <title>Power of a Power</title>
+      <statement>
+      <p><me>\left(a^n\right)^m = (a^m)^n = a^{m n}</me></p>
+      </statement>
+    </principle>
+
+    <!-- <p>Recall that <m>\sqrt{2}</m>
+      means the 
+      <em>non-negative</em>
+      real number whose square is 
+      <m>2</m>. That is,
+      <me>\left(\sqrt{2}\right)^2 = \sqrt{2}\cdot\sqrt{2} = 2.</me>
+      I can use a calculator to get an estimate of its value to be 
+      <m>\sqrt{2}\approx 1.414</m>
+      and compare
+      <me>(1.414)^2 \approx 1.999,</me>
+      which is close to 2.</p>
+    <p>Sometimes, I'm lucky to have a <term>perfect square</term>. For instance, 
+      <m>\sqrt{9} = 3</m>
+      because <m>3</m>is non-negative and 
+      <m>3^2 = 9</m>. Notice that 
+      <m>\sqrt{9} \neq -3</m>
+      despite 
+      <m>(-3)^2 = 9</m>.</p>
+    <p>Observe that 
+      <m>\sqrt{0} = 0</m>
+      as 
+      <m>0^2 = 0</m>. Negative numbers do not have real number square roots. For instance, there is no real number 
+      <m>x</m>
+      whose square is 
+      <m>-2</m>. Equivalently, the equation
+    
+      <me>x^2 = -2</me>
+      has no real solutions. Mathematicians invented imaginary numbers to deal with expressions like 
+      <m>\sqrt{-2}</m>, but that's not the focus of this discussion.</p>
+    <p>Cube roots are more well-behaved. For instance, 
+      <m>\sqrt[3]{2}</m>
+      is the real number whose cube is 
+      <m>2</m>. This means,
+    
+      <me>\left(\sqrt[3]{2}\right)^3 = \sqrt[3]{2}\cdot \sqrt[3]{2}\cdot \sqrt[3]{2} = 2.</me>
+      This is sensible even for negative numbers. For example,
+    
+      <me>(-2)^3 = -8 \quad\Rightarrow\quad \sqrt[3]{-8} = -2.</me></p> -->
+    
+    <p>What happens when we apply this law to an exponent that is a fraction like 
+      <m>1/2</m>? Consider,
+      <me>\left(2^{1/2}\right)^{2} = 2^{(1/2)\cdot 2} = 2^1 = 2.</me>
+      Observe that <m>2^{1/2}</m> is a number whose square is 
+      <m>2</m>, just like <m>\sqrt{2}</m>. In fact, we define <m>2^{1/2}=\sqrt{2}</m>. In general, we define the reciprocal exponent as a principal <m>n</m>-th root.</p>
+
+    <definition>
+      <title>Reciprocal Exponent</title>
+      <statement>
+        <p>For positive integer <m>n</m>, we define
+      <me>a^{1/n} = \sqrt[n]{a}.</me>
+      We also assume <m>a\geq 0</m> in the case that <m>n</m> is even.</p>
+    </statement></definition>
+
+      <example>
+        <p>The cube root of <m>8</m> in exponential notation is
+      <me>8^{1/3} = \sqrt[3]{8} = 2.</me>
+        The cube root of <m>-8</m> is
+      <me>(-8)^{1/3} = \sqrt[3]{-8} = -2.</me>
+      </p>
+      </example>
+    
+    <p>Recall that a rational number 
+      is a ratio of integers 
+      <m>m/n</m>, where 
+      <m>n\neq 0</m>. We can now make sense of expressions with rational exponents.</p>
+
+    <principle>
+      <title>Rational Exponent</title>
+      <statement><p>
+      <me>a^{m/n} = \left(a^m\right)^{1/n} = \sqrt[n]{a^m}</me>
+      Or equivalently,
+      <me>a^{m/n} = \left(a^{1/n}\right)^{m} = \left(\sqrt[n]{a}\right)^m.</me></p></statement></principle>
+      
+      <example><p>
+        To illustrate,
+      <me>4^{3/2} = (4^{1/2})^3 = (\sqrt{4})^3 = 2^3 = 8.</me>
+      Alternatively,
+      <me>4^{3/2} = (4^3)^{1/2} = \sqrt{4^3} = \sqrt{64} = 8.</me>
+      Notice both ways give the same result.</p></example>
+    
+    <example>
+      <statement>
+        <p>Evaluate each of the following expressions without using a calculator.
+          <ol marker="a" cols="2">
+            <li>
+              <m>\displaystyle -64^{3/2}</m></li>
+            <li>
+              <m>\displaystyle 64^{-3/2}</m>
+            </li>
+            <li>
+              <m>\displaystyle (-64)^{2/3}</m>
+            </li>
+            <li>
+              <m>\displaystyle \frac{1}{{64}^{-2/3}}</m>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>First, observe that 
+          <m>8^2 = 64</m>
+          and 
+          <m>4^3 = 64</m>.
+    
+          <ol marker="a">
+            <li>
+              Order of operations requires us to perform the exponent before multiplying by 
+              <m>-1</m>
+              <me>-64^{3/2} = - \left(\sqrt{64}\right)^3 = - 8^3 = -512.</me></li>
+            <li>Recall the negative exponents means reciprocal
+        
+              <me>64^{-3/2} = \frac{1}{64^{3/2}} = \frac{1}{\left(\sqrt{64}\right)^3} = \frac{1}{8^3} = \frac{1}{512}</me></li>
+            <li>Order of operations requires us to perform the operations inside parenthesis before the exponent.
+        
+              <me>(-64)^{2/3} = \left(\sqrt[3]{-64}\right)^2 = \left(-4\right)^2 = 16</me></li>
+            <li>The exponent is performed before the division.
+        
+              <me>\frac{1}{{64}^{-2/3}} = 64^{2/3} = \left(\sqrt[3]{64}\right)^2 = \left(4\right)^2 = 16</me></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+</section>
+
+<section xml:id="section-laws-of-exponents">
+    <title>Laws of Exponents</title>
+    <p>Here's a summary of the 
+      <term>Laws of Exponents</term>
+      encountered in this chapter.</p>
+    <table>
+      <tabular bottom="minor" halign="center" left="major" right="medium" top="major">
+        <row>
+          <cell bottom="medium" colspan="1">Zero Exponent:
+            <me>a^0 = 1, \quad a\neq 0</me></cell>
+          <cell bottom="medium" colspan="1">Unit Exponent:
+            <me>a^1 = a</me></cell>
+        </row>
+        <row>
+          <cell bottom="medium" colspan="1">Power of Product:
+            <me>(a b)^n = a^{n} b^n</me></cell>
+          <cell bottom="medium" colspan="1">Power of Quotient:
+            <me>\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}</me></cell>
+        </row>
+        <row>
+          <cell bottom="medium" colspan="1">Product of Powers:
+            <me>a^m a^n = a^{m+n}</me></cell>
+          <cell bottom="medium" colspan="1">Quotient of Powers
+            <me>\frac{a^m}{a^n} = a^{m-n}</me></cell>
+        </row>
+        <row>
+          <cell bottom="medium" colspan="1">Reciprocal:
+            <me>a^{-1} = \frac{1}{a}</me></cell>
+          <cell bottom="medium" colspan="1">Negative Exponent:
+            <me>a^{-n} = \frac{1}{a^n}</me></cell>
+        </row>
+        <row>
+          <cell bottom="medium" colspan="1">Power of Power:
+            <me>(a^m)^n = a^{mn}</me></cell>
+          <cell bottom="medium" colspan="1">Rational Exponent:
+            <me>a^{m/n} = \sqrt[n]{a^m} = \left(\sqrt[n]{a}\right)^m</me></cell>
+        </row>
+      </tabular>
+    </table>
+</section>
+
+<xi:include href="../exercises/ex-exponents.xml"/>
+</chapter>

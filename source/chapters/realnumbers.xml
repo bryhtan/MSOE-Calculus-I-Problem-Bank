@@ -1,0 +1,1141 @@
+<chapter xml:id="chapter-realnumbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>The Real Numbers</title>
+
+<section xml:id="section-integers-rational-reals">
+    <title>Integers, Rationals, and Reals</title>
+    <p>A <term>real number</term> is a number that represents a location on the continuous number line. We refer to the collection of all real numbers as the <term>set of real numbers</term> and denote this by the symbol <m>\mathbb{R}</m>.
+    <image source="images/thirdparty/realnumberline" width="50%"/>
+    Within the set of real numbers are special categories of numbers you should be familiar with. The <term>set of natural numbers</term> includes the counting numbers and zero:
+    <me>0, 1, 2, 3, 4, 5, \ldots .</me>
+    If we also include their <em>opposite</em>, we obtain the <term>set of integers</term>:
+    <me>\ldots, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, \ldots .</me>
+    If we form <term>ratios</term> of integers, i.e. fractions involving integers, we obtain the <term>set of rational numbers</term>.</p>
+
+    <example>
+        <title>Rational Numbers</title>
+        <statement>
+        <p>The following real numbers are rational numbers:
+        <me>\frac{7}{10} = 0.7,\quad \quad\frac{2}{3} = 0.6666\ldots, \quad \quad  \frac{-20}{5} = - 4.</me>
+        Every integer is a rational number as it can be written as a ratio in many ways. For example,
+        <me>-4 = \frac{-4}{1} = \frac{4}{-1} = \frac{-20}{5}.</me>
+        Even zero is a rational number, since dividing zero by any non-zero integer results in zero:
+        <me>0 = \frac{0}{1} = \frac{0}{-50}.</me>
+      </p></statement>
+    </example>
+    
+    <warning xml:id="warning-division-by-zero">
+      <title>Division by Zero is Undefined</title>
+      <p>You must <alert>never divide a real number by zero</alert>. Expressions such as <q><m>1/0</m></q> or <q><m>0/0</m></q> are considered to be <term>undefined</term> in that they are assigned no numeric value and have no mathematical meaning.</p>
+      <p>Division <em>into zero</em> by a non-zero real number is permitted and results in zero. For instance, <m>0/1 = 0</m>.
+      </p>
+    </warning>
+
+    <p>A real number which is <em>not</em> rational is called an <term>irrational</term> number. Irrational numbers are everywhere on the real line, filling up the gaps between the rationals numbers. Many famous constants are irrational, such as <m>\sqrt{2}</m>, <m>\pi</m>, and <m>e</m>.</p>
+
+    <exercise xml:id="checkpoint-integers-rationals-reals">
+        <statement><p>What is an integer? What is a rational number? What is an irrational number? Is every rational number an integer? Is every integer a rational number?</p></statement>
+    </exercise>
+</section>
+
+<section xml:id="section-decimal-representations">
+    <title>Decimal Representations</title>
+    <p>A real number like <m>3.1459</m>, which can be written with a finite number of digits, is shorthand for a sum of rational numbers:
+    <md>
+        <mrow>3.1459 \amp= \underbrace{3}_{\text{integer part}} 
+          + \underbrace{\frac{1}{10}}_{\text{tenths}} 
+          + \underbrace{\frac{4}{100}}_{\text{hundreths}} 
+          + \underbrace{\frac{5}{1000}}_{\text{thousandths}} 
+          + \underbrace{\frac{9}{10000}}_{\text{ten thousandths}}</mrow>
+        <mrow>\amp= 3 + \frac{1459}{10000} =  \frac{31459}{10000}.</mrow>
+    </md>
+    In fact, every <em>rational number</em> has a <term>decimal representation</term> provided we allow the digits to eventually repeat a regular pattern infinitely often. We write a bar over the digits that repeat.</p>
+
+    <example>
+        <title>Decimal Representations of Rationals</title>
+        <statement><p>The following examples provide decimal representations of some rational numbers.
+        <me>\frac{1}{2} = 0.5000\ldots = 0.5\overline{0} = 0.5</me>
+        <me>\frac{2}{3} = 0.6666\ldots = 0.\overline{6}</me>
+        <me>\frac{12}{37} = 0.324\,324\,324\ldots = 0.\overline{324}</me>
+        <me>\frac{381}{148} = 2.57\,432\,432\,432\ldots = 2.57\overline{432}</me></p></statement>
+    </example>
+
+    <p>The relationship between the decimal representation of a rational number (and what it even means to have an infinitely long decimal representation) requires some concepts we won't discuss until calculus. For now, I'd like you to be aware of the following fact.</p>
+
+    <fact xml:id="fact-decimal-representation-of-rationals">
+      <title>Decimal Representation of Rational Numbers</title>
+        <statement><p>A real number is rational if and only if it has a decimal representation that eventually repeats a regular sequence of digits.</p>
+        <p> Accordingly, a real number is irrational if and only if it's impossible to express it in a decimal form with a regularly repeating sequence of digits.</p></statement>
+    </fact>
+
+    <example xml:id="example-pi-irrational">
+      <title><m>\pi</m> is irrational</title>
+      <statement>
+        <p>Draw a perfect circle of any size. Measure the length of its diameter (the distance across the circle through the center) and its circumference (the distance around the circle).
+        <!-- Third Party Image -->
+        <image source="images/thirdparty/pi" width="25%"/>
+        If you divide the circumference <m>C</m> by the diameter <m>d</m> you will always obtain the same number called <m>\pi</m> ("pi")
+        <me>\pi = \frac{C}{d}.</me> 
+        In fact, <m>\pi</m> is an irrational number. The decimal representation of 
+        <m>\pi</m> begins with <me>\pi = 3.1459\ldots,</me> but never terminates or infinitely repeats a fixed sequence of digits. We can at best approximate its value with a finite number of digits which we could indicate as <me>\pi \approx 3.1459</me> where <m>\approx</m> is used to indicate an approximation.
+        </p>
+      </statement>
+    </example>
+
+  
+    <example xml:id="example-reciprocal-pi-irrational">
+      <title>Mathematical Reasoning</title>
+      <statement>
+      <p>
+        Given that <m>\pi</m> is irrational, what about other expressions that involve 
+        <m>\pi</m>? For instance, is it possible that <m>1/\pi</m> is suddenly rational? Prove that can't be the case!
+      </p>
+      </statement>
+      <solution>
+        <p>
+        Let's assume that <m>1/\pi</m> it is rational and see what happens. This would mean that there are integers <m>p</m> and <m>q\neq 0</m>, such that
+        <me>\frac{1}{\pi} = \frac{p}{q}.</me>
+        Note that <m>p \neq 0</m> because <m>1/\pi</m> is not zero. Taking the reciprocal of both sides gives
+        <me>\pi = \frac{q}{p}</me>
+        from which we could conclude that <m>\pi</m> is <em>rational</em>, a contradiction. Thus, <m>1/\pi</m> must be irrational after all.
+        </p>
+      </solution>
+    </example>
+
+    <exercise xml:id="checkpoint-decimal-representations">
+        <p>
+          <ol>
+            <li>Express <m>4.321</m> as a ratio of two integers.</li>
+            <li>What is the circumference of a circle whose radius is 4 inches long?</li>
+            <li>Given that <m>\sqrt{2}</m> is irrational, do you think <m>\sqrt{3}</m> is irrational? What about <m>\sqrt{4}</m>?</li>
+          </ol>
+        </p>
+      </exercise>
+</section>
+
+<section xml:id="section-order-of-operations">
+    <title>Order of Operations</title>
+      <p>We combine real numbers using arithmetic operations such as addition, subtraction, multiplication, and division. If we want to carry out many such operations in a single expression, we must agree upon the rules on the correct order to carry this out to ensure we all obtain the same result. The conventional <term>order of operations</term> is referred to as <term>PEMDAS</term>. </p>
+
+    <!-- TODO: Confirm PEMDAS -->
+    <principle xml:id="principle-pemdas">
+        <title>Order of Operations</title>
+        <statement><p> Work from left to right evaluating the expression respecting the following order:
+        <ol>
+          <li><em>Parentheses:</em> Perform all calculations inside parentheses or brackets (if parentheses are nested, work from inside out);</li>
+          <li><em>Exponents:</em> Evaluate all exponential expressions <m>a^b</m>;</li>
+          <li><em>Multiplication and Division:</em> Evaluate all products and quotients;</li>
+          <li><em>Addition and Subtraction:</em> Evaluate all sums and differences.</li>
+        </ol>
+      </p></statement>
+    </principle>
+
+    <example>
+        <statement><p>Evaluate the following expressions. Show your work carefully as a sequence of equal expressions separated by the equal sign until complete. Then compare with the solution.
+            <ol>
+              <li><p><m>\displaystyle (-2+4)^2-3\cdot 4</m></p></li>
+              <li><p><m>\displaystyle -2^2-(-3)^2\div 4</m></p></li>
+              <li><p><m>\displaystyle -\frac{2^3+(-2)^3}{2^2+(-2)^2}</m></p></li>
+            </ol>
+          </p></statement>
+        <solution>
+          <ol><li><p>
+              <md>
+                  <mrow>(-2+4)^2-3\cdot 4 \amp= 2^2-3\cdot 4</mrow>
+                  <mrow>\amp= 4-3\cdot 4</mrow>
+                  <mrow>\amp= 4-12</mrow>
+                  <mrow>\amp= \boxed{-8}</mrow>
+                </md></p></li>
+            <li><p>
+                <md>
+                  <mrow>-2^2-(-3)^2\div 4 \amp= 4 - 9 \div 4</mrow>
+                  <mrow>\amp= 4 - \frac{9}{4}</mrow>
+                  <mrow>\amp= \frac{16}{4} - \frac{9}{4}</mrow>
+                  <mrow>\amp= \frac{16-9}{4}</mrow>
+                  <mrow>\amp= \boxed{\frac{7}{4}}</mrow>
+                </md></p></li>
+            <li><p>
+                <md>
+                  <mrow>-\frac{2^3+(-2)^3}{2^2+(-2)^2}\amp= -\frac{8-8}{4+4}</mrow>
+                  <mrow>\amp= -\frac{0}{8}</mrow>
+                  <mrow>\amp= -0</mrow>
+                  <mrow>\amp=\boxed{0}</mrow>
+                </md></p></li>
+          </ol>
+        </solution>
+    </example>
+
+    <exercise xml:id="checkpoint-order-of-operations">
+        <p>Evaluate without the use of a calculator
+        <me>\displaystyle 2 - \frac{2}{(\frac{1}{2}-1)^2}.</me>
+        Show your work as a sequence of equal expressions separated by the equal sign <q><m>=</m></q>.</p>
+    </exercise>
+</section>
+
+<section xml:id="section-properties-of-reals">
+      
+    <title>Properties of Real Numbers</title>
+
+    <p>The real numbers and the arithmetic operations we perform with them fundamental properties that you should be aware of.</p>
+
+    <principle><title>Properties of Real Numbers</title>
+      <statement>
+      <p> 
+        <ul>
+          <li><em>Commutativity</em>: <m>a+b=b+a</m> and <m>ab = ba</m></li>
+          <li><em>Associativity</em>: <m>a+(b+c)=(a+b)+c</m> and <m>a(bc) = (ab)c</m></li>
+          <li><em>Distributivity</em>: <m>a(b+c) = ab+ac</m> and <m>(a+b)c = ac+bc</m></li>
+        </ul>
+      </p></statement></principle>
+
+    <example>
+      <title>Using Commutativity</title>
+      <statement>
+        <p>
+          Commutativity says it doesn't matter the order you add or the order you multiply real numbers, as the results will be the same. 
+          For addition:
+          <me>-2 + 7 = 7+(-2) = 7-2 =5.</me>
+          For multiplication:
+          <me>-2\cdot 7 = 7(-2) = -14.</me>
+    </p></statement></example>
+
+    <example>
+      <title>Using Associativity</title>
+      <statement>
+        <p>
+          Associativity says the way you group multiple additions or products together doesn't matter. This ensures that it makes perfect sense to drop parenthesis altogether as in the following example involving addition:
+          <me>-2+7+3 = -2+(7+3) = -2 + 10 = 8.</me>
+          This is the same if computed as
+          <me>-2+7+3 = (-2+7)+3 = 5+3 = 8.</me>
+          Similarly for multiplication,
+          <me>-2\cdot 7\cdot 3 = (-2\cdot 7)\cdot 3 = -14\cdot 3 =-42.</me>
+          Or, equivalently
+          <me>-2\cdot 7\cdot 3 = -2\cdot (7\cdot 3) = -2\cdot 21 =-42.</me>
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="example-FOIL">
+      <title>FOIL'ing</title>
+      <statement>
+        <p>The <term>FOIL (First-Outer-Inner-Last)</term>
+          rule for expanding expressions of the form <m>(a+b)(c+d)</m> is a consequence of the distributive property.
+          <mdn>
+            <mrow>(a+b)(c+d) \amp=\quad (a+b)c + (a+b)d </mrow>
+            <mrow>\amp=\quad ac+bc + ad+bd </mrow>
+            <mrow xml:id="eqn-FOIL">(a+b)(c+d) \amp=\quad \underbrace{ac}_{\text{first}} + \underbrace{ad}_{\text{outer}} + \underbrace{bc}_{\text{inner}} + \underbrace{bd}_{\text{last}}</mrow>
+          </mdn>
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="example-multiplying-using-properties">
+      <statement>
+        <p>Let's evaluate <m>31\times 49</m> using properties of real numbers to avoid needing a calculator. I can write <m>31 = 30+1</m> and <m>49 = 50-1</m> which relates them to a nearby multiple of <m>10</m>. Then
+          <md>
+            <mrow>31\times 49 \amp=\quad (30+1)\times (50-1)</mrow>
+            <mrow>\amp=\quad 30\times 50-30+50-1</mrow>
+            <mrow>\amp=\quad 30\times 50+20-1</mrow>
+            <mrow>\amp=\quad 30\times 50+19</mrow>
+            <mrow>\amp=\quad 3\times 10\times 5\times 10+19</mrow>
+            <mrow>\amp=\quad 15\times 100+19</mrow>
+            <mrow>\amp=\quad 1500+19</mrow>
+            <mrow>\amp=\quad 1519.</mrow></md>
+        </p>
+      </statement>
+    </example>
+
+    <exercise xml:id="checkpoint-properties-of-reals">
+      <p>Multiply <m>61\times 18</m> in a creative way to illustrate the use of commutativity, associativity, and distributivity. Think about which property you are using in each step.</p>
+    </exercise>
+</section>
+
+<section xml:id="section-terms-versus-factors">
+    <title>Terms versus Factors</title>
+
+    <introduction><p>This section emphasizes the importance of correctly identifying the parts of an algebraic expression. Carefully use the words "term" and "factor" accurately to avoid many pitfalls in algebra.</p></introduction>
+
+    <p><em>Repeated addition</em> of a number gives a <term>multiple</term> of that number. Each occurrence of the number is a <term>term</term> in the sum.</p>
+
+    <example><title>Repeated Addition</title>
+    <statement><p>In this case, there are 5 terms of 2 resulting in 10.
+      <me>\underbrace{2+2+2+2+2}_{\text{$5$ terms of $2$}} = \underbrace{5\cdot 2}_{\text{A multiple of $2$}} = 10.</me>
+      </p></statement>
+    </example>
+
+    <p><em>Repeated multiplication</em> of a number gives a <term>power</term> of that number. Each occurrence of the number is a <term>factor</term> in the product.</p>
+
+    <example>
+        <title>Repeated Multiplication</title>
+        <statement><p>In this case, there are 5 factors of 2 resulting in 32.
+        <me>\underbrace{2\cdot 2\cdot 2\cdot 2\cdot 2}_{\text{$5$ factors of $2$}} = \underbrace{2^5}_{\text{a power of $2$}} = 32.</me>
+        The number of factors, <m>5</m>, in the power <m>2^5</m> is called its 
+        <term>exponent</term>. The number <m>2</m> in the power is called the <term>base</term> of the power.</p></statement>
+    </example>
+
+    <definition><title>Terms and Factors</title>
+        <statement><p>Whenever we add (or subtract) real numbers  
+          <me>a+b+c+\cdots</me>
+          the individual numbers <m>a,b,c,\ldots</m> are called 
+          <term>terms</term> in the sum. Whenever we multiply (or divide) real numbers
+          <me>a\times b\times c\times \cdots</me>
+          the numbers <m>a,b,c,\ldots</m> are called 
+          <term>factors</term> in the product. 
+          An expression of the form <m>a^b</m> is called a 
+          <term>power</term> with <term>base</term> <m>a</m> and 
+          <term>exponent</term> <m>b</m>.
+        </p></statement>
+    </definition>
+
+    <example xml:id="example-cancelling"><title>Canceling</title>
+    <statement>
+    <p>It's crucial that you distinguish between 
+      <em>terms in a sum</em>
+      versus 
+      <em>factors in a product</em>. For instance, you may 
+      <em>cancel the common factors</em>
+      of 
+      <m>2</m>
+      in the ratio:
+  
+      <me>\frac{3\cdot 2}{2} = 3.</me>
+      However, you must never cancel common terms in a ratio. For instance, do not cancel the common terms of 
+      <m>2</m>
+      in the ratio 
+      <m>\frac{3+2}{2}</m>. Instead,
+      <me>\frac{3+2}{2} = \frac{5}{2}.</me></p></statement></example>
+
+    <p>If <m>a</m> is a real number, then <m>-a</m> is its <term>opposite</term>
+      value and appears at the same, but opposite location on the real line.
+
+      I recommend you resist the urge to refer to 
+      <m>-a</m>
+      as 
+      <q><em>negative</em>
+      <m>a</m></q>
+      as it is unclear if the result is positive or negative. For instance, the opposite of 
+      <m>-4</m>
+      is 
+      <m>-(-4) = 4</m>, a positive integer. Adding a number with its opposite results in zero:
+      <me>a + (-a) = 0.</me>
+      It is for this reason that 
+      <m>-a</m>
+      is sometimes called the 
+      <term>additive inverse</term>
+      of 
+      <m>a</m>.</p>
+    <p>If 
+      <m>a</m>
+      is non-zero (see 
+      <xref ref="warning-division-by-zero"/>
+      ) real number, then 
+      <m>1/a</m>
+      is called its 
+      <term>reciprocal</term>. Multiplying 
+      <m>a</m>
+      by its reciprocal results in one:
+  
+      <me>a \times \frac{1}{a} = 1.</me>
+      It is for this reason that 
+      <m>1/a</m>
+      is sometimes called the 
+      <term>multiplicative inverse</term>
+      of 
+      <m>a</m>. For instance, <m>2</m> is the multiplicative inverse of <m>1/2</m> because <m>2\times (1/2) = 1</m>.</p>
+
+      <example><title>Inverses of Rational Numbers</title>
+      <statement>
+      <p>The reciprocal of a rational number interchanges the numerator and denominator:
+      <me>\frac{1}{\frac{2}{3}} = \frac{1}{2/3} = \frac{3}{2}.</me>
+      The opposite of a rational number can be formed with the opposite of the numerator or denominator. That is, the following are all equal:
+      <me>- \left(\frac{2}{3}\right) = -\frac{2}{3} = \frac{-2}{3} = \frac{2}{-3}.</me>
+      </p>
+      </statement></example>
+
+      <exercise xml:id="checkpoint-terms-versus-factors">
+        <p>
+        <ol>
+          <li>What real numbers are <em>factors</em> in the expression <m>(2+3)\times 4</m>?</li>
+          <li>What real numbers are <em>terms</em> in the expression <m>2\times 4+3\times 4</m>?</li>
+          <li>The word "inverse" appears frequently in mathematics. What were the two kinds of inverses you saw above? Give an example of each.</li>
+        </ol>
+        </p>
+      </exercise>
+</section>
+
+<section xml:id="section-working-with-fractions">
+    <title>Working with Fractions</title>
+      <p>
+        To multiply two fractions, just multiply the two numerators and the two denominators.
+      </p>
+
+      <principle xml:id="principle-multiplying-fractions">
+        <title>Multiplying Fractions</title>
+          <statement>
+            <p>
+              <me>\frac{a}{b}\cdot \frac{c}{d} = \frac{a\cdot c}{b\cdot d}.</me>
+            </p>
+          </statement>
+      </principle>
+        
+      <example>
+        <title>Multiplying Fractions</title>
+        <statement>
+        <p>Multiply <m>5/6</m> and <m>2/5</m>.
+          <me>\frac{5}{6}\cdot\frac{2}{5} = \frac{10}{30} = \frac{10}{3\cdot 10} = \frac{1}{3}.</me>
+          Of course, we can cancel any <alert>common factors</alert> as soon as we notice them:
+          <me>\frac{5}{6}\cdot\frac{2}{5} = \frac{1}{6}\cdot\frac{2}{1} = \frac{2}{6} = \frac{2}{2\cdot 3} = \frac{1}{3}.</me>
+        </p></statement>
+      </example> 
+
+      <warning xml:id="warning-cancelling"><title>Cancellation in Fractions</title><p>You may cancel common <em>factors</em> in a fraction. For instance, the <m>b</m>'s cancel in the expression
+        <me>\frac{ab}{cb} = \frac{a}{c}.</me>
+        However, you must <alert>never cancel common <em>terms</em> in a fraction</alert>. For instance, the <m>b</m>'s in the expression
+        <m>\displaystyle \frac{a+b}{b}</m>
+        do NOT cancel as this would violate PEMDAS <xref ref="principle-pemdas"></xref> and <xref ref="example-cancelling"/>.</p>
+      </warning>
+
+      <p>
+        To divide two fractions, we can multiply by the reciprocal of the denominator.
+      </p>
+
+      <principle>
+        <title>Dividing Fractions</title>
+        <statement>
+          <p>
+              <me>\frac{a}{b} \div \frac{c}{d} = \frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{d}{c}.</me>
+          </p>
+        </statement>
+      </principle>
+
+      <example>
+        <title>Dividing Fractions</title>
+        <statement>
+        <p>Divide <m>3/2</m> by <m>3/4</m>.
+          <me>\frac{3}{2} \div \frac{3}{4} = \frac{3/2}{3/4} = \frac{3}{2} \cdot \frac{4}{3} = \frac{4}{2} = 2.</me>
+        </p></statement>
+      </example>
+
+      <p>Addition may be performed when the denominators are the same.</p>
+
+      <principle><title>Adding Fractions</title>
+        <statement><p>
+          <me>\frac{a}{b}+\frac{c}{b} = \frac{a+c}{b}.</me></p></statement></principle>
+
+      <p>If the denominators are different, we need to find a common denominator. We usually prefer to find the 
+        <term>least common denominator (LCD)</term>
+        and multiply each fraction by the appropriate 
+        <term>form of one</term>. </p>
+
+        <example><title>Adding Fractions</title>
+        <statement>
+          <p>To add
+        <m>5/4</m>
+        and 
+        <m>1/6</m>, observe that the least common denominator is 
+        <m>12</m>
+        because this is the smallest multiple of 
+        <m>4</m>
+        and 
+        <m>6</m>
+        they have in common. Then,
+        <me>\frac{5}{4} + \frac{1}{6} = \frac{5\cdot 3}{4\cdot 3} + \frac{1 \cdot 2}{6\cdot 2}
+        =  \frac{15}{12} + \frac{2}{12} = \frac{15+2}{12} = \frac{17}{12}.</me>
+        This results in an 
+        <term>improper</term> fraction
+        which may be written as a 
+        <me>\frac{17}{12} = \frac{12+5}{12} = \frac{12}{12}+\frac{5}{12} = 1 + \frac{5}{12}.</me></p>
+        </statement>
+      </example>
+
+      <remark xml:id="remark-mixednumbers">
+      <p>
+        The result above is often written as a <term>mixed number</term>
+        <m>1 \frac{5}{12}</m>,
+        and while you may encounter this in some subjects, we will prefer the improper fraction 
+        <m>\frac{17}{12}</m>
+        or the sum 
+        <m>1 + \frac{5}{12}</m> in calculus.</p></remark>
+
+
+    <example>
+      <title>Subtracting Fractions</title>
+      <statement><p>What fraction of the circle is unlabeled?
+        <image source="images/realnumbers/sector1" width="40%"/>
+      </p></statement>
+      <solution><p>
+        The sum of the portions should add to one, so that the missing fraction is
+        <md>
+          <mrow>1-\frac{1}{3}-\frac{2}{5} \amp= \frac{15}{15} - \frac{5}{15} - \frac{6}{15} </mrow>
+          <mrow>\amp= \frac{15-5-6}{15} </mrow>
+            <mrow>\amp= \frac{4}{15}</mrow></md>
+      </p></solution>
+    </example>
+
+    <p>Using a common denominator can also be useful when comparing fractions. </p>
+
+    <example>
+      <title>Comparing fractions</title>
+      <statement>
+      <p>Which is larger
+        <m>4/7</m>
+        or 
+        <m>3/5</m>
+        ? </p>
+      </statement>
+      <solution><p>To avoid any possible confusion, we observe they have a least common denominator of 
+        <m>35 = 7\times 5</m>. Then,
+  
+        <me>\frac{4}{7} = \frac{20}{35} \quad \text{and} \quad \frac{3}{5} = \frac{21}{35}.</me>
+        Comparing the numerators, we conclude that <m>3/5</m> is slightly bigger than <m>4/7</m>
+        <me>\frac{4}{7} \lt \frac{3}{5},</me>
+        but only by <m>1/21</m>.
+      </p>
+      </solution></example>
+
+      <p>Consider the square of a fraction:
+        <me>\left(\frac{a}{b}\right)^2 = \frac{a}{b}\cdot\frac{a}{b} = \frac{a\cdot a}{b\cdot b} = \frac{a^2}{b^2}.</me>
+        In general, a power of a fraction can be applied to the numerator and denominator individually.</p>
+      
+    <principle>
+      <title>Powers of Fractions</title>
+      <statement><p>
+        <me>\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}</me></p></statement>
+      </principle>
+
+    <example>
+      <title>Power of Fractions</title>
+      <statement><p>Evaluate completely
+        <ol cols="3">
+            <li>
+              <m>\displaystyle\left(\frac{2}{3}\right)^2</m></li>
+            <li>
+              <m>\displaystyle\frac{2^2}{3}</m>
+            </li>
+            <li>
+              <m>\displaystyle\frac{-2^2}{3}</m>
+            </li>
+            <li>
+              <m>\displaystyle\frac{(-2)^2}{3}</m>
+            </li>
+            <li>
+              <m>\displaystyle\left(-\frac{2}{3}\right)^2</m>
+            </li>
+            <li>
+              <m>\displaystyle\left(-\frac{2}{3}\right)^3</m>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>Remember that exponents are considered before multiplication or division in <xref ref="principle-pemdas">PEMDAS</xref>.
+          <ol>
+            <li>
+              <m>\displaystyle\left(\frac{2}{3}\right)^2 = \frac{2^2}{3^2} = \frac{4}{9}</m></li>
+            <li>
+              <m>\displaystyle\frac{2^2}{3} = \frac{4}{3}</m>
+            </li>
+            <li>
+              <m>\displaystyle\frac{-2^2}{3} = -\frac{4}{3}</m>
+            </li>
+            <li>
+              <m>\displaystyle\frac{(-2)^2}{3} = \frac{4}{3}</m>
+            </li>
+            <li>
+              <m>\displaystyle\left(-\frac{2}{3}\right)^2 = \left(-\frac{2}{3}\right)\cdot\left(-\frac{2}{3}\right)
+        = \frac{4}{9}</m>
+            </li>
+            <li>
+              <m>\displaystyle\left(-\frac{2}{3}\right)^3 = \left(-\frac{2}{3}\right)\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{2}{3}\right) = - \frac{8}{27}</m>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <exercise xml:id="checkpoint-working-with-fractions">
+      <p>
+        <ol>
+          <li><p>Can I cancel the <m>5</m> in <m>\frac{(3+4)\times 5}{15}</m>? Can I cancel the <m>3</m>? Why or why not?</p></li>
+          <li><p>Is <m>\frac{2}{3+4}</m> the same as <m>\frac{2}{3}+\frac{2}{4}</m>?</p></li>
+        </ol>
+      </p>
+    </exercise><!-- 
+
+    <paragraphs>
+      <title>Summary</title>
+      <p>We have observed a number of properties involving fractions summarized below.
+        <ul>
+          <li>
+            Multiplication: 
+            <m>\displaystyle \frac{a}{b}\cdot\frac{c}{d} = \frac{ac}{bd}</m></li>
+          <li>Addition: 
+            <m>\displaystyle \frac{a}{b}+\frac{c}{b} = \frac{a+c}{b}</m></li>
+          <li>Reciprocals: 
+            <m>\displaystyle \frac{1}{a/b} = \frac{b}{a}</m></li>
+          <li>Division: 
+            <m>\displaystyle \frac{a}{b}\div\frac{c}{d} = \frac{a}{b}\cdot\frac{d}{c}</m></li>
+          <li>Canceling: 
+            <m>\displaystyle \frac{ab}{cb} = \frac{a}{c}</m></li>
+          <li>Powers: 
+            <m>\displaystyle \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}</m></li>
+        </ul>
+      </p>
+    </paragraphs>
+ -->
+</section>
+
+<section xml:id="section-squares-and-cubes">
+  <title>Squares and Cubes</title>
+    <p>Some powers 
+      <m>a^b</m> have common names. A <term>square</term> is an expression of the form <m>a^2</m>, because this is the area of a square with side length <m>a</m>. A <term>cube</term> is an expression of the form <m>a^3</m>, because this is the volume of a cube with side length <m>a</m>.
+    </p>
+      
+    <paragraphs>
+      <title>Square Roots</title>
+      <p>We can write 
+        <m>9</m> as a square in two different ways:
+        <me>9 = 3^2 \quad \text{and} \quad 9 = (-3)^2.</me> 
+        We call <m>3</m> and <m>-3</m> <term>square roots</term>
+        of <m>9</m>. Notice I said <q>square roots</q> and not <q>the square root</q>! 
+        One of these, <m>3</m>, is positive; and the other, 
+        <m>-3</m>, is negative. We use the symbol <m>\sqrt{9}</m> specifically for the positive square root and call it the <term xml:id="term-principal-square-root">principal square root</term>
+        of <m>9</m>. So <m>\sqrt{9} = 3</m>.</p>
+
+      <p>Note that the other square root of <m>9</m> is the opposite of its principal square root, namely <m>-\sqrt{9} = -3</m>. There are exactly two square roots of <m>9</m>, <m>\sqrt{9}</m> and 
+      <m>-\sqrt{9}</m>. This is summarized by saying the square roots of <m>9</m> are <m>\pm\sqrt{9}</m>, where the <m>\pm</m> is read as <q>plus or minus</q>. </p>
+
+      <p>To put things another way, the real number solutions to the equation 
+        <m>x^2 = 9</m>
+        are 
+        <m>x= \pm\sqrt{9}</m>:
+        <men xml:id="equation-square-root-principle">x^2 = 9 \quad \Rightarrow \quad x = \pm \sqrt{9} = \pm 3.</men></p>
+      <p>Now consider 
+        <m>-9</m>, a negative number. Since the square of any real number is never negative, 
+        <m>-9</m>
+        has no real number square roots and the symbol 
+        <m>\sqrt{-9}</m>
+        is 
+        <em>undefined</em>. To put things another way, the equation 
+        <m>x^2 = -9</m>
+        has no real number solutions.</p>
+      <p>Finally, observe that 
+        <m>0^2 = 0</m>, so that 
+        <m>0</m>
+        is a square root of itself. This is the only square root of zero, so that 
+        <m>\sqrt{0} = 0</m>.</p>
+    </paragraphs>
+    <example>
+      <statement>
+        <p>The equation 
+          <m>x^2 = 15</m>
+          has exactly two real number solution 
+          <m>x=\pm \sqrt{15}</m>. These numbers are irrational, but may be approximated with a calculator or computer. Using the square root button, I found that 
+          <m>\sqrt{15} \approx 3.87</m>, approximately. The solutions are approximately 
+          <m>x \approx 3.87</m>
+          and 
+          <m>x \approx - 3.87</m>. That is,
+          <me>\left(\pm 3.87\right)^2\approx 15</me>.
+        </p>
+      </statement>
+    </example>
+    <warning xml:id="warning-square-rooting">
+      <p>Do you see what's wrong with the following?
+        <md>
+          <mrow>x^2 = 15</mrow>
+          <mrow>\sqrt{x^2} = \sqrt{15}</mrow>
+          <mrow>x = \sqrt{15}</mrow></md>Try to avoid viewing 
+        <m>\sqrt{\quad}</m>
+        as an operation you perform to both sides. Doing so leads to missing the other square root of 
+        <m>15</m>, namely 
+        <m>-\sqrt{15}</m>. Instead, think of it as an if/then sentence: &quot;if 
+        <m>x^2 = 15</m>, then 
+        <m>x = \pm \sqrt{15}</m>
+        &quot;.</p>
+    </warning>
+    <paragraphs>
+      <title>Cube Roots</title>
+      <p>The number 
+        <m>-8</m>
+        is the cube of 
+        <m>-2</m>, that is, 
+        <m>(-2)^3 = 8</m>. This is the only real number with this property, so we write 
+        <m>\sqrt[3]{-8} = -2</m>
+        for the 
+        <term>principal cube root</term>. In general, every real number (including negative numbers) has exactly one real number cube root. To put things another way, there is exactly one real number solutions to the equation 
+        <m>x^3 = -8</m>, namely 
+        <m>x = -2</m>.</p>
+    </paragraphs>
+
+    <example><statement><p>
+      Evaluate without using a calculator. 
+      <me>\sqrt[3]{\sqrt[3]{27}+\sqrt[3]{-8}}</me> 
+    </p></statement>
+    <solution><p>
+      <md>
+        <mrow>\sqrt[3]{\sqrt[3]{27}+\sqrt[3]{-8}}
+              \amp= \sqrt[3]{\sqrt[3]{3^3}+\sqrt[3]{(-2)^3}}</mrow>
+        <mrow>\amp= \sqrt[3]{3-2}</mrow>
+        <mrow>\amp= \sqrt[3]{1}</mrow>
+        <mrow>\amp= \sqrt[3]{1^3}</mrow>
+        <mrow>\amp= 1.</mrow>
+      </md>
+    </p></solution>
+  </example>
+
+    <exercise xml:id="checkpoint-squares-cubes">
+      <p>Evaluate without using a calculator. 
+        <me>\sqrt{\left(\sqrt{(-2)^2}+\sqrt{3^2}\right)^2}</me></p>
+    </exercise>
+</section>
+
+<section xml:id="section-roots-radicals">
+    <title>Roots and Radicals</title>
+  
+    <p>By <q>roots</q> I'm referring to things like &quot;square roots&quot; and when I say <q>radicals</q>, I mean expressions involving the symbol 
+      <m>\sqrt{\quad}</m>.
+      Hopefully you saw a clear distinction between square roots and cube roots in <xref ref="section-squares-and-cubes"/>. This distinction is maintained between even and odd <m>n</m>-th roots.</p>
+    
+    <definition xml:id="definition-even-roots">
+      <title>Even <m>n</m>-th Roots</title>
+      <statement>
+      <p>Suppose 
+        <m>n=2,4,6,\ldots</m>
+        is an 
+        <em>even</em>
+        positive integer and 
+        <m>A \gt 0</m>
+        is a real number. Then there exists a unique positive real number 
+        <m>\sqrt[n]{A}</m>
+        called the 
+        <term>
+          principal 
+          <m>n</m>-th root of <m>A</m></term>. It satisfies the properties:
+        <me>\sqrt[n]{A} \gt 0 \quad \text{and} \quad \left(\sqrt[n]{A}\right)^n = A.</me></p></statement></definition>
+
+        <p>
+        When <m>n</m> is even, there are exactly two real 
+        <term><m>n</m>-th roots of <m>A</m></term>. 
+        They are <m>\sqrt[n]{A}</m> and its opposite <m>-\sqrt[n]{A}</m>. We say briefly that the <m>n</m>-th roots of <m>A</m> are 
+        <m>\pm \sqrt[n]{A}</m>. To put things another way, the equation 
+        <m>x^n = A</m>
+        has exactly two real number solutions:
+        <men xml:id="equation-even-nth-root-principle">x^n = A \quad \Rightarrow \quad x = \pm \sqrt[n]{A}.</men>
+        If <m>B \lt 0</m>, then <m>\sqrt[n]{B}</m> is undefined, while 
+        <m>\sqrt[n]{0} = 0</m>.</p> 
+    
+    <example>
+      <statement>
+        <p>For example, 
+          <m>\sqrt[4]{16} = 2</m>
+          because 
+          <m>2 \gt 0</m>
+          and 
+          <m>2^4 = 2\cdot 2\cdot 2\cdot 2 = 16</m>. In addition, 
+          <m>(-2)^4 = 16</m>. Observe how this is positive due to the even number of factors! The equation 
+          <m>x^4 = 16</m>
+          has exactly two real number solutions. They are
+          <m>x = \pm\sqrt[4]{16} = \pm 2</m>.</p>
+      </statement>
+    </example>
+
+    <definition xml:id="definition-odd-roots">
+      <title>Odd <m>n</m>-th Roots</title>
+      <statement>
+      <p>Suppose <m>n=3,5,7,\ldots</m> is an <em>odd</em> positive integer and 
+        <m>A</m> is <em>any</em> real number. Then there exists a unique real number 
+        <m>\sqrt[n]{A}</m>
+        called the <term>principal <m>n</m>-th root of <m>A</m></term> satisfying the property:
+        <me>\left(\sqrt[n]{A}\right)^n = A.</me></p></statement></definition>
+
+      <p>
+        When n is odd, there is exactly one real 
+        <term><m>n</m>-th root of <m>A</m></term>, namely 
+        <m>\sqrt[n]{A}</m>. Equivalently, the equation 
+        <m>x^n = A</m>
+        has exactly one real number solution:
+        <men xml:id="equation-odd-nth-root-principle">x^n = A \quad \Rightarrow \quad x = \sqrt[n]{A}.</men></p>
+
+    <example>
+      <statement>
+        <p>For example, 
+          <m>\sqrt[5]{-\frac{1}{32}} = -\frac{1}{2}</m>
+          because
+          <me>\left(-\frac{1}{2}\right)^5 = \left(-\frac{1}{2}\right)\cdot\left(-\frac{1}{2}\right)\cdot\left(-\frac{1}{2}\right)\cdot\left(-\frac{1}{2}\right)\cdot\left(-\frac{1}{2}\right) = -\frac{1}{32}.</me>
+          We say that <m>1/2</m> is the fifth root of <m>1/32</m>.
+          Alternatively, the equation 
+          <m>x^5 = 1/32</m> has exactly one real number solution, 
+          <m>x = \sqrt[5]{1/32} = 1/2</m>.</p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>The only real number solution to the equation 
+          <m>x^5 = -32</m>
+          is 
+          <m>x=\sqrt[5]{-32} = -2</m>. </p>
+      </statement>
+    </example>
+
+    <principle xml:id="principle-properties-of-radicals">
+      <title>Properties of 
+        <m>n</m>-th Roots</title>
+        <statement>
+      <p>
+        <m>n</m>-th roots satisfy various properties. Remember that there is a strong dichotomy between odd and even roots! Suppose 
+        <m>n = 2,3,4,\ldots</m>
+        and 
+        <m>x</m>
+        and 
+        <m>y</m>
+        are real numbers. Assume 
+        <m>x \geq 0</m>
+        and 
+        <m>y \geq 0</m>
+        in the case that 
+        <m>n</m>
+        is even. Then:
+        <ul>
+          <li>
+            <m>\displaystyle \left(\sqrt[n]{x}\right)^n  = x</m></li>
+          <li>
+            <m>\displaystyle \sqrt[n]{x^n}  = x</m>
+          </li>
+          <li>
+            <m>\displaystyle \sqrt[n]{xy} = \sqrt[n]{x}\sqrt[n]{y}</m>
+          </li>
+          <li>
+            <m>\displaystyle \sqrt[n]{\frac{x}{y}} = \frac{\sqrt[n]{x}}{\sqrt[n]{y}}</m>, provided 
+            <m>y\neq 0</m></li>
+        </ul>
+      </p>
+      <p>If <m>n</m> is <em>even</em> and <m>x</m> is now permitted to be any real number, possibly negative, then we must have absolute value to ensure a non-negative result when extracting powers from the radical:
+        <me>\sqrt[n]{x^n} = \left| x \right|</me>
+      </p>
+    </statement></principle>
+
+    <example>
+      <p>
+        Comparing odd and even
+        <me>\sqrt[4]{(-3)^4} = \left| - 3 \right| = 3</me>
+        <me>\sqrt[3]{(-3)^3} = - 3</me>
+      </p>
+    </example>
+    
+    <example>
+      <p>
+        <me>\sqrt[5]{64} = \sqrt[5]{32 \cdot 2} = \sqrt[5]{32} \cdot \sqrt[5]{2} =  \sqrt[5]{2^5}\cdot \sqrt[5]{2} = 2\sqrt[5]{2}.</me>
+      </p>
+    </example>
+    <example>
+      <p>
+        <me>\sqrt{\frac{1}{12}} = \frac{\sqrt{1}}{\sqrt{12}} = \frac{1}{\sqrt{4\cdot 3}} = \frac{1}{\sqrt{4}\cdot \sqrt{3}} = \frac{1}{2\sqrt{3}}.</me>The final result above is fine, but its customary to 
+        <term>rationalize radicals</term>
+        in the denominator. This involves multiplying by a <em>form of one</em>
+      
+        <me>\frac{1}{2\sqrt{3}} 
+        =  \frac{1}{2\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}} = \frac{\sqrt{3}}{2 \left(\sqrt{3}\right)^2} = \frac{\sqrt{3}}{2\cdot 3} = \frac{\sqrt{3}}{6}.</me></p>
+    </example>
+    
+    <warning>
+      <title>Roots are incompatible with addition</title>
+      <p>In general, 
+        <m>\sqrt[n]{a+b}</m>
+        is not 
+        <m>\sqrt[n]{a}+\sqrt[n]{b}</m>.</p>
+    </warning>
+
+    <example>
+      <statement><p>Evaluate any sums or differences under radicals first.
+        <me>\sqrt{3^2 +4^2} = \sqrt{9+16} = \sqrt{25} = 5.</me>
+      </p></statement>
+    </example>
+
+    <exercise xml:id="checkpoint-roots-radicals">
+      <p>Evaluate the expression without a calculator.
+        <me>\sqrt{\sqrt[4]{2^{8}}}</me></p>
+    </exercise>
+</section>
+
+<section xml:id="section-absolute-value">
+    <title>Absolute Value</title>
+    <p>
+      The <term>absolute value</term> <m>|x|</m> of a real number <m>x</m> provides its 
+      <term>magnitude</term>, i.e. how large it is without regard to being positive or negative. Geometrically, it represents the distance the number is from zero along the real number line. 
+      <image source="images/realnumbers/absolute" width="50%">
+        <description>Image of the real number line and the absolute value of a number depicting distance from zero.</description></image>We can express this precisely with the conditional expression
+      <men xml:id="eqn-absolute-value">|x| = \begin{cases} 
+        x, \quad &amp;\text{if $x \geq 0$}\\
+        -x, \quad &amp; \text{if $x \lt 0$}
+      \end{cases}</men>For example, 
+      <me>|4|=4, \quad \text{because $4 \geq 0$},</me>
+      while the absolute value of <m>-4</m> is the opposite of <m>-4</m>:
+      <me>|-4| = -(-4) = 4, \quad \text{because $4 \lt 0$.}</me>
+      Note that <m>|0| = 0</m>. Formulas like Equation <xref ref="eqn-absolute-value"/>
+      which involving multiple cases are common in engineering. Take some time to carefully understand the notation used above.</p>
+    <paragraphs>
+      <title>Distance between numbers</title>
+      <p>
+        We can measure the distance between two real numbers 
+        <m>a</m> and <m>b</m>
+        on the real line by subtracting them and then computing the absolute value to obtain a distance. This ensures that we do not need to worry about the order the subtraction was performed.
+        <me>\left(\text{distance between $a$ and $b$}\right) = \left| a-b\right| = \left|b-a\right|.</me>
+      </p>
+    </paragraphs>
+    <image source="images/realnumbers/distance" width="50%"></image>
+    <example>
+      <statement>
+        <p>If we divide the portion of the real line between <m>-6</m> and <m>8</m> into ten equal width parts, what is the width of each part?</p>
+      </statement>
+      <solution>
+        <p>The distance between <m>-6</m> and <m>8</m> is 
+          <me>\left|-6-8\right| = \left|-14\right| = 14.</me>
+          We then divide this by <m>10</m> to obtain a width of <m>14/10 =1.4</m> for each part.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>Order of operations requires us to 
+          <em>evaluate expressions within the absolute value  completely</em>
+          before combining with other operations. For example,
+          <md>
+            <mrow>-5\left|8-10 \right| + 3 
+                  \amp=\quad  -5 \left|-2\right| + 3 </mrow>
+            <mrow>\amp=\quad  -5 \left(-(-2)\right) + 3 </mrow>
+            <mrow>\amp=\quad  -5 \cdot 2 + 3 </mrow>
+            <mrow>\amp=\quad  -10 + 3 </mrow>
+            <mrow>\amp=\quad  -7 </mrow></md>
+        </p>
+      </statement>
+    </example>
+    <example><statement><p>Evaluate the expression
+      <me>\left|\left|2-5\right|-4\right|^3</me></p></statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\left|\left|2-5\right|-4\right|^3 
+                  \amp=\left|\left|-3\right|-4\right|^3</mrow>
+            <mrow>\amp=\left|3-4\right|^3</mrow>
+            <mrow>\amp=\left|-1\right|^3</mrow>
+            <mrow>\amp=1^3</mrow>
+            <mrow>\amp=1</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <!-- <paragraphs>
+      <title>Solving Equations</title>
+      <p>Consider the equation <m>|x| = 4</m>. Its solutions are precisely the real numbers which are four units from zero on the real number line. There are exactly two such solutions, namely <m>x=4</m> and <m>x=-4</m>. In general, for any real number <m>A \gt 0</m>,
+      <me>|x| = A \quad \Rightarrow \quad x = \pm A.</me></p>
+    </paragraphs>
+    <example>
+      <statement>
+        <p>To solve the equation <m>|x^2| = 4</m>, we note that <m>x^2 = \pm 4</m>. So that 
+          <m>x^2 = 4</m> OR <m>x^2 = -4</m>. The first equation has two solutions 
+          <m>x = \pm 2</m>, but the second equation has no solutions since a square cannot be negative. Thus, the solutions are <m>x=\pm 2</m>.</p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>The equation <m>|x| = -4</m> has no solutions. Why?</p>
+      </statement>
+    </example> -->
+    <warning>
+      <title>Square root of a square</title>
+      <p>Be careful simplifying the expression 
+        <m>\sqrt{x^2}</m>. First, note that <m>x</m> is squared (making the result non-negative) and then we want the <em>principal</em> square root of <m>x^2</m>. Consider two examples, first with 
+        <m>x=4</m>
+        <me>\sqrt{4^2} = \sqrt{16} = 4,</me>
+        as you might expect. But, not with 
+        <m>x=-4</m>,
+        <me>\sqrt{\left(-4\right)^2} = \sqrt{16} = 4,</me>
+        which does not result in <m>-4</m>. In both cases, we finished with the positive value <m>4</m>, i.e. the absolute value of <m>x</m>.
+        In general, for any real number <m>x</m>,
+        <me>\sqrt{x^2} = \left|x\right|.</me>
+      </p>
+    </warning>
+
+    <principle>
+      <title>Properties of Absolute Values</title>
+      <statement>
+      <p>The following properties are satisfied by absolute values.
+        <ul>
+          <li>Positive: <m>\displaystyle |a|\geq 0</m>.</li>
+          <li>Opposites: <m>\displaystyle |-a|=|a|</m>.</li>
+          <li>Multiplication: <m>\displaystyle |ab| = |a||b|</m>.</li>
+          <li>Division: <m>\displaystyle |a/b| = |a|/|b|</m>.</li>
+          <li>Square Roots: <m>\sqrt{x^2} = |x|</m>.</li>
+          <li>Triangle Inequality: <m>\displaystyle |a+b| \leq |a|+|b|</m>.</li>
+        </ul>
+      </p></statement>
+    </principle>
+    <exercise xml:id="checkpoint-absolute-value">
+      <p>Evaluate
+        <me>\left|\left|-2\right|-\left|3\right|\right|</me></p>
+    </exercise>
+</section>
+
+<section xml:id="section-interval-notation">
+      <title>Interval Notation</title>
+      <p>
+        We frequently need to describe sets of real numbers that form contiguous segments along the real number line called <term>intervals</term>. For instance, all the real numbers <m>x</m> that satisfies the inequalities 
+        <me>x \geq -5 \quad \text{AND}\quad x \lt 2</me>
+        forms an interval that includes <m>-5</m> and all real numbers to right on the number line up to and excluding <m>2</m>. Graphically, this can be plotted as we see below.
+        <image source="images/realnumbers/m5-2" width="60%"></image>
+        Note the use of a open circle and closed circle to indicate the behavior at the endpoints of the interval.
+      </p>
+      <p>
+        Describing these types of sets is so useful that we have special notation for this called <term>interval notation</term>. For example, the interval graphed above is written as <m>[-5,2)</m>, where we use a bracket next to 
+        <m>-5</m> to indicate that it is <em>included</em> in the set and a parenthesis next to <m>2</m> to indicate that it is <em>excluded</em> from the set.
+      </p>
+      <definition>
+        <title>Interval Notation</title>
+        <p>Suppose <m>a</m>
+          and <m>b</m> are real numbers with <m>a \lt b</m>. We define the following (finite) 
+          <term>intervals</term>:
+          <ul>
+            <li>The set of all real numbers <m>x</m> satisfying 
+              <m>x \gt a</m> AND <m>x \lt b</m>
+              is denoted by <m>(a,b)</m>. We call this an 
+              <term>open interval</term>.      
+              <image source="images/realnumbers/ab1" width="60%"/>
+            </li>
+            <li>The set of all real numbers 
+              <m>x</m> satisfying <m>x \geq a</m> AND <m>x \leq b</m>
+              is denoted by <m>[a,b]</m>. We call this a <term>closed interval</term>.
+              <image source="images/realnumbers/ab4" width="60%"/>
+            </li>
+            <li>The set of all real numbers <m>x</m> satisfying 
+              <m>x \geq a</m> AND <m>x \lt b</m> is denoted by 
+              <m>[a,b)</m>.
+              <image source="images/realnumbers/ab2" width="60%"/>
+            </li>
+            <li>The set of all real numbers <m>x</m> satisfying <m>x \gt a</m> AND  <m>x \leq b</m> is denoted by <m>(a,b]</m>.    
+              <image source="images/realnumbers/ab3" width="60%"/>
+            </li></ul></p></definition>
+
+          <p>In addition, there are also the following 
+          <em>infinite intervals</em>.</p>
+        
+        <definition>
+        <title>Infinite Intervals</title>
+        <p>
+          <ul>
+            <li>
+              The set of all real numbers 
+              <m>x</m>
+              satisfying 
+              <m>x \gt a</m>
+              is denoted by 
+              <m>(a,+\infty)</m>.
+              <image source="images/realnumbers/ab5" width="60%">
+                <description>A graph of the interval</description></image>
+            </li>
+            <li>The set of all real numbers 
+              <m>x</m>
+              satisfying 
+              <m>x \geq a</m>
+              is denoted by 
+              <m>[a,+\infty)</m>.
+              <image source="images/realnumbers/ab7" width="60%">
+                <description>A graph of the interval</description></image>
+            </li>
+            <li>The set of all real numbers 
+              <m>x</m>
+              satisfying 
+              <m>x \lt a</m>
+              is denoted by 
+              <m>(-\infty,a)</m>.
+              <image source="images/realnumbers/ab6" width="60%">
+                <description>A graph of the interval</description></image>
+            </li>
+            <li>The set of all real numbers 
+              <m>x</m>
+              satisfying 
+              <m>x \leq a</m>
+              is denoted by 
+              <m>(-\infty,a]</m>.
+              <image source="images/realnumbers/ab8" width="60%">
+                <description>A graph of the interval</description></image>
+            </li>
+          </ul>Finally, the set of all real numbers 
+          is denoted 
+          <m>\mathbb{R} = (-\infty,+\infty)</m>.
+          <image source="images/realnumbers/ab9" width="60%">
+            <description>A graph of the interval</description></image>
+        </p>
+      </definition>
+
+      <remark>
+        <title>A word about infinity</title>
+        <p>The symbol 
+          <m>\infty</m>
+          refers to <q>infinity</q>, and is purely a description that these intervals have no <term>upper bound</term>
+          in the case of <m>+\infty</m> or <term>lower bound</term>
+          in the case of <m>-\infty</m>. Also observe that we never include brackets, <q><m>[</m></q> or <q><m>]</m></q>, with infinities because we never <q>include</q> it in the interval. Finally, you are free to write 
+          <m>\infty</m> in the case of <m>+\infty</m>.</p>
+      </remark>
+      
+      <exercise xml:id="checkpoint-interval-notation">
+        <p>Describe each set in interval notation.
+          <ol>
+          <li><p>The set of all positive real numbers.</p></li>
+          <li><p>The set of all negative real numbers.</p></li>
+          <li><p>The set of all non-negative real numbers.</p></li>
+          <li><p>The set of all non-positive real numbers.</p></li>
+          </ol>
+        </p>
+      </exercise>
+</section>
+
+<section xml:id="section-union-and-intersection">
+    <title>Unions and Intersections</title>
+    <p>We may combine two intervals in two different ways: by forming their <em>union</em> or <em>intersection</em>. First, the <term>union</term> of two intervals consists of all real numbers that are in one OR both of the intervals. Graphically, this combines the two intervals into a (usually) larger set which may or may not be an interval. We use the symbol <q><m>\cup</m></q> to denote the union of two sets.</p>
+
+    <example>
+      <title>Finding a Union</title> 
+      <statement><p>
+        The union of <m>[-3,1]</m> and <m>(0,+\infty)</m>
+        <image source="images/realnumbers/union1" width="60%"></image>
+        results in the interval <m>[-3,+\infty)</m>.
+        <image source="images/realnumbers/union2" width="60%"></image>
+        This is written as
+        <me>[-3,1] \cup (0,+\infty) = [-3,+\infty).</me></p></statement>
+    </example>
+
+    <p>The <term>intersection</term> of two intervals consists of all real numbers that are in both of the intervals. It is the set of all real numbers they have in common. The symbol for intersection is <q><m>\cap</m></q>.</p> 
+
+    <example><title>Finding an Intersection</title>
+      <statement><p>The intersection of <m>[-3,1]</m>
+        and <m>(0,+\infty)</m> is <m>(0,1]</m>
+        <image source="images/realnumbers/intersection" width="60%"></image>
+        and this result is written as
+        <me>[-3,1] \cap (0,+\infty) = (0,1].</me></p></statement>
+    </example>
+    
+     <p>If two sets have nothing in common, their intersection is the <term>empty set</term>, that is the set containing no real numbers. This is denoted by the symbol <m>\emptyset</m>. </p>
+
+     <example>
+      <statement>
+        <p>The interval of <m>(-\infty,-3]</m> and <m>(0,1]</m> do not overlap.
+        <image source="images/realnumbers/intersection2" width="60%"/>
+        So their intersection is empty:
+        <me>(-\infty,-3] \cap (0,1] = \emptyset.</me>        
+     </p></statement></example>
+      
+    <remark>
+        <p>The intersection or union of two intervals does not itself need to be an interval. For instance, 
+          <me>(-\infty,-3)\cup (0,1]</me>
+          is just comprised of real numbers in one of the two intervals above and cannot be written more simply than this.</p>
+      </remark>
+  <exercise xml:id="checkpoint-union-intersection">
+    <p>
+      Find the intersection of the non-negative real numbers and the interval <m>(-1,1)</m>.
+    </p>
+  </exercise>
+</section>
+
+<xi:include href="../exercises/ex-realnumbers.xml"/>
+</chapter>

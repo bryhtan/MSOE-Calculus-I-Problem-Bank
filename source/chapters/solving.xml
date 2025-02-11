@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-solving" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Solving Equations</title>
+
+<section xml:id="section-what-are-equations">
+	<title>What Are Equations?</title>
+	
+	<p>This might seem like a silly question, but it's important to address clearly. An <term>equation</term> is a mathematical statement involving equality <q><m>=</m></q> that evaluates as either TRUE or FALSE. The following equation
+	<me>2 + 4 \times (2 - 2) - 2 = 0</me>
+	is TRUE because the values on either side of the equal sign are the same. On the other hand, the equation
+	<me>2+2 = 5</me>
+	is FALSE. An <term>algebraic equation</term> is an equation involving one or more variables. For instance,
+	<me>4x - 3y + 2z = 6</me>
+	is an algebraic equation in three variables. The equation is TRUE or FALSE depending on what value the variables take. If <m>x=1, y=1, z=1</m> then it is FALSE, but if <m>x=2, y=2, z=2</m>, then it is TRUE.</p>
+
+	<p>To <term>solve an equation</term>, means to find all possible values of the variable(s) that make the equation TRUE. These values are called <term>solutions</term> of the equation. For instance, the equation
+	<me>x^2 = 4</me>
+	has two solutions <m>x = 2</m> AND <m>x=-2</m>. The <term>solution set</term> is the set of all solutions of the equation. In this case, the solution set is <m>\{-2,2\}</m>, where it is common to enclose the solutions in curly braces. On the other hand, the equation
+	<me>x^2 = -4</me>
+	has no (real number) solutions, so that its solution set is the empty set, <m>\emptyset</m>.</p>
+
+	<p>When solving an equation, we usually do so by replacing it with an <term>equivalent equation</term>, that is, with an equation with the same solution set.
+	Performing operations of addition or multiplication by the same value to both sides of an equation generally results in an equivalent equation. The following example illustrates this in the case of a <term>linear equation</term>.</p>
+
+	<example>
+		<title>Solving a Linear Equation</title>
+		<p>To solve <m>2(x-3)+5\,=\,9</m>, we replace it with a sequence of equivalent equations.
+		<md>
+		<mrow>2(x-3)+5\,\amp=\,9</mrow>
+		<mrow>2(x-3)+5\,{\color{blue}-5}\,\amp=\,9\,{\color{blue}-5}</mrow>
+		<mrow>2(x-3)\,\amp=\,4</mrow>
+		<mrow>2(x-3)\,{\color{blue}\div 2}\,\amp=\,4 \,{\color{blue}{\div 2}}</mrow>
+		<mrow>x-3 \,\amp=\, 2</mrow>
+		<mrow>x-3 \,{\color{blue}+3}\,\amp=\, 2 \,{\color{blue}+3}</mrow>
+		<mrow>x \,\amp=\, 5</mrow>
+		</md>
+		showing that <m>x=5</m> is the unique solution to the original equation.</p>
+	</example>
+
+	<p>It is not necessary to write as much as the previous example might suggest. The following would be suitable in the college classroom.</p>
+
+	<example>
+		<title>Solving a Linear Equation</title>
+		<p>Solve the linear equation <m>\frac{1}{3} x \,=\, \frac{2}{3}(x+2)</m>.</p>
+		<md>
+			<mrow>\frac{1}{3} x \,\amp=\, \frac{2}{3}(x+2)</mrow>
+			<mrow>x \,\amp=\, 2(x+2)</mrow>
+			<mrow>x \,\amp=\, 2x+4</mrow>
+			<mrow>0 \,\amp=\, x+4</mrow>
+			<mrow>x \,\amp=\, -4</mrow>
+		</md>
+	</example>
+
+	<remark xml:id="writing-solving-equations">
+		<title>Mathematical Exposition</title><p>
+		Solving equations typically requires writing a <alert>sequence of equivalent equations on each line</alert>. Move down the page, writing the left and right side of the equation. This is a practice you should adhere to throughout your college mathematics courses. Compare this advice with <xref ref="writing-simplifying-expressions"/>.</p>
+	</remark>
+
+	<example>
+		<title>Solving a Linear Equation</title>
+		<statement>
+		<p>Solve for <m>z</m>.<me>\frac{2z-3}{4} = 2 - \frac{3z+1}{2}</me> </p>
+		</statement>
+		<solution>
+		<p>If we multiply both sides by 4, we will clear the fractions.
+		<md>
+			<mrow>\frac{2z-3}{4} = 2 - \frac{3z+1}{2}</mrow>
+			<mrow>4\cdot \frac{2z-3}{4} = 4\cdot \left(2 - \frac{3z+1}{2}\right)</mrow>
+			<mrow>4\cdot \frac{2z-3}{4} = 4\cdot 2 - 4\cdot \frac{3z+1}{2}</mrow>
+			<mrow>2z-3 = 8 - 2(3z+1)</mrow>
+			<mrow>2z-3 = 8 - 6z-2</mrow>
+			<mrow>2z-3 = 6 - 6z</mrow>
+			<mrow>8z = 9</mrow>
+			<mrow>z = 9/8</mrow>
+		</md></p></solution>
+	</example>
+
+	<warning xml:id="warning-extraneous-solutions">
+		<title>Avoid Losing Solutions</title>
+		<p>Be cautious when performing algebraic operations as the domain of the expressions involved may change resulting in a non-equivalent equation. This can lead to lost solutions or extraneous values that are not solutions to the original equation. For example, the equation
+		<me>4x^2 = 2x</me> 
+		is not equivalent to 
+		<me>2x = 1</me>
+		as dividing both sides by <m>2x</m> assumed it was non-zero. Doing so lost a solution to the first equation of <m>x=0</m>.</p>
+	</warning>
+
+	<exercise>
+		<statement><p>Are the following pairs of equations equivalent? That is, do they have the same solution set? Why or why not.
+			<ol>
+				<li><m>x = 2</m> and <m>x^2 = 4</m> </li>
+				<li><m>\sqrt{x^2} = \sqrt{4}</m> and <m>x = 2</m></li>
+			</ol></p>
+		</statement>
+	</exercise>
+</section>
+
+<section xml:id="section-compound-inequalities">
+
+		<title>Compound Inequalities</title>
+		<p>Inequalities are similar to equations, but involve the relations <m>\lt,\leq,\gt,\geq</m> instead of equality. We can manipulate these like we do equations, but care must be taken to consider if the inequality changes with the operation performed.</p>
+
+		<example><p>Consider the linear inequality
+		<me>-2x - 4 \lt 8.</me>
+		Adding 4 to both sides preserves the relationship, so that
+		<me>-2x  \lt 12.</me>
+		Dividing by 2 also maintains the inequality
+		<me>-x  \lt 6.</me>
+		However, multiplying both sides by <m>-1</m> reverses the relation
+		<me>x \gt - 6.</me>
+		The solution to the inequality is the interval <m>(-6,+\infty)</m>.
+		<image source="images/solving/interval1" width="50%"/>
+		</p></example>
+
+		<example>
+			<statement><p>Solve the linear inequality
+				<me>4-3(x+2) \geq 7</me>
+				</p></statement>
+			<solution>
+				<p>
+				<md>
+					<mrow>4-3(x+2) \,\amp\geq\, 7</mrow>
+					<mrow>-3(x+2) \,\amp\geq\, 3</mrow>
+					<mrow>x+2 \,\amp{\color{blue} \leq}\, -1</mrow>
+					<mrow>x \,\amp\leq\, -3</mrow>
+				</md>
+				So the solutions are in the interval <m>(-\infty,-3]</m>.
+				<image source="images/solving/interval2" width="50%"/>
+			</p>
+			</solution>
+		</example>
+
+
+		<p>A <term>compound inequality</term> involves multiples inequalities joined with the logical connections AND or OR. For example,
+		<me>3x \lt 7 \quad \text{AND} \quad x \geq 5</me>
+		and 
+		<me>3x \lt 7 \quad \text{OR} \quad x \geq 5</me>
+		are examples of compound inequalities.
+		</p>
+
+		<example><title>Intervals and Compound Inequalities</title>
+		<statement><p>
+			Suppose <m>a \lt b</m> are real numbers.
+			The interval <m>(a,b)</m> is precisely the solutions to the compound inequality
+			<me>a \lt x \quad \text{AND} \quad x \lt b.</me>
+			<image source="images/solving/ab1" width="50%"/>
+			Inequalities involving AND are often abbreviated as
+			<me>a \lt x \lt b.</me>
+		</p></statement>
+		</example>
+
+		<example>
+			<title>Compound Inequality with AND</title>
+			<statement><p>Solve the compound inequality
+				<me>3 \leq 4x + 2 \lt 8.</me></p>
+			</statement>
+			<solution>
+				<p>
+					<md>
+						<mrow>3 \leq 4x + 2 \lt 8</mrow>
+						<mrow>1 \leq 4x \lt 6</mrow>
+						<mrow>\frac{1}{4} \leq x \lt \frac{6}{4}</mrow>
+						<mrow>\frac{1}{4} \leq x \lt \frac{3}{2}</mrow>
+					</md>
+					This says <m>1/4 \leq x</m> AND <m>x \lt 3/2</m>. Plotting each interval we see
+					<image source="images/solving/interval3a" width="50%"/>
+					To be in both intervals, <m>x</m> must be in their intersection (See <xref ref="section-union-and-intersection"/>.)
+					So the solution set is 
+					<me>\left[\frac{1}{4},+\infty\right)
+						\cap
+						\left(-\infty,\frac{3}{2}\right) =
+						\left[\frac{1}{4},\frac{3}{2}\right).</me>
+					<image source="images/solving/interval3b" width="50%"/>
+				</p>
+			</solution>
+		</example>
+
+		<p>In mathematical logic, the connective OR is always assumed to be <em>inclusive</em> in that one or the other <em>or both</em> of the inequalities must be satisfied in order to make the statement true.</p>
+
+		<example xml:id="example-compound-inequality-1">
+			<title>Compound Inequality with OR</title>
+			<statement><p>Solve the compound inequality
+				<me>3x+9 \gt 0 \quad \text{OR} \quad -x + 5 \leq 10</me>
+			</p></statement>
+			<solution>
+				<p>Work with each inequality in parallel
+					<md>
+						<mrow>3x+9 \gt 0 \quad \text{OR} \quad -x + 5 \leq 10</mrow>
+						<mrow>3x \gt -9 \quad \text{OR} \quad -x  \leq 2</mrow>
+						<mrow>3x \gt -9 \quad \text{OR} \quad -x  \leq 5</mrow>
+						<mrow>x \gt -3 \quad \text{OR} \quad x  {\color{blue}\geq} -5</mrow>
+					</md>
+					Plot each inequality and interpret the results inclusively.
+					<image source="images/solving/interval4a" width="50%"/>
+					To satisfy the compound inequality, <m>x</m> must be in one, or the other, or both of the intervals. Thus, <m>x</m> must be in their union (see <xref ref="section-union-and-intersection"/>)
+					<me>(-3,+\infty)\cup [-5,+\infty) = [-5,+\infty).</me>
+					So the solution set is <m>[-5,+\infty)</m>.
+					<image source="images/solving/interval4b" width="50%"/>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement><p>Solve the compound inequality
+				<me>3x+9 \gt 0 \quad \text{AND} \quad -x + 5 \leq 10</me>
+			</p></statement>
+			<solution>
+				<p>This is the same as Example <xref ref="example-compound-inequality-1"/>, but with AND instead of OR.
+					<md>
+						<mrow>3x+9 \gt 0 \quad \text{AND} \quad -x + 5 \leq 10</mrow>
+						<mrow>3x \gt -9 \quad \text{AND} \quad -x  \leq 2</mrow>
+						<mrow>3x \gt -9 \quad \text{AND} \quad -x  \leq 5</mrow>
+						<mrow>x \gt -3 \quad \text{AND} \quad x  \geq -5</mrow>
+					</md>
+					<image source="images/solving/interval4a" width="50%"/>
+					To satisfy the compound inequality, <m>x</m> must be both of the intervals. Thus, <m>x</m> must be in their intersection and the solution set is <m>[-5,-3)</m>.</p></solution></example>
+		<example>
+			<title>Not all inequalities have solutions</title>
+			<statement><p>Solve
+				<me>5-x \lt 0 \quad \text{AND} \quad -2x \geq 8.</me></p>
+			</statement>
+			<solution>
+				<p>We require
+					<me>5 \lt x \quad \text{AND} \quad x \leq -4.</me>
+				
+				Plotting
+				<image source="images/solving/interval5" width="50%"/>
+				where we see their intersection is empty. Thus, there is no solution to the compound inequality.</p>
+			</solution>
+		</example>
+</section>
+
+<section xml:id="section-absolute-value-equations">
+	<title>Absolute Value Equations</title>
+	
+		<p>Recall that <m>|x|</m>, the <xref ref="eqn-absolute-value">absolute value of <m>x</m></xref>, measures how far <m>x</m> is from zero. So the equation
+		<me>|x| = 4</me>
+		tells us that <m>x</m> must be within <m>4</m> units of zero. There are only two possibilities for <m>x</m>:
+		<me>x = 4 \quad \text{OR} \quad x = -4</me>
+		which we write compactly as <m>x=\pm 4</m>. 
+		This method is summarized by the following principle.</p>
+
+	<principle xml:id="fact-absolute-value-principle">
+		<title>Absolute Value Equations</title>
+		<statement><p>
+		If <m>|x| = A</m>, where <m>A \gt 0</m>, then <m>x = \pm A</m>. If <m>|x|=0</m>, then <m>x=0</m>. Finally, the equation <m>|x| = -A</m> has no solution since <m>|x|\geq 0</m>.</p>
+		</statement>
+	</principle>
+
+	<example>
+		<title>Solving a Linear Absolute Value Equation</title>
+		<p>Let's solve
+			<me>|2x-3| +6 = 10.</me></p>
+		<p>First, isolate the term with the absolute value.
+		<me>|2x-3 | = 4</me>
+		Thus, the number <m>2x-3</m> must be within <m>4</m> units of zero. There are only two possibilities
+		<me>2x-3 = 4 \quad \text{or} \quad 2x-3 = -4</me>
+		Solving the first,
+		<me>2x-3 = 4 \Rightarrow 2x = 7 \Rightarrow x = 7/2</me>
+		Solving the second,
+		<me>2x-3 = -4 \Rightarrow 2x = -1 \Rightarrow x = -1/2</me>
+		Thus, the solutions to our equation are
+		<me>x = 7/2, \, -1/2.</me></p>
+	</example>
+
+	<p>Inequalities involving absolute values are useful in Calculus. For example, the inequality <m>|x| \lt 4</m> says that <m>x</m> must be within four units of zero. This requires <m>x</m> satisfy the compound inequality
+	<me>-4 \lt x \quad \text{AND} \quad x \lt 4,</me>
+	or equivalently, <m>-4 \lt x \lt 4</m>. Similarly, the inequality <m>|x| \gt 4</m> requires that <m>x</m> be further than <m>4</m> units from zero. 
+	This requires <m>x</m> satisfy the compound inequality
+	<me>x \lt -4 \quad \text{OR}\quad 4 \lt x.</me></p>
+	
+	<principle xml:id="fact-absolute-value-inequalities">
+		<title>Absolute Value Inequalities</title>
+		<statement><p>
+		<ol>
+		<li><p>If <m>|x| \lt A</m>, where <m>A \gt 0</m>, then <me>-A \lt x \lt A</me>.</p></li>
+		<li><p>If <m>|x| \gt A</m>, where <m>A \gt 0</m>, then
+		 <me>x\lt -A \quad \text{OR}\quad A \lt x.</me></p></li></ol></p>
+		</statement>
+	</principle>
+
+	<example>
+		<title>Solving an Absolute Value Inequality</title>
+		<p>Let's solve <me>\left|2-3x\right| \leq 10.</me>
+		We require that <m>2-3x</m> is within <m>10</m> units of zero. So
+		<md>
+			<mrow>-10 \leq 2-3x \leq 10</mrow>
+			<mrow>-12 \leq -3x \leq 8</mrow>
+			<mrow>-4 \leq -x \leq \frac{8}{3}</mrow>
+			<mrow>4 \geq x \geq -\frac{8}{3}</mrow>
+			<mrow>-\frac{8}{3} \leq x \leq 4</mrow>
+		</md>
+		So the solution is the interval <m>\left[-\frac{8}{3},4\right]</m>.</p>
+	</example>
+
+	<example>
+		<title>Solving an Absolute Value Inequality</title>
+		<statement>
+			<p>Solve <me>\left|x-7\right| -5 \gt 6.</me></p>
+		</statement>
+		<solution>
+			<p>First, isolate the absolute value to obtain
+			<me>\left|x-7\right| \gt 11.</me>
+			We require that <m>x-7</m> is more than <m>11</m> units from zero. So
+			<md>
+				<mrow>x-7 \lt -11 \quad \text{OR} \quad 11 \lt x-7</mrow>
+				<mrow>x\lt -4 \quad \text{OR} \quad 18 \lt x</mrow>
+			</md>
+			So the solution is the union <m>(-\infty,-4)\cup(18,+\infty)</m>.</p>
+		</solution>
+	</example>
+</section>
+
+<section xml:id="section-quadratic-equations">
+	<title>Quadratic Equations</title>
+	<p>A <term>quadratic equation</term> is an equation of the form
+	<me>ax^2+bx+c=0,</me>
+	where <m>a\neq 0</m>. Let's discuss some ways we might solve them. The first method is to take advantage of the so-called <em>Zero Product Principle</em></p>
+
+	<principle xml:id="principle-zero-product">
+		<title>Zero Product Theorem</title>
+		<statement><p> Suppose a product of two expressions <m>A</m> and <m>B</m> is zero, <me>A\cdot B = 0.</me>
+		Then <m>A=0</m> OR <m>B=0</m>.</p></statement>
+	</principle>
+
+	<example>
+		<title>Solving a quadratic by factoring</title>
+		<p>To solve <me>x^2-2 x-3=0</me>, we attempt to factor
+		<md>
+			<mrow>x^2-2 x-3 &amp;=0</mrow>
+			<mrow>(x+1)(x-3) &amp;=0</mrow>
+		</md>
+		Thus, by the Zero Product Theorem, <m>x+1 = 0</m> OR <m>x-3=0</m>. Solving each, we find that <m>x=-1</m> OR <m>x=3</m>.</p>
+	</example>
+
+	<p>The second method is to take advantage of the <em>Square Root Principle.</em></p>
+
+	<principle xml:id="principle-square-root">
+		<title>Square Root Principle</title>
+		<statement><p>Suppose <m>A^2 = B</m>, where <m>B\geq 0</m>. Then <m>A= \sqrt{B}</m> OR <m>A=-\sqrt{B}</m>. That is, <m>A= \pm \sqrt{B}</m>.</p></statement>
+	</principle>
+
+	<example>
+		<title>Using the Square Root Principle</title>
+		<p>To solve <me>4x^2 - 9 = 0</me>, we first note that there is no degree one term. So
+			<md>
+				<mrow>4x^2 - 9 &amp;= 0</mrow>
+				<mrow>4x^2  &amp;= 9</mrow>
+				<mrow>x^2  &amp;= \frac{9}{4}</mrow>
+				<mrow>x  &amp;= \pm \sqrt{\frac{9}{4}} = \pm \frac{\sqrt{9}}{\sqrt{4}}= \pm \frac{3}{2}</mrow>
+			</md>
+			That is, <m>x=3/2</m> OR <m>x=-3/2</m>.</p>
+	</example>
+
+	<example>
+		<title>Using the Square Root Principle</title>
+		<statement>
+			<p>Solve <me>3(x-1)^2 - 6 = 0</me>.</p>
+		</statement>
+		<solution>
+			<p>Isolate the squared expression <m>(x-1)^2</m> first
+			<md>
+				<mrow>3(x-1)^2 - 6 &amp;= 0</mrow>
+				<mrow>3(x-1)^2 &amp;= 6</mrow>
+				<mrow>(x-1)^2 &amp;= \frac{6}{3} = 2</mrow>
+				<mrow>x-1 &amp;= \pm \sqrt{2}</mrow>
+				<mrow>x &amp;= 1 \pm \sqrt{2}</mrow>
+			</md>
+			Estimating with a calculator, <m>x = 1 + \sqrt{2} \approx 2.414</m> OR <m>x=1-\sqrt{2} \approx -0.414</m>.</p>
+		</solution>
+	</example>
+
+	<p>A third method is to use the <em>Quadratic Formula</em></p>
+
+	<theorem xml:id="thereom-quadratic-formula">
+		<title>Quadratic Formula</title>
+		<statement><p>The solutions to <me>ax^2+bx+c=0, \quad a\neq 0</me>
+		are given by
+		<me xml:id="eqn-quadratic-formula">x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}.</me></p>
+		</statement>
+	</theorem>
+
+	<example>
+		<title>Using the Quadratic Formula</title>
+		<statement><p>Use the quadratic formula to solve
+			<me>4x^2 - 10 x + 2 = 0.</me></p>
+		</statement>
+		<solution>
+			<md>
+				<mrow>x &amp;= \frac{10\pm \sqrt{100-32}}{8}</mrow>
+				<mrow>  &amp;= \frac{10\pm \sqrt{68}}{8}</mrow>
+				<mrow>  &amp;= \frac{10\pm 2\sqrt{17}}{8}</mrow>
+				<mrow>  &amp;= \frac{2(5\pm \sqrt{17})}{8}</mrow>
+				<mrow>  &amp;= \frac{5\pm \sqrt{17}}{4}</mrow>
+			</md>
+		</solution>
+	</example>
+
+	<!-- <example>
+		<title>More Video Discussion</title>
+		<video youtube="j2-NzE-WwAM"/>
+	</example> -->
+</section>
+
+<section xml:id="section-polynomial-equations">
+	<title>Polynomial Equations</title>
+	
+	<p>A <term>degree <m>n</m> polynomial equation</term> is one that is equivalent to
+	<men xml:id="eqn-polynomial-equation">a_n x^n + a_{n-1} x^{n-1} +\cdots a_1 x + a_0 = 0,</men>
+	where <m>a_n, a_{n-1}, \ldots, a_0</m> are real number coefficients and <m>a_n\neq 0</m>. For example, a linear equation <m>ax+b=0</m> is a degree <m>n=1</m> polynomial equation, while a quadratic equation <m>ax^2+bx+c=0</m> is a degree <m>n=2</m> polynomial equation. Solutions to <xref ref="eqn-polynomial-equation"/> are called <term>zeros</term> or <term>roots</term> of the polynomial. Finding the zeros can be quite challenging in practice, depending on the degree and complexity of the expression. For this section, we will rely on factoring and the <xref ref="principle-zero-product"/>.</p>
+
+	<!-- <p>The first is to understand the deep connection between solving polynomial equations and factoring.</p> -->
+
+	<!-- <theorem xml:id="thm-factor-theorem">
+		<title>The Factor Theorem</title>
+		<statement><p>Suppose <m>x=a</m> is a solution to <xref ref="eqn-polynomial-equation"/>.
+		Then, <m>x-a</m> is a linear factor of the polynomial. That is,
+		<me>a_n x^n + a_{n-1} x^{n-1} +\cdots a_1 x + a_0 = (x-a)\cdot Q,</me>
+		where <m>Q</m> is a polynomial of degree <m>n-1</m>.</p>
+	</statement></theorem>
+	-->
+	<example>
+		<title>Solving by Factoring</title>
+		<p>Let's solve
+			<me>2 x^5 = 18x.</me>
+		First, move terms to one side to make zero appear:
+			<me>2 x^5 - 18x = 0.</me>
+			Next factor,
+			<me>2x(x^4 - 9) = 0.</me>
+			The second factor is a difference of squares,
+			<me>2x(x^2 - 3)(x^2+3) = 0.</me>
+			<me>2x(x - \sqrt{3})(x+\sqrt{3})(x^2+3) = 0.</me>
+		So,
+		<me>2x =0 \quad \text{OR} \quad x - \sqrt{3} = 0 \quad \text{OR} \quad x+\sqrt{3} = 0 \quad \text{OR} \quad x^2+3 =0.</me>
+		The first three factors give solutions <m>x=0, \sqrt{3}, -\sqrt{3}</m>. The last <m>x^2 + 3 = 0</m> has no real number solutions as <m>x^2+3 \gt 0</m> for all real numbers <m>x</m>.
+		</p>
+	</example>
+</section>
+
+<section xml:id="section-rational-equations">
+	<title>Rational Equations</title>
+
+	<p>When is a ratio zero? When its numerator is zero!</p>
+
+	<example>
+		<title>A rational equation</title>
+		<p>Suppose
+		<men xml:id="equation-rational-equation-example">\frac{x^3-4x}{x+1} = 0</men>
+		then it must be that the numerator is zero. That is,
+		<men xml:id="equation-rational-equation-example-numerator">x^3-4x=0.</men>
+		Factoring,
+		<me>x(x^2-4) = x(x-2)(x+2) = 0.</me>
+		Thus, the solutions are <m>x=0</m>, <m>2</m>, and <m>-2</m>.</p>
+
+		<p>Observe that if <m>x = -1</m>, then the denominator <m>x+1=0</m> and the left side of the equation is undefined. Thus, <m>x=-1</m> is not in the domain of the equation. Luckily, all of our solutions to the polynomial equation <xref ref="equation-rational-equation-example-numerator"/> are in the domain of the rational equation <xref ref="equation-rational-equation-example"/>, so that this is not a concern.</p>
+	</example>
+
+	<p>In general, a rational equation may be solved by <term>clearing the fractions</term>. This means to multiply both sides of the equation by an expression which results in canceling all the denominators. But care must be taken to consider the domain of the equation when finished. (See <xref ref="warning-extraneous-solutions"/>.)</p>
+
+	<example>
+		<title>Considering the domain</title>
+		<p>Consider
+		<me>\frac{4}{x+1}+\frac{10}{x^2-1} = \frac{5}{x-1}.</me>
+		We can clear the fractions by multiplying both sides by <m>x^2-1 = (x-1)(x+1)</m>. 
+		However, we are assuming that <m>x\neq 1</m> and <m>x\neq -1</m> as these values are not in the domain of the equation.
+		<me>(x-1)(x+1)\cdot \left[\frac{4}{x+1}+\frac{10}{x^2-1} \right] = \left[\frac{5}{x-1}\right] \cdot (x-1)(x+1).</me>
+		Distributing through and simplifying,
+		<me>4(x-1)+10 = 5(x+1)</me>
+		Combining like terms,
+		<me>4x-4+10 = 5x+5</me>
+		<me>-4+10-5 = 5x-4x</me>
+		<me>x = 1</me>
+		But this value is not in the domain of the original equation and therefore there are no solutions!</p>
+	</example>
+
+	<example>
+		<title>Solving a Rational Equation</title>
+		<statement><p>Solve the rational equation
+			<me>4 + \frac{7}{x-2} = -\frac{1}{x+1}.</me></p></statement>
+		<solution>
+			<p>First, observe that <m>x = 2</m> and <m>x=-1</m> are not in the domain of the equation and therefore these values are not solutions. Let's clear the fractions by multiplying both sides by <m>(x-2)(x+1)</m>
+			<md>
+				<mrow>(x-2)(x+1) \left[4 + \frac{7}{x-2}\right] &amp;= \left[-\frac{1}{x+1}\right](x-2)(x+1)</mrow>
+				<mrow>4(x-2)(x+1) + 7(x+1) &amp;= -(x-2) </mrow>
+				<mrow>4(x^2-x-2) + 7x+7 &amp;= -x+2 </mrow>
+				<mrow>4x^2-4x-8 + 7x+7 + x - 2 &amp;= 0 </mrow>
+				<mrow>4x^2+4x-3  &amp;= 0 </mrow>
+			</md>
+			This is quadratic equation. Factoring,
+			<me>
+				(2x+3)(2x-1) = 0
+			</me>
+			So that,
+			<me>2x+3 = 0 \quad \text{or} \quad 2x - 1 = 0</me>
+			<me>x = -3/2 \quad \text{or} \quad x = 1/2</me>
+			Note that both these values are in the domain of the original equation.
+		</p>
+		</solution>
+	</example>
+
+	<example>
+		<title>Solving Rational Equations</title>
+		<statement><p>Solve each rational equation. Video solutions follow.</p>
+		<ol>
+			<li><m>\frac{3}{x+1}=\frac{4}{x+2}</m></li>
+			<li><m>\frac{4x^2-2x}{x+3} =0</m></li>
+			<li><m>\frac{4}{x+1}+\frac{10}{x^2-1} = \frac{5}{x-1}</m></li>
+			<li><m>4 + \frac{7}{x-2} = -\frac{1}{x+1}</m></li>
+		</ol>
+		</statement>
+		<solution>
+			<video youtube="n4BEbyZUDPc"/>
+		</solution>
+	</example>
+</section>
+
+<section xml:id="section-radical-equations">
+	<title>Radical Equations</title>
+
+	<example><p>To solve the equation
+		<me>\sqrt{x} +4 =7</me>
+		first isolate the radical term:
+		<men xml:id="eqn-radical-example">\sqrt{x} = 3</men>
+		Squaring both sides,
+		<me>x = 9</me> 
+		which we can confirm is the solution
+		<me>\sqrt{9}+4 = 3 + 4 = 7 </me>
+	</p></example>
+
+	<warning xml:id="warning-squaring-extraneous-solutions">
+		<title>Avoiding Extraneous Solutions</title>
+		<p>Squaring both sides of an equation like <xref ref="eqn-radical-example"/> above can result in expressions with a different domain than the original. This can sometimes lead to <term>extraneous solutions</term>, i.e. solutions to a later equation that are not in the domain of the original. This is why I checked at the end of the example.</p>
+	</warning>
+
+	<p>The following example illustrates why we must be so careful here.</p>
+
+	<example>
+		<title>A radical equation</title>
+		<p>Solve <me>\sqrt{x-1} + x = 1.</me></p>
+			<p>We first isolate the radical term:
+			<me>\sqrt{x-1} = 1-x</me>
+			Next, square both sides of the equation
+			<me>x-1 = (1-x)^2</me>
+			Expanding,
+			<me>x-1 = 1-2x + x^2</me>
+			Combine like terms
+			<me>x^2 -3x +2= 0</me>
+			which is quadratic and can be factored as
+			<me>(x-2)(x-1) = 0</me>
+			So the solutions to this <em>quadratic</em> equation are <m>x = 2</m> and <m>x = 1</m>.</p>
+			<p>But be careful! We need to check each one in the original equation.
+			<me>\sqrt{x-1} + x = 1</me>
+			For instance, when <m>x=2</m>,
+			<me>\sqrt{2-1} + 2 = \sqrt{1}+2 = 1+2 = 3 \neq 1</me>
+			so this is not a solution after all!
+			Checking <m>x=1</m>,
+			<me>\sqrt{1-1} + 1 = \sqrt{0} + 1 = 0 + 1 = 1.</me>
+			Thus, the only solution to our equation is <m>x=1</m>.
+			</p>
+	</example>
+</section>
+
+<xi:include href="../exercises/ex-solving.xml" />
+</chapter>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="exercises-trig-radians">
+
+	<title>Exercises: Radians</title>
+
+	<introduction><p><em>These exercises address measurement of angles, particularly in radians, and use of the relationship
+		<me>\boxed{\theta = \frac{s}{r}}.</me></em>
+		In this equation, <m>\theta</m> is the radian measure of the angle and <m>s</m> is the length of the arc subtended by the angle in a circle of radius <m>r</m>.</p>
+		<p><em>This video reviews some of the topics above.</em></p>
+		<figure>
+			<video youtube="OCcCqVV_QdU" width="100%" xml:id="video-trig-measuring-angles" />
+		</figure>
+	</introduction>
+
+	<exercise>
+	<statement><p>Accurately sketch the angles <m>\theta = \frac{11\pi}{6}</m> and <m>\theta = - \frac{8\pi}{3}</m> <em>without</em> converting to degrees.</p></statement>
+	<solution>
+		<p>For <m>\theta = 11\pi/6</m>, equally divide 1 revolution into 12 parts. Each is <m>\pi/6 = 30^\circ</m>. Count off 11 of them in the counterclockwise orientation.
+
+		<figure>
+			<image source="images/trig/ang1.png"/>
+		</figure>
+
+		For <m>\theta = -8\pi/3</m>, equally divide 1 revolution into 6 parts. Each is <m>\pi/3 = 60^\circ</m>. Count off 8 of them in the clockwise orientation.
+
+		<figure>
+			<image source="images/trig/ang2.png"/>
+		</figure>
+	</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>How many degrees is an angle of 1 radian? How many radians is an angle of 1 degree? 
+		What's bigger: one degree or one radian?</p></statement>
+	<solution><p>Recall <m>180^\circ = \pi</m> radians. So, dividing by <m>\pi</m>,
+		<me>1 \, {\rm radian} = \frac{180^\circ }{\pi} \approx 57^\circ</me>
+		So one radian is much bigger than 1 degree! Similarly,
+		<me>1^{\circ} = \frac{\pi}{180} \approx 0.017</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement>
+		<p><em>True or False:</em> The symbol <m>\pi</m> must be used whenever we measure an angle with units of <em>radians</em>.</p>
+	</statement>
+	<solution>
+		<p>False! Often times we see nice angles which are rational mutliples of <m>\pi</m> when expressed in radians. But <m>\pi</m> is just a number <m>\pi \approx 3.14</m> and is not conveying units at all. In fact, angles are dimensionless quantities and have no units.</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>A wheel with radius 16 inches rolls without slipping along the ground turning to form an angle of <m>495^\circ</m>. How far does the center of the wheel move, in feet?</p></statement>
+	<hint><p>You must first convert the angle to radians.</p></hint>
+	<answer>
+		<p>About 138 inches.</p>
+	</answer>
+	<solution>
+		<p>The distance travelled is exactly the amount of the outer arclength of the wheel that touches along the ground. This is related to the angle by <m>s = r \theta</m>, provided <m>\theta</m> is measured in radians. So,
+		<me>
+			s = r \theta = {16\, \rm inches} \times 495^\circ \times \frac{\pi}{180^\circ} \approx 138 \, {\rm inches}
+		</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>A vinyl record plays at 33 rpm (revolutions per minute). If the diameter of the record is 10 inches, how fast is a speck of dust on the outer edge of the record moving in inches per minute? How far will it move in inches after a song of 4 minutes and 10 seconds?</p></statement>
+	<hint><p>First find the angular velocity in <em>radians</em> per minute!</p></hint>
+	<answer>
+		<p>The speck of dust will move at about <m>1036.5</m> inches per minute. After 4 minutes and 10 seconds, this will go about 4318 inches.</p>
+	</answer>
+	<solution>
+		<p>On the one hand, velocity <m>v</m> of the dust speck should satisfy
+		<me>
+			v = \frac{\Delta s}{\Delta t} \, \text{inches per minute},
+		</me>
+		where <m>\Delta s</m> (in inches) is the distance travelled along the outer edge of the record for a corresponding change in time <m>\Delta t</m> (in minutes). On the other hand, <m>\Delta s = r \cdot \Delta\theta</m> is just arclength, so that:
+		<me>
+			v =\frac{\Delta s}{\Delta t}=\frac{r \cdot \Delta \theta}{\Delta t}= r \times \frac{\Delta \theta}{\Delta t}
+		</me>
+		The quantity <m>\frac{\Delta \theta}{\Delta t}</m> (in radians per minute) is called the angular velocity and in this case, is <m>33</m> rpm. Of course, we must convert this to radians
+		<me>
+			v = 5 \, {\rm inches} \times \frac{33 \, \rm revolutions}{\rm minute} \times \frac{2 \pi}{1 \, \rm revolution} \approx 1036.5 \frac{\rm inches}{\rm minute}
+		</me>
+		Observe how the radian measure of <m>2\pi</m> contributes no units to answer.
+		If the record plays for 4 minutes and 10 seconds, it will travel
+		<me>
+			s = 1036.5 \frac{\rm inches}{\rm minute} \times \left(4+\frac{10}{60}\right)\,{\rm minutes} \approx 4318 \,{\rm inches}
+		</me></p>
+	</solution>
+	</exercise>
+</exercises>

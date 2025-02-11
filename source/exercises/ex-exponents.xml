@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercises xml:id="exercises-exponents">
+	<title>Exercises</title>
+
+	
+
+	<exercise>
+	<title>Evaluating Negative and Rational Exponents</title>
+	<statement>
+		<p>Find the exact value of each expression without using a calculator.
+			<ol marker="a" cols="2">
+				<li><m>2^{-4}</m></li>
+				<li><m>4^{-1/2}</m></li>
+				<li><m>-8^{4/3}</m></li>
+				<li><m>(-8)^{4/3}</m></li>
+				<li><m>8^{-4/3}</m></li>
+				<li><m>-8^{-4/3}</m></li>
+			</ol></p>
+	</statement>
+	<answer>
+		<ol>
+			<li><m>2^{-4} = 1/16</m></li>
+			<li><m>4^{-1/2} = 1/2</m></li>
+			<li><m>-8^{4/3} = -16</m></li>
+			<li><m>(-8)^{4/3} = 16</m></li>
+			<li><m>8^{-4/3} = 1/16</m></li>
+			<li><m>-8^{-4/3} = -1/16</m></li>
+		</ol>
+	</answer>
+	</exercise>
+
+	<exercise>
+		<title>Using Laws of Exponents</title>
+		<statement>
+			<p>Find the exact value <m>\left(\frac{2^0-2^1}{2^2}\right)^{-3}</m> without using a calculator.</p>
+		</statement>
+		<answer>
+			<p><m>-64</m></p>
+		</answer>
+	</exercise>
+</exercises>

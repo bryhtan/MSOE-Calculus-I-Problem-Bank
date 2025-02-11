@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercises xml:id="exercises-functions">
+	<title>Exercises</title>
+
+	<exercise>
+		<title>What is a Function?</title>
+		<statement><p>Review <xref ref="definition-function"/>. Consider a typical telephone keypad.</p>
+			<sidebyside widths="60% 30%" valign="middle"> 
+			<p>There is the set of buttons <me>\{1,2,3,4,5,6,7,8,9,0,*,\#\}</me>
+			and the set of letters
+			<me>\{A,B,C,D,E,\ldots,W,X,Y,Z\}.</me>
+			The association between the two determines a function. What are the inputs to this function? the buttons or the letters? What are the outputs? What is the domain of this function? What is the range?</p>
+			<image  source="images/thirdparty/telephone-keypad.png"/>
+		</sidebyside>
+		</statement>
+	</exercise>
+
+<!-- 	<exercise>
+		<statement><p>Look around the space you are currently in. Do you see any functional relationships around you? Is there a </p></statement>
+	</exercise>
+ -->
+	<exercise>
+		<statement><p>Let <m>f(x) = \sqrt{2-x}</m>. 
+		<ol>
+			<li><p>Evaluate <m>f</m> at <m>x=7</m>, if possible.</p></li>
+			<li><p>Evaluate <m>f</m> at <m>x=-7</m>, if possible.</p></li>
+			<li><p>What is the domain of <m>f</m>?</p></li>
+			<li><p>When is <m>f(x) = 0</m>?</p></li>
+		</ol></p></statement>
+	</exercise>
+
+	<exercise>
+	<title>Evaluating Functions</title>
+	<statement>
+		<p>Suppose that <m>f(x) = \sqrt{16+x^2}</m> and <m>g(x) = x^3+2x</m>. Evaluate the expression completely. Show your work carefully as a sequence of equal expressions seperated with the equal sign.</p>
+		<me>\frac{f(-3)\cdot g(-1)}{2+\left[f(-3)\right]^2+g(-1^2)}.</me>
+	</statement>
+	<answer>
+		<me>\frac{f(-3)\cdot g(-1)}{2+\left[f(-3)\right]^2+g(-1^2)} = -5/8</me>
+	</answer>
+	</exercise>
+
+	<exercise>
+	<statement>
+		<p>Given the defintions of <m>f(x) = 1-2x^2</m>, <m>g(x) = \sqrt{2+x}</m>. Find each expression and determine the domain. Then simplify the result, if possible.</p>
+		<ol marker="a" >
+			<li><m>\displaystyle f-h</m></li>
+			<li><m>\displaystyle fh</m></li>
+			<li><m>\displaystyle f/h</m></li>
+			
+
+			<li><m>\displaystyle f \circ g </m></li>
+			<li><m>\displaystyle g \circ f </m></li>
+			<li><m>\displaystyle f \circ f</m></li>
+			
+			<li><m>\displaystyle h\circ k</m></li>
+			<li><m>\displaystyle k\circ h</m></li>
+			<li><m>\displaystyle g\circ k</m></li>
+		</ol>
+	</statement>
+	</exercise>
+
+	<exercise>
+		<statement><p>Let <m>F(x) = 1/x</m> and <m>G(x) = \frac{1-x}{2x+3}</m>
+	Find each expression and determine the domain. Then simplify the result, if possible.
+	<ol>
+		<li><m>(F\circ G)(x)</m></li>
+		<li><m>(G\circ F)(x)</m></li>
+		<li><m>(G\circ G)(x)</m></li>
+		<li><m>(G\circF)(x)+2</m></li>
+		<li><m>(G\circF)(x+2)</m></li>
+	</ol>
+	</p></statement>
+	</exercise>
+	
+ 	<!-- Transformations -->
+<!-- 	<exercise>
+		<statement></statement>
+	</exercise>
+ -->
+	<!-- Inverse Functions -->
+	<exercisegroup>
+		<title>Inverse Functions</title>
+		<exercise>
+			<statement><p>Suppose <m>f</m> is a one-to-one function satisfying <m>f(0) = -1</m>, <m>f(1) = −1</m>, and <m>f(−1) = 0</m>. Evaluate each expression below.</p>
+			<ol>
+				<li><m>f^{-1}(1)</m></li>
+				<li><m>f^{-1}(0)</m></li>
+				<li><m>-f(1)</m></li>
+				<li><m>[f(0)]^{-1}</m></li>
+				<li><m>(f^{-1}\circ f)(0)</m></li>
+			</ol>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement><p>Given that each function is one-to-one, find its inverse function.</p>
+			<ol>
+				<li><m>f(x) = 4-3x</m></li>
+				<li><m>g(x) = (4-3x)^3</m></li>
+				<li><m>h(x) = \frac{1}{4-3x}</m></li>
+				<li><m>h(x) = \frac{2x+1}{4-3x}</m></li>
+				<li><m>k(x) = \frac{1}{\sqrt[5]{4-3x}}</m></li>
+			</ol>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement><p>Explain why <m>f(x) = \frac{1}{(2-x)^4}</m> is not one-to-one.</p></statement>
+		</exercise>
+	</exercisegroup>
+ 
+	<!-- Applications -->
+<!-- 	<exercise>
+		<statement></statement>
+	</exercise>
+ -->
+<!-- 	<exercise>
+		<statement></statement>
+	</exercise>
+ -->
+	<!-- Difference Quotients -->
+	<exercise>
+		<title>Difference Quotients</title>
+		<statement><p>Find and simplify the difference quotient <xref ref="equation-difference-quotient-h"/> for each function.</p>
+		<ol>
+			<li><m>f(x) = 4-2x</m></li>
+			<li><m>f(x) = (4-2x)^2</m></li>
+			<li><m>f(x) = \frac{1}{4-2x}</m></li>
+		</ol>
+		 </statement>
+	</exercise>
+ 
+
+</exercises>

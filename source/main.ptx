@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <brandlogo source="images/msoe.svg" url="https://msoe.edu" />
+    <macros>
+      \newcommand{\R}{\mathbb R}
+      \newcommand{\reference}[1]{\overline{#1}}
+    </macros>
+    <latex-image-preamble>
+      \usepackage{tikz}
+    </latex-image-preamble>
+  </docinfo>
+
+  <book xml:id="jumpstart">
+    <title>Precalculus JumpStart</title>
+
+ <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <!-- <department>Mathematics Department</department> -->
+          <institution>Milwaukee School of Engineering</institution>
+          <personname>Anthony van Groningen</personname>
+        </author>
+        <date>
+          Summer 2023
+        </date>
+      </titlepage>
+    </frontmatter>
+
+<!--      <colophon> 
+
+        <website>
+          <name>
+            <c>example.org</c>
+          </name>
+          <address>https://example.org</address>
+        </website>
+
+        <copyright>
+          <year>2020<ndash />2023</year>
+          <holder>Anthony P. van Groningen</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
+      </colophon> 
+    </frontmatter> -->
+
+    <xi:include href="./chapters/realnumbers.xml" />         
+    <xi:include href="./chapters/exponents.xml" />
+    <xi:include href="./chapters/simplifying.xml" />
+    <xi:include href="./chapters/solving.xml" />
+    <xi:include href="./chapters/graphing.xml" />
+    <xi:include href="./chapters/functions.xml" />
+    <xi:include href="./chapters/explog.xml" />
+    <xi:include href="./chapters/trig-1.xml" />
+    <xi:include href="./chapters/trig-2.xml" />
+   <!--  <backmatter xml:id="backmatter">
+      <title>Backmatter</title>
+
+      <colophon>
+        <p> This book was authored in <pretext />. </p>
+      </colophon>
+
+    </backmatter> -->
+
+  </book>
+</pretext>

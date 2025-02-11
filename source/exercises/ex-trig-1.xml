@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises>
+<exercisegroup xml:id="exercises-trig-radians">
+	<title>Exercises: Radians</title>
+
+	<introduction><p><em>These exercises address measurement of angles, particularly in radians, and use of the relationship
+		<me>\boxed{\theta = \frac{s}{r}}.</me></em>
+		In this equation, <m>\theta</m> is the radian measure of the angle and <m>s</m> is the length of the arc subtended by the angle in a circle of radius <m>r</m>.</p>
+	<!-- 		<p><em>This video reviews some of the topics above.</em></p>
+		<figure>
+			<video youtube="OCcCqVV_QdU" width="100%" xml:id="video-trig-measuring-angles" />
+		</figure> -->
+	</introduction>
+
+	<exercise>
+	<statement><p>Accurately sketch the angles <m>\theta = \frac{11\pi}{6}</m> and <m>\theta = - \frac{8\pi}{3}</m> <em>without</em> converting to degrees.</p></statement>
+	<solution>
+		<p>For <m>\theta = 11\pi/6</m>, equally divide 1 revolution into 12 parts. Each is <m>\pi/6 = 30^\circ</m>. Count off 11 of them in the counterclockwise orientation.
+
+		<figure>
+			<image source="images/trig/ang1.png"/>
+		</figure>
+
+		For <m>\theta = -8\pi/3</m>, equally divide 1 revolution into 6 parts. Each is <m>\pi/3 = 60^\circ</m>. Count off 8 of them in the clockwise orientation.
+
+		<figure>
+			<image source="images/trig/ang2.png"/>
+		</figure>
+	</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>How many degrees is an angle of 1 radian? How many radians is an angle of 1 degree? 
+		What's bigger: one degree or one radian?</p></statement>
+	<solution><p>Recall <m>180^\circ = \pi</m> radians. So, dividing by <m>\pi</m>,
+		<me>1 \, {\rm radian} = \frac{180^\circ }{\pi} \approx 57^\circ</me>
+		So one radian is much bigger than 1 degree! Similarly,
+		<me>1^{\circ} = \frac{\pi}{180} \approx 0.017</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement>
+		<p><em>True or False:</em> The symbol <m>\pi</m> must be used whenever we measure an angle with units of <em>radians</em>.</p>
+	</statement>
+	<solution>
+		<p>False! Often times we see nice angles which are rational mutliples of <m>\pi</m> when expressed in radians. But <m>\pi</m> is just a number <m>\pi \approx 3.14</m> and is not conveying units at all. In fact, angles are dimensionless quantities and have no units.</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>A wheel with radius 16 inches rolls without slipping along the ground turning to form an angle of <m>495^\circ</m>. How far does the center of the wheel move, in feet?</p></statement>
+	<hint><p>You must first convert the angle to radians.</p></hint>
+	<answer>
+		<p>About 138 inches.</p>
+	</answer>
+	<solution>
+		<p>The distance travelled is exactly the amount of the outer arclength of the wheel that touches along the ground. This is related to the angle by <m>s = r \theta</m>, provided <m>\theta</m> is measured in radians. So,
+		<me>
+			s = r \theta = {16\, \rm inches} \times 495^\circ \times \frac{\pi}{180^\circ} \approx 138 \, {\rm inches}
+		</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>A vinyl record plays at 33 rpm (revolutions per minute). If the diameter of the record is 10 inches, how fast is a speck of dust on the outer edge of the record moving in inches per minute? How far will it move in inches after a song of 4 minutes and 10 seconds?</p></statement>
+	<hint><p>First find the angular velocity in <em>radians</em> per minute!</p></hint>
+	<answer>
+		<p>The speck of dust will move at about <m>1036.5</m> inches per minute. After 4 minutes and 10 seconds, this will go about 4318 inches.</p>
+	</answer>
+	<solution>
+		<p>On the one hand, velocity <m>v</m> of the dust speck should satisfy
+		<me>
+			v = \frac{\Delta s}{\Delta t} \, \text{inches per minute},
+		</me>
+		where <m>\Delta s</m> (in inches) is the distance travelled along the outer edge of the record for a corresponding change in time <m>\Delta t</m> (in minutes). On the other hand, <m>\Delta s = r \cdot \Delta\theta</m> is just arclength, so that:
+		<me>
+			v =\frac{\Delta s}{\Delta t}=\frac{r \cdot \Delta \theta}{\Delta t}= r \times \frac{\Delta \theta}{\Delta t}
+		</me>
+		The quantity <m>\frac{\Delta \theta}{\Delta t}</m> (in radians per minute) is called the angular velocity and in this case, is <m>33</m> rpm. Of course, we must convert this to radians
+		<me>
+			v = 5 \, {\rm inches} \times \frac{33 \, \rm revolutions}{\rm minute} \times \frac{2 \pi}{1 \, \rm revolution} \approx 1036.5 \frac{\rm inches}{\rm minute}
+		</me>
+		Observe how the radian measure of <m>2\pi</m> contributes no units to answer.
+		If the record plays for 4 minutes and 10 seconds, it will travel
+		<me>
+			s = 1036.5 \frac{\rm inches}{\rm minute} \times \left(4+\frac{10}{60}\right)\,{\rm minutes} \approx 4318 \,{\rm inches}
+		</me></p>
+	</solution>
+	</exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercises-trig-right">
+
+	<title>Exercises: Right Triangles</title>
+	<introduction>
+		<p><em>These exercises address the trigonometry of right triangles and the fundamental definitions of sine, cosine, and tangent of an angle <m>\theta</m> as ratio of sides of a right triangle.</em></p>
+		<me>
+			\sin (\theta) = \frac{\text{(opposite)}}{\text{(hypotenuse)}}, \quad 
+			\cos (\theta) = \frac{\text{(adjacent)}}{\text{(hypotenuse)}}, \quad 
+			\tan (\theta) = \frac{\text{(opposite)}}{\text{(adjacent)}}.
+		</me>
+	</introduction>
+
+	<exercise>
+	<statement><p>Find the sine, cosine, and tangent of the angles <m>\alpha</m> and <m>\beta</m> in the triangle below.</p>
+	<figure>
+		<image source="images/trig/triangle1.png" width="10%"/>
+	</figure>
+	</statement>
+	<answer>
+		<p><m>\sin \alpha = \frac{\sqrt{86}}{10}</m>, <m>\cos \alpha = \frac{4}{10} = \frac{2}{5}</m>, and <m>\tan \alpha = \frac{\sqrt{86}}{4}</m>. While <m>\cos \beta = \frac{\sqrt{86}}{10}</m>, <m>\sin \beta = \frac{4}{10} = \frac{2}{5}</m>, and <m>\tan \beta = \frac{4}{\sqrt{86}} = \frac{2 \sqrt{86}}{43}</m>.</p>
+	</answer>
+	<solution>
+		<p>The missing side <m>x</m> satisfies:
+		<me>
+			4^2+x^2 =10^2 \Rightarrow x^2 = 100-16 = 86 \Rightarrow x = \sqrt{86}
+		</me>
+		Thus, <m>\sin \alpha = \frac{\sqrt{86}}{10}</m>, <m>\cos \alpha = \frac{2}{5}</m>, and <m>\tan \alpha = \frac{\sqrt{86}}{4}</m>. 
+
+		Now for the other angle, <m>\cos \beta = \frac{\sqrt{86}}{10}</m>, <m>\sin \beta = \frac{2}{5}</m>, and <m>\tan \beta = \frac{4}{\sqrt{86}} = \frac{2 \sqrt{86}}{43}</m>.</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Given that <m>\sin(\theta) = 1/5</m> and that the hypotenuse is <m>7</m> inches, find the length of the remaining sides of the right triangle containing <m>\theta</m>.</p>
+	</statement>
+	<answer>
+		<p>The side opposite <m>\theta</m> has length <m>\frac{7}{5}</m> while the side adjacent has length <m>\frac{14\sqrt{6}}{5}</m>.</p>
+	</answer>
+	<solution>
+		<p>We have,
+		<me>
+			\sin \theta = \frac{\rm opposite}{\rm hypotenuse} = \frac{\rm opposite}{7} = \frac{1}{5} \Rightarrow {\rm opposite} = 7 \times \frac{1}{5} = \frac{7}{5}
+		</me>
+		We could now find the adjacent side using the pythagorean theorem:
+		<me>
+			\left(\frac{7}{5}\right)^2 + \left(\rm adjacent\right)^2  = 7^2
+			\Rightarrow \left(\rm adjacent\right)^2 = 49-\frac{49}{25} = \frac{1176}{25}
+		</me>
+		Thus, the adjacent side is <m>\sqrt{\frac{1176}{25}} = \frac{14\sqrt{6}}{5}</m>.
+		</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Standing at a point 100 feet from the base of a building, you measure the angle of elevation from the ground to the top of the building to be <m>40^\circ</m>. A cellphone tower is mounted onto the top of the building. From the same point you measure the angle of elevation from the ground to the top of the cell tower to be <m>50^\circ</m>. How tall is the building? How tall is the cellphone tower? Use a calculator.</p>
+	</statement>
+	<answer><p>The tower is about 35 feet.</p>
+	</answer>
+	<solution><p>The height <m>h</m> of the building satisfies
+		<me>
+			\tan 40^\circ = \frac{h}{100 \, \rm feet} \Rightarrow h = \tan 40^\circ \times 100 \, \rm feet
+		</me>
+		With a calculator in degree mode, I estimate that <m>h \approx 84 \, \rm feet</m>.
+		The combined height <m>H</m> of the building and cell tower satisfies
+		<me>
+			\tan 50^\circ = \frac{H}{100 \, \rm feet} \Rightarrow H = \tan 50^\circ \times 100 \, \rm feet \Rightarrow H \approx 119 \, \rm feet		
+		</me>
+		The tower itself is <m>119 - 84 = 35</m> feet.</p>
+	</solution>
+	</exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercises-trig-special">
+
+	<title>Exercises: Special Triangles</title>
+	<introduction>
+		<p><em>These exercises review the special triangles 45-45-90 and 30-69-90 that allow us to determine the exact values of trigonometric functions for these commonly used angles.</em></p>
+		<p><em>The video reviews some of the topics above.</em></p>
+	</introduction>
+
+	
+	<exercise>
+	<statement>
+		<p>Practice drawing the two special triangles that allow you to determine the exact values of the trigonometric functions of <m>\pi/4</m>, <m>\pi/3</m>, and <m>\pi/6</m>.</p>
+	</statement>
+	<hint>
+		<p>Watch the video below!</p>
+	</hint>
+	</exercise>
+
+	<exercise>
+	<statement><p>
+		Two acute angles <m>\alpha</m> and <m>\beta</m> are called <term>complementary angles</term> if <m>\alpha+\beta = \pi/2</m>. How are the trigonometric function values of complementary angles related? Illustrate your conclusion with the 30-60-90 degree special triangle.</p>
+	</statement>
+	<hint><p>Consider Exercise 1 above.</p></hint>
+	<solution><p>The sine of a complementary angle is the cosine of the original:
+		<me>
+			\cos \alpha = \sin (\pi/2 - \alpha) = \sin \beta
+		</me>
+		Similarly, the cosine of the complementary angle is the sine of the original:
+		<me>
+			\sin \alpha = \cos (\pi/2 - \alpha) = \cos \beta
+		</me>
+		Compare <m>\alpha = \pi/3</m> and <m>\beta = \pi/6</m> in the special triangle. For instance,
+		<me>
+			\sin (\pi/3) = \frac{\sqrt{3}}{2} = \cos(\pi/6)
+		</me>
+		</p></solution>
+	</exercise>
+</exercisegroup>
+
+</exercises>

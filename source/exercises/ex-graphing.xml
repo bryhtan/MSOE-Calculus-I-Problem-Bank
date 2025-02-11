@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercises xml:id="exercises-graphing">
+	<title>Exercises</title>
+
+	<exercise>
+		<statement>
+		<p>Is the given point on the graph of <m>y^2 = x^3 - 10 x + 3</m>? How can you be sure?
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+		<ol cols="1">
+			<li><m>(3,0)</m></li>
+			<li><m>(0,3)</m></li>
+			<li><m>(0,\sqrt{3})</m></li>
+			<li><m>(\sqrt{3},0)</m></li>
+			<li><m>(1,2)</m></li>
+		</ol></p>
+		<image source="images/graphing/exercises/eliptic"/></sidebyside>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement><p>Find an equation for the circle having the points <m>(-2,4)</m> and <m>(7,9)</m> as endpoints of a diameter.</p></statement>
+	</exercise>
+
+	<exercisegroup>
+		<title>Linear Equations</title>
+		<exercise>
+			<statement><p>Sketch a graph of each equation.
+				<ol cols="3">
+					<li><m>x=-4</m></li>
+					<li><m>y=3</m></li>
+					<li><m>2y=-1</m></li>
+				</ol>
+			</p></statement>
+		</exercise>
+
+		<exercise>
+			<statement><p>What is an equation for the <m>x</m>-axis? What is an equation for the <m>y</m>-axis?
+			</p></statement>
+		</exercise>
+
+		<exercise>
+			<statement><p>Find the intercepts of <m>4x-7y = 2</m> and sketch its graph.</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement><p>Sketch a graph of <m>y - 7 = -2 (x+1)</m></p></statement>
+		</exercise>
+
+		<exercise>
+			<statement><p>Find a linear equation for the line passing through the points <m>(5,4)</m> and <m>(-2,3)</m>.</p></statement>
+		</exercise>
+	</exercisegroup>
+
+	<exercise>
+		<title>Linear Models</title>
+		<p>Let <m>C</m> denote the annual cost in millions of dollars to maintain a computer network <m>t</m> years since the year 2000 (so that <m>t = 0</m> corresponds to the year 2000). In 2005, it cost 2 million dollars and, in 2010 it cost 17 million dollars.</p>
+		<ol>
+			<li><p>At what rate is the cost increasing per year, assuming the rate of increase remains constant?</p></li>
+			<li><p>Find a linear model for the cost <m>C</m>.</p></li>
+			<li><p>Use your model to predict the cost to maintain the network in 2020.</p></li>
+		</ol>
+	</exercise>
+
+	<exercise>
+		<title>A Parabola</title>
+		<statement><p>Find an equation for the parabola with focus at <m>F(0,-1)</m> and directrix <m>y = 2</m>.</p></statement>
+	</exercise>
+</exercises>

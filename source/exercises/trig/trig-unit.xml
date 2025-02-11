@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="exercises-trig-unit">
+	<title>Exercises: Unit Circle Trig</title>
+
+	<introduction><p><em>These exercises address the connection between sine, cosine, and tangent and the geometry of the unit circle. We can use the reference angle and symmetry to find trigonometric functions of an angle.</em>
+		<me>\boxed{\sin(\theta) = \text{($y$-coordinate)}, \quad \cos(\theta) = \text{($x$-coordinate)}, \quad \tan(\theta) = \text{(slope of terminal ray)}}</me>
+	</p>
+	<p><em>This video reviews some of the concepts above.</em></p>
+	<figure>	
+		<video youtube="zN8ninNM-gk" width="100%" xml:id="video-trig-unit-circle" />
+	</figure>
+	</introduction>
+
+	<exercise>
+	<statement><p>Suppose <m>\theta</m> is an angle in standard position. Explain what <m>\cos (\theta)</m>, <m>\sin(\theta)</m>, and <m>\tan(\theta)</m> represent geometrically in relation to the unit circle <m>x^2+ y^2 = 1</m>.</p>
+	</statement>
+	<solution><p>
+		<ul>
+			<li><m>\cos\theta</m> is the <m>x</m>-coordinate of the point on the unit circle;</li>
+			<li><m>\sin\theta</m> is the <m>y</m>-coordinate of the point on the unit circle;</li>
+			<li><m>\tan\theta</m> is the slope of the line parallel to the terminal ray of <m>\theta</m>.</li>
+		</ul></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Find the sine, cosine, and tangent of <m>\theta = -90^\circ</m>, <m>\theta = 3\pi/2</m>, and <m>\theta = 5\pi</m> by considering the corresponding the geometry of the unit circle.</p>
+	</statement>	
+	<solution><p>
+		<ul>
+			<li>The terminal ray of <m>\theta = -90^\circ</m> intersects the unit circle at <m>(x,y) = (0,-1)</m>. So
+			<me>
+				\sin(-90^\circ) = -1, \quad \cos(-90^\circ) = 0, \quad \tan(-90^\circ) \, \rm undefined
+			</me>
+			Observe that the terminal ray is vertical so that it has no defined slope.</li>
+			<li>The terminal ray of <m>\theta = 3\pi/2</m> is the same as <m>-90^\circ</m>. Therefore, 
+			<me>
+				\sin(3\pi/2) = -1, \quad \cos(3\pi/2) = 0, \quad \tan(3\pi/2) \, \rm undefined
+			</me></li>
+			<li>The terminal ray of <m>\theta = 5\pi</m> intersects the unit circle at <m>(x,y) = (-1,0)</m>. So
+			<me>
+				\sin(5\pi) = 0, \quad \cos(5\pi) = -1, \quad \tan(5\pi) = 0.</me>
+				Observe that the terminal ray is horizontal so that it has slope zero.</li>
+		</ul>
+		</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Use the reference angle approach to find the six trigonometric function values of <m>\theta = 150^\circ</m>, <m>\theta = -2\pi/3</m>, <m>\theta = 7\pi/4</m>, and <m>\theta = -11\pi/4</m>. Include a sketch in each case.</p></statement>
+	<solution><p>
+		<ol>
+			<li> <m>\theta = 150^\circ</m> is in Quadrant II and has reference angle <m>\bar\theta = 30^\circ</m>.
+			<figure>
+				<image source="images/trig/ang1ex.png" width="50%" />
+			</figure>
+			<table>
+				<tabular>
+					<row>
+						<cell><m>\sin \theta = +\sin 30^\circ = \frac{1}{2}</m></cell>
+						<cell><m>\csc \theta = 2</m></cell>
+					</row>
+					<row>
+						<cell><m>\cos \theta = -\cos 30^\circ = -\frac{\sqrt{3}}{2}</m></cell>
+						<cell><m>\sec \theta = -\frac{2}{\sqrt{3}} = - \frac{2\sqrt{3}}{3}</m></cell>
+					</row>
+					<row>
+						<cell><m>\tan \theta = -\tan 30^\circ = -\frac{1}{\sqrt{3}} = - \frac{\sqrt{3}}{3}</m></cell>
+						<cell><m>\cot \theta = - \sqrt{3}</m></cell>
+					</row>
+				</tabular>
+			</table></li>
+
+			<li><m>\theta = -2\pi/3</m> is in Quadrant III and has reference angle <m>\bar\theta = \pi/3</m>.
+			<figure>
+				<image source="images/trig/ang2ex.png" width="50%" />
+			</figure>
+			<table>
+				<tabular>
+					<row>
+						<cell><m>\sin \theta = -\sin \pi/3 = -\frac{\sqrt{3}}{2}</m></cell>
+						<cell><m>\csc \theta = -\frac{2}{\sqrt{3}} = - \frac{2\sqrt{3}}{3}</m></cell>
+					</row>
+					<row>
+						<cell><m>\cos \theta = -\cos \pi/3 = -\frac{1}{2}</m></cell>
+						<cell><m>\sec \theta = -2</m></cell>
+					</row>
+					<row>
+						<cell><m>\tan \theta = +\tan \pi/3 = \sqrt{3}</m></cell>
+						<cell><m>\cot \theta =  \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}</m></cell>
+					</row>
+				</tabular>
+			</table></li>
+
+		<li><m>\theta = 7\pi/4</m> is in Quadrant IV and has reference angle <m>\bar\theta = \pi/4</m>.
+		<figure>
+				<image source="images/trig/ang3ex.png" width="50%" />
+		</figure>
+		<table>
+			<tabular>
+				<row>
+					<cell><m>\sin \theta = -\sin \pi/4 = -\frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\csc \theta = -\frac{2}{\sqrt{2}} = - \frac{2\sqrt{2}}{2} = - \sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\cos \theta = +\cos \pi/4 = \frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\sec \theta = \sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\tan \theta = -\tan \pi/4 = -1</m></cell>
+					<cell><m>\cot \theta =  -1</m></cell>
+				</row>
+			</tabular>
+		</table></li>
+
+		<li><m>\theta = -11\pi/4</m> is in Quadrant III and has reference angle <m>\bar\theta = \pi/4</m>.
+		<figure>
+				<image source="images/trig/ang4ex.png" width="50%" />
+		</figure>
+		<table>
+			<tabular>
+				<row>
+					<cell><m>\sin \theta = -\sin \pi/4 =- \frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\csc \theta = -\sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\cos \theta = -\cos \pi/4 = -\frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\sec \theta = -\sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\tan \theta = +\tan \pi/4 = 1</m></cell>
+					<cell><m>\cot \theta =  1</m></cell>
+				</row>
+			</tabular>
+		</table></li>
+	</ol>
+	</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Find all angles <m>0 \leq \theta \lt 2\pi</m> satisfying <m>\sin(\theta) = -1</m>.</p></statement>
+	<solution><p>The point <m>(0,-1)</m> is the only point on the unit circle whose <m>y</m>-coordinate is <m>-1</m>. This corresponds to <m>\theta = 3\pi/2</m>. Draw a picture to confirm.</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Find all angles <m>0 \leq \theta \lt 2\pi</m> satisfying <m>\cos(\theta) = 0</m>.</p></statement>
+	<solution><p>The points <m>(0,1)</m> and <m>(0,-1)</m> are the only points on the unit circle whose <m>x</m>-coordinate is <m>0</m>. These corresponds to <m>\theta = 0</m> and <m>\theta = \pi</m>, respectively. Draw a picture to confirm.</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Find all angles <m>0 \leq \theta \lt 2\pi</m> satisfying <m>\tan(\theta) = -1</m>.</p></statement>
+	<solution><p>
+		The slope of a terminal ray is <m>-1</m> for <m>\theta = 3\pi/4</m> and <m>\theta = 7\pi/4</m>. Draw a picture to confirm.
+	</p>
+	</solution>
+	</exercise>
+
+	
+</exercises>

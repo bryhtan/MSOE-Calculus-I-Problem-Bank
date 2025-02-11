@@ -1,0 +1,385 @@
+<chapter xml:id="chapter-trigonometry-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Right Triangle Trigonometry</title>
+	
+	<section xml:id="section-measuring-angles">
+		<title>Measuring Angles</title>
+
+		<introduction><p>This section reviews the radian measure of an angle. A brief overview is provided in the video below.<video youtube="OCcCqVV_QdU" width="100%" xml:id="video-trig-measuring-angles" /></p></introduction>
+
+		<p>An angle in the plane consists of a <term>vertex</term>, an <term>initial ray</term>, and a <term>terminal ray</term> which we think of being obtained by rotating the initial ray some amount about the vertex. 
+		<image source="images/trig/intro-angle" width="50%"/>
+		(There can be quite a lot of rotation as the dashed arrow indicates above. This is useful for engineering situations where angles are describing a rotating object over time.) If the rotation is counter clockwise, we will say the angle is <term>positive</term>; if the rotation is clockwise, we say the angle is <term>negative</term>.</p>
+
+		<sidebyside widths="40% 40%">
+			<image source="images/trig/positive-angle"/>
+			<image source="images/trig/negative-angle"/>
+		</sidebyside>
+
+		<p>We'd like to measure the amount of rotation and hence the size of the angle with a real number typically denoted by a greek letter such as <m>\theta</m> (<q>theta</q>). The preferred approach for calculus is to draw a circle of radius <m>r</m> centered at the vertex of the angle and measure the arc-length <m>s</m> <em>subtended</em> by the angle, that is, the length of the curve that's formed around the circle as the initial ray is rotated to form the terminal ray.</p>
+
+		<image source="images/trig/radian-measure-angle" width="50%"/>
+
+		<definition xml:id="definition-radian-measure">
+			<title>Radian Measure of an Angle</title>
+			<statement>
+				<p>The <term>radian</term> measure of the positive angle above is the ratio of arc-length to the radius
+				<me>\theta = \frac{s}{r}.</me>
+				If the angle is a negative angle, we will take the opposite sign for <m>\theta</m>.</p>
+			</statement>
+		</definition>
+
+		<remark>
+			<title>Angles are Dimensionless</title>
+			<p>Observe that <m>\theta</m> is a ratio of lengths and therefore has no units. As such, angles are considered <term>dimensionless quantities</term> provided you are using the radian measure of the angle. This is one reason why using radians is the natural choice of measurement of angles in calculus and engineering.</p>
+		</remark>
+
+		<example>
+			<title>Measuring an Angle in Radians</title>
+			<statement>
+				<p>
+					In the figure below, I've drawn a positive angle with vertex at the center of a circle with a radius of 2 inches. I measure around the arc formed by the angle with a piece of string and find it to be <m>4.6</m> inches.
+					<image source="images/trig/radian-measure-angle-example" width="40%"/>
+					The radian measure of the angle is then
+					<me>\theta = \frac{4.6\,\rm inches}{2\,\rm inches} = 2.3.</me>
+					Note how the units of inches cancel leaving us with a quantity that has no physical units anymore. While it is perfectly appropriate to write <m>\theta = 2.3</m> without units, sometimes we might write <me>\theta = 2.3 \, {\rm radians}</me>
+					only to provide context for how the measurement was made.
+				</p>
+				<p>If we let <m>\tau</m> (<q>tau</q>) be the same angle but with opposite rotation
+				<image source="images/trig/radian-measure-angle-example-negative" width="30%"/>
+				then <m>\tau = -2.3</m> (radians).</p>
+			</statement>
+		</example>
+
+		<p>Of course, you are likely more familiar with using degrees to measure angles in everyday life. For practical purposes, it's important to be able to convert between the two. To start, an angle of <m>360^\circ</m> is one revolution. In a circle of radius <m>r</m>, one revolution will subtend an arc of length <m>s = 2\pi r</m>. Thus,
+		<me>360^\circ = \frac{2\pi r}{r} = 2\pi \, (\text{radians}).</me>
+		Dividing both sides by two,
+		<me>180^\circ =  \pi \, (\text{radians}).</me>
+		So that,
+		<me>1^\circ = \frac{\pi}{180} \, (\text{radians}) \approx 0.0174533 </me>
+		and
+		<me>1 \, (\text{radians}) = \frac{180^\circ}{\pi} \approx 57.2958^\circ.</me>
+		Observe that a radian is significantly larger than a degree.</p>
+
+		<example><title>
+			Converting between units</title>
+			<statement><p>Convert <m>2.3</m> radians to degrees</p></statement>
+			<solution>
+				<p>Remember, <m>180^\circ</m> is <m>\pi</m> radians. Use this as a conversion factor. Its useful to include <q>radians</q> as a unit when converting:
+					<me>2.3 \, {\rm radians} = 2.3 \, {\rm radians} \times \frac{180^\circ}{\pi \, {\rm radians}} \approx 131.6^\circ.</me></p>
+			</solution>
+		</example>
+
+		<p>Usually we draw our angles on the <m>xy</m>-plane in <term>standard position</term> with the vertex at the origin and the initial ray along the positive <m>x</m>-axis. The following angle is in standard position. Its terminal ray is in the second quadrant so we refer to this as a Quadrant II angle.
+		<image source="images/trig/standard-position-q2" width="40%"/>
+		The following figure illustrates angles in standard position and their quadrant.
+		<sidebyside widths="32% 32% 32%" valign="middle">
+			  <figure>	
+			    <caption>A Quadrant III angle.</caption>
+			    <image source="images/trig/standard-position-q3" />
+			  </figure>
+  			  <figure>	
+			    <caption>A Quadrant IV angle.</caption>
+			    <image source="images/trig/standard-position-q4" />
+			  </figure>
+  			  <figure>	
+			    <caption>A Quadrant I angle.</caption>
+			    <image source="images/trig/standard-position-q1" />
+			  </figure>
+		 </sidebyside></p>
+
+		<example xml:id="example-15pi-over-4">
+		 	<title>Sketching an Angle</title>
+			<statement><p>Consider <m>\theta = 15\pi/4</m> in standard position. We'd like to draw picture accurate enough to determine the quadrant of <m>\theta</m>. You should think of this as
+			<me>\theta = 15 \times \frac{\pi}{4} = 15 \text{\, of \,} \frac{\pi}{4}.
+			</me>
+			Now <m>\pi = 180^\circ</m>, so <m>\pi/4 = 45^\circ</m>. This divides a full rotation into 8 equal parts.
+			<image source="images/trig/sketch-8" width="40%"/>
+			Starting at the positive <m>x</m>-axis and going counter-clockwise, count out 15 of these parts until you arrive at the terminal side.
+			<image source="images/trig/sketch-8-2" width="50%"/>
+			The result is <m>\theta = 15\pi/4</m> is a Quadrant IV angle.
+			</p></statement>
+		</example>
+
+		<example>
+		 	<title>Sketching an Angle</title>
+			<statement><p>Draw the angle <m>\theta = - 5\pi/3</m> in standard position and determine its quadrant.</p></statement>
+			<solution><p>We have
+				<me>\theta = - 5 \times \frac{\pi}{3}</me>.
+				Now, <m>\pi/3 = 180^\circ /3 = 60^\circ</m> and this divides a full rotation into six equal parts. Count of <m>5</m> in the clockwise orientation.
+				<image source="images/trig/sketch-8-3" width="50%"/>
+				We conclude that <m>\theta = -5\pi/3</m> is a Quadrant I angle.
+			</p></solution>
+		</example>
+
+		<example>
+		 	<title>Sketching an Angle</title>
+			<statement><p>Draw the angle <m>\theta = 13\pi/6</m> in standard position and determine its quadrant.</p></statement>
+			<solution><p>
+				Observe that <m>\pi/6</m> divides one full rotation into 12 equal parts. Count out 13 of these in the counter-clockwise direction.
+				<image source="images/trig/sketch-8-6" width="50%"/>
+				Thus, <m>\theta = 13\pi/6</m> is a Quadrant I angle.
+			</p></solution>
+		</example>
+
+		<p>Angles whose terminal sides coincide with a coordinate axis are called <term>quadrantal</term> angles and do not have a defined quadrant. For instance, <m>\theta = \pi = 180^\circ</m> is a quadrantal angle and so is half this amount <m>\pi/2=90^\circ</m>. In fact, the quadrantal angles are precisely the integer multiples of <m>\pi/2</m>.
+		<sidebyside widths="32% 32% 32%">
+			<image source="images/trig/standard-position-180" />
+			<image source="images/trig/standard-position-90" />
+			<image source="images/trig/standard-position-m270" />
+		</sidebyside>
+		</p>
+
+		<example>
+		 	<title>Sketching Quadrantal Angles</title>
+			<statement><p>Sketch <m>\theta = -810^\circ</m> in standard position.</p></statement>
+			<solution><p>We can write this as
+				<me>-810^\circ = -(360+360+90)^\circ</me>
+				Sketching, we count two full clockwise revolutions and an extra quarter revolution. The result is a quadrantal angle.
+				<image source="images/trig/sketch-quad" width="50%"/>
+			</p></solution>
+		</example>
+
+
+		<definition><title>Coterminal Angles</title>
+			<statement><p>We say that two angles are <term>coterminal</term> if their terminal rays coincide when drawn in standard position.</p></statement>
+		</definition>
+
+		<p>Any angle is coterminal to infinitely many other angles, simply by adding or subtracting complete revolutions. However, it may be helpful to find the smallest positive or negative angle coterminal to a given angle as illustrated in the example below.</p>
+
+		<example><title>Finding Coterminal Angles</title>
+		<statement><p>Consider <m>\theta = 15\pi/4</m> from <xref ref="example-15pi-over-4"/>. 
+		Then <m>\theta</m> is coterminal to <m>-\pi/4</m> and this is the smallest such <em>negative</em> angle. The smallest <em>positive</em> angle coterminal to <m>\theta</m> is <m>7\pi/4</m>.
+		<sidebyside widths="32% 32% 32%">
+			<image source="images/trig/sketch-8-2" />
+			<image source="images/trig/sketch-8-2-ctm" />
+			<image source="images/trig/sketch-8-2-ctp" />
+		</sidebyside></p></statement>
+		</example>
+
+		
+	</section>
+
+	<section xml:id="section-right-triangle-trigonometry">
+		<title>Right Triangle Trigonometry</title>
+
+		<introduction><p>Right triangle trigonometry involves the function of an angle computed as ratios of sides from a right triangle. The video summarizes the content of this section.</p></introduction>
+		<video youtube="LBOPUcDBjfg" width="100%" xml:id="video-trig-right-triangle-trigonometry" />
+
+		<p>A <term>right triangle</term> is a triangle containing one <m>90^\circ</m> angle. The remaining two angles must be <term>acute</term>, i.e. they are positive angles less than <m>90^\circ</m>. I've drawn a right triangle below with the acute angles labeled <m>\alpha</m> (<q>alpha</q>) and <m>\beta</m> (<q>beta</q>). We call <m>\alpha</m> and <m>\beta</m> <term>complementary</term> angles as they sum to <m>90^\circ</m>. The side opposite the right angle is always called the <term>hypotenuse</term>. The remaining sides are labeled <term>adjacent</term> and <term>opposite</term> relative to the acute angle being considered. Carefully read the labels on the figures below.
+		<sidebyside widths="30% 30%">
+			<figure>
+				<caption>Sides labeled from <m>\alpha</m>'s perspective.</caption>
+				<image source="images/trig/right-defn-2" />
+			</figure>
+			<figure>
+				<caption>Sides labeled from <m>\beta</m>'s perspective.</caption>
+				<image source="images/trig/right-defn-3" />
+			</figure>
+		</sidebyside></p>
+
+		<p>There are six trigonometric functions that input an acute angle <m>0 \lt \alpha \lt 90^\circ</m> and output a particular ratio of two sides of the triangle.</p>
+		<image source="images/trig/trigmap" width="50%"/>
+
+		<definition xml:id="definition-right-triangle-trig">
+			<title>The Six Trigonometric Ratios</title>
+			<statement>
+				Suppose <m>0 \lt \alpha \lt 90^\circ</m> is an acute angle in a right triangle. The <term>six trigonometric functions</term> of <m>\alpha</m> are:
+				<ul>
+					<li><p><term>Sine</term> of <m>\alpha</m> is defined as
+					<m>\sin(\alpha) = \frac{\text{opposite}}{\text{hypotenuse}}.</m></p></li>
+					<li><p><term>Cosine</term> of <m>\alpha</m> is defined as
+					<m>\cos(\alpha) = \frac{\text{adjacent}}{\text{hypotenuse}}.</m></p></li>
+					<li><p><term>Tangent</term> of <m>\alpha</m> is defined as
+					<m>\tan(\alpha) = \frac{\text{opposite}}{\text{adjacent}}.</m></p></li>
+					<li><p><term>Cosecant</term> of <m>\alpha</m> is defined as
+					<m>\csc(\alpha) = \frac{\text{hypotenuse}}{\text{opposite}}.</m></p></li>	
+					<li><p><term>Secant</term> of <m>\alpha</m> is defined as
+					<m>\sec(\alpha) = \frac{\text{hypotenuse}}{\text{adjacent}}.</m></p></li>	
+					<li><p><term>Cotangent</term> of <m>\alpha</m> is defined as
+					<m>\cot(\alpha) = \frac{\text{adjacent}}{\text{opposite}}.</m></p></li>				
+				</ul>
+			</statement>
+		</definition>
+
+		<example><title>Finding Trignometric Function Values</title>
+			<statement><p>Consider the right triangle below with two sides labeled.
+				<image source="images/trig/right-example-1" width="40%"/>
+				We are missing one of the sides which we may determine from the Pythagorean theorem:
+				<me>(\text{missing})^2 + 4^2 = 10^2</me>
+				so that
+				<me>(\text{missing}) = \sqrt{100-16} = \sqrt{84} = 2\sqrt{21}.</me>
+				<image source="images/trig/right-example-2" width="40%"/>
+				We can now find the six trigonometric function values of the angle <m>\alpha</m>:</p>
+				<sidebyside widths="50% 50%">
+					<p>
+				<md>
+					<mrow>\sin(\alpha) &amp;= \frac{2\sqrt{21}}{10} = \frac{\sqrt{21}}{5}.</mrow>
+					<mrow>\cos(\alpha) &amp;= \frac{4}{10} = \frac{2}{5}</mrow>
+					<mrow>\tan(\alpha) &amp;= \frac{2\sqrt{21}}{4} = \frac{\sqrt{21}}{2}</mrow>
+				</md></p><p>
+				<md>
+					<mrow>\csc(\alpha) &amp;= \frac{10}{2\sqrt{21}} = \frac{5}{\sqrt{21}} = \frac{5\sqrt{21}}{21}</mrow>
+					<mrow>\sec(\alpha) &amp;= \frac{10}{4} = \frac{5}{2}</mrow>
+					<mrow>\cot(\alpha) &amp;= \frac{4}{2\sqrt{21}} = \frac{2}{\sqrt{21}} = \frac{2\sqrt{21}}{21}</mrow>
+				</md></p></sidebyside>
+				<p>Observe how the right column results are reciprocals of the left column. For instance,
+					<me>\csc(\alpha) = \frac{1}{\sqrt{21}/5} = \frac{1}{\sin(\alpha)}.</me></p><p>
+						Now let's find the ratios for <m>\beta</m>. Now the meaning of opposite and adjacent change.</p>
+				<sidebyside widths="50% 50%">
+					<p>
+				<md>
+					<mrow>\cos(\beta) &amp;= \frac{2\sqrt{21}}{10} = \frac{\sqrt{21}}{5}.</mrow>
+					<mrow>\sin(\beta) &amp;= \frac{4}{10} = \frac{2}{5}</mrow>
+					<mrow>\cot(\beta) &amp;= \frac{2\sqrt{21}}{4} = \frac{\sqrt{21}}{2}</mrow>
+				</md></p><p>
+				<md>
+					<mrow>\sec(\beta) &amp;= \frac{10}{2\sqrt{21}} = \frac{5}{\sqrt{21}} = \frac{5\sqrt{21}}{21}</mrow>
+					<mrow>\csc(\beta) &amp;= \frac{10}{4} = \frac{5}{2}</mrow>
+					<mrow>\tan(\beta) &amp;= \frac{4}{2\sqrt{21}} = \frac{2}{\sqrt{21}} = \frac{2\sqrt{21}}{21}</mrow>
+				</md></p></sidebyside>
+				<p>Observe the order I've written them in so that they compare with those for <m>\alpha</m>. For instance, <m>\cos(\beta) = \sin(\alpha)</m>.</p>
+
+				<p>Finally, notice that the specific dimensions of the triangle I use to compute the trigonometric ratios is irrelevant: <em>any right trianlge with these angles will result in the same ratios</em>. For instance, if I draw <m>\alpha</m> in a right triangle with half the size
+				<image source="images/trig/right-example-3" width="40%"/>
+				the side lengths are all scaled by <m>1/2</m> and the ratios remain unchanged.</p>
+			</statement>
+		</example>
+
+		<p>Some of our observations from the previous examples are summarized below as <term>trigonometric identities</term>. An identity is an equation relating trigonometric expressions that are valid for all angles in the domain of the expressions.</p>
+
+		<theorem xml:id="theorem-right-triangle-reciprocal-ratio-cofunction">
+			<title>Reciprocal, Ratio, and Cofunction Identities</title>
+			<statement>
+			<p>Suppose <m>\alpha</m> is an acute angle. The <term>reciprocal identites</term> state:
+			<md>
+				<mrow>\csc(\alpha) = \frac{1}{\sin(\alpha)}</mrow>
+				<mrow>\sec(\alpha) = \frac{1}{\cos(\alpha)}</mrow>
+				<mrow>\cot(\alpha) = \frac{1}{\tan(\alpha)}</mrow>
+			</md>
+			The <term>ratio identities</term> state:
+			<md>
+				<mrow>\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}</mrow>
+				<mrow>\cot(\alpha) = \frac{\cos(\alpha)}{\sin(\alpha)}</mrow>
+			</md></p>
+			<p>Suppose <m>\alpha</m> and <m>\beta</m> are complementary acute angles in a right triangle. The <term>cofunction identities</term> state:
+			<md>
+				<mrow>\sin(\alpha) = \cos(\beta)</mrow>
+				<mrow>\tan(\alpha) = \cot(\beta)</mrow>
+				<mrow>\sec(\alpha) = \csc(\beta)</mrow>
+			</md>
+			</p></statement>
+			<proof>
+				<p>Let's verify the first ratio identity.
+					<me>\tan(\alpha) 
+						= \frac{\text{opposite}}{\text{adjacent}} 
+						= \frac{\text{opposite}}{\text{hypotenuse}} 	
+						\frac{\text{adjacent}}{\text{hypotenuse}} 	
+						= \frac{\sin(\alpha)}{\cos(\alpha)}.</me></p>
+			</proof>
+		</theorem>
+
+		<example xml:id="example-right-finding-ratios-from-one">
+			<title>Finding Trignometric Function Values Given a Ratio</title>
+			<statement><p>Suppose <m>\theta</m> is an acute angle and <m>\csc(\theta) = 3</m>. Find the remaining trigonometric function values of <m>\theta</m>.</p></statement>
+			<solution>
+				<p>
+					We know that 
+					<m>\csc(\theta) = 3</m>
+					and from the reciprocal identities,
+					<m>\sin(\theta) = \frac{1}{3}</m>.
+					We can assign any value to the opposite side and the hypotenuse provided their ratio as above is <m>1/3</m>. Taking the opposite to be <m>1</m> and the hypotenuse to be <m>3</m> will suffice. The adjacent side is then
+					<me>\text{(adjacent)}^2 = \sqrt{9-1} = \sqrt{8}</me>
+					from which we may compute
+					<m>\cos(\theta) = \frac{\sqrt{8}}{3}</m> and the reciprocal <m>\sec(\theta) = \frac{3}{\sqrt{8}} = \frac{3\sqrt{8}}{8}</m>. Finally, from the ratio identities
+					<me>\tan(\theta) = \frac{1/3}{\sqrt{8}/3} = \frac{1}{\sqrt{8}}</me>
+					and then <m>\cot(\theta) = \sqrt{8}</m>.
+
+				</p>
+			</solution>
+		</example>
+		
+		<p>A standard scientific calculator can estimate the trigonometric function values of an angle. You need to make sure you calculator is in degree or radian mode depending on the context.</p>
+
+		<example>
+			<title>Using Technology</title>
+			<statement>
+				<p>A person stands 100 feet from a flagpole and measures an angle of elevation between the ground and the top of the flagpole to be <m>37^\circ</m>. Find the height of the flagpole.</p>
+			</statement>
+			<solution>
+				<p>We have 
+					<me>\tan(37^\circ) = \frac{\text{(height of pole)}}{100 \, \rm feet}</me>
+					so that
+					<me> \text{(height of pole)} = ({100 \, \rm feet}) \tan(37\circ)
+						\approx 84.1 \, \rm feet</me>
+					from using a calculator in degree mode. Notice that the trigonometric ratio is dimensionless and we have the expected units.
+				</p>
+			</solution>
+		</example>
+
+		
+	</section>
+
+	<section xml:id="section-special-triangles">
+		<title>Special Triangles</title>
+
+		<p>Certain nice angles appear in triangles with pleasing geometry which allows us to compute their trigonometric ratios qexactly.</p>
+		<video youtube="PZ_83lOfB3k" width="100%" xml:id="video-trig-special-triangle" />
+
+		<example><title>
+			The 45-45-90 Triangle
+		</title>
+		<statement>
+			<p>Start with a square. You may label the side lengths any value you want, but <m>1</m> is convenient. All the angles are <m>\pi/2 = 90^\circ</m>.
+			<image source="images/trig/st1" width="30%"/>
+			Draw a diagonal with length <m>\sqrt{1^2+1^2} = \sqrt{2}</m>. The new angles are <m>\pi/4 = 45^\circ</m>.
+			<figure xml:id="figure-45-45-90"> 
+				<caption>The 45-45-90 triangle.</caption>
+				<image source="images/trig/st2" width="30%"/>
+			</figure>
+			This forms a <q>45-45-90</q> triangle. From this, we can compute exactly any trigonometric function value for <m>\pi/4</m> (radians) or equivalently <m>45^\circ</m>.
+			<md>
+				<mrow>&amp;\sin(\pi/4) = \sin(45^\circ) = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}</mrow>
+				<mrow>&amp;\cos(\pi/4) = \cos(45^\circ) = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}</mrow>
+				<mrow>&amp;\tan(\pi/4) = \tan(45^\circ) = \frac{1}{1} = 1</mrow>
+				<mrow>&amp;\csc(\pi/4) = \csc(45^\circ) = \frac{\sqrt{2}}{1} = \sqrt{2}</mrow>
+				<mrow>&amp;\sec(\pi/4) = \sec(45^\circ) = \frac{\sqrt{2}}{1} = \sqrt{2}</mrow>
+				<mrow>&amp;\cot(\pi/4) = \cot(45^\circ) = \frac{1}{1} = 1</mrow>
+			</md></p>
+		</statement>
+		</example>
+
+		<example><title>
+			The 30-60-90 Triangle
+		</title>
+		<statement>
+			<p>Start with an equilateral triangle, all sides and all angles are equal to <m>\pi/3 = 60^\circ</m>. You can label the side lengths whatever you like, but its convenient to start with length <m>2</m>.
+			<image source="images/trig/st3" width="40%"/>
+			Divide the triangle into two right triangles by bisecting one of the angles into two <m>\pi/6 = 30^\circ</m> angles. This divides the opposite side into two equal parts of length <m>1</m>.
+			<image source="images/trig/st4" width="40%"/>
+			Finally, the missing height can be found with the Pythagorean Theorem
+			<me>(\text{height})^2 + 1^2 = 2^2</me>
+			so that
+			<me>(\text{height}) = \sqrt{4-1}=\sqrt{3}.</me>
+			<figure xml:id="figure-30-60-90"> 
+				<caption>The 30-60-90 triangle.</caption>
+				<image source="images/trig/st5" width="40%"/>
+			</figure>
+			This gives two <q>30-60-90</q> triangles which allows us to find exact values of trigonometric functions for <m>30^\circ = \pi/6</m> and its complementary angle <m>60^\circ = \pi/3</m>. We'll summarize in radians:
+			<md>
+				<mrow>&amp;\sin(\pi/6) = \cos(\pi/3) = \frac{1}{2}</mrow>
+				<mrow>&amp;\cos(\pi/6) = \sin(\pi/3) = \frac{\sqrt{3}}{2}</mrow>
+				<mrow>&amp;\tan(\pi/6) = \cot(\pi/3) = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}</mrow>
+				<mrow>&amp;\csc(\pi/6) = \sec(\pi/3) = 2</mrow>
+				<mrow>&amp;\sec(\pi/6) = \csc(\pi/3) = \frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}</mrow>
+				<mrow>&amp;\cot(\pi/6) = \tan(\pi/3) = \sqrt{3}</mrow>
+			</md>
+			</p>
+		</statement>
+		</example>
+
+		
+	</section>
+
+	<xi:include href="../exercises/ex-trig-1.xml" />
+</chapter>
+

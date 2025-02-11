@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises>
+<exercisegroup xml:id="exercises-trig-functions">
+
+	<title>Exercises: Trig Functions</title>
+
+	<introduction><p><em>These exercises address the six trigonometric functions of an angle <m>\theta</m> in standard position as determined by the coordinates of a point on its terminal ray.
+	<me>\sin(\theta) = \frac{y}{r}, \quad 
+		\cos(\theta) = \frac{x}{r}, \quad 
+		\tan(\theta) = \frac{y}{x}</me>
+	and their reciprocals 
+	<me>\csc(\theta) = \frac{r}{y} = \frac{1}{\sin(\theta)}, \quad 
+		\sec(\theta) = \frac{r}{x} = \frac{1}{\cos(\theta)}, \quad 
+		\cot(\theta) = \frac{x}{y} = \frac{1}{\tan(\theta)}.
+	</me></em></p>
+	</introduction>
+
+	<exercise>
+	<statement><p>Find all six trigonometric function values of the angle <m>\theta</m> in standard position whose terminal ray passes through the point <m>(x,y) = (4,-1)</m>. See figure below.</p>
+	<figure>
+		<image source="images/trig/point.png" width="40%"/>
+	</figure>
+	</statement>
+	<answer><p><table>
+			<tabular bottom="minor" top="major" left="major" right="medium"  halign="center" >
+			<row>
+				<cell><m>\sin \theta = \frac{-1}{\sqrt{17}}= -\frac{\sqrt{17}}{17}</m></cell> 
+				<cell><m>\csc \theta = \frac{\sqrt{17}}{-1} = - \sqrt{17}</m></cell>
+			</row>
+			<row>
+				<cell><m>\cos \theta = \frac{4}{\sqrt{17}}=\frac{4\sqrt{17}}{17}</m></cell> 
+				<cell><m>\sec \theta = \frac{\sqrt{17}}{4}</m></cell>
+			</row>
+			<row>
+				<cell><m>\tan \theta = -\frac{1}{4}</m></cell>
+				<cell><m>\cot \theta = \frac{4}{-1}=-4</m></cell>
+			</row>
+			</tabular>
+		</table>
+	</p></answer>
+	<solution><p>
+		We need the radial distance <m>r</m> from the origin to the point:
+		<me>
+			r^2 = 4^2 + (-1)^2 = 16 + 1 = 17 \Rightarrow r = \sqrt{17}.
+		</me>
+		We can now form all the ratios we want with <m>x=4</m>, <m>y = -1</m>, and <m>r = \sqrt{17}</m>
+
+		<table>
+			<tabular bottom="minor" top="major" left="major" right="medium"  halign="center" >
+			<row>
+				<cell><m>\sin \theta = \frac{-1}{\sqrt{17}}= -\frac{\sqrt{17}}{17}</m></cell> 
+				<cell><m>\csc \theta = \frac{\sqrt{17}}{-1} = - \sqrt{17}</m></cell>
+			</row>
+			<row>
+				<cell><m>\cos \theta = \frac{4}{\sqrt{17}}=\frac{4\sqrt{17}}{17}</m></cell> 
+				<cell><m>\sec \theta = \frac{\sqrt{17}}{4}</m></cell>
+			</row>
+			<row>
+				<cell><m>\tan \theta = -\frac{1}{4}</m></cell>
+				<cell><m>\cot \theta = \frac{4}{-1}=-4</m></cell>
+			</row>
+			</tabular>
+		</table>
+	</p></solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Using a calculator, approximate the coordinates <m>(x,y)</m> of the point on the circle indicated in the figure below.</p>
+	<figure>
+		<image source="images/trig/circle.png" width="30%"/>
+	</figure>
+	</statement>
+	<hint>
+		<p>The radius of the circle appears to be <m>r = 4</m></p>.
+	</hint>
+	<answer>
+		<p><m>x  \approx -2.06015</m> and <m>y  \approx 3.42867</m></p>
+	</answer>
+	<solution><p>The radius of the circle appears to be <m>r = 4</m>. Using a calculator, <m>x = 4\times\cos (121^\circ) \approx -2.06015</m> and <m>y = 4\times\sin (121^\circ) \approx 3.42867</m>. Observe the signs of each are consistent with an angle in Quadrant II.</p></solution>
+	</exercise>
+
+<!-- 	<exercise>
+		<statement><p>Find the exact value of the sine, cosine, and tangent of each angle below without using a calculator.
+		<ol label="a">
+			<li><m>\displaystyle \theta = \frac{4\pi}{3}</m></li>
+			<li><m>\displaystyle \theta = -\frac{7\pi}{6}</m></li>
+			<li><m>\displaystyle \theta = \frac{7\pi}{4}</m></li>
+			<li><m>\displaystyle \theta = \frac{5\pi}{4}</m></li>
+		</ol>
+		</p>
+	</statement>
+	<hint><p>First plot the angle to determine its quadrant. Then determine the sine, cosine, and tangent of the reference and asjust signs according to the quadrant.</p></hint>
+	<answer>
+		<p><ol label="a">
+			<li><m>\sin\left(\frac{4\pi}{3}\right) =</m>, 
+				<m>\cos\left(\frac{4\pi}{3}\right) = </m>, and 
+				<m>\tan\left(\frac{4\pi}{3}\right) =</m>.</li>
+			<li><m>\sin\left(-\frac{7\pi}{6}\right) = </m>, 
+				<m>\cos\left(-\frac{7\pi}{6}\right) = </m>, and 
+				<m>\tan\left(-\frac{7\pi}{6}\right) =</m>.</li>
+			<li><m>\sin\left(\frac{7\pi}{4}\right) = </m>,
+				<m>\cos\left(\frac{7\pi}{4}\right) = </m>, and 
+				<m>\tan\left(\frac{7\pi}{4}\right) = </m>.</li>
+			<li><m>\sin\left(\frac{5\pi}{4}\right) = </m>, 
+				<m>\cos\left(\frac{5\pi}{4}\right) = </m>, and 
+				<m>\tan\left(\frac{5\pi}{4}\right) =</m>.</li>
+		</ol></p>
+	</answer>
+	</exercise>
+
+	<exercise>
+		<statement><p>Find the exact value of the sine, cosine, and tangent of each angle below without using a calculator.
+		<ol label="a">
+			<li><m>\displaystyle \theta = 3\pi</m></li>
+			<li><m>\displaystyle \theta = -\frac{7\pi}{2}</m></li>
+			<li><m>\displaystyle \theta = 4\pi</m></li>
+			<li><m>\displaystyle \theta = -\frac{\pi}{2}</m></li>
+		</ol>
+		</p></statement>
+	<hint><p>Each angle's terminal ray lies on an axes. Determine the corresponding point on the unit circle to answer.</p></hint>
+	<answer>
+		<p><ol label="a">
+			<li><m>\sin(3\pi) = 0</m>, 
+				<m>\cos(3\pi) = -1</m>, and 
+				<m>\tan(3\pi) = 0</m>.</li>
+			<li><m>\sin\left(-\frac{7\pi}{2}\right) = 1</m>, 
+				<m>\cos\left(-\frac{7\pi}{2}\right) = 0</m>, and 
+				<m>\tan\left(-\frac{7\pi}{2}\right)</m> undefined.</li>
+			<li><m>\sin(4\pi) = 0</m>,
+				<m>\cos(4\pi) = 1</m>, and 
+				<m>\tan(4\pi) = 0</m>.</li>
+			<li><m>\sin\left(-\frac{\pi}{2}\right) = -1</m>, 
+				<m>\cos\left(-\frac{\pi}{2}\right) = 0</m>, and 
+				<m>\tan\left(-\frac{\pi}{2}\right)</m> undefined.</li>
+		</ol></p>
+	</answer>
+	</exercise> -->
+	
+
+	<exercise>
+	<statement><p>Suppose <m>\theta</m> is an angle in standard position whose terminal ray is in Quadrant III satisfying <m>\tan (\theta) = 3</m>. Find the sine and cosine of <m>\theta</m>.</p>
+	</statement>
+	<answer>
+		<p><m>
+			\sin \theta = -\frac{3\sqrt{10}}{10}
+		</m>
+		and
+		<m>
+			\cos \theta = -\frac{\sqrt{10}}{10}.
+		</m></p></answer>
+	<solution>
+		<p>Suppose <m>(x,y)</m> is a point in the terminal ray of <m>\theta</m>. Here's what we know:
+		<ol>
+			<li><m>x \lt 0</m> is negative;</li>
+			<li><m>y \lt 0</m> is negative;</li>
+			<li><m>\tan \theta = \frac{y}{x} = 3.</m></li>
+		</ol>
+		So if <m>x = -1</m> (negative), then <m>y = 3 x = -3</m>. The point <m>(x,y) = (-1,-3)</m> will do. (There are many other options!) The radial distance is
+		<me>
+			r^2 = (-1)^2 + (-3)^2 = 1 + 9 = 10 \Rightarrow r = \sqrt{10}.
+		</me>
+		So,
+		<me>
+			\sin \theta = y/r = -3/\sqrt{10} = -\frac{3\sqrt{10}}{10}
+		</me>
+		and
+		<me>
+			\cos \theta = x/r = -1/\sqrt{10} = -\frac{\sqrt{10}}{10}.
+		</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Suppose <m>\theta</m> is an angle in standard position whose terminal ray is in Quadrant III satisfying <m>\sin (\theta) = -1/3</m>. Find the cosine and tangent of <m>\theta</m>.</p>
+	</statement>
+	<answer>
+		<p><m>\cos \theta = -\sqrt{8}/3</m>
+		and
+		<m>\tan \theta = \frac{\sqrt{8}}{8}
+		</m></p>
+	</answer>
+	<solution>
+		<p>Suppose <m>(x,y)</m> is a point in the terminal ray of <m>\theta</m>. Here's what we know:
+		<ol>
+			<li><m>x \lt 0</m> is negative;</li>
+			<li><m>y \lt 0</m> is negative;</li>
+			<li><m>\sin \theta = \frac{y}{r} = -1/3.</m></li>
+		</ol>
+		So if <m>y = -1</m> (negative), then <m>r = 3</m>. The <m>x</m>-coordinate must satisfy
+		<me>
+			r^2 = x^2 + y^2 \Rightarrow x^2 = 3^2 - (-1)^2 = 8 \Rightarrow x = \pm \sqrt{8}
+		</me>
+		and since <m>x</m> must be negative, we choose <m>x=-\sqrt{8}</m>. The point <m>(-\sqrt{8},-1)</m> is on the terminal ray of our angle. (There are many other options!)
+		So,
+		<me>
+			\cos \theta = x/r = -\sqrt{8}/3
+		</me>
+		and
+		<me>
+			\tan \theta = y/x = \frac{-1}{-\sqrt{8}} = \frac{1}{\sqrt{8}} = \frac{\sqrt{8}}{8}
+		</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Suppose the terminal ray of an angle <m>\theta</m> in standard position is in Quadrant IV. Which of the six trigonometric function values of <m>\theta</m> are positive?</p>
+	</statement>
+	<solution><p>
+		In Quadrant IV, <m>x \gt  0</m> is positive and <m>y \lt 0</m> is negative. Thus,
+		<ol>
+			<li>Sine is negative; and so is its reciprocal cosecant.</li>
+			<li>Cosine is positive; and so is its reciprocal secant.</li>
+			<li>Tangent is negative; and so is its reciprocal cotangent.</li>
+		</ol></p>
+	</solution>
+	</exercise>
+</exercisegroup>
+
+
+<exercisegroup xml:id="exercises-trig-unit">
+	<title>Exercises: Unit Circle Trig</title>
+
+	<introduction><p><em>These exercises address the connection between sine, cosine, and tangent and the geometry of the unit circle. We can use the reference angle and symmetry to find trigonometric functions of an angle.</em>
+		<me>\boxed{\sin(\theta) = \text{($y$-coordinate)}, \quad \cos(\theta) = \text{($x$-coordinate)}, \quad \tan(\theta) = \text{(slope of terminal ray)}}</me>
+	</p>
+	
+	</introduction>
+
+	<exercise>
+	<statement><p>Suppose <m>\theta</m> is an angle in standard position. Explain what <m>\cos (\theta)</m>, <m>\sin(\theta)</m>, and <m>\tan(\theta)</m> represent geometrically in relation to the unit circle <m>x^2+ y^2 = 1</m>.</p>
+	</statement>
+	<solution><p>
+		<ul>
+			<li><m>\cos\theta</m> is the <m>x</m>-coordinate of the point on the unit circle;</li>
+			<li><m>\sin\theta</m> is the <m>y</m>-coordinate of the point on the unit circle;</li>
+			<li><m>\tan\theta</m> is the slope of the line parallel to the terminal ray of <m>\theta</m>.</li>
+		</ul></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Find the sine, cosine, and tangent of <m>\theta = -90^\circ</m>, <m>\theta = 3\pi/2</m>, and <m>\theta = 5\pi</m> by considering the corresponding the geometry of the unit circle.</p>
+	</statement>	
+	<solution><p>
+		<ul>
+			<li>The terminal ray of <m>\theta = -90^\circ</m> intersects the unit circle at <m>(x,y) = (0,-1)</m>. So
+			<me>
+				\sin(-90^\circ) = -1, \quad \cos(-90^\circ) = 0, \quad \tan(-90^\circ) \, \rm undefined
+			</me>
+			Observe that the terminal ray is vertical so that it has no defined slope.</li>
+			<li>The terminal ray of <m>\theta = 3\pi/2</m> is the same as <m>-90^\circ</m>. Therefore, 
+			<me>
+				\sin(3\pi/2) = -1, \quad \cos(3\pi/2) = 0, \quad \tan(3\pi/2) \, \rm undefined
+			</me></li>
+			<li>The terminal ray of <m>\theta = 5\pi</m> intersects the unit circle at <m>(x,y) = (-1,0)</m>. So
+			<me>
+				\sin(5\pi) = 0, \quad \cos(5\pi) = -1, \quad \tan(5\pi) = 0.</me>
+				Observe that the terminal ray is horizontal so that it has slope zero.</li>
+		</ul>
+		</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Use the reference angle approach to find the six trigonometric function values of <m>\theta = 150^\circ</m>, <m>\theta = -2\pi/3</m>, <m>\theta = 7\pi/4</m>, and <m>\theta = -11\pi/4</m>. Include a sketch in each case.</p></statement>
+	<solution><p>
+		<ol>
+			<li> <m>\theta = 150^\circ</m> is in Quadrant II and has reference angle <m>\bar\theta = 30^\circ</m>.
+			<figure>
+				<image source="images/trig/ang1ex.png" width="50%" />
+			</figure>
+			<table>
+				<tabular>
+					<row>
+						<cell><m>\sin \theta = +\sin 30^\circ = \frac{1}{2}</m></cell>
+						<cell><m>\csc \theta = 2</m></cell>
+					</row>
+					<row>
+						<cell><m>\cos \theta = -\cos 30^\circ = -\frac{\sqrt{3}}{2}</m></cell>
+						<cell><m>\sec \theta = -\frac{2}{\sqrt{3}} = - \frac{2\sqrt{3}}{3}</m></cell>
+					</row>
+					<row>
+						<cell><m>\tan \theta = -\tan 30^\circ = -\frac{1}{\sqrt{3}} = - \frac{\sqrt{3}}{3}</m></cell>
+						<cell><m>\cot \theta = - \sqrt{3}</m></cell>
+					</row>
+				</tabular>
+			</table></li>
+
+			<li><m>\theta = -2\pi/3</m> is in Quadrant III and has reference angle <m>\bar\theta = \pi/3</m>.
+			<figure>
+				<image source="images/trig/ang2ex.png" width="50%" />
+			</figure>
+			<table>
+				<tabular>
+					<row>
+						<cell><m>\sin \theta = -\sin \pi/3 = -\frac{\sqrt{3}}{2}</m></cell>
+						<cell><m>\csc \theta = -\frac{2}{\sqrt{3}} = - \frac{2\sqrt{3}}{3}</m></cell>
+					</row>
+					<row>
+						<cell><m>\cos \theta = -\cos \pi/3 = -\frac{1}{2}</m></cell>
+						<cell><m>\sec \theta = -2</m></cell>
+					</row>
+					<row>
+						<cell><m>\tan \theta = +\tan \pi/3 = \sqrt{3}</m></cell>
+						<cell><m>\cot \theta =  \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}</m></cell>
+					</row>
+				</tabular>
+			</table></li>
+
+		<li><m>\theta = 7\pi/4</m> is in Quadrant IV and has reference angle <m>\bar\theta = \pi/4</m>.
+		<figure>
+				<image source="images/trig/ang3ex.png" width="50%" />
+		</figure>
+		<table>
+			<tabular>
+				<row>
+					<cell><m>\sin \theta = -\sin \pi/4 = -\frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\csc \theta = -\frac{2}{\sqrt{2}} = - \frac{2\sqrt{2}}{2} = - \sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\cos \theta = +\cos \pi/4 = \frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\sec \theta = \sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\tan \theta = -\tan \pi/4 = -1</m></cell>
+					<cell><m>\cot \theta =  -1</m></cell>
+				</row>
+			</tabular>
+		</table></li>
+
+		<li><m>\theta = -11\pi/4</m> is in Quadrant III and has reference angle <m>\bar\theta = \pi/4</m>.
+		<figure>
+				<image source="images/trig/ang4ex.png" width="50%" />
+		</figure>
+		<table>
+			<tabular>
+				<row>
+					<cell><m>\sin \theta = -\sin \pi/4 =- \frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\csc \theta = -\sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\cos \theta = -\cos \pi/4 = -\frac{\sqrt{2}}{2}</m></cell>
+					<cell><m>\sec \theta = -\sqrt{2}</m></cell>
+				</row>
+				<row>
+					<cell><m>\tan \theta = +\tan \pi/4 = 1</m></cell>
+					<cell><m>\cot \theta =  1</m></cell>
+				</row>
+			</tabular>
+		</table></li>
+	</ol>
+	</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Find all angles <m>0 \leq \theta \lt 2\pi</m> satisfying <m>\sin(\theta) = -1</m>.</p></statement>
+	<solution><p>The point <m>(0,-1)</m> is the only point on the unit circle whose <m>y</m>-coordinate is <m>-1</m>. This corresponds to <m>\theta = 3\pi/2</m>. Draw a picture to confirm.</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Find all angles <m>0 \leq \theta \lt 2\pi</m> satisfying <m>\cos(\theta) = 0</m>.</p></statement>
+	<solution><p>The points <m>(0,1)</m> and <m>(0,-1)</m> are the only points on the unit circle whose <m>x</m>-coordinate is <m>0</m>. These corresponds to <m>\theta = 0</m> and <m>\theta = \pi</m>, respectively. Draw a picture to confirm.</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Find all angles <m>0 \leq \theta \lt 2\pi</m> satisfying <m>\tan(\theta) = -1</m>.</p></statement>
+	<solution><p>
+		The slope of a terminal ray is <m>-1</m> for <m>\theta = 3\pi/4</m> and <m>\theta = 7\pi/4</m>. Draw a picture to confirm.
+	</p>
+	</solution>
+	</exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercises-trig-graphs">
+
+	<title>Exercises: Graphs</title>
+
+	<introduction><p><em>These exercises address graphing sinusoidal curves and the graphs of other trigonometric functions.
+	</em></p></introduction>
+
+	<exercise><statement><p>Practice drawing the graph of <m>y = \sin (\theta)</m>, <m>y = \cos (\theta)</m>, and <m>\tan(\theta)</m> by considering the geometry of the unit circle.</p></statement>
+	<hint><p>Remember that cosine is the <m>x</m>-coordinate and sine is the <m>y</m>-coordinate of the point on the unit circle determined by <m>\theta</m>. Tangent is the slope of the terminal ray.</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Sketch the graphs of <m>y = - 2 \cos (\theta)</m>, <m>y = \cos(\theta)-2</m>, <m>y = \cos(2\theta)</m>, and <m>y = \cos(\theta/2)</m>.</p></statement>
+	<solution>
+	<p><ul>
+		<li><m>y=-2\cos\theta</m> is the graph of cosine reflected over the horizontal axis and stretched vertically by a factor of 2 to give an amplitude of 2.
+		<figure>
+				<image source="images/trig/g1.png" width="50%" />
+		</figure></li>
+
+		<li><m>y=\cos\theta-2</m> is the graph of cosine translated down 2 units
+			<figure>
+				<image source="images/trig/g2.png" width="50%" />
+			</figure></li>
+
+		<li><m>y=\cos(2\theta)</m> is the graph of cosine stretched horizontally by a factor of 1/2 resulting in a period of <m>\pi</m>. 
+			<figure>
+				<image source="images/trig/g3.png" width="50%" />
+			</figure></li>
+
+		<li><m>y=\cos(\theta/2)</m> is the graph of cosine stretched horizontally by a factor of 2 resulting in a period of <m>4\pi</m>. 
+			<figure>
+				<image source="images/trig/g4.png" width="50%" />
+			</figure></li>
+	</ul></p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Sketch one period of <m>y=2\sin\left(3t-\frac{\pi}{4}\right)</m>. Identify the amplitude, period, and phase shift.</p></statement>
+	<hint><p>First solve <m>3t-\frac{\pi}{4} = 0</m> and <m>3t-\frac{\pi}{4} = 2\pi</m> for <m>t</m> to find where one period begins and ends, respectively.</p></hint>
+	<solution><p>To find where a period begins, solve
+		<me>
+			3t - \frac{\pi}{4} = 0 \Rightarrow t = \frac{\pi}{12}.
+		</me>
+		To find where this same period ends, solve 
+		<me>
+			3t - \frac{\pi}{4} = 2\pi \Rightarrow t = \frac{3\pi}{4}.
+		</me>
+		We can plot this one period
+		<figure>
+				<image source="images/trig/g6.png"  />
+		</figure>
+		to see that its the graph of sine shifted <m>\pi/12</m> units to the right with a period of <m>3\pi/4 - \pi/12= 2\pi/3</m> and an amplitude of 2.</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Sketch one period of <m>y=-\cos\left(2\left(t+\frac{\pi}{6}\right)\right)</m>.</p></statement>
+	<hint><p>First solve <m>2\left(t+\frac{\pi}{6}\right) = 0</m> and <m>2\left(t+\frac{\pi}{6}\right) = 2\pi</m> for <m>t</m> to find where one period begins and ends, respectively.</p></hint>
+	<solution><p>To find where a period begins, solve
+		<me>
+			2\left(t+\frac{\pi}{6}\right) = 0 \Rightarrow t = -\pi/6.
+		</me>
+		To find where this same period ends, solve 
+		<me>
+			2\left(t+\frac{\pi}{6}\right) = 2\pi \Rightarrow t = 5\pi/6.
+		</me>
+		We can plot this one period
+		<figure>
+				<image source="images/trig/g6-2.png"  />
+		</figure>
+		to see that its the graph of cosine reflected over the <m>t</m>-axis, shifted <m>\pi/6</m> units to the left with a period of <m>5\pi/6 - (-\pi/6)= \pi</m> and an amplitude of 1. the peak occurs at the midpoint of <m>(5\pi/6 + (-\pi/6))/2 = \pi/3</m>.</p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Sketch one period of <m>y = \tan(2x)</m>. Label the vertical asymptotes and at least three points on the graph for scale.</p></statement>
+	<solution>
+		<p>The graph of <m>y = \tan \theta</m> has asymptotes where <m>\theta = \pm \pi/2</m>. So if <m>2x = \pm \pi/2 \Rightarrow x = \pm \pi/4</m> we will see asymptotes on <m>y = \tan(2x)</m>. This means the period shrinks to <m>\pi/2</m>.
+			<figure>
+				<image source="images/trig/g5.png" width="50%" />
+			</figure></p>
+	</solution>
+	</exercise>
+
+	<exercise><statement><p>Use the graph of <m>y = \sin(\theta)</m> to help you sketch the graph of its reciprocal <m>y = \csc(\theta)</m>.</p></statement>
+	<solution><p>Recall that <m>\csc\theta = \frac{1}{\sin\theta}</m>. Think about what this means:
+		<ul>
+			<li>When sine is small (close to zero), cosecant will be large;</li>
+			<li>When sine is zero, cosecant will be undefined (vertical asymptote);</li>
+			<li>When sine is negative, cosecant will be negative.</li>
+		</ul>
+		<figure>
+				<image source="images/trig/g7.png" width="50%"/>
+		</figure>
+	</p>
+	</solution>	
+	</exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercises-trig-identities">
+
+	<title>Exercises: Identities</title>
+
+	<introduction><p><em>These exercises emphasize use of some important trigonometric identities. Review Appendix A of Anton (Handout). Here's a summary of summary important identities. Don't feel obligated to memorize the Addition Formulas.</em></p>
+
+	<table>
+			<tabular bottom="minor" top="major" left="major" right="medium"  halign="center" >
+				<row><cell colspan="6" halign="center">Ratio Identities</cell></row>
+				<row>
+					<cell colspan="3" bottom="medium"><me>\tan \theta = \frac{\sin \theta}{\cos \theta}</me></cell>
+					<cell colspan="3" bottom="medium"><me>\cot \theta = \frac{\cos \theta}{\sin \theta}</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Reciprocal Identities</cell></row>
+				<row>
+					<cell colspan="2" bottom="medium"><me>\csc \theta = \frac{1}{\sin \theta}</me></cell>
+					<cell colspan="2" bottom="medium"><me>\sec \theta = \frac{1}{\cos \theta}</me></cell>
+					<cell colspan="2" bottom="medium"><me>\cot \theta = \frac{1}{\tan \theta}</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Pythagorean Identity</cell></row>
+				<row>
+					<cell colspan="6" bottom="medium"><me>\sin^2 (\theta) + \cos^2 (\theta) = 1</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Opposite Angle Identities</cell></row>
+				<row>
+					<cell colspan="3" bottom="medium"><me>\cos(-\theta) = \cos(\theta)</me></cell>
+					<cell colspan="3" bottom="medium"><me>\sin(-\theta) = - \sin(\theta)</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Addition Formulas</cell></row>
+				<row>
+					<cell colspan="6" bottom="medium"><me>\sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta</me></cell>
+				</row>
+				<row>
+					<cell colspan="6" bottom="medium"><me>\cos(\alpha+\beta) = \cos \alpha \cos \beta - \sin \alpha \sin \beta</me></cell>
+				</row>
+			</tabular>
+	</table>
+	</introduction>
+
+	<exercise><statement><p>Use the the appropriate identities to simplify the following expression as much as possible.
+	<me>
+		\frac{\tan \theta \, \csc^3 \theta}{\cot^4 \theta \, \sin^5 \theta\, (1-\sin^2 \theta)}
+	</me>
+	Your final answer should not include any ratios.</p></statement>	
+	<answer><p>
+	Reciprocal identities will be helpful. Also, <m>1-\sin^2 \theta = \cos^2\theta</m>, by the Pythagorean Identity.
+	<me>
+		\frac{\tan \theta \, \csc^3 \theta}{\cot^4 \theta \, \sin^5 \theta\, (1-\sin^2 \theta)} = \csc^3 \theta \sec^7 \theta
+	</me>
+	</p>
+	</answer>
+	</exercise>
+
+	<exercise><statement><p>Suppose <m>\cos(\theta) = 0.3</m> and <m>\theta</m> is in Quadrant IV. Find the sine of the <m>\theta</m> using the Pythagorean Identity.</p>
+	</statement>
+	<answer>
+		<me>\sin(\theta) = - \sqrt{1-(0.3)^2} \approx - 0.9539</me>
+	</answer>
+	</exercise>
+
+	<exercise><statement><p>Starting with the identity <m>\sin^2 \theta + \cos^2 \theta = 1</m>, derive two similar identities involving tangent and cotangent, respectively.</p></statement>
+	<hint>
+	<p>Divide both sides by <m>\cos^2\theta</m> to see that
+		<me>
+			\tan^2 \theta + 1 = \sec^2 \theta
+		</me>
+		Divide both sides by <m>\sin^2\theta</m> to see that
+		<me>
+				1+\cot^2 \theta = \csc^2 \theta
+		</me>
+	</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Addition Formulas and the Opposite Angle Identities to derive the Difference Formulas
+	<me>
+		\sin(\alpha - \beta) = \sin \alpha \cos \beta - \cos \alpha \sin \beta
+	\quad
+	\text{and}
+	\quad
+		\cos(\alpha-\beta) = \cos \alpha \cos \beta + \sin \alpha \sin \beta.
+	</me></p></statement>
+	<hint><p>Write the difference of angles as a sum
+		<m>\sin(\alpha - \beta) = \sin(\alpha +(-\beta))</m>.
+	</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Difference Formulas above and the Special Triangles to find the exact values of <m>\sin(15^\circ)</m> and <m>\cos(15^\circ)</m>.</p></statement>
+	<hint><p><m>15^\circ = 45^\circ - 30^\circ</m> and the exact values of these can be found from the special triangles.</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Addition Formulas to derive the following Double Angle Identities
+	<me>
+		\sin (2\theta) = 2\sin\theta \cos\theta
+	\quad \text{and} \quad
+		\cos (2\theta) = \cos^2 \theta - \sin^2 \theta.
+	</me></p></statement>
+	<hint><p>Write the double angle as a sum <m>\sin (2\theta) = \sin (\theta + \theta)</m>.</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Double Angle Identity for Cosine above to derive the Half-Angle Identities
+	<me>
+		\cos(x/2) = \pm \sqrt{\frac{1+\cos x}{2}} \quad \text{and} \quad
+		\sin(x/2) = \pm \sqrt{\frac{1-\cos x}{2}}.
+	</me></p></statement>
+	<solution><p>
+		I'll do one. From the double angle identity:
+		<md>
+			<mrow>\cos(2\theta) 
+				&amp;= \cos^2 \theta - \sin^2 \theta</mrow>
+			<mrow>
+				&amp;= 1-\sin^2 \theta - \sin^2 \theta</mrow>
+			<mrow>
+				\cos(2\theta)&amp;= 1-2\sin^2 \theta</mrow>
+		</md>
+		Solve this last equation for <m>\sin^2 \theta</m>,
+		<me>
+			\sin^2 \theta = \frac{1-\cos(2\theta)}{2}
+		</me>
+		Thus,
+		<me>
+			\sin \theta =\pm\sqrt{\frac{1-\cos(2\theta)}{2}},
+		</me>
+		where the sign is determined by the quadrant <m>\theta</m> is in. Let <m>\theta = x/2</m>, then <m>2\theta = x</m> and
+		<me>
+			\sin (x/2) =\pm\sqrt{\frac{1-\cos(x)}{2}}.
+		</me></p>
+	</solution>
+	</exercise>
+
+	<!--<exercise><statement><p>Use the addition formula for sine to express the linear combination <m>y = c_1 \cos(\omega t)+c_2 \sin(\omega t)</m> of sine and cosine as a single sinusoidal expression of the form <m>y = A \sin(\omega t + \phi) </m>. Then graph one period of the sinusoidal graph.
+	<ol label="a">
+		<li><m>\displaystyle y = 2 \cos(0.5t)+3 \sin⁡(0.5t)</m></li>
+		<li><m>\displaystyle y = -2 \cos(0.5t)+3 \sin⁡(0.5t)</m></li>
+		<li><m>\displaystyle y = 2 \cos(0.5t)-3 \sin⁡(0.5t)</m></li>
+	</ol></p></statement>
+	<solution>
+		<p></p>
+	</solution>
+	</exercise>-->
+
+
+</exercisegroup>
+</exercises>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercises xml:id="exercises-realnumbers">
+  <title>Exercises</title>
+  <exercise>
+    <title>Integers and Rationals</title>
+    <statement>
+      <p>Which of the following expressions are integers? Which are rational? Which are both? Which are undefined? Explain.
+      <ol cols="2">
+        <li><m>\displaystyle \frac{120}{-12}</m></li>
+        <li><m>\displaystyle \frac{120}{-12}</m></li>
+        <li><m>\displaystyle \frac{12\times 0}{-12}</m></li>
+        <li><m>\displaystyle \frac{12}{-120}</m></li>
+        <li><m>\displaystyle \frac{10}{5-5}</m></li>
+        <li><m>\displaystyle \frac{10}{-5-5}</m></li>
+        <li><m>\displaystyle \sqrt{100}</m></li>
+        <li><m>\displaystyle \sqrt{10}</m></li>
+        <li><m>\displaystyle 10.9999</m></li>
+        <!-- <li><m>\displaystyle 10.999\ldots</m></li> -->
+        <li><m>\displaystyle 10.\overline{9}</m></li>
+      </ol></p>
+    </statement>
+  </exercise>
+
+  <exercise><title>Is it Irrational?</title>
+    <statement><p>We know that <m>\pi</m> is irrational. Which of the following are also irrational? Support your reasoning.
+    <ol cols="2">
+      <li><m>\displaystyle \frac{\pi}{2\pi}</m></li>
+      <li><m>\displaystyle \frac{1}{2\pi}</m></li>
+      <li><m>\displaystyle \frac{3+\pi}{2\pi}</m></li>
+      <li><m>\displaystyle \frac{3\pi+\pi}{2\pi}</m></li>
+      <li><m>\displaystyle 3.\overline{1459}</m></li>
+    </ol>
+    </p></statement>
+  </exercise>
+
+  <exercise>
+  <title>Order of Operations</title>
+  <statement>
+    <p>Evaluate each expression. What are your conclusions?</p>
+    <ol cols="2">
+      <li><m>\displaystyle (2/3)/4</m></li>
+      <li><m>\displaystyle 2/(3/4)</m></li>
+      <!-- <li><m>\displaystyle 2/3/4</m></li> -->
+      <li><m>\displaystyle 2/(3 \times 4)</m></li>
+      <li><m>\displaystyle (2\times 3)/4</m></li>
+    </ol>
+  </statement>
+  </exercise>
+
+  <exercise>
+    <title>Properties of Real Numbers</title>
+    <statement><p>Use the properties of real numbers to expand and simplify the products below. Which properties are you using as you proceed?
+      <ol>
+        <li><m>\displaystyle 48 \times 21</m></li>
+        <li><m>\displaystyle (a+b)^2</m></li>
+        <li><m>\displaystyle (a+b)(a-b)</m></li>
+      </ol>
+    </p></statement>
+    <solution>
+    <p>
+      <md>
+        <mrow>48 \times 21 \amp=\quad (50-2)\times (20+1) </mrow>
+          <mrow>\amp=\quad 1000+50-40-2 </mrow>
+         <mrow> \amp=\quad 1000 +10-2 </mrow>
+          <mrow>\amp=\quad 1008</mrow>
+      </md>
+    </p>
+    <p>
+      <md>
+        <mrow>(a+b)^2    \amp=\quad (a+b)(a+b)</mrow>
+        <mrow>           \amp=\quad a(a+b)+b(a+b)</mrow>
+        <mrow>           \amp=\quad a^2+ab+ba+b^2</mrow>
+        <mrow>           \amp=\quad a^2+ab+ab+b^2</mrow>
+        <mrow>           \amp=\quad a^2+2ab+b^2</mrow>
+      </md>
+    </p>
+    <p>
+      <md>
+        <mrow>(a+b)(a-b) \amp=\quad a(a-b)+b(a-b)</mrow>
+        <mrow>           \amp=\quad a^2-ab+ba-b^2</mrow>
+        <mrow>           \amp=\quad a^2-ab+ab-b^2</mrow>
+        <mrow>           \amp=\quad a^2-b^2</mrow>
+      </md>
+    </p>
+    <p>Notice how we use the distributive property and commutativity at key points in each. Associativity is used throughout. Why?</p>
+    </solution>
+  </exercise>
+
+<!--   <exercise>
+   <statement><p>TODO: Identify terms/factors/powers/exponent/cancelling.</p></statement>
+  </exercise>
+ -->
+  <exercise>
+    <title>Number Sense</title>
+  <statement>
+  <p>I consider a number to be small if it is close to zero. How would you describe the reciprocal of a small, but non-zero, real number? How would you describe the reciprocal of a big number?</p>
+  </statement>
+  </exercise>
+
+  <exercise >
+  <title>Avoiding Common Mistakes</title>
+  <statement>
+    <p>Are <m>\sqrt{4\cdot 9}</m> and <m>\sqrt{4}\cdot\sqrt{9}</m> the same or different real numbers? Are <m>\sqrt{9 + 16}</m> and <m>\sqrt{9}+\sqrt{16}</m> the same or different real numbers? Explain your answers.</p>
+  </statement>
+  <solution>
+    <ul>
+      <li><p>We have <m>\sqrt{4\cdot 9} = \sqrt{36} = \sqrt{6^2} = 6</m>, while  <m>\sqrt{4}\cdot\sqrt{9} = 2 \cdot 3 = 6</m> and they agree.
+      In general, <m>\sqrt{a\cdot b} = \sqrt{a} \cdot \sqrt{b}</m>, for non-negative <m>a</m> and <m>b</m>.</p></li>
+      <li><p>We have <m>\sqrt{9 + 16}=\sqrt{25} = 5</m>, while <m>\sqrt{9}+\sqrt{16}= 3+ 4 = 7</m> and they do not agree. In general, <m>\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}</m></p></li>
+    </ul>
+  </solution>
+  </exercise>
+
+
+  <exercise>
+  <title>Avoiding Common Mistakes</title>
+  <statement>
+    <p>Is <m>\sqrt{-4}</m> a real number? What about <m>-\sqrt{4}</m>? What makes them different? What are the solutions to the equation <m>x^2 - 4 = 0</m>? What are the solutions to <m>x^2 + 4 = 0</m>? Explain your answer.</p>
+  </statement>
+  <solution>
+    <p>You cannot square a real number and get a negative result. Thus, <m>\sqrt{-4}</m> is not a real number because nothing may be squared to get <m>-4</m>. On the otherhand, <m>-\sqrt{4}=- 2</m> is a real number.</p>
+  </solution>
+  </exercise>
+
+  <exercise>
+  <title>Avoiding Common Mistakes</title>
+  <statement><p>Evaluate the expression <m>\sqrt{(-2)^2}</m> without using a calculator. What should you be careful about when simplifing expressions of the form <m>\sqrt{x^2}</m>? Explain your answer.</p></statement>
+    <hint><p>Remember! <m>\sqrt{x}</m> is defined as the <em>non-negative</em> number whose square is <m>x</m>. Emphasis on non-negative!</p></hint>
+    <answer><p>In general, <m>\sqrt{x^2} = | x |</m>.</p></answer>
+  </exercise>
+
+  <exercise>
+    <title>Interval Notation</title>
+    <statement><p>The speed of light is <m>670,616,629</m> miles per hour. No object with mass can travel at or faster than the speed of light. What interval represents the allowable speeds an object with mass may acheive?</p></statement>
+  </exercise> 
+
+  <exercise><title>Working with Intervals</title>
+  <statement><p>Let <m>I = [0,7)</m>, <m>J = (-\infty,2]</m>, and <m>K = (3,+\infty)</m>. Plot the intervals <m>I</m>, <m>J</m>, and <m>K</m> then describe <m>I \cap J</m>, <m>I \cup J</m>, <m>I \cap K</m>, <m>I \cup K</m>, <m>J \cap K</m>, and <m>J \cup K</m>.</p></statement>
+  <answer>
+    <p><m>I \cap J = [0,2]</m>, <m>I \cup J = (-\infty,7)</m>, <m>I \cap K = (3,7)</m>, <m>I \cup K = [0,+\infty)</m>, <m>J \cap K = \emptyset</m>, and <m>J \cup K = (-\infty,2]\cup(3,+\infty)</m>.</p>
+  </answer>
+  </exercise>
+
+  <!-- <exercise><title>Mathematical Reasoning</title>
+  <statement><p>TODO You may take the intersection (or union) of more than two intervals. You can even take the intersection of infinitely many intervals!</p></statement></exercise> -->
+
+</exercises>

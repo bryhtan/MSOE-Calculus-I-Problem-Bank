@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="exercises-trig-identities">
+
+	<title>Exercises: Identities</title>
+
+	<introduction><p><em>These exercises emphasize use of some important trigonometric identities. Review Appendix A of Anton (Handout). Here's a summary of summary important identities. Don't feel obligated to memorize the Addition Formulas.</em></p>
+
+	<table>
+			<tabular bottom="minor" top="major" left="major" right="medium"  halign="center" >
+				<row><cell colspan="6" halign="center">Ratio Identities</cell></row>
+				<row>
+					<cell colspan="3" bottom="medium"><me>\tan \theta = \frac{\sin \theta}{\cos \theta}</me></cell>
+					<cell colspan="3" bottom="medium"><me>\cot \theta = \frac{\cos \theta}{\sin \theta}</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Reciprocal Identities</cell></row>
+				<row>
+					<cell colspan="2" bottom="medium"><me>\csc \theta = \frac{1}{\sin \theta}</me></cell>
+					<cell colspan="2" bottom="medium"><me>\sec \theta = \frac{1}{\cos \theta}</me></cell>
+					<cell colspan="2" bottom="medium"><me>\cot \theta = \frac{1}{\tan \theta}</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Pythagorean Identity</cell></row>
+				<row>
+					<cell colspan="6" bottom="medium"><me>\sin^2 (\theta) + \cos^2 (\theta) = 1</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Opposite Angle Identities</cell></row>
+				<row>
+					<cell colspan="3" bottom="medium"><me>\cos(-\theta) = \cos(\theta)</me></cell>
+					<cell colspan="3" bottom="medium"><me>\sin(-\theta) = - \sin(\theta)</me></cell>
+				</row>
+				<row><cell colspan="6" halign="center">Addition Formulas</cell></row>
+				<row>
+					<cell colspan="6" bottom="medium"><me>\sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta</me></cell>
+				</row>
+				<row>
+					<cell colspan="6" bottom="medium"><me>\cos(\alpha+\beta) = \cos \alpha \cos \beta - \sin \alpha \sin \beta</me></cell>
+				</row>
+			</tabular>
+	</table>
+	</introduction>
+
+	<exercise><statement><p>Use the the appropriate identities to simplify the following expression as much as possible.
+	<me>
+		\frac{\tan \theta \, \csc^3 \theta}{\cot^4 \theta \, \sin^5 \theta\, (1-\sin^2 \theta)}
+	</me>
+	Your final answer should not include any ratios.</p></statement>	
+	<answer><p>
+	Reciprocal identities will be helpful. Also, <m>1-\sin^2 \theta = \cos^2\theta</m>, by the Pythagorean Identity.
+	<me>
+		\frac{\tan \theta \, \csc^3 \theta}{\cot^4 \theta \, \sin^5 \theta\, (1-\sin^2 \theta)} = \csc^3 \theta \sec^7 \theta
+	</me>
+	</p>
+	</answer>
+	</exercise>
+
+	<exercise><statement><p>Suppose <m>\cos(\theta) = 0.3</m> and <m>\theta</m> is in Quadrant IV. Find the sine of the <m>\theta</m> using the Pythagorean Identity.</p>
+	</statement>
+	<answer>
+		<me>\sin(\theta) = - \sqrt{1-(0.3)^2} \approx - 0.9539</me>
+	</answer>
+	</exercise>
+
+	<exercise><statement><p>Starting with the identity <m>\sin^2 \theta + \cos^2 \theta = 1</m>, derive two similar identities involving tangent and cotangent, respectively.</p></statement>
+	<hint>
+	<p>Divide both sides by <m>\cos^2\theta</m> to see that
+		<me>
+			\tan^2 \theta + 1 = \sec^2 \theta
+		</me>
+		Divide both sides by <m>\sin^2\theta</m> to see that
+		<me>
+				1+\cot^2 \theta = \csc^2 \theta
+		</me>
+	</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Addition Formulas and the Opposite Angle Identities to derive the Difference Formulas
+	<me>
+		\sin(\alpha - \beta) = \sin \alpha \cos \beta - \cos \alpha \sin \beta
+	\quad
+	\text{and}
+	\quad
+		\cos(\alpha-\beta) = \cos \alpha \cos \beta + \sin \alpha \sin \beta.
+	</me></p></statement>
+	<hint><p>Write the difference of angles as a sum
+		<m>\sin(\alpha - \beta) = \sin(\alpha +(-\beta))</m>.
+	</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Difference Formulas above and the Special Triangles to find the exact values of <m>\sin(15^\circ)</m> and <m>\cos(15^\circ)</m>.</p></statement>
+	<hint><p><m>15^\circ = 45^\circ - 30^\circ</m> and the exact values of these can be found from the special triangles.</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Addition Formulas to derive the following Double Angle Identities
+	<me>
+		\sin (2\theta) = 2\sin\theta \cos\theta
+	\quad \text{and} \quad
+		\cos (2\theta) = \cos^2 \theta - \sin^2 \theta.
+	</me></p></statement>
+	<hint><p>Write the double angle as a sum <m>\sin (2\theta) = \sin (\theta + \theta)</m>.</p>
+	</hint>
+	</exercise>
+
+	<exercise><statement><p>Use the Double Angle Identity for Cosine above to derive the Half-Angle Identities
+	<me>
+		\cos(x/2) = \pm \sqrt{\frac{1+\cos x}{2}} \quad \text{and} \quad
+		\sin(x/2) = \pm \sqrt{\frac{1-\cos x}{2}}.
+	</me></p></statement>
+	<solution><p>
+		I'll do one. From the double angle identity:
+		<md>
+			<mrow>\cos(2\theta) 
+				&amp;= \cos^2 \theta - \sin^2 \theta</mrow>
+			<mrow>
+				&amp;= 1-\sin^2 \theta - \sin^2 \theta</mrow>
+			<mrow>
+				\cos(2\theta)&amp;= 1-2\sin^2 \theta</mrow>
+		</md>
+		Solve this last equation for <m>\sin^2 \theta</m>,
+		<me>
+			\sin^2 \theta = \frac{1-\cos(2\theta)}{2}
+		</me>
+		Thus,
+		<me>
+			\sin \theta =\pm\sqrt{\frac{1-\cos(2\theta)}{2}},
+		</me>
+		where the sign is determined by the quadrant <m>\theta</m> is in. Let <m>\theta = x/2</m>, then <m>2\theta = x</m> and
+		<me>
+			\sin (x/2) =\pm\sqrt{\frac{1-\cos(x)}{2}}.
+		</me></p>
+	</solution>
+	</exercise>
+
+	<!--<exercise><statement><p>Use the addition formula for sine to express the linear combination <m>y = c_1 \cos(\omega t)+c_2 \sin(\omega t)</m> of sine and cosine as a single sinusoidal expression of the form <m>y = A \sin(\omega t + \phi) </m>. Then graph one period of the sinusoidal graph.
+	<ol label="a">
+		<li><m>\displaystyle y = 2 \cos(0.5t)+3 \sin⁡(0.5t)</m></li>
+		<li><m>\displaystyle y = -2 \cos(0.5t)+3 \sin⁡(0.5t)</m></li>
+		<li><m>\displaystyle y = 2 \cos(0.5t)-3 \sin⁡(0.5t)</m></li>
+	</ol></p></statement>
+	<solution>
+		<p></p>
+	</solution>
+	</exercise>-->
+
+
+</exercises>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="exercises-trig-special">
+
+<title>Exercises: Special Triangles</title>
+	<introduction>
+		<p><em>These exercises review the special triangles 45-45-90 and 30-69-90 that allow us to determine the exact values of trigonometric functions for these commonly used angles.</em></p>
+		<p><em>The video reviews some of the topics above.</em></p>
+		<figure>
+			<video youtube="PZ_83lOfB3k" width="100%" xml:id="video-trig-special-triangle" />
+		</figure>
+	</introduction>
+
+	
+	<exercise>
+	<statement>
+		<p>Practice drawing the two special triangles that allow you to determine the exact values of the trigonometric functions of <m>\pi/4</m>, <m>\pi/3</m>, and <m>\pi/6</m>.</p>
+	</statement>
+	<hint>
+		<p>Watch the video below!</p>
+	</hint>
+	</exercise>
+
+	<exercise>
+	<statement><p>
+		Two acute angles <m>\alpha</m> and <m>\beta</m> are called <term>complementary angles</term> if <m>\alpha+\beta = \pi/2</m>. How are the trigonometric function values of complementary angles related? Illustrate your conclusion with the 30-60-90 degree special triangle.</p>
+	</statement>
+	<hint><p>Consider Exercise 1 above.</p></hint>
+	<solution><p>The sine of a complementary angle is the cosine of the original:
+		<me>
+			\cos \alpha = \sin (\pi/2 - \alpha) = \sin \beta
+		</me>
+		Similarly, the cosine of the complementary angle is the sine of the original:
+		<me>
+			\sin \alpha = \cos (\pi/2 - \alpha) = \cos \beta
+		</me>
+		Compare <m>\alpha = \pi/3</m> and <m>\beta = \pi/6</m> in the special triangle. For instance,
+		<me>
+			\sin (\pi/3) = \frac{\sqrt{3}}{2} = \cos(\pi/6)
+		</me>
+		</p></solution>
+	</exercise>
+
+
+</exercises>

@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Functions</title>
+
+<section xml:id="section-introduction-to-functions">
+	<title>Introduction to Functions</title>
+		<p>
+			The notion of a function is possibly the most important and useful concepts in all of mathematics. Generally speaking, a function is some sort of relationship or rule that takes an <em>input</em> and assigns it to a distinct <em>output</em>. I like to think of it as a machine that converts an input to its output.
+			<image source="images/functions/function1" width="50%"></image>
+		</p>
+	<example><title>Make and Model</title>
+	<statement>
+		<p>
+			To illustrate with an everyday example, there is a functional relationship between the model of an automobile and its make. The input to the function is the <em>model</em> of a car, while the output is the corresponding <em>manufacturer</em> of that particular car. For example, if I told you that I drive a <em>Civic</em>, you could then determine (perhaps after a little research) that my car is manufactured by <em>Honda</em>.
+			<image source="images/functions/function2" width="40%"></image>
+			In this case, we say that the <em>make of a car is a function of the model</em>.
+		</p>
+		<p>
+			Notice that this example doesn't work the other way. If I told you I drive a <em>Honda</em> you could not determine the model of the car from that information alone. 
+			<image source="images/functions/function3" width="40%"></image>
+			The <em>model of a car is NOT a function of the make</em>.
+		</p></statement></example>
+
+		<p>
+			In algebra and calculus we are mostly interested in functions whose inputs and outputs are real numbers. These are so-called <em>real-valued functions of a real variable.</em></p>
+
+		<definition xml:id="definition-function">
+			<statement>
+				<p>
+				A <term>real-valued function</term> <m>f</m> of a real variable is a rule which assigns to each real number input <m>x</m> from a set called the <term>domain</term> of <m>f</m> to a <em>unique</em> real number output <m>f(x)</m>. 
+				We call <m>f(x)</m> the <term>value of <m>f</m> evaluated at <m>x</m></term>. The <term>range</term> of <m>f</m> is the set of all outputs <m>f(x)</m>, where <m>x</m> is from the domain of <m>f</m>.
+				<!-- In this case, we say that <term><m>y</m> is a function of <m>x</m></term>. 
+				 --> 
+				<!-- The <term>graph</term> of <m>y = f(x)</m> consists of all ordered pairs <m>(x,f(x))</m>, where <m>x</m> is from the domain. -->
+				</p>
+			</statement>
+		</definition>
+
+		<p>We need to refer to the function by some name, a symbol like <m>f</m>, but it could be anything you prefer for the situation. If we input a number <m>x</m>, then we call the corresponding output <m>f(x)</m>, which we read as <q><m>f</m> of <m>x</m></q> or <q><m>f</m> at <m>x</m></q>. Visualize <m>f</m> as a machine that converts an inputted real number <m>x</m> to a real number output <m>f(x)</m>.
+			<image source="images/functions/function4" width="40%"></image>
+		The process of determining the output of a function from an input is called <term>evaluation</term>.	
+		</p>
+
+		<example>
+			<title>Evaluating the Squaring Function</title>
+			<p>The statement:
+				<me>f(x) = x^2</me>
+				tells us that we are defining a function whose name is <m>f</m>. It takes a real number input <m>x</m> and outputs its square <m>x^2</m>. We call <m>f</m> the <em>squaring function</em>.
+				<image source="images/functions/function5" width="40%"></image>
+				We may evaluate <m>f</m> at various real numbers. For example, evaluating at <m>x=-2</m> we would write:
+				<me>f(-2) = (-2)^2 = 4.</me>
+				Notice the use of parenthesis to ensure the correct <xref ref="principle-pemdas">order of operations</xref>. Visually,
+				<image source="images/functions/function6" width="40%"></image>
+				Some other examples of evaluating give:
+				<me>f(2) = 2^2 = 4</me>
+				<me>f(0) = 0^2 = 0</me>
+				<me>f(\pi) = \pi^2 \approx 9.897</me>
+				Since we are allowed to input any real number <m>x</m>, the domain of <m>f</m> is assumed to be <m>(-\infty,+\infty)</m>. The result of squaring a real number is a non-negative number. Thus, the range of <m>f</m> is <m>[0,+\infty)</m>.
+			</p>
+		</example>
+
+		<example>
+			<title>A function from data</title>
+			<p>The population of Madison, Wisconsin is provided in the table below (Source: US Decennial Census). 
+				<tabular haligh="center">
+					<row header="yes" bottom="minor" >
+						<cell>Year</cell><cell>Population</cell>
+					</row>
+					<row>
+						<cell>1980</cell><cell>170,616</cell>
+					</row>
+				<row>
+					<cell>1990</cell>	<cell>191,262</cell>
+				</row>
+				<row>
+					<cell>2000</cell>	<cell>208,054</cell>
+				</row>
+				<row>
+					<cell>2010</cell>	<cell>233,209</cell>
+				</row>
+				<row>
+					<cell>2020</cell>	<cell>269,840</cell>
+				</row>
+				</tabular>
+			To use the table, we choose a year (the input) and read the population (the output). Thus, the <em>population is a function of the year</em>.</p>
+			<p>To make this formal, let <m>P(t)</m> be the population, where <m>t</m> is the number of years since 1980 (this is a preference to avoid working with large numbers).
+			<image source="images/functions/function7" width="40%"></image>
+			To illustrate,
+			<me>P(0) = 170616, \quad P(20) = 208054, \quad P(30) = 233209.</me>
+			Strictly speaking, the domain of this function consists only of the years for which we have data, so the domain is the set
+			<me>\left\{0,10,20,30,40,50\right\}.</me>
+			</p>
+
+			<p>You might want to infer values in between those years, or predict future values from this data, but once you do this, you are now <em>modeling</em> the data with a different function. For example, it looks like the population is increasing about 20,000 people per decade, or about 2000 people per year. (This is a very crude estimate!) So we could construct a second linear function
+			<me>M(t) = 2000 t + 170616</me>
+			to model the population. Our model says the population in 2020 should be
+			<me>M(50) = 2000\times 50 + 170616 = 270616</me>
+			compared to the census population <m>P(50) = 269840</m>. The domain of the model <m>M</m> is likely interpreted as the interval <m>[0,+\infty)</m> presuming we wish it to model years 1980 and on.</p>
+		</example>
+</section>
+
+<section xml:id="section-graphing-functions">
+	<title>Graphing Functions</title>
+
+	<p>The graph of a function is a visual representation of the relationship between the inputs and corresponding output of a function. We typically plot inputs on the horizontal <m>x</m>-axis and the corresponding output on the vertical <m>y</m>-axis. Each input/output pair determines a point on the graph <m>(x,f(x))</m>.</p>
+
+	<image source="images/functions/graphing-function-general" width="50%"></image>
+
+	<definition xml:id="definition-graph-function"><statement><p>
+		Suppose <m>f</m> is a real-valued function of a real variable. The <term>graph of <m>f</m></term> is the graph of the equation <m>y = f(x)</m>. The graph consists of all points <m>(x,f(x))</m>, with <m>x</m> in the domain of <m>f</m>.
+	</p></statement></definition>
+
+	<example>
+		<title>The graph of the squaring function</title>
+		<p>Let <m>f(x) = x^2</m>, the squaring function. The graph of <m>f</m> is the graph of the equation <m>y=x^2</m>. It consists of all points <m>(x,y) = (x,x^2)</m>, where <m>x</m> is any real number. For instance, <m>f(2) = 4</m> so that <m>(2,4)</m> is a point on the graph. Similarly, <m>f(-3) = (-3)^2 = 9</m> so that <m>(-3,9)</m> is also point on the graph. The resulting curve is called a <term>parabola</term>.</p>
+		<image source="images/functions/graphing-function-squaring" width="50%"></image>
+		<p>Visualize the domain <m>(-\infty,+\infty)</m> along the horizontal axis and the range <m>[0,+\infty)</m> along the vertical axis. Observe how I have labeled the curve with its equation <m>y=x^2</m>. <alert>This is a practice should adhere to as well when graphing.</alert></p>
+	</example>
+
+	<example>
+		<title>A function given by its graph</title>
+		<statement><p>A function may be described entirely by its graph. For example, the odd looking graph below determines a function which I will call <m>f</m>.
+			<image source="images/functions/pwgraph" width="50%"></image>
+		We can use the graph to evaluate <m>f</m>. For instance, <m>f(-1)= 1</m>, or at least appears to be so if the graph truly includes the point <m>(-1,1)</m>. Similarly, <m>f(0) \approx 1.5</m>, which I'm definitely estimating here. This determines the <term><m>y</m>-intercept</term> of the graph.  A value of <m>x</m> where <m>f(x) = 0</m> is called a (real) <term>zero of <m>f</m></term> and corresponds to an <term><m>x</m>-intercept</term> of the graph. It appears that this function has zeros at <m>x = -3</m> and at <m>x \approx 1.4</m>.</p>
+
+		<p>The behavior of the graph at <m>x=1</m> is subtle. There is clearly a point plotted at <m>(1,1)</m> so that <m>f(1) = 1</m>. The <term>hole</term> at <m>(1,2)</m> is used to emphasize that no point is plotted here. In fact, if there was not a hole here as in
+		<image source="images/functions/pwgraph-bad" width="50%"></image>
+		then this would <alert>not be a the graph of a function</alert> as the value of <m>x=1</m> is associated to two different <m>y</m>-coordinates. This violates the <em>uniqueness</em> requirement in <xref ref="definition-function"/>
+		</p>
+		<p>The domain of <m>f</m> can be visualized along the horizontal <m>x</m>-axis; the range along the vertical <m>y</m>-axis.
+		<sidebyside widths="50% 50%">
+			<image source="images/functions/pwgraph-domain"></image>
+			<image source="images/functions/pwgraph-range"></image>
+		</sidebyside>
+		In this case, the domain of <m>f</m> is the interval <m>[-3,2)</m>. We exclude <m>2</m> because no point is plotted at <m>x=2</m>. The range of <m>f</m> is the interval <m>(-2,2)</m>, excluding both <m>y = -2</m> and <m>y = 2</m>.
+		</p>
+
+		<p>A vertical line drawn to the left or the right of the circle does not intersect the graph at all. This is fine, as these correspond to values of <m>x</m> not in the domain of these functions.</p>
+		</statement>
+
+	</example>
+
+	<p>When <m>f</m> is a function and we write <m>y = f(x)</m>, we are saying that <m>y</m> is a function of <m>x</m>, that is, the value of <m>y</m> is explicitly determined by the value of <m>x</m>. Graphically, this means a vertical line corresponding to a value of <m>x</m> in the domain of the function should intersect the graph once.</p>
+	<image source="images/functions/graphing-function-vertical-line" width="50%"></image>
+
+	<principle><title>Vertical Line Test</title>
+		<statement><p>Suppose <m>f</m> is a real-valued function of the variable <m>x</m>. Then any vertical line will intersect the graph of <m>y = f(x)</m> at most once. In this case, the graph is said to <term>pass the vertical line test</term>.</p>
+
+		<p>On the other hand, if there is a vertical line which intersects a graph more than once, then this is not the graph of a function of <m>x</m>. In this case, the graph is said to <term>fail the vertical line test</term>.</p></statement>
+	</principle>
+
+	<example>
+		<title>A circle is not the graph of any function</title>
+		<p>
+			Consider the graph of the equation <m>x^2 + y^2 = 1</m> which forms the <em>unit circle</em> of radius 1 centered at the origin. 
+			<image source="images/functions/circle" width="50%"></image>
+			A vertical line drawn between <m>-1 \lt x \lt 1</m> intersects the circle exactly twice. The value of <m>x</m> here does not explicitly determine the value of <m>y</m>. Thus, <m>y</m> is not a function of <m>x</m> and the circle is not the graph of any function.
+		</p>
+		<p>We can make some progress if we solve for <m>y</m> using the <xref ref="principle-square-root">Square Root Principle</xref>:
+		<md>
+			<mrow>x^2 + y^2 = 1</mrow>
+			<mrow>y^2 = 1 - x^2</mrow>
+			<mrow>y = \pm \sqrt{1 - x^2}</mrow>
+		</md>
+		There are really two equations here,
+		<m>y = \sqrt{1-x^2}</m> and <m>y = -\sqrt{1-x^2}</m>, which correspond to the upper and lower semi-circles.
+		These graphs do pass the vertical line test individually and so are graphs of functions.</p>
+	</example>
+
+	<exercise>
+		<statement>How many <m>y</m>-intercepts can the graph of a function <m>y = f(x)</m> have? Must it have any <m>y</m>-intercepts? How many zeros can the graph of a function have? Must it have any></statement>
+	</exercise>
+</section>
+
+<section xml:id="section-function-gallery">
+	<title>Function Gallery</title>
+
+		<example xml:id="example-constant-function">
+			<title>Constant Functions</title>
+			<statement><p>
+			A <term>constant function</term> assigns every real number to the same value. For example, <me>f(x) = 4, \quad \text{$x$ any real number}</me>
+			defines a constant function <m>f</m> that assigns every real number input to the value <m>4</m>. The graph of <m>f</m> is then the graph of the equation <m>y = 4</m> and consists of all points <m>(x,4)</m>, where <m>x</m> is any real number. This is a horizontal line with slope zero.</p>
+			<image source="images/functions/graphing-function-constant" width="50%"/></statement>
+			<p>The domain of <m>f</m> is <m>(-\infty,+\infty)</m>. The range of <m>f</m> is the set <m>\{4\}</m>.</p>
+		</example>
+
+	<example xml:id="example-identity-function">
+		<title>The Identity Function</title>
+		<p>The function <m>i(x) = x</m> is pretty boring. It identifies the input by returning the same value as its output. As such, we call it the <term>identity function</term>. 
+		<image source="images/functions/identitymap" width="40%"/>
+		The symbol <m>i</m> is just the name I chose for the function in this example. For instance,
+		<me>i(7) = 7, \quad i(\pi) = \pi, \quad i\left(-\frac{1}{\sqrt{2}}\right) = - \frac{1}{\sqrt{2}}.</me>
+		
+		While it's not a very interesting formula, it does play an important role in the algebra of functions later. As a linear function, its graph is a line passing through the origin with slope one.
+		<image source="images/graphing/identity" width="50%"/>
+		The domain of <m>i</m> is <m>(-\infty,+\infty)</m> and its range is <m>(-\infty,+\infty)</m>.</p>
+	</example>
+
+	<example>
+		<title>Linear Functions</title>
+		<p>A linear function is of the form <m>L(x) = mx + b</m>, where <m>m</m> determines the slope and <m>b</m> determines the <m>y</m>-intercept (and any <m>x</m>-intercept!). Use the sliders below to adjust <m>m</m> and <m>b</m> and observe their effect on the graph.</p>
+		<figure>
+      		<caption>Graph of <m>y=mx+b</m>.</caption>
+	      		<interactive geogebra="ujet5jbx" width="90%" aspect="16:9" />
+      	</figure>
+	</example>
+
+
+	<example xml:id="example-reciprocal-function">
+		<title>The Reciprocal Function</title>
+		<p>The <term>reciprocal function</term> returns the reciprocal of its input. It's defined by <m>R(x) = \frac{1}{x}</m>. 
+		<image source="images/functions/reciprocalmap" width="40%"/>
+		Its domain is all real numbers <m>x\neq 0</m>, or in interval notation <m>(-\infty,0)\cup(0,+\infty)</m>.
+		<image source="images/graphing/reciprocal" width="50%"/>
+		The reciprocal function outputs every non-zero real number, so that the range is <m>(-\infty,0)\cup(0,+\infty)</m>.
+		Observe three key features of its graph:
+		<ol>
+			<li><p>Near zero it is very large, because the reciprocal of a very small number is huge in magnitude. For instance <m>R(0.001) = 1/(0.001) = 1000</m>.</p></li>
+			<li><p>Far away from zero it is very small, because the reciprocal of a very large number is very small. For instance <m>R(1000) = 1/(-1000) = 0.001</m>.</p></li>
+			<li><p>The reciprocal of a negative number is also negative. So the graph of <m>y = 1/x</m> is below the <m>x</m>-axis on the interval <m>(-\infty,0)</m>.</p></li>
+		</ol></p>
+	</example>
+
+	<example xml:id="example-sqrt-function">
+		<title>The Square Root Function</title>
+		<p>The (principal) square root function is <m>f(x) = \sqrt{x}</m>. See <xref ref="section-squares-and-cubes"/>. 
+		<image source="images/functions/sqrtmap" width="40%"/>
+		For example,
+		<me>f(4) = \sqrt{4} = 2, \quad f(0) = \sqrt{0} = 0, \quad f(2) = \sqrt{2} \approx 1.414.</me>
+		However, <m>f(-4)</m> is undefined as the is no (real number) I can square to get <m>-4</m>. Thus, the domain of the square root function is <m>[0,+\infty)</m>.
+		<image source="images/graphing/sqrt" width="50%"/></p>
+	</example>
+
+	<exercise xml:id="exercise-cubing-cuberoot-functions">
+		<title>Cubing and Cube Root Functions</title>
+		<p>The graphs of the cubing function <m>f(x) = x^3</m> and <m>g(x) = \sqrt[3]{x}</m> are plotted below. Identify the coordinates of three points on each graph by evaluating <m>f</m> and <m>g</m> and some convenient values. What is the domain and range of each function? Do you notice any relationship between the two graphs? How would you describe it?</p>
+		<sidebyside widths="50% 50%">
+			<image source="images/graphing/cubing" width="50%"/>
+			<image source="images/graphing/cuberoot" width="50%"/>
+		</sidebyside>
+	</exercise>
+</section>
+
+<section xml:id="section-pw-defined-functions">
+	<title>Piecewise-defined Functions</title>
+	<p>You are not limited to functions defined by a single algebraic expression. Frequently engineers need to model situations that are quite complex and might require sudden changes in behavior. A <term>piecewise-defined</term> function is a function defined by multiple expressions, each assigned to a particular portion of the function's domain indicated by some logical condition.</p>
+
+	<example>
+		<title>A Piecewise-Defined Function</title>
+		<statement><p>A piecewise-defined function may be describe by listing multiple expressions gathered by a large brace as follows.
+			<me>f(x) = 
+					\begin{cases}
+						4,&amp; \text{if $0 \leq x \lt 3$} \\
+						-2(x-5),&amp; \text{if $3 \leq x \lt 5$} \\
+						0,&amp; \text{if $5 \leq x$} \\
+					\end{cases}
+			</me>
+			To evaluate <m>f</m> check which, if any, of the conditional statements are true and use that expression to evaluate. For example,
+			<ul>
+				<li><p>evaluating at <m>x = 2</m>, we note that <m>0 \leq 2 \lt 3</m> is true and conclude <m>f(2) = 4</m>.</p></li>
+				<li><p>evaluating at <m>x = 3</m>, we note that <m>0 \leq 3 \lt 3</m> is false, but <m>3 \leq 3 \lt 5</m> is true so that <m>f(3) = -2(3-5) = -2(-2) = 4</m>.</p></li>
+				<li><p>evaluating at <m>x = 4</m>, we note that <m>3 \leq 4 \lt 5</m> is true so that <m>f(4) = -2(4-5) = -2(-1) = 2</m>.</p></li>
+				<li><p>evaluating at <m>x = 10</m>, we note that <m>4 \leq 10</m> is true so that <m>f(10) = 0</m>.</p></li>
+				<li><p>evaluating at <m>x = -10</m>, we note that none of the conditions are true for this value so that <m>f(-10)</m> is undefined and <m>x=-10</m> is not in the domain of <m>f</m>.</p></li></ul>
+			In fact, the domain of <m>f</m> is <m>[0,+\infty)</m> as every non-negative real number satisfies one of the conditions above.
+			</p>
+			<p>To graph <m>y=f(x)</m>, sketch the graph of each expression, but only on the domain indicated by its companion condition. In our example, there are three <q>pieces</q> to the graph. I've plotted each only on its domain indicated by the conditional.
+			<sidebyside widths="32% 32% 32%">
+				<image source="images/functions/pwgraph-ex1-1"/>
+				<image source="images/functions/pwgraph-ex1-2"/>
+				<image source="images/functions/pwgraph-ex1-3"/>
+			</sidebyside>
+			Notice the use of a hole or dot, depending on the inequality <m>\lt</m> or <m>\leq</m> Combining them we obtain the graph of <m>y=f(x)</m>
+				<image source="images/functions/pwgraph-ex1-all" width="50%"/>
+			From this, we conclude that the range of <m>f</m> is <m>[0,4]</m>. Finally, observe how the graph is <em>continuous</em> in that the piecewise join together at points and may be drawn without lifting our pencil up at any point.
+			</p>
+	</statement>
+	</example>
+
+	<warning>
+		<p>When defining a piecewise-defined function, we must ensure that the conditions don't conflict. A given real number must satisfy <em>at most one</em> of the statements. For example, the following is not a function:
+		<me>
+			\begin{cases}
+						4,&amp; \text{if $0 \leq x \leq 3$} \\
+						2,&amp; \text{if $3 \leq x \lt 5$} \\
+			\end{cases}
+		</me>
+		because <m>x=3</m> satisfies both conditions resulting in conflicting values. This does not satisfy the uniqueness of outputs required in <xref ref="definition-function"/>.
+		</p>
+	</warning>
+
+	<example>
+		<title xml:id="example-abs-function">The Absolute Value Function</title>
+		<p>The absolute value function is a piecewise-defined function. Its value depends on if the input is a negative or non-negative.
+			<me>|x| = \begin{cases}
+						-x,&amp; \text{if $x \lt 0$} \\
+						x,&amp; \text{if $x \geq 0$} \\
+					\end{cases}</me>
+		</p>
+		<image source="images/graphing/abs" width="40%"/>
+	</example>
+
+	<example>
+		<title>Graphing of a Piecewise-defined Function</title>
+		<statement><p>
+			Graph
+				<me>g(x) = 
+					\begin{cases}
+						x^2,&amp; \text{if $x \lt 0$} \\
+						x-2,&amp; \text{if $0 \lt x \leq 4$} \\
+						1,&amp;  \text{otherwise} \\
+					\end{cases}
+			</me> and determine its domain and range.
+		</p></statement>
+		<solution>
+			<p>There are two pieces, <m>y=x^2</m> and <m>y=x-2</m>. Plot them individually, but restrict your attention to the interval they are defined on. Use a dot or hole depending on the inequality.
+			<sidebyside widths="50% 50%">
+				<image source="images/functions/pwgraph-ex2-1"/>
+				<image source="images/functions/pwgraph-ex2-2"/>
+			</sidebyside>
+			There is a <q>catchall</q> that assigns one to any other value of <m>x</m>. For example, <m>f(0) = 1</m> because neither condition applies to zero. Putting it all together:
+				<image source="images/functions/pwgraph-ex2-all" width="50%"/>
+			The domain is <m>(-\infty,+\infty)</m> and the range is <m>(-2,+\infty)</m>.</p>
+		</solution>
+	</example>
+
+	<example><title>Finding Zeros</title>
+		<statement>
+			<p>Find the real number zeros of 
+				<me>P(x) = \begin{cases}
+						4-x^2 &amp;= \text{if $-4\leq x \lt 1$}\\
+						(x-3)^2 &amp;= \text{of $1\leq x \lt 4$}\\
+						1-x &amp;= \text{if $4 \leq x$}\\
+					\end{cases}
+				</me></p></statement>
+		<solution>
+			<p>Recall that a zero is a solution to <m>P(x) = 0</m>. We should attempt to find zeros of each expression defining <m>P</m>, but only on the interval where it applies.
+			<ol>
+				<li><p>Solving <m>4-x^2 = 0</m> results in <m>x=\pm 2</m>, but only <m>x=-2</m> satisfies <m>-4\leq x \lt 1</m>. Thus, <m>x=-2</m> is a zero of <m>P</m>, but <m>x=2</m> is not.</p></li>
+				<li><p>Solving <m>(x-3)^2 = 0</m> results in <m>x=3</m>, which satisfies <m>-1\leq x \lt 4</m>. Thus, <m>x=3</m> is a zero of <m>P</m>.</p></li>
+				<li><p>Solving <m>1-x = 0</m> results in <m>x=1</m>, but this does not satisfy <m>4 \leq x</m>. Thus, <m>x=1</m> is not a zero of <m>P</m>.</p></li>
+			</ol>
+			We conclude that the real number zeros of <m>P</m> are <m>x=-2</m> and <m>x=3</m>. These correspond to the <m>x</m>-intercepts on its graph below.
+			<image source="images/functions/pwgraph-ex3" width="50%"/>
+		</p>
+		</solution>
+	</example>
+</section>
+
+<section xml:id="section-algebra-of-fuctions">
+	<title>Algebra of functions</title>
+	<p>Just as we can arithmetically combine numbers, we may also combine functions using basic arithmetic operations to create new functions.</p>
+	<example><title>Dividing two functions</title>
+		<statement><p>
+		Let <m>f(x) = \sqrt{x}</m> and let <m>g(x) = x+4</m>. We can divide these two expressions to obtain new function denote by <m>f/g</m>. Its value at <m>x</m> is
+		<me>\left(f/g\right)(x) = \frac{f(x)}{g(x)} = \frac{\sqrt{x}}{x+4}.</me>
+		Note that <m>f/g</m> is simply the name I've given to this function and <m>f(x)/g(x)</m> is the expression I compute to evaluate <m>f/g</m>.</p>
+		<image source="images/functions/ratiomap" width="40%"/>
+		<p>For example, when <m>x=4</m>,
+			<me>
+				\left(f/g\right)(4) = \frac{f(4)}{g(4)} = \frac{\sqrt{4}}{4+4} = \frac{2}{8} = \frac{1}{4}.
+			</me>
+			</p>
+		</statement>
+	</example>
+
+	<definition xml:id="definition-arithmetic-of-functions"><title>Arithmetic of Functions</title>
+		<statement><p>Suppose <m>f</m> and <m>g</m> are functions. We define new functions <m>f+g</m>, <m>f-g</m>, <m>fg</m>, and <m>f/g</m> as follows
+		<md>
+			<mrow>(f+g)(x) = f(x)+g(x)</mrow>
+			<mrow>(f-g)(x) = f(x)-g(x)</mrow>
+			<mrow>(fg)(x) = f(x)g(x)</mrow>
+			<mrow>(f/g)(x) = f(x)/g(x)</mrow>
+		</md>
+	defined for all <m>x</m> in the intersection of the domain of <m>f</m> and the domain of <m>g</m>. In addition, we require <m>g(x) \neq 0</m> for <m>f/g</m>.</p>
+	</statement></definition>
+
+	<example><title>Combining Functions</title>
+		<statement>
+				<p>
+					Let <m>g(x) = \frac{1}{x}</m> and <m>h(x) = x^2-1</m>. Find <m>g+h</m>, <m>g-h</m>, <m>gh</m>, and <m>g/h</m> at <m>x</m>. Find the domain of each.
+				</p>
+		</statement>
+		<solution>
+			<p>
+				Adding, 
+				<me>(g+h)(x) = \frac{1}{x} + x^2-1.</me>
+				This is defined for all <m>x\neq 0</m>. The domain of <m>g+h</m> is <m>(-\infty,0)\cup(0,+\infty)</m>.
+				We can simplify, if desired, to a single term
+				<md>
+					<mrow>(g+h)(x) &amp;= \frac{1}{x} + x^2-1</mrow>
+					<mrow>	&amp;= \frac{1}{x} + \frac{x^3-x}{x}</mrow>
+					<mrow>	&amp;= \frac{x^3-x+1}{x}</mrow>
+				</md></p>
+				<p>Subtracting,
+				<me>(g-h)(x) = \frac{1}{x} - (x^2-1).</me>
+				Observe the parenthesis. Distributing,
+				<me>(g-h)(x) = \frac{1}{x} - x^2+1.</me>
+				The domain of <m>g-h</m> is <m>(-\infty,0)\cup(0,+\infty)</m>.</p>
+				<p>Multiplying,
+				<me>(gh)(x) = \frac{1}{x} (x^2-1).</me>
+				The domain of <m>gh</m> is <m>(-\infty,0)\cup(0,+\infty)</m>. We can distribute, if desired,
+				<me>(gh)(x) = \frac{x^2}{x} - \frac{1}{x} = x-\frac{1}{x}.</me></p>
+				<p>Dividing,
+				<me>(g/h)(x) = \frac{\frac{1}{x}}{x^2-1}.</me>
+				We require <m>x\neq 0</m>, but additional must require <m>x^2-1\neq 0</m> since dividing by zero is not permitted. The second requirement excludes <m>x=\pm 1</m>. So the domain of <m>g/h</m> is all real numbers <m>x \neq -1,0,1</m>. In interval notation this is
+				<me>(-\infty,-1)\cup(-1,0)\cup(0,1)\cup(1,+\infty).</me>We prefer to simplify complex fractions:
+				<md>
+					<mrow>(g/h)(x)
+						 &amp;= \frac{\frac{1}{x}}{x^2-1} \cdot \frac{x}{x}</mrow>
+					<mrow>&amp;= \frac{1}{(x^2-1)x}</mrow>
+					<mrow>&amp;= \frac{1}{x^3-x}</mrow>
+				</md>
+				</p>
+		</solution>
+	</example>
+
+	<example><title>Finding the Domain</title>
+		<statement>
+			<p>
+				Let <m>g(x) = \frac{1}{x}</m> and <m>h(x) = x^2-1</m>. Find the domain of <m>h/g</m>.
+			</p>
+			<p>Dividing in the opposite order as the previous example,
+				<me>(h/g)(x) = \frac{x^2-1}{\frac{1}{x}}.</me>
+				We now only require <m>x\neq 0</m> because dividing into zero is perfectly fine. So the domain of <m>h/g</m> is all real numbers <m>x \neq 0</m>.
+				Simplifying,
+				<md>
+					<mrow>(h/g)(x)
+						 &amp;= \frac{x^2-1}{\frac{1}{x}} \cdot \frac{x}{x}</mrow>
+					<mrow>&amp;= \frac{(x^2-1)x}{1}</mrow>
+					<mrow>&amp;= x^3-x, \quad x\neq 0.</mrow>
+				</md>
+				But be cautious here! The last expression <m>x^3-x</m> appears to be defined for all real numbers <m>x</m>, including zero. But in the context of the ratio of our two functions, <m>x = 0 </m> must be excluded from the domain. This is why I added this extra condition at the end.
+				</p>
+	</statement></example>
+</section>
+
+<section xml:id="section-composition-of-functions">
+	<title>Composition of Functions</title>
+
+	<p>Two functions may be combined in a fundamentally different way through <em>composition</em>. To perform a composition, we <q>chain</q> the output of one function into the input of the other. Visually,
+	<image width="50%" source="images/functions/compmap2"/>
+	For this to make any sense, we require that <m>x</m> is in the domain of <m>g</m> (so that the first link in the chain is defined) and <m>g(x)</m> is in the domain of <m>f</m> (so that the second link in the chain is sensible).
+	The resulting function which assigns <m>x</m> to <m>f(g(x))</m> is called a composition and is denoted by <m>f\circ g</m>.
+	<image width="40%" source="images/functions/compmapcirc"/></p>
+
+	<definition>
+		<p>Suppose <m>f</m> and <m>g</m> are functions. The <term>composition</term> of <m>f</m> with <m>g</m> is a new function denoted by <m>f\circ g</m> whose value at <m>x</m> is given by
+		<me>(f\circ g)(x) = f(g(x)),</me>
+		provided <m>x</m> is in the domain of <m>g</m> and <m>g(x)</m> is in the domain of <m>f</m>.</p>
+	</definition>
+
+	<p>Observe that the order of the composition matters: <m>g \circ f</m> would interchange the order of the functions being applied:
+	<image width="50%" source="images/functions/compmap"/>
+	</p>
+
+	<example><title>Evaluating compositions</title>
+		<statement>
+			<p>Let <m>f(x) = \sqrt{x+1}</m> and <m>g(x) = x^2-1</m>. To evaluate <m>f\circ g</m> at <m>x=4</m>, work from the inside of the expression first
+			<md>
+				<mrow>
+					(f\circ g)(4) &amp;= f(g(4))</mrow>
+				<mrow> &amp;=f(4^2-1)</mrow>
+				<mrow> &amp;=f(15)</mrow>
+				<mrow> &amp;=\sqrt{15+1}</mrow>
+				<mrow> &amp;=\sqrt{16}</mrow>
+				<mrow> &amp;=4</mrow>
+			</md></p><p>
+			To evaluate <m>g\circ f</m> at <m>x=3</m>,
+			<md>
+				<mrow>(g\circ f)(3) &amp;= g(f(3))</mrow>
+				<mrow>&amp;= g(\sqrt{3+1})</mrow>
+				<mrow>&amp;= g(\sqrt{4})</mrow>
+				<mrow>&amp;= g(2)</mrow>
+				<mrow>&amp;= 2^2-1</mrow>
+				<mrow>&amp;= 3</mrow>
+			</md></p>
+		</statement>
+	</example>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = \frac{1}{x}</m>, <m>g(x) = \frac{x+2}{1-x}</m>. Find a formula for <m>f\circ g</m>, <m>g\circ f</m>, and <m>f\circ f</m>. State the domain of each.</p>
+		</statement>
+		<solution>
+			<p>First,
+				<me>
+					(f\circ g)(x) = f\left(\frac{x+2}{1-x}\right)
+					= \frac{1}{\frac{x+2}{1-x}}</me>
+				which is defined provided:
+				<ol>
+					<li><m>g(x) = \frac{x+2}{1-x}</m> is defined. This requires <m>x\neq 1</m>.</li>
+					<li><m>\frac{x+2}{1-x} \neq 0</m>. This requires <m>x\neq -2</m>.</li>
+				</ol>
+				Thus,
+				<me>(f\circ g)(x) = \frac{1-x}{x+2}, \quad x\neq -2,1.</me>
+				It's important to add these final conditions, because it would not be clear this is the domain from the final simplified expression.
+			</p>
+			<p>Next,
+				<me>
+					(g\circ f)(x) = g\left(\frac{1}{x}\right)
+					= \frac{\frac{1}{x}+2}{1-\frac{1}{x}}</me>
+				which is defined provided:
+				<ol>
+					<li><m>f(x) = 1/x</m> is defined. This requires <m>x\neq 0</m>.</li>
+					<li><m>1-\frac{1}{x} \neq 0</m>. This requires <m>x\neq 1</m>.</li>
+				</ol>
+				Simplifying,
+				<me>(g\circ f)(x) = \frac{\frac{1}{x}+2}{1-\frac{1}{x}} \cdot \frac{x}{x} = \frac{1+2x}{x-1} \quad x\neq 0,1.</me>
+			</p>
+			<p>Finally,
+				<m>(f\circ f)(x) = f\left(\frac{1}{x}\right) = \frac{1}{1/x}</m>
+				which is defined provided:
+				<ol>
+					<li><m>f(x) = 1/x</m> is defined. This requires <m>x\neq 0</m>.</li>
+					<li><m>\frac{1}{x} \neq 0</m>. This never happens.</li>
+				</ol>
+				Thus,
+				<me>(f\circ f)(x) = \frac{1}{1/x} = x, \quad x\neq 0.</me>Again, its essential to add the additional requirement <m>x\neq 0</m>.</p>
+		</solution>
+	</example>
+
+
+	<!-- TODO Application with Composition -->
+	<!-- 	<example>
+		<title>Applying compositions</title>
+		<statement>
+			<p>
+
+			</p>
+		</statement>
+	</example> -->
+</section>
+
+
+
+<section xml:id="section-transformations">
+	<title>Transformations of Functions</title>
+	<p>Performing simple algebraic operations on the input or output of a function <m>f</m> has a predictable effect on how the function's graph <m>y=f(x)</m> is transformed:
+	<ul>
+		<li><p>Addition (or subtraction) by a fixed amount <m>a \gt 0</m> to the input, as in <m>y=f(x+a)</m>, or the output, as in <m>y = f(x)+a</m>, has a <em>translation</em> effect on the graph by rigidly shifting points left/right or up/down.</p></li>
+
+		<li><p>Multiplication by <m>k \gt 0</m> with the input, as in <m>y=f(kx)</m>, or the output, as in <m>y = kf(x)</m>, has a <em>scaling</em> effect on the graph by stretching or contracting points horizontally or vertically in relation to the coordinate axes.</p></li>
+
+		<li><p>Taking the opposite value of the input, as in <m>y=f(-x)</m>, or the output, as in <m>y = -f(x)</m>, has a <em>reflecting</em> effect on the graph by flipping points over the vertical or horizontal axis.</p></li>
+	</ul>
+	This is best explored with an example involving a piecewise-defined function. (See <xref ref="section-pw-defined-functions"/>.)
+	</p>
+
+	<activity>
+		<title>Exploring Transformations</title>
+		<introduction>
+		<p>Consider the function <m>f</m> with graph below.</p>
+		<image source="images/functions/trans1" width="60%"/>
+		</introduction>
+		<task>
+			<statement>
+				<p>What is the domain of <m>f</m>? What is the range of <m>f</m>?</p>
+			</statement>
+			<answer>
+				<p>Domain: <m>[-2,8]</m>; Range: <m>[0,9]</m>.</p>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>The graph of <m>f</m> is <term>piecewise-linear</term>, meaning it is a piecewise-defined function consisting entirely of linear graphs. Fill in the blanks below to find a formula for <m>f</m>. I did the middle piece for you.
+				<me>f(x) = 
+						\begin{cases}
+							\underline{\quad\quad\quad},&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							\underline{\quad\quad\quad},&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me></p>
+			</statement>
+			<hint>
+				<p>A line with slope <m>m</m> and <m>x</m>-intercept <m>(a,0)</m> must have equation <m>y = m(x-a)</m>. Alternatively, if you know the <m>y</m>-intercept is <m>(0,b)</m>, then it can be written as <m>y=mx+b</m>.</p>
+			</hint>
+			<answer>
+				<p>One form emphasizes the <m>x</m>-intercepts:
+				<me>f(x) = 
+						\begin{cases}
+							3(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							-3(x-8),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}</me>
+				while the second form emphasizes the <m>y</m>-intercepts:
+				<me>
+					f(x)	= 
+						\begin{cases}
+							3x+6,&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							-3x+24,&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me></p>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>Let's see what the effect of adding <m>2</m> to the input of <m>f</m> will be. Evaluate <m>f(x+2)</m> using your formula above. To do so, <em>replace every occurrence of <m>x</m> with <m>x+2</m>, including in the inequalities, but don't simplify anything yet</em>. I'll do the middle piece.
+				<me>f({\color{blue} x+2}) = 
+						\begin{cases}
+							\underline{\quad\quad\quad},&amp; \text{if $-2 \leq \underline{\quad\quad\quad} \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq {\color{blue} x+2} \lt 5$} \\
+							\underline{\quad\quad\quad},&amp; \text{if $ 5 \leq \underline{\quad\quad\quad} \leq 8$} \\
+						\end{cases}
+				</me>
+			</p>
+			</statement>
+			<answer>
+				<p>Starting from
+				<me>f(x) = 
+						\begin{cases}
+							3(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							-3(x-8),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me>
+				we obtain
+				<me>f({\color{blue} x+2}) = 
+						\begin{cases}
+							3({\color{blue} x+2}+2),&amp; \text{if $-2 \leq {\color{blue} x+2} \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq {\color{blue} x+2} \lt 5$} \\
+							-3({\color{blue} x+2}-8),&amp; \text{if $ 5 \leq {\color{blue} x+2} \leq 8$} \\
+						\end{cases}
+				</me>
+				</p>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>Simplify your result from above. In particular, make the inequalities look more friendly to the reader by isolating <m>x</m> in the middle of each compound inequality. I'll do the second piece again so you see what I mean.</p>
+				<me>f({\color{blue} x+2}) = 
+						\begin{cases}
+							\underline{\quad\quad\quad},&amp; \text{if $\underline{\quad\quad\quad\quad}$} \\
+							9,&amp; \text{if ${\color{blue} -1 \leq x \lt 3}$} \\
+							\underline{\quad\quad\quad},&amp; \text{if $\underline{\quad\quad\quad\quad}$} \\
+						\end{cases}
+				</me>
+			</statement>
+			<answer>
+				<me>f(x+2) = 
+						\begin{cases}
+							3(x+4),&amp; \text{if $-4 \leq x \lt -1$} \\
+							9,&amp; \text{if $ -1 \leq x \lt 3$} \\
+							-3(x-6),&amp; \text{if $ 3 \leq x \leq 6$} \\
+						\end{cases}
+				</me>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>Graph <m>y=f({\color{blue}x+2})</m>. What effect does adding <m>2</m> to the input of <m>f</m> have on the graph? How, if at all, have the domain and range changed?</p>
+			</statement>
+			<hint>
+				<p>The domain is the set of all permissible inputs to the function. Look along the horizontal axis for the domain. The range is the set of all resulting outputs of the function. Look along the vertical axis for the range.</p>
+			</hint>
+			<answer>
+				<p>The graph of <m>y=f(x+2)</m> is the graph of <m>y=f(x)</m> translated <m>2</m> units to the <em>left</em>. The domain is now <m>[-4,6]</m>, but the range has not changed.</p>
+				<image source="images/functions/trans2" width="60%"/>
+			</answer>
+		</task>
+		<!-- Part 2 -->
+		<task>
+			<statement>
+				<p>Now let's see what the effect of adding <m>2</m> to the <em>output</em> of <m>f</m> will be. We need to evaluate <m>f(x)+2</m>. Notice that we first compute <m>f(x)</m>
+				<me>f(x) = 
+						\begin{cases}
+							3(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							-3(x-8),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me>
+				then add <m>2</m> to the results. So that
+				<me>f(x) {\color{blue}+2} = 
+						\begin{cases}
+							3(x+2){\color{blue}+2},&amp; \text{if $-2 \leq x \lt 1$} \\
+							9{\color{blue}+2},&amp; \text{if $ 1 \leq x \lt 5$} \\
+							-3(x-8){\color{blue}+2},&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me>
+				Since the operation is only on the output of <m>f(x)</m>, no change is made to the inequalities. Sketch the graph of <m>y=f(x)+2</m>. What effect does adding <m>2</m> to the output of <m>f</m> have on the graph? How, if at all, have the domain and range changed?</p>
+			</statement>
+			<answer>
+				<p>The graph of <m>y=f(x)+2</m> is the graph of <m>y=f(x)</m> translated <m>2</m> units <em>up</em>. The range is now <m>[2,11]</m>, but the domain has not changed.</p>
+				<image source="images/functions/trans3" width="60%"/>
+			</answer>
+		</task>
+		<!-- Part 3 -->
+		<task>
+			<statement>
+				<p>What is the effect of doubling the <em>output</em> of <m>f</m>?. Evaluate <m>2f(x)</m>. What happens to the slopes of each linear piece?</p>
+			</statement>
+			<answer><p>
+				<me>{\color{blue}2\cdot}f(x)  = 
+						\begin{cases}
+							{\color{blue}2\cdot}3(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							{\color{blue}2\cdot}9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							{\color{blue}2\cdot}(-3(x-8)),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me>
+				or
+				<me>{\color{blue}2\cdot}f(x)  = 
+						\begin{cases}
+							6(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							18,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							-6(x-8),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+				</me>
+				with the effect of doubling the slopes of each line.</p>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>Sketch the graph of <m>y=2f(x)</m>. What effect does doubling the output of <m>f</m> have on the graph? How, if at all, have the domain and range changed?</p>
+			</statement>
+			<answer>
+				<p>The graph of <m>y=2f(x)</m> is the graph of <m>y=f(x)</m> stretched <m>vertically</m> by a factor of <m>2</m>. The range is now <m>[9,18]</m>, but the domain has not changed.</p>
+				<image source="images/functions/trans4" width="60%"/>
+			</answer>
+		</task>
+
+		<!-- Part 4-->
+		<task>
+			<statement>
+				<p>What is the effect of doubling the <em>input</em> of <m>f</m>?. Evaluate <m>f(2x)</m>. What happens to the slopes? What happens to the <m>x</m>-intercepts? Sketch the and discuss the graph of <m>y=f(2x)</m></p>
+			</statement>
+			<answer><p>
+				<me>f({\color{blue}2\cdot}x)  = 
+						\begin{cases}
+							3({\color{blue}2\cdot}x+2),&amp; \text{if $-2 \leq {\color{blue}2\cdot}x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq {\color{blue}2\cdot}x \lt 5$} \\
+							(-3({\color{blue}2\cdot}x-8)),&amp; \text{if $ 5 \leq {\color{blue}2\cdot}x \leq 8$} \\
+						\end{cases}
+				</me>
+				which becomes
+				<me>f({\color{blue}2\cdot}x)  = 
+						\begin{cases}
+							6(x+1),&amp; \text{if $-1 \leq x \lt 0.5$} \\
+							9,&amp; \text{if $ 0.5 \leq {\color{blue}2\cdot}x \lt 2.5$} \\
+							(-6(x-4)),&amp; \text{if $2.5 \leq x \leq 4$} \\
+						\end{cases}
+				</me>
+				Observe that the slopes have doubled again, but the <m>x</m>-intercepts are half of what they were for <m>f</m>.</p>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>Sketch the and discuss the graph of <m>y=f(2x)</m></p>
+			</statement>
+			<answer>
+				<p>The graph of <m>y=f(2x)</m> is the graph of <m>y=f(x)</m> compressed <m>horizontally</m> by a factor of <m>2</m>. The domain is now <m>[1,4]</m>, but the range has not changed.</p>
+				<image source="images/functions/trans5" width="60%"/>
+			</answer>
+		</task>
+
+		<task>
+			<statement>
+				<p>What effect will taking the <em>opposite input</em> have on the graph? In other words, what would the graph of <m>y=f(-x)</m> look like? Write an expression for <m>f(-x)</m>, graph, and summarize.</p>
+			</statement>
+			<answer>
+				<p>Flipping the input,
+					<me>f({\color{blue}-}x) = 
+						\begin{cases}
+							3({\color{blue}-}x+2),&amp; \text{if $-2 \leq {\color{blue}-}x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq {\color{blue}-}x \lt 5$} \\
+							-3({\color{blue}-}x-8),&amp; \text{if $ 5 \leq {\color{blue}-}x \leq 8$} \\
+						\end{cases}
+					</me>
+					which will reverse the inequalities:
+					<me>f({\color{blue}-}x) = 
+						\begin{cases}
+							-3(x-2),&amp; \text{if $2 \geq x \gt -1$} \\
+							9,&amp; \text{if $-1 \geq x \gt -5$} \\
+							3(x+8),&amp; \text{if $-5 \geq x \geq -8$} \\
+						\end{cases}
+					</me>
+					It's a little more friendly to write things with the inequalities increasing from left to right:
+					<me>f({\color{blue}-}x) = 
+						\begin{cases}
+							3(x+8),&amp; \text{if $-8 \leq x \leq -5$} \\
+							-3(x-2),&amp; \text{if $-5 \lt x \leq -1$} \\
+							9,&amp; \text{if $-1 \lt x \leq 2$} \\
+						\end{cases}
+					</me>
+					The effect is reflect the graph of <m>y=f(x)</m> horizontally over the <m>y</m>-axis.
+					<image source="images/functions/trans6" width="60%"/>
+				</p>
+			</answer>
+		</task>
+		<task>
+			<statement>
+				<p>What effect will taking the <em>opposite output</em> have on the graph? In other words, what would the graph of <m>y=-f(x)</m> look like? Write an expression for <m>-f(x)</m>, graph, and summarize.</p>
+			</statement>
+			<answer>
+				<p>Flipping the output,
+					<me>{\color{blue}-}f(x) = 
+						\begin{cases}
+							{\color{blue}-}3(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							{\color{blue}-}(-3(x-8)),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+					</me>
+					which has no effect on the inequalities, resulting in
+					<me>{\color{blue}-}f(x) = 
+						\begin{cases}
+							-3(x+2),&amp; \text{if $-2 \leq x \lt 1$} \\
+							9,&amp; \text{if $ 1 \leq x \lt 5$} \\
+							3(x-8),&amp; \text{if $ 5 \leq x \leq 8$} \\
+						\end{cases}
+					</me>
+					Observe how the slopes of the lines are now opposite.
+					The effect is to reflect <m>y=f(x)</m> vertically, over the <m>x</m>-axis.</p>
+					<image source="images/functions/trans7" width="60%"/>
+				</answer>
+			</task>
+	</activity>
+
+
+
+		
+
+
+	<!-- https://www.geogebra.org/calculator/eubmkcdu -->
+
+	<!-- <activity>
+		<title>Translating the graph of a function</title>
+		<introduction>
+			<p>Let <m>f(x) = x^2</m>. The demonstration below allows you to view the  
+			<figure>
+      		<caption>Graph of <m>y=x^2</m>.</caption>
+	      		<interactive geogebra="eubmkcdu" width="90%" aspect="16:9" />
+	      	</figure>
+			</p>
+		</introduction>
+	</activity> -->
+</section>
+
+<!-- <section xml:id="section-combining-transformations">
+	<title>Combining Transformations</title>
+</section>
+ -->
+<section xml:id="section-inverse-functions">
+	<title>Inverse Functions</title>
+
+	<p></p>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = 2 x^3 +4</m>. Consider the following two contrasting problems.
+				<ol>
+					<li>Evaluate <m>f</m> at <m>x=-1</m>.</li>
+					<li><em>The inverse problem:</em> Find <m>x</m>, if <m>f(x) = 2</m>.</li>
+				</ol>
+			</p>
+			<p>For the first, we simply evaluate <m>f</m>
+			<me>f(-1) = 2(-1)^3 + 4 = -2+4 = 2.</me>
+			For the <em>inverse problem</em> we need to solve the equation <m>f(x) = 2</m> for <m>x</m>.
+			<md>
+				<mrow>f(x) &amp;= 2</mrow>
+				<mrow>2x^3 + 4 &amp;= 2</mrow>
+				<mrow>2x^3  &amp;= -2</mrow>
+				<mrow>x^3  &amp;= -1</mrow>
+				<mrow>x  &amp;= \sqrt[3]{-1} = -1</mrow>
+			</md>
+			</p>
+		</statement>
+	</example>
+
+	<p>In the <em>inverse problem</em>, we are told the output <m>y = f(x)</m> of the function and find the corresponding input <m>x</m>. We could have solved this problem regardless of the given <m>y</m>-value. Regardless of wherever I choose the output <m>y</m> on the graph, I can always trace back to find a unique corresponding input <m>x</m>.</p>
+	<figure>
+		<caption>Graph of <m>y=2x^3+4</m>.</caption>
+		<image width="50%" source="images/functions/invcube" />
+	</figure>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = 2 x^3 +4</m>. Find <m>x</m>, if <m>f(x) = y</m>.</p>
+
+			<p>We must solve the equation <m>f(x) = y</m> for <m>x</m>.
+				<md>
+					<mrow>f(x) &amp;= y</mrow>
+					<mrow>2x^3 + 4 &amp;= y</mrow>
+					<mrow>2x^3  &amp;= y-4</mrow>
+					<mrow>x^3  &amp;= \frac{y-4}{2}</mrow>
+					<mrow>x  &amp;= \boxed{\sqrt[3]{\frac{y-4}{2}}}</mrow>
+				</md>
+			</p>
+
+			<p>To illustrate, if <m>y = 2</m>, then the corresponding <m>x</m> is
+			<me>x = \sqrt[3]{\frac{2-4}{2}} = \sqrt[3]{\frac{-2}{2}} = \sqrt[3]{-1} = -1,</me>
+			so that <m>f(-1) = 2</m>.</p>
+		</statement>
+	</example>
+
+	<p>The solution for <m>x</m> in terms of <m>y</m> above determines a new function which has a special relationship with <m>f</m>.</p>
+
+	<definition>
+		<p>Suppose <m>f</m> and <m>g</m> are two functions satisfying the following conditions:
+		<ol>
+			<li><m>(g\circ f)(x) = x</m>, for all <m>x</m> in the domain of <m>f</m>; and</li>
+			<li><m>(f\circ g)(y) = y</m>, for all <m>y</m> in the domain of <m>g</m>.</li>
+		</ol>
+		The we say <m>g</m> is an <term>inverse function</term> of <m>f</m>; and reflexively, <m>f</m> is an inverse function of <m>g</m>.</p>
+	</definition>
+
+	<example xml:id="example-cube-inverse">
+		<statement>
+			<p>Let <m>f(x) = 2x^3 + 4</m> and <me>g(y) = \sqrt[3]{\frac{y-4}{2}}</me>. Show that <m>f</m> and <m>g</m> are inverse functions of each other by confirming that
+			<ol>
+				<li><m>(g\circ f)(x) = x</m>, for all real numbers <m>x</m>; and</li>
+				<li><m>(f\circ g)(y) = y</m>, for all real numbers <m>y</m>.</li>
+			</ol></p>
+		</statement>
+		<solution>
+			<p>First,
+				<md>
+					<mrow>(g\circ f)(x) 
+							&amp;= g(f(x)) </mrow>
+					<mrow>	&amp;= g\left(2x^3+4\right) </mrow>
+					<mrow>	&amp;= \sqrt[3]{\frac{\left(2x^3+4\right)-4}{2}} </mrow>
+					<mrow>	&amp;= \sqrt[3]{\frac{2x^3}{2}} </mrow>
+					<mrow>	&amp;= \sqrt[3]{x^3} </mrow>
+					<mrow>	&amp;= x </mrow>
+				</md>
+			</p>
+
+			<p>Second,
+				<md>
+					<mrow>(f\circ g)(y) 
+							&amp;= f(g(y)) </mrow>
+					<mrow>  &amp;= f\left(\sqrt[3]{\frac{y-4}{2}}\right) </mrow>
+					<mrow>  &amp;= 2\left(\sqrt[3]{\frac{y-4}{2}}\right)^3 + 4 </mrow>
+					<mrow>  &amp;= 2\left(\frac{y-4}{2}\right) + 4 </mrow>
+					<mrow>  &amp;= y-4 + 4 </mrow>
+					<mrow>  &amp;= y </mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="example-linear-inverse">
+		<statement><p>Let <m>f(x) = 3x - 4</m>. Find an inverse function for <m>f</m>, if possible.</p></statement>
+		<solution>
+			<p>Suppose <m>f(x) = y</m>. We need to solve this equation for <m>x</m>.
+				<md>
+					<mrow>f(x) &amp;= y</mrow>
+					<mrow>3x-4 &amp;= y</mrow>
+					<mrow>3x &amp;= y+4</mrow>
+					<mrow>x &amp;= \frac{y+4}{3}</mrow>
+				</md>
+			So, let <m>g(y) = \frac{y+4}{3}</m>. Then <m>g</m> is an inverse function of <m>f</m>. You can confirm this with
+			<me>(g\circ f)(x) = g(f(x)) = g(3x - 4) = \frac{3x-4+4}{3} = \frac{3x}{3} = x</me>
+			and 
+			<me>(f\circ g)(y) = f(g(y)) = f\left(\frac{y+4}{3}\right) = 3\left(\frac{y+4}{3}\right) - 4 = y+4 - 4 = y.</me></p>
+		</solution>
+	</example>
+
+	<p>Not all functions have inverse functions, an issue we address in <xref ref="section-one-to-one-functions"/>. An inverse function, if it exists, is in fact unique. As such, it deserves its own special notation introduce below.</p>
+
+	<theorem>
+		<statement>
+		<p>Suppose <m>f</m> has an inverse function <m>g</m>. Then <m>g</m> is the unique such function and will be denoted by <m>f^{-1}</m> from now on. It satisfies,
+		<ol>
+			<li><m>(f^{-1}\circ f)(x) = x</m>, for all <m>x</m> in the domain of <m>f</m>; and</li>
+			<li><m>(f\circ f^{-1})(y) = y</m>, for all <m>y</m> in the domain of <m>f^{-1}</m>.</li>
+		</ol></p>
+		</statement>
+	</theorem>
+
+	<p>There is a nice relation between the graph of a function and its inverse function (when there is one).</p>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = 2 x^3 +4</m>. Then we saw in <xref ref="example-cube-inverse"/> that <m>g(y) = \sqrt[3]{\frac{y-4}{2}}</m> is an inverse function of <m>f</m>. As such, it is the only inverse function of <m>f</m> and we may now write
+			<me>f^{-1} (y) = \sqrt[3]{\frac{y-4}{2}}.</me>
+			I personally like to write <m>f^{-1}(y)</m> emphasizing that the inverse function accepts a <m>y</m>-value from the graph of <m>f</m> as its input. However, it is customary to use <m>x</m> as the input to a function so we usually rewrite this as
+			<me>f^{-1} (x) = \sqrt[3]{\frac{x-4}{2}}.</me>
+			We can now plot <m>y=f^{-1}(x)</m> and compare it to the graph of <m>y=f(x)</m>.
+			<sidebyside widths="30% 70%">
+			<figure>
+				<caption>Graph of <m>y=f(x)</m></caption>
+				<image source="images/functions/invcube2"/>
+			</figure>
+			<figure>
+				<caption>Graph of <m>y=f^{-1}(x)</m></caption>
+				<image source="images/functions/invcube3"/>
+			</figure>
+			</sidebyside>
+			Observe the labeled points. For instance, <m>f(1)=6</m> so that <m>(1,6)</m> is a point on the graph of <m>f</m>. Then, <m>f^{-1}(6) = 1</m> so that <m>(6,1)</m> is a point on the graph of its inverse function. Repeat this observation for the other marked points on the two graphs.</p>
+		</statement>
+	</example>
+
+	<principle xml:id="principle-graph-of-inverse-functions">
+		<title>Graphs of Inverse Function</title>
+		<p>Suppose <m>f</m> has an inverse function. Then, 
+		<ol>
+			<li><p><m>(a,b)</m> is a point on the graph of <m>f</m> if and only <m>(b,a)</m> is a point on the graph of <m>f^{-1}</m>.</p></li>
+			<li><p>The graph of <m>y=f^{-1}(x)</m> is obtained by reflecting the graph of <m>y=f(x)</m> over the line <m>y=x</m>.</p></li>
+			<li><p>The domain of <m>f</m> is the range of <m>f^{-1}</m>.</p></li>
+			<li><p>The range of <m>f</m> is the domain of <m>f^{-1}</m>.</p></li>
+		</ol></p>
+		<image source="images/functions/invgen1" width="50%"/>
+	</principle>
+
+	<example>
+		<title>Evaluating the Inverse Function Graphically</title>
+		<statement><p>
+			Below is the graph of a function <m>f</m> which has an inverse function.
+			<image width="50%" source="images/functions/invgrap1"/>
+			<ol>
+				<li><p>Find <m>f(6)</m>.</p></li>
+				<li><p>Find <m>f^{-1}(6)</m>.</p></li>
+				<li><p>Find the real number zeros of <m>f^{-1}</m></p></li>
+				<li><p>Find the domain and range of <m>f^{-1}</m></p></li>
+				<li><p>Sketch the graph of <m>y=f^{-1}(x)</m></p></li>
+			</ol>
+		</p></statement>
+		<solution>
+			<p>
+				<ol>
+				<li><p><m>f(6) = -1</m> because <m>(6,-1)</m> is on the graph of <m>f</m>.</p></li>
+				<li><p><m>f^{-1}(6) = -2</m> because <m>(-2,6)</m> is on the graph of <m>f</m>.</p></li>
+				<li><p><m>f(0)=2</m> so that <m>f^{-1}(2) = 0</m> and <m>x=2</m> is the only zero of <m>f^{-1}</m></p></li>
+				<li><p>The domain of <m>f</m> is <m>[-5,6]</m> which is also the range of <m>f^{-1}</m>. The range of <m>f</m> is <m>[-1,8]</m> which is also the domain of <m>f^{-1}</m>.</p></li>
+				<li><p>Take the key points on the graph and interchange the coordinates. Plot these and connect the dots.</p>
+				<image source="images/functions/invgrap2" width="50%"/>
+			</li>
+			</ol>
+
+			</p>
+		</solution>
+	</example>
+
+
+	<warning xml:id="warning-exponent-inverse">
+		<title>Many Kinds of Inverse</title>
+		<p>Be careful with the interpretation of the exponent <m>-1</m>. For instance, <m>2^{-1} = 1/2</m> refers to the multiplicative inverse of the real number <m>2</m> satisfying
+		<me>2\times 2^{-1} = 1.</me>
+		If <m>f</m> is a function that has an inverse function, then <m>f^{-1}</m> refers to the functional inverse satisfying
+		<me>(f\circ f^{-1})(x) = x.</me>
+		In general,
+		<me> f^{-1}(x) \neq \frac{1}{f(x)}.</me>
+		However,
+		<me> [f(x)]^{-1} \neq \frac{1}{f(x)},</me>
+		because <m>f(x)</m> is a real number obtained by evaluating <m>f</m>. (We are assuming <m>f(x)\neq 0</m>.)
+		</p>
+	</warning>
+</section>
+
+<section xml:id="section-one-to-one-functions">
+	<title>One-to-one Functions</title>
+
+	<p>Not all functions have inverse functions. Here's an example.</p>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = x^2 + 2</m>. I evaluated at a real number  <m>x</m> and found <m>f(x) = 6</m>. Can you determine my value of <m>x</m>?
+			</p>
+
+			<p>We need to solve the equation <m>f(x) = 6</m> for <m>x</m>. This will prove to be a problem.
+			<md>
+				<mrow>f(x) &amp;= 6</mrow>
+				<mrow>x^2+2 &amp;= 6</mrow>
+				<mrow>x^2 &amp;= 4</mrow>
+				<mrow>x &amp;= \pm \sqrt{4} = \pm 2</mrow>
+			</md>
+			Thus, <m>x=2</m> or <m>x = -2</m> and it is impossible to determine which value I evaluated <m>f</m> at to get <m>6</m>. So while we have limited the possibilities to two different possible values, we cannot <em>explicitly</em> determine the input to the function from the output.</p>
+
+			<p>The problem here is two distinct inputs <m>-2 \neq 2</m> result in the same output <m>f(-2)=f(2)</m>. Graphically, the horizontal line <m>y=6</m> intersects the graph at two different points corresponding to the two distinct inputs.
+			<image source="images/functions/oneone1" width="50%"/>
+			</p>
+
+			<p>More generally, if <m>f(x) = y</m>, then solving for <m>x</m> gives
+			<me>x = \pm \sqrt{y- 4}</me>
+			and <m>x</m> is not a function of <m>y</m>. Therefore, there is no inverse function for <m>f</m>.</p>
+		</statement>
+	</example>
+
+	<p>To avoid this situation, we require that each output of a function <m>f</m> corresponds to exactly one input. Such functions are called <em>one-to-one</em> functions.</p>
+
+	<definition xml:id="definition-one-to-one">
+		<title>One-to-one Functions</title>
+		<statement>
+			<p>A function <m>f</m> is <term>one-to-one</term> if whenever <m>a\neq b</m> are in the domain of <m>f</m>, then <m>f(a)\neq f(b)</m>. That is, distinct inputs to <m>f</m> result in distinct outputs.</p>
+		</statement>
+	</definition>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = x^2+2</m>. Since <m>f(-2)=f(2)</m>, <m>f</m> is not one-to-one.</p>
+		</statement>
+	</example>
+
+	<p>Graphically, if distinct inputs are to give distinct outputs, a horizontal line should never pass through the graph more than once. This is called the horizontal line test.</p>
+
+	<principle xml:id="principle-horizontal-line-test">
+		<title>Horizontal Line Test</title>
+		<statement><p>A function is one-to-one if and only if no horizontal line intersects the graph of <m>y=f(x)</m> more than once.</p></statement>
+	</principle>
+
+	<example>
+		<statement>
+			<p>Let <m>f(x) = x^3+2</m>. The graph passes the Horizontal Line Test.
+			<image source="images/functions/oneone2" width="50%"/>
+			Therefore <m>f</m> is one-to-one.
+			</p>
+		</statement>
+	</example>
+
+	<p>To conclude, one-to-one functions have inverse functions.</p>
+
+	<theorem xml:id="theorem-one-to-one-functions-are-invertible">
+		<title>One-to-one Functions have Inverse Functions</title>
+		<statement><p>A function <m>f</m> has an inverse function if and only if <m>f</m> is one-to-one.</p></statement>
+	</theorem>
+
+	<example xml:id="example-rational-inverse-function">
+		<statement>
+			<p>Let <m>g(x) = \frac{2x-1}{3-x}</m>. Given that <m>g</m>, find <m>g^{-1}(x)</m>.</p>
+		</statement>
+		<solution>
+			<p>We need to solve <m>y=g(x)</m> for <m>x</m>.
+				<md>
+					<mrow>y &amp;= \frac{2x-1}{3-x}</mrow>
+					<mrow>y(3-x) &amp;= 2x-1</mrow>
+					<mrow>3y-xy &amp;= 2x-1</mrow>
+					<mrow>3y+1 &amp;= 2x-xy</mrow>
+					<mrow>3y+1 &amp;= x(2-y)</mrow>
+					<mrow>\frac{3y+1}{2-y} &amp;= x</mrow>
+				</md>
+				So that
+				<me>g^{-1}(y) = \frac{3y+1}{2-y}.</me>
+				If you happen to prefer <m>x</m> as the input, then write
+				<me>g^{-1}(x) = \frac{3x+1}{2-x}.</me>
+			</p>
+		</solution>
+
+	</example>
+</section>
+
+<section xml:id="section-difference-quotients">
+	<title>Difference Quotients</title>
+	<p>A linear function changes at a constant rate of change determined by its slope. For example, the value of function <m>f(x) = -2.3x +7</m> <em>decreases</em> <m>2.3</m> units per unit increase in <m>x</m>. Non-linear functions have a non-constant rate of change, but it is still useful to attempt to study the way they change. In fact, a good portion of calculus addresses this particular question.</p>
+
+	<p>The best we can do right now is measure the <em>average rate of change</em> of a function over some interval. To do this, we measure the slope of a  line joining two points on the graph called a <term>secant line</term>. In the graph below, I've sketched the secant line joining between <m>x=a</m> and <m>x=b</m> on the graph of <m>y=f(x)</m>.
+	<image source="images/functions/diffq1" width="50%"/>
+	</p>
+
+	<definition xml:id="definition-average-rate-of-change">
+		<title>Average Rate of Change</title>
+		<p>Suppose <m>f</m> is a function defined on an interval <m>[a,b]</m>. the <term>average rate of change</term> of <m>f</m> on <m>[a,b]</m> is
+		<men xml:id="equation-difference-quotient">
+			\frac{f(b)-f(a)}{b-a}.
+		</men>
+		The expression in <xref ref="equation-difference-quotient"/> is called a <term>difference quotient</term>.
+		</p>
+	</definition>
+	
+	<example>
+		<title>Finding Average Rate of Change</title>
+		<p>Let's find the average rate of change of <m>f(x) = x^3 - 2x + 1</m> on the interval <m>[-1,2]</m>.</p>
+		<p>To do so, we evaluate the difference quotient of <m>f</m> on <m>[-1,2]</m>.
+			<md>
+				<mrow>\frac{f(2)-f(-1)}{2-(-1)}
+						&amp;= \frac{[2^3-4+1]-[-1+2+1]}{3} </mrow>
+				<mrow>		&amp;= \frac{5-2}{3} </mrow>
+				<mrow>	&amp;= \frac{3}{3} </mrow>
+				<mrow>	&amp;= 1 </mrow>
+			</md>
+			Observe the slope of the secant on the graph below.
+			<image source="images/functions/diffq2" width="50%"/>
+		</p>
+	</example>
+
+	<example>
+		<title>Data Transfer</title>
+		<statement><p>The graph below shows the amount of data transferred (in gigabytes) over a secure network during a <m>6</m> second period of time.
+		<image source="images/functions/diffqdata1" width="50%"/>
+		<ol>
+			<li><p>Find the average rate of data transfer during the time interval starting at <m>t = 2</m> seconds and ending at <m>t = 5</m> seconds. What units does this have? Draw the corresponding secant line on the graph.</p></li>
+			<li><p>Find the average rate of data transfer during the time interval starting at <m>t = 2</m> seconds and ending at <m>t = 3</m> seconds.</p></li>
+		</ol>
+		</p>
+		</statement>
+		<solution>
+			<p>Let <m>D(t)</m> denote the amount of data transferred after <m>t</m> seconds. Then the average rate on <m>[2,5]</m> is
+			<me>\frac{D(5)-D(2)}{5-2} = \frac{5.5-1.5}{3} = \frac{4}{3} \approx 1.33</me>
+			with units of Gigabytes per second.
+			<image source="images/functions/diffqdata2" width="50%"/>
+			Repeating for <m>[2,3]</m>,
+			<me>\frac{D(3)-D(2)}{3-2} = \frac{2-1.5}{1} = 0.5 \, {\rm Gb/sec}.</me>
+			<image source="images/functions/diffqdata3" width="50%"/>
+			which appears to very accurately indicate the rate of data transfer.
+		</p>
+		</solution>
+	</example>
+
+	<paragraphs><title>Difference Quotients in Calculus</title>
+	<p>In calculus, we will want to consider the difference quotient over small intervals <m>[x,x+h]</m>, where <m>h\neq 0</m> is a small non-zero amount. This puts the two points on the graph close together.
+	<image source="images/functions/diffqh1" width="50%"/>
+	The slope of this secant line does a good job of measuring the rate of change of the function at <m>x</m>. In this case, the difference quotient (<xref ref="equation-difference-quotient"/>) takes the form
+	<men xml:id="equation-difference-quotient-h">
+			\frac{f(x+h)-f(x)}{h}.
+		</men></p></paragraphs>
+
+	<example>
+		<title>Evaluating a Difference Quotient</title>
+		<p>Let's find and simplify the difference quotient <xref ref="equation-difference-quotient-h"/> for <m>{\color{blue} f(x) = -x^2 + 2x + 1}</m>.
+		</p>
+		<p>First, note that
+			<m>{\color{green} f(x+h) = -(x+h)^2 +2(x+h)+1}.</m>
+		So,
+		<md>
+			<mrow>\frac{{\color{green}f(x+h)}-{\color{blue}f(x)}}{h}
+					&amp;= 
+					\frac{{\color{green}-(x+h)^2 +2(x+h)+1} -\left[{\color{blue}-x^2 + 2x + 1}\right]}{h}</mrow>
+			<mrow>
+			&amp;= \frac{-(x^2+2xh+h^2) +2x+2h+1 +x^2 - 2x - 1}{h}</mrow>
+			<mrow>
+			&amp;= \frac{-x^2-2xh-h^2 +2x+2h+1 +x^2 - 2x - 1}{h}</mrow>
+			<mrow>
+			&amp;= \frac{-2xh-h^2 +2h}{h}</mrow>
+			<mrow>
+			&amp;= \frac{h(-2x-h +2)}{h}</mrow>
+			<mrow>
+			&amp;= -2x-h +2</mrow> -->
+		</md></p></example>
+
+		<example>
+			<title>Additional Difference Quotient Examples</title>
+			<statement><p>Find and simplify the difference quotient <xref ref="equation-difference-quotient-h"/> for each function below. Video solutions follow.</p>
+			<ol>
+				<li><m>f(x) = 3x-4</m></li>
+				<li><m>f(x) = x-2x^2</m></li>
+				<li><m>f(x) = \frac{1}{3x}</m></li>
+				<li><m>f(x) = \frac{1}{x+3}</m></li>
+			</ol>
+			</statement>
+			<solution><p>
+				<video youtube="9wqWe5JQcek"/>
+			</p></solution>
+		</example>
+
+
+		<!-- <iframe title="difference quotient practice" width="512" height="288" allowTransparency="true" mozallowfullscreen webkitallowfullscreen allowfullscreen style="background-color:transparent;" frameBorder="0" src="https://app.vidgrid.com/embed/5BHunZEb3jyv"></iframe> --> -->
+  
+
+ 
+
+	<!-- <example>
+		<title>Average Velocity</title>
+	</example>
+ -->
+</section>
+
+<xi:include href="../exercises/ex-functions.xml" />
+</chapter>

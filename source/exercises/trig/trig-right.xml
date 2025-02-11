@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="exercises-trig-right">
+
+<title>Exercises: Right Triangles</title>
+<introduction>
+		<p><em>These exercises address the trigonometry of right triangles and the fundamental definitions of sine, cosine, and tangent of an angle <m>\theta</m> as ratio of sides of a right triangle.</em></p>
+		<me>
+			\sin (\theta) = \frac{\text{(opposite)}}{\text{(hypotenuse)}}, \quad 
+			\cos (\theta) = \frac{\text{(adjacent)}}{\text{(hypotenuse)}}, \quad 
+			\tan (\theta) = \frac{\text{(opposite)}}{\text{(adjacent)}}.
+		</me>
+		<p><em>This video reviews some of the topics above.</em></p>
+		<figure>
+			<video youtube="LBOPUcDBjfg" width="100%" xml:id="video-trig-right-triangle-trigonometry" />
+		</figure>
+	</introduction>
+
+	<exercise>
+	<statement><p>Find the sine, cosine, and tangent of the angles <m>\alpha</m> and <m>\beta</m> in the triangle below.</p>
+	<figure>
+		<image source="images/trig/triangle1.png" width="10%"/>
+	</figure>
+	</statement>
+	<answer>
+		<p><m>\sin \alpha = \frac{\sqrt{86}}{10}</m>, <m>\cos \alpha = \frac{4}{10} = \frac{2}{5}</m>, and <m>\tan \alpha = \frac{\sqrt{86}}{4}</m>. While <m>\cos \beta = \frac{\sqrt{86}}{10}</m>, <m>\sin \beta = \frac{4}{10} = \frac{2}{5}</m>, and <m>\tan \beta = \frac{4}{\sqrt{86}} = \frac{2 \sqrt{86}}{43}</m>.</p>
+	</answer>
+	<solution>
+		<p>The missing side <m>x</m> satisfies:
+		<me>
+			4^2+x^2 =10^2 \Rightarrow x^2 = 100-16 = 86 \Rightarrow x = \sqrt{86}
+		</me>
+		Thus, <m>\sin \alpha = \frac{\sqrt{86}}{10}</m>, <m>\cos \alpha = \frac{2}{5}</m>, and <m>\tan \alpha = \frac{\sqrt{86}}{4}</m>. 
+
+		Now for the other angle, <m>\cos \beta = \frac{\sqrt{86}}{10}</m>, <m>\sin \beta = \frac{2}{5}</m>, and <m>\tan \beta = \frac{4}{\sqrt{86}} = \frac{2 \sqrt{86}}{43}</m>.</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Given that <m>\sin(\theta) = 1/5</m> and that the hypotenuse is <m>7</m> inches, find the length of the remaining sides of the right triangle containing <m>\theta</m>.</p>
+	</statement>
+	<answer>
+		<p>The side opposite <m>\theta</m> has length <m>\frac{7}{5}</m> while the side adjacent has length <m>\frac{14\sqrt{6}}{5}</m>.</p>
+	</answer>
+	<solution>
+		<p>We have,
+		<me>
+			\sin \theta = \frac{\rm opposite}{\rm hypotenuse} = \frac{\rm opposite}{7} = \frac{1}{5} \Rightarrow {\rm opposite} = 7 \times \frac{1}{5} = \frac{7}{5}
+		</me>
+		We could now find the adjacent side using the pythagorean theorem:
+		<me>
+			\left(\frac{7}{5}\right)^2 + \left(\rm adjacent\right)^2  = 7^2
+			\Rightarrow \left(\rm adjacent\right)^2 = 49-\frac{49}{25} = \frac{1176}{25}
+		</me>
+		Thus, the adjacent side is <m>\sqrt{\frac{1176}{25}} = \frac{14\sqrt{6}}{5}</m>.
+		</p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Standing at a point 100 feet from the base of a building, you measure the angle of elevation from the ground to the top of the building to be <m>40^\circ</m>. A cellphone tower is mounted onto the top of the building. From the same point you measure the angle of elevation from the ground to the top of the cell tower to be <m>50^\circ</m>. How tall is the building? How tall is the cellphone tower? Use a calculator.</p>
+	</statement>
+	<answer><p>The tower is about 35 feet.</p>
+	</answer>
+	<solution><p>The height <m>h</m> of the building satisfies
+		<me>
+			\tan 40^\circ = \frac{h}{100 \, \rm feet} \Rightarrow h = \tan 40^\circ \times 100 \, \rm feet
+		</me>
+		With a calculator in degree mode, I estimate that <m>h \approx 84 \, \rm feet</m>.
+		The combined height <m>H</m> of the building and cell tower satisfies
+		<me>
+			\tan 50^\circ = \frac{H}{100 \, \rm feet} \Rightarrow H = \tan 50^\circ \times 100 \, \rm feet \Rightarrow H \approx 119 \, \rm feet		
+		</me>
+		The tower itself is <m>119 - 84 = 35</m> feet.</p>
+	</solution>
+	</exercise>
+
+	
+
+	
+
+</exercises>

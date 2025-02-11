@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="exercises-trig-functions">
+
+	<title>Exercises: Trig Functions</title>
+
+	<introduction><p><em>These exercises address the six trigonometric functions of an angle <m>\theta</m> in standard position as determined by the coordinates of a point on its terminal ray.
+	<me>\sin(\theta) = \frac{y}{r}, \quad 
+		\cos(\theta) = \frac{x}{r}, \quad 
+		\tan(\theta) = \frac{y}{x}</me>
+	and their reciprocals 
+	<me>\csc(\theta) = \frac{r}{y} = \frac{1}{\sin(\theta)}, \quad 
+		\sec(\theta) = \frac{r}{x} = \frac{1}{\cos(\theta)}, \quad 
+		\cot(\theta) = \frac{x}{y} = \frac{1}{\tan(\theta)}.
+	</me></em></p>
+	<p><em>The video reviews the trigonometric functions.</em></p>
+	<figure>
+		<video youtube="H_cQwsZ9uYE" width="100%" xml:id="video-trig-trigonometric-functions" />
+	</figure>
+	</introduction>
+
+	<exercise>
+	<statement><p>Find all six trigonometric function values of the angle <m>\theta</m> in standard position whose terminal ray passes through the point <m>(x,y) = (4,-1)</m>. See figure below.</p>
+	<figure>
+		<image source="images/trig/point.png" width="40%"/>
+	</figure>
+	</statement>
+	<answer><p><table>
+			<tabular bottom="minor" top="major" left="major" right="medium"  halign="center" >
+			<row>
+				<cell><m>\sin \theta = \frac{-1}{\sqrt{17}}= -\frac{\sqrt{17}}{17}</m></cell> 
+				<cell><m>\csc \theta = \frac{\sqrt{17}}{-1} = - \sqrt{17}</m></cell>
+			</row>
+			<row>
+				<cell><m>\cos \theta = \frac{4}{\sqrt{17}}=\frac{4\sqrt{17}}{17}</m></cell> 
+				<cell><m>\sec \theta = \frac{\sqrt{17}}{4}</m></cell>
+			</row>
+			<row>
+				<cell><m>\tan \theta = -\frac{1}{4}</m></cell>
+				<cell><m>\cot \theta = \frac{4}{-1}=-4</m></cell>
+			</row>
+			</tabular>
+		</table>
+	</p></answer>
+	<solution><p>
+		We need the radial distance <m>r</m> from the origin to the point:
+		<me>
+			r^2 = 4^2 + (-1)^2 = 16 + 1 = 17 \Rightarrow r = \sqrt{17}.
+		</me>
+		We can now form all the ratios we want with <m>x=4</m>, <m>y = -1</m>, and <m>r = \sqrt{17}</m>
+
+		<table>
+			<tabular bottom="minor" top="major" left="major" right="medium"  halign="center" >
+			<row>
+				<cell><m>\sin \theta = \frac{-1}{\sqrt{17}}= -\frac{\sqrt{17}}{17}</m></cell> 
+				<cell><m>\csc \theta = \frac{\sqrt{17}}{-1} = - \sqrt{17}</m></cell>
+			</row>
+			<row>
+				<cell><m>\cos \theta = \frac{4}{\sqrt{17}}=\frac{4\sqrt{17}}{17}</m></cell> 
+				<cell><m>\sec \theta = \frac{\sqrt{17}}{4}</m></cell>
+			</row>
+			<row>
+				<cell><m>\tan \theta = -\frac{1}{4}</m></cell>
+				<cell><m>\cot \theta = \frac{4}{-1}=-4</m></cell>
+			</row>
+			</tabular>
+		</table>
+	</p></solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Using a calculator, approximate the coordinates <m>(x,y)</m> of the point on the circle indicated in the figure below.</p>
+	<figure>
+		<image source="images/trig/circle.png" width="30%"/>
+	</figure>
+	</statement>
+	<hint>
+		<p>The radius of the circle appears to be <m>r = 4</m></p>.
+	</hint>
+	<answer>
+		<p><m>x  \approx -2.06015</m> and <m>y  \approx 3.42867</m></p>
+	</answer>
+	<solution><p>The radius of the circle appears to be <m>r = 4</m>. Using a calculator, <m>x = 4\times\cos (121^\circ) \approx -2.06015</m> and <m>y = 4\times\sin (121^\circ) \approx 3.42867</m>. Observe the signs of each are consistent with an angle in Quadrant II.</p></solution>
+	</exercise>
+
+<!-- 	<exercise>
+		<statement><p>Find the exact value of the sine, cosine, and tangent of each angle below without using a calculator.
+		<ol label="a">
+			<li><m>\displaystyle \theta = \frac{4\pi}{3}</m></li>
+			<li><m>\displaystyle \theta = -\frac{7\pi}{6}</m></li>
+			<li><m>\displaystyle \theta = \frac{7\pi}{4}</m></li>
+			<li><m>\displaystyle \theta = \frac{5\pi}{4}</m></li>
+		</ol>
+		</p>
+	</statement>
+	<hint><p>First plot the angle to determine its quadrant. Then determine the sine, cosine, and tangent of the reference and asjust signs according to the quadrant.</p></hint>
+	<answer>
+		<p><ol label="a">
+			<li><m>\sin\left(\frac{4\pi}{3}\right) =</m>, 
+				<m>\cos\left(\frac{4\pi}{3}\right) = </m>, and 
+				<m>\tan\left(\frac{4\pi}{3}\right) =</m>.</li>
+			<li><m>\sin\left(-\frac{7\pi}{6}\right) = </m>, 
+				<m>\cos\left(-\frac{7\pi}{6}\right) = </m>, and 
+				<m>\tan\left(-\frac{7\pi}{6}\right) =</m>.</li>
+			<li><m>\sin\left(\frac{7\pi}{4}\right) = </m>,
+				<m>\cos\left(\frac{7\pi}{4}\right) = </m>, and 
+				<m>\tan\left(\frac{7\pi}{4}\right) = </m>.</li>
+			<li><m>\sin\left(\frac{5\pi}{4}\right) = </m>, 
+				<m>\cos\left(\frac{5\pi}{4}\right) = </m>, and 
+				<m>\tan\left(\frac{5\pi}{4}\right) =</m>.</li>
+		</ol></p>
+	</answer>
+	</exercise>
+
+	<exercise>
+		<statement><p>Find the exact value of the sine, cosine, and tangent of each angle below without using a calculator.
+		<ol label="a">
+			<li><m>\displaystyle \theta = 3\pi</m></li>
+			<li><m>\displaystyle \theta = -\frac{7\pi}{2}</m></li>
+			<li><m>\displaystyle \theta = 4\pi</m></li>
+			<li><m>\displaystyle \theta = -\frac{\pi}{2}</m></li>
+		</ol>
+		</p></statement>
+	<hint><p>Each angle's terminal ray lies on an axes. Determine the corresponding point on the unit circle to answer.</p></hint>
+	<answer>
+		<p><ol label="a">
+			<li><m>\sin(3\pi) = 0</m>, 
+				<m>\cos(3\pi) = -1</m>, and 
+				<m>\tan(3\pi) = 0</m>.</li>
+			<li><m>\sin\left(-\frac{7\pi}{2}\right) = 1</m>, 
+				<m>\cos\left(-\frac{7\pi}{2}\right) = 0</m>, and 
+				<m>\tan\left(-\frac{7\pi}{2}\right)</m> undefined.</li>
+			<li><m>\sin(4\pi) = 0</m>,
+				<m>\cos(4\pi) = 1</m>, and 
+				<m>\tan(4\pi) = 0</m>.</li>
+			<li><m>\sin\left(-\frac{\pi}{2}\right) = -1</m>, 
+				<m>\cos\left(-\frac{\pi}{2}\right) = 0</m>, and 
+				<m>\tan\left(-\frac{\pi}{2}\right)</m> undefined.</li>
+		</ol></p>
+	</answer>
+	</exercise> -->
+	
+
+	<exercise>
+	<statement><p>Suppose <m>\theta</m> is an angle in standard position whose terminal ray is in Quadrant III satisfying <m>\tan (\theta) = 3</m>. Find the sine and cosine of <m>\theta</m>.</p>
+	</statement>
+	<answer>
+		<p><m>
+			\sin \theta = -\frac{3\sqrt{10}}{10}
+		</m>
+		and
+		<m>
+			\cos \theta = -\frac{\sqrt{10}}{10}.
+		</m></p></answer>
+	<solution>
+		<p>Suppose <m>(x,y)</m> is a point in the terminal ray of <m>\theta</m>. Here's what we know:
+		<ol>
+			<li><m>x \lt 0</m> is negative;</li>
+			<li><m>y \lt 0</m> is negative;</li>
+			<li><m>\tan \theta = \frac{y}{x} = 3.</m></li>
+		</ol>
+		So if <m>x = -1</m> (negative), then <m>y = 3 x = -3</m>. The point <m>(x,y) = (-1,-3)</m> will do. (There are many other options!) The radial distance is
+		<me>
+			r^2 = (-1)^2 + (-3)^2 = 1 + 9 = 10 \Rightarrow r = \sqrt{10}.
+		</me>
+		So,
+		<me>
+			\sin \theta = y/r = -3/\sqrt{10} = -\frac{3\sqrt{10}}{10}
+		</me>
+		and
+		<me>
+			\cos \theta = x/r = -1/\sqrt{10} = -\frac{\sqrt{10}}{10}.
+		</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Suppose <m>\theta</m> is an angle in standard position whose terminal ray is in Quadrant III satisfying <m>\sin (\theta) = -1/3</m>. Find the cosine and tangent of <m>\theta</m>.</p>
+	</statement>
+	<answer>
+		<p><m>\cos \theta = -\sqrt{8}/3</m>
+		and
+		<m>\tan \theta = \frac{\sqrt{8}}{8}
+		</m></p>
+	</answer>
+	<solution>
+		<p>Suppose <m>(x,y)</m> is a point in the terminal ray of <m>\theta</m>. Here's what we know:
+		<ol>
+			<li><m>x \lt 0</m> is negative;</li>
+			<li><m>y \lt 0</m> is negative;</li>
+			<li><m>\sin \theta = \frac{y}{r} = -1/3.</m></li>
+		</ol>
+		So if <m>y = -1</m> (negative), then <m>r = 3</m>. The <m>x</m>-coordinate must satisfy
+		<me>
+			r^2 = x^2 + y^2 \Rightarrow x^2 = 3^2 - (-1)^2 = 8 \Rightarrow x = \pm \sqrt{8}
+		</me>
+		and since <m>x</m> must be negative, we choose <m>x=-\sqrt{8}</m>. The point <m>(-\sqrt{8},-1)</m> is on the terminal ray of our angle. (There are many other options!)
+		So,
+		<me>
+			\cos \theta = x/r = -\sqrt{8}/3
+		</me>
+		and
+		<me>
+			\tan \theta = y/x = \frac{-1}{-\sqrt{8}} = \frac{1}{\sqrt{8}} = \frac{\sqrt{8}}{8}
+		</me></p>
+	</solution>
+	</exercise>
+
+	<exercise>
+	<statement><p>Suppose the terminal ray of an angle <m>\theta</m> in standard position is in Quadrant IV. Which of the six trigonometric function values of <m>\theta</m> are positive?</p>
+	</statement>
+	<solution><p>
+		In Quadrant IV, <m>x \gt  0</m> is positive and <m>y \lt 0</m> is negative. Thus,
+		<ol>
+			<li>Sine is negative; and so is its reciprocal cosecant.</li>
+			<li>Cosine is positive; and so is its reciprocal secant.</li>
+			<li>Tangent is negative; and so is its reciprocal cotangent.</li>
+		</ol></p>
+	</solution>
+	</exercise>
+
+
+	
+
+</exercises>
