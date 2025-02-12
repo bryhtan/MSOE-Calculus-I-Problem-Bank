@@ -14,18 +14,22 @@
   </docinfo>
 
   <book xml:id="jumpstart">
-    <title>Precalculus JumpStart</title>
+    <title>Calculus Preperation Workbook</title>
 
  <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
           <!-- <department>Mathematics Department</department> -->
           <institution>Milwaukee School of Engineering</institution>
-          <personname>Anthony van Groningen</personname>
+          <personname>Anthony van Groningen*</personname>
+            <personname>Niles Armstrong</personname>
+              <personname>Zachary Bryhtan</personname>
+                <personname>Dylan Heuer</personname>
+                  <personname>Adam Buck</personname>
         </author>
-        <date>
+        <!-- <date>
           Summer 2023
-        </date>
+        </date> -->
       </titlepage>
     </frontmatter>
 
