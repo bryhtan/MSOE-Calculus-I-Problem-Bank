@@ -21,11 +21,7 @@
         <author>
           <!-- <department>Mathematics Department</department> -->
           <institution>Milwaukee School of Engineering</institution>
-          <personname>Anthony van Groningen*</personname>
-            <personname>Niles Armstrong</personname>
-              <personname>Zachary Bryhtan</personname>
-                <personname>Dylan Heuer</personname>
-                  <personname>Adam Buck</personname>
+          <personname>Niles Armstrong, Zachary Bryhtan, Adam Buck, Anthony van Groningen*, Dylan Heuer</personname>
         </author>
         <!-- <date>
           Summer 2023
