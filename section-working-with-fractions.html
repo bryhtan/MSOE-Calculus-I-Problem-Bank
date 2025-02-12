@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_grey">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Working with Fractions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Precalculus JumpStart">
+<meta property="book:author" content="Anthony van Groningen">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.5.6';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.82032a8574f6ce75.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6a985cbf816db5c7.css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://msoe.edu"><img src="external/images/msoe.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="jumpstart.html"><span class="title">Precalculus JumpStart</span></a></h1>
+<p class="byline">Anthony van Groningen</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="section-terms-versus-factors.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-realnumbers.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-squares-and-cubes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\reference}[1]{\overline{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-realnumbers.html" class="internal"><span class="codenumber">1</span> <span class="title">The Real Numbers</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-integers-rational-reals.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Integers, Rationals, and Reals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-decimal-representations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Decimal Representations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-order-of-operations.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-properties-of-reals.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Properties of Real Numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-terms-versus-factors.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Terms versus Factors</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="section-working-with-fractions.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Working with Fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-squares-and-cubes.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Squares and Cubes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-roots-radicals.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-absolute-value.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Absolute Value</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-interval-notation.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Interval Notation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-union-and-intersection.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Unions and Intersections</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-realnumbers.html" class="internal"><span class="codenumber">1.12</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-exponents.html" class="internal"><span class="codenumber">2</span> <span class="title">Exponents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-negative-exponents.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Negative Exponents <span class="process-math">\(x^{-n}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-scientific-notation.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Scientific Notation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-rational-exponents.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Rational Exponents <span class="process-math">\(x^{m/n}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-laws-of-exponents.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Laws of Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-exponents.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-simplifying.html" class="internal"><span class="codenumber">3</span> <span class="title">Simplifying Expressions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-what-are-expressions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">What Are Expressions?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-domain-of-an-expression.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Domain of an Expression</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-polynomial-expressions.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Polynomial Expressions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-factoring.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Factoring</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-rational-expressions.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Rational Expressions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-radical-expressions.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Radical Expressions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-exponential-expressions.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Exponential Expressions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-simplifying-expressions.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-solving.html" class="internal"><span class="codenumber">4</span> <span class="title">Solving Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-what-are-equations.html" class="internal"><span class="codenumber">4.1</span> <span class="title">What Are Equations?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-compound-inequalities.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Compound Inequalities</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-absolute-value-equations.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Absolute Value Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-quadratic-equations.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Quadratic Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-polynomial-equations.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Polynomial Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-rational-equations.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Rational Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-radical-equations.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Radical Equations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-solving-equations.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-graphing.html" class="internal"><span class="codenumber">5</span> <span class="title">Graphing</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-coordinate-plane.html" class="internal"><span class="codenumber">5.1</span> <span class="title">The Coordinate Plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-graphing-equations.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphing Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-equations.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Linear Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-slope-rates.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Slope and Rates of Change</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-point-slope-form.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-models.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Linear Models</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-parabolas.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Parabolas</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-graphing.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-functions.html" class="internal"><span class="codenumber">6</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-introduction-to-functions.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introduction to Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-graphing-functions.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Graphing Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-function-gallery.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Function Gallery</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-pw-defined-functions.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Piecewise-defined Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-algebra-of-fuctions.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Algebra of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-composition-of-functions.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Composition of Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-transformations.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Transformations of Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-inverse-functions.html" class="internal"><span class="codenumber">6.8</span> <span class="title">Inverse Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-one-to-one-functions.html" class="internal"><span class="codenumber">6.9</span> <span class="title">One-to-one Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-difference-quotients.html" class="internal"><span class="codenumber">6.10</span> <span class="title">Difference Quotients</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-functions.html" class="internal"><span class="codenumber">6.11</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-explog.html" class="internal"><span class="codenumber">7</span> <span class="title">Exp and Log</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-exponential-functions.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-natural-base.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Natural Base</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-logarithmic-functions.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Logarithmic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-natural-logarithm.html" class="internal"><span class="codenumber">7.4</span> <span class="title">The Natural Logarithm</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-algebraic-properties-logs.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Algebraic Properties</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-exponential-equations.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Exponential Equations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-explog.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-trigonometry-1.html" class="internal"><span class="codenumber">8</span> <span class="title">Right Triangle Trigonometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-measuring-angles.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Measuring Angles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-right-triangle-trigonometry.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Right Triangle Trigonometry</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-special-triangles.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Special Triangles</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter-trigonometry-1-5.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-trigonometry-2.html" class="internal"><span class="codenumber">9</span> <span class="title">Circle Trigonometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-trig-functions.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-signs-of-trig-functions.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Signs of Trig Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-reference-angle.html" class="internal"><span class="codenumber">9.3</span> <span class="title">The Reference Angle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-basic-ids.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Basic Identities</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-unit-circle.html" class="internal"><span class="codenumber">9.5</span> <span class="title">The Unit Circle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-trig-graphs.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Graphs</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter-trigonometry-2-8.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-working-with-fractions"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.6</span><span class="space"> </span><span class="title">Working with Fractions</span>
+</h2>
+<div class="para" id="section-working-with-fractions-2">To multiply two fractions, just multiply the two numerators and the two denominators.</div>
+<article class="principle theorem-like" id="principle-multiplying-fractions"><h3 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">1.24</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplying Fractions.</span>
+</h3>
+<div class="para logical" id="principle-multiplying-fractions-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{b}\cdot \frac{c}{d} = \frac{a\cdot c}{b\cdot d}.
+\end{equation*}
+</div></div></article><article class="example example-like" id="section-working-with-fractions-4"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.25</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplying Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-4-2-1">
+<div class="para">Multiply <span class="process-math">\(5/6\)</span> and <span class="process-math">\(2/5\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{5}{6}\cdot\frac{2}{5} = \frac{10}{30} = \frac{10}{3\cdot 10} = \frac{1}{3}.
+\end{equation*}
+</div>
+<div class="para">Of course, we can cancel any <em class="alert">common factors</em> as soon as we notice them:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{5}{6}\cdot\frac{2}{5} = \frac{1}{6}\cdot\frac{2}{1} = \frac{2}{6} = \frac{2}{2\cdot 3} = \frac{1}{3}.
+\end{equation*}
+</div>
+</div></article><article class="warning remark-like" id="warning-cancelling"><h3 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">1.26</span><span class="period">.</span><span class="space"> </span><span class="title">Cancellation in Fractions.</span>
+</h3>
+<div class="para logical" id="warning-cancelling-2">
+<div class="para">You may cancel common <em class="emphasis">factors</em> in a fraction. For instance, the <span class="process-math">\(b\)</span>’s cancel in the expression</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-pemdas.html ./knowl/xref/example-cancelling.html">
+\begin{equation*}
+\frac{ab}{cb} = \frac{a}{c}.
+\end{equation*}
+</div>
+<div class="para">However, you must <em class="alert">never cancel common <em class="emphasis">terms</em> in a fraction</em>. For instance, the <span class="process-math">\(b\)</span>’s in the expression <span class="process-math">\(\displaystyle \frac{a+b}{b}\)</span> do NOT cancel as this would violate PEMDAS <a href="section-order-of-operations.html#principle-pemdas" class="xref" data-knowl="./knowl/xref/principle-pemdas.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 1.9: Order of Operations">Principle 1.9</a> and <a href="section-terms-versus-factors.html#example-cancelling" class="xref" data-knowl="./knowl/xref/example-cancelling.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.21: Canceling">Example 1.21</a>.</div>
+</div></article><div class="para" id="section-working-with-fractions-6">To divide two fractions, we can multiply by the reciprocal of the denominator.</div>
+<article class="principle theorem-like" id="section-working-with-fractions-7"><h3 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">1.27</span><span class="period">.</span><span class="space"> </span><span class="title">Dividing Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-7-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{b} \div \frac{c}{d} = \frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{d}{c}.
+\end{equation*}
+</div></div></article><article class="example example-like" id="section-working-with-fractions-8"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.28</span><span class="period">.</span><span class="space"> </span><span class="title">Dividing Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-8-2-1">
+<div class="para">Divide <span class="process-math">\(3/2\)</span> by <span class="process-math">\(3/4\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{2} \div \frac{3}{4} = \frac{3/2}{3/4} = \frac{3}{2} \cdot \frac{4}{3} = \frac{4}{2} = 2.
+\end{equation*}
+</div>
+</div></article><div class="para" id="section-working-with-fractions-9">Addition may be performed when the denominators are the same.</div>
+<article class="principle theorem-like" id="section-working-with-fractions-10"><h3 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">1.29</span><span class="period">.</span><span class="space"> </span><span class="title">Adding Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-10-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{b}+\frac{c}{b} = \frac{a+c}{b}.
+\end{equation*}
+</div></div></article><div class="para" id="section-working-with-fractions-11">If the denominators are different, we need to find a common denominator. We usually prefer to find the <dfn class="terminology">least common denominator (LCD)</dfn> and multiply each fraction by the appropriate <dfn class="terminology">form of one</dfn>.</div>
+<article class="example example-like" id="section-working-with-fractions-12"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.30</span><span class="period">.</span><span class="space"> </span><span class="title">Adding Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-12-2-1">
+<div class="para">To add <span class="process-math">\(5/4\)</span> and <span class="process-math">\(1/6\text{,}\)</span> observe that the least common denominator is <span class="process-math">\(12\)</span> because this is the smallest multiple of <span class="process-math">\(4\)</span> and <span class="process-math">\(6\)</span> they have in common. Then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{5}{4} + \frac{1}{6} = \frac{5\cdot 3}{4\cdot 3} + \frac{1 \cdot 2}{6\cdot 2}
+=  \frac{15}{12} + \frac{2}{12} = \frac{15+2}{12} = \frac{17}{12}.
+\end{equation*}
+</div>
+<div class="para">This results in an <dfn class="terminology">improper</dfn> fraction which may be written as a</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{17}{12} = \frac{12+5}{12} = \frac{12}{12}+\frac{5}{12} = 1 + \frac{5}{12}.
+\end{equation*}
+</div>
+</div></article><article class="remark remark-like" id="remark-mixednumbers"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.31</span><span class="period">.</span>
+</h3>
+<div class="para" id="remark-mixednumbers-1">The result above is often written as a <dfn class="terminology">mixed number</dfn> <span class="process-math">\(1 \frac{5}{12}\text{,}\)</span> and while you may encounter this in some subjects, we will prefer the improper fraction <span class="process-math">\(\frac{17}{12}\)</span> or the sum <span class="process-math">\(1 + \frac{5}{12}\)</span> in calculus.</div></article><article class="example example-like" id="section-working-with-fractions-14"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.32</span><span class="period">.</span><span class="space"> </span><span class="title">Subtracting Fractions.</span>
+</h3>
+<div class="para" id="section-working-with-fractions-14-2-1">What fraction of the circle is unlabeled? <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/images/realnumbers/sector1.svg" role="img" class="contained"></div>
+</div>
+<div class="solutions"><details id="section-working-with-fractions-14-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="section-working-with-fractions-14-3-1">
+<div class="para">The sum of the portions should add to one, so that the missing fraction is</div>
+<div class="displaymath process-math" id="section-working-with-fractions-14-3-1-1">
+\begin{align*}
+1-\frac{1}{3}-\frac{2}{5} \amp= \frac{15}{15} - \frac{5}{15} - \frac{6}{15} \\
+\amp= \frac{15-5-6}{15} \\
+\amp= \frac{4}{15}
+\end{align*}
+</div>
+</div></div></details></div></article><div class="para" id="section-working-with-fractions-15">Using a common denominator can also be useful when comparing fractions.</div>
+<article class="example example-like" id="section-working-with-fractions-16"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.33</span><span class="period">.</span><span class="space"> </span><span class="title">Comparing fractions.</span>
+</h3>
+<div class="para" id="section-working-with-fractions-16-2-1">Which is larger <span class="process-math">\(4/7\)</span> or <span class="process-math">\(3/5\)</span> ?</div>
+<div class="solutions"><details id="section-working-with-fractions-16-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="section-working-with-fractions-16-3-1">
+<div class="para">To avoid any possible confusion, we observe they have a least common denominator of <span class="process-math">\(35 = 7\times 5\text{.}\)</span> Then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{4}{7} = \frac{20}{35} \quad \text{and} \quad \frac{3}{5} = \frac{21}{35}.
+\end{equation*}
+</div>
+<div class="para">Comparing the numerators, we conclude that <span class="process-math">\(3/5\)</span> is slightly bigger than <span class="process-math">\(4/7\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{4}{7} \lt \frac{3}{5},
+\end{equation*}
+</div>
+<div class="para">but only by <span class="process-math">\(1/21\text{.}\)</span>
+</div>
+</div></div></details></div></article><div class="para logical" id="section-working-with-fractions-17">
+<div class="para">Consider the square of a fraction:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{a}{b}\right)^2 = \frac{a}{b}\cdot\frac{a}{b} = \frac{a\cdot a}{b\cdot b} = \frac{a^2}{b^2}.
+\end{equation*}
+</div>
+<div class="para">In general, a power of a fraction can be applied to the numerator and denominator individually.</div>
+</div>
+<article class="principle theorem-like" id="section-working-with-fractions-18"><h3 class="heading">
+<span class="type">Principle</span><span class="space"> </span><span class="codenumber">1.34</span><span class="period">.</span><span class="space"> </span><span class="title">Powers of Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-18-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}
+\end{equation*}
+</div></div></article><article class="example example-like" id="section-working-with-fractions-19"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.35</span><span class="period">.</span><span class="space"> </span><span class="title">Power of Fractions.</span>
+</h3>
+<div class="para logical" id="section-working-with-fractions-19-2-1">
+<div class="para">Evaluate completely</div>
+<ol class="decimal cols3" id="section-working-with-fractions-19-2-1-1">
+<li id="section-working-with-fractions-19-2-1-1-1"><div class="para" id="p-derived-section-working-with-fractions-19-2-1-1-1"><span class="process-math">\(\displaystyle \displaystyle\left(\frac{2}{3}\right)^2\)</span></div></li>
+<li id="section-working-with-fractions-19-2-1-1-2"><div class="para" id="p-derived-section-working-with-fractions-19-2-1-1-2"><span class="process-math">\(\displaystyle \displaystyle\frac{2^2}{3}\)</span></div></li>
+<li id="section-working-with-fractions-19-2-1-1-3"><div class="para" id="p-derived-section-working-with-fractions-19-2-1-1-3"><span class="process-math">\(\displaystyle \displaystyle\frac{-2^2}{3}\)</span></div></li>
+<li id="section-working-with-fractions-19-2-1-1-4"><div class="para" id="p-derived-section-working-with-fractions-19-2-1-1-4"><span class="process-math">\(\displaystyle \displaystyle\frac{(-2)^2}{3}\)</span></div></li>
+<li id="section-working-with-fractions-19-2-1-1-5"><div class="para" id="p-derived-section-working-with-fractions-19-2-1-1-5"><span class="process-math">\(\displaystyle \displaystyle\left(-\frac{2}{3}\right)^2\)</span></div></li>
+<li id="section-working-with-fractions-19-2-1-1-6"><div class="para" id="p-derived-section-working-with-fractions-19-2-1-1-6"><span class="process-math">\(\displaystyle \displaystyle\left(-\frac{2}{3}\right)^3\)</span></div></li>
+</ol>
+</div>
+<div class="solutions"><details id="section-working-with-fractions-19-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="section-working-with-fractions-19-3-1">
+<div class="para">Remember that exponents are considered before multiplication or division in <a href="section-order-of-operations.html#principle-pemdas" class="xref" data-knowl="./knowl/xref/principle-pemdas.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 1.9: Order of Operations">PEMDAS 1.9</a>.</div>
+<ol class="decimal" id="section-working-with-fractions-19-3-1-2">
+<li id="section-working-with-fractions-19-3-1-2-1"><div class="para" id="p-derived-section-working-with-fractions-19-3-1-2-1"><span class="process-math">\(\displaystyle \displaystyle\left(\frac{2}{3}\right)^2 = \frac{2^2}{3^2} = \frac{4}{9}\)</span></div></li>
+<li id="section-working-with-fractions-19-3-1-2-2"><div class="para" id="p-derived-section-working-with-fractions-19-3-1-2-2"><span class="process-math">\(\displaystyle \displaystyle\frac{2^2}{3} = \frac{4}{3}\)</span></div></li>
+<li id="section-working-with-fractions-19-3-1-2-3"><div class="para" id="p-derived-section-working-with-fractions-19-3-1-2-3"><span class="process-math">\(\displaystyle \displaystyle\frac{-2^2}{3} = -\frac{4}{3}\)</span></div></li>
+<li id="section-working-with-fractions-19-3-1-2-4"><div class="para" id="p-derived-section-working-with-fractions-19-3-1-2-4"><span class="process-math">\(\displaystyle \displaystyle\frac{(-2)^2}{3} = \frac{4}{3}\)</span></div></li>
+<li id="section-working-with-fractions-19-3-1-2-5"><div class="para" id="p-derived-section-working-with-fractions-19-3-1-2-5"><span class="process-math">\(\displaystyle \displaystyle\left(-\frac{2}{3}\right)^2 = \left(-\frac{2}{3}\right)\cdot\left(-\frac{2}{3}\right)
+= \frac{4}{9}\)</span></div></li>
+<li id="section-working-with-fractions-19-3-1-2-6"><div class="para" id="p-derived-section-working-with-fractions-19-3-1-2-6"><span class="process-math">\(\displaystyle \displaystyle\left(-\frac{2}{3}\right)^3 = \left(-\frac{2}{3}\right)\cdot\left(-\frac{2}{3}\right)\cdot\left(-\frac{2}{3}\right) = - \frac{8}{27}\)</span></div></li>
+</ol>
+</div></div></details></div></article><article class="exercise exercise-like" id="checkpoint-working-with-fractions"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.36</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="checkpoint-working-with-fractions-1"><ol class="decimal" id="checkpoint-working-with-fractions-1-1">
+<li id="checkpoint-working-with-fractions-1-1-1"><div class="para" id="checkpoint-working-with-fractions-1-1-1-1">Can I cancel the <span class="process-math">\(5\)</span> in <span class="process-math">\(\frac{(3+4)\times 5}{15}\text{?}\)</span> Can I cancel the <span class="process-math">\(3\text{?}\)</span> Why or why not?</div></li>
+<li id="checkpoint-working-with-fractions-1-1-2"><div class="para" id="checkpoint-working-with-fractions-1-1-2-1">Is <span class="process-math">\(\frac{2}{3+4}\)</span> the same as <span class="process-math">\(\frac{2}{3}+\frac{2}{4}\text{?}\)</span>
+</div></li>
+</ol></div></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-terms-versus-factors.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-squares-and-cubes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KH1BSEKHDW"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KH1BSEKHDW');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>

@@ -1,0 +1,935 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     31237,        927]
+NotebookOptionsPosition[     29753,        893]
+NotebookOutlinePosition[     30150,        909]
+CellTagsIndexPosition[     30107,        906]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.8973781288441677`*^9, 3.8973781372821817`*^9}},
+ CellLabel->
+  "In[244]:=",ExpressionUUID->"4d058cfe-6e99-4ab6-a18d-8f50fcf781d2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"White", ",", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "Thick"}], "]"}], "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"White", ",", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "Thick"}], "]"}], "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.05", ",", 
+          RowBox[{"1", "-", "0.05"}]}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"White", ",", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "Thick"}], "]"}], "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"1", "-", "0.05"}], ",", "0.05"}], "}"}]}], "]"}]}], "}"}], 
+    "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", 
+            RowBox[{"-", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "+", "0.05"}], ",", "0.5"}], "}"}]}], "]"}], ",", 
+        "25"}], "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<st1.pdf\>\"", ",", "\"\<st1.svg\>\""}], "}"}], ",", "%"}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.897378142034576*^9, 3.8973782717756653`*^9}, {
+  3.897378308026791*^9, 3.8973785218761187`*^9}},
+ CellLabel->
+  "In[276]:=",ExpressionUUID->"f990eb40-dcca-4704-859d-6e7f6b6c8348"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    RectangleBox[{0, 0}]}, 
+   {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    RectangleBox[{0, 1}, {0.05, 0.95}]}, 
+   {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    RectangleBox[{1, 0}, {0.95, 0.05}]}},
+  Epilog->{
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {0.5, -0.05}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {1.05, 0.5}], {25}, StripOnInput -> 
+     False]},
+  PlotRange->{{-0.1, 1.1}, {-0.1, 1.1}}]], "Output",
+ CellChangeTimes->{{3.89737833223915*^9, 3.897378349136876*^9}, {
+  3.8973783876930523`*^9, 3.8973785223439302`*^9}},
+ CellLabel->
+  "Out[276]=",ExpressionUUID->"0f94aace-0228-4e6b-b920-44ac6ffc9a0d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"White", ",", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "Thick"}], "]"}], "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"White", ",", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "Thick"}], "]"}], "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.05", ",", 
+          RowBox[{"1", "-", "0.05"}]}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"White", ",", 
+      RowBox[{"EdgeForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "Thick"}], "]"}], "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"1", "-", "0.05"}], ",", "0.05"}], "}"}]}], "]"}]}], "}"}], 
+    "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", "Thick", ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], ",",
+    "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", 
+            RowBox[{"-", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "+", "0.05"}], ",", "0.5"}], "}"}]}], "]"}], ",", 
+        "25"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", "2", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"0.5", "-", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{
+            RowBox[{"Pi", "/", "4"}], "==", 
+            SuperscriptBox["45", "\[EmptySmallCircle]"]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0.25", ",", "0.08"}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{
+            RowBox[{"Pi", "/", "4"}], "==", 
+            SuperscriptBox["45", "\[EmptySmallCircle]"]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "-", "0.09"}], ",", 
+            RowBox[{"1", "-", "0.25"}]}], "}"}]}], "]"}], ",", "14"}], 
+       "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<st2.pdf\>\"", ",", "\"\<st2.svg\>\""}], "}"}], ",", "%"}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8973785308056192`*^9, 3.8973785322129087`*^9}, {
+  3.897378579056253*^9, 3.8973788415707273`*^9}},
+ CellLabel->
+  "In[342]:=",ExpressionUUID->"4bf9aa82-8745-4ee0-84c1-abd68ad6d2d5"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    RectangleBox[{0, 0}]}, 
+   {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    RectangleBox[{0, 1}, {0.05, 0.95}]}, 
+   {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    RectangleBox[{1, 0}, {0.95, 0.05}]}, 
+   {RGBColor[0, 0, 1], Thickness[Large], 
+    LineBox[{{0, 0}, {1, 1}, {1, 0}, {0, 0}}]}},
+  Epilog->{
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {0.5, -0.05}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {1.05, 0.5}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       SqrtBox["2"], TraditionalForm], {0.45, 0.55}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        RowBox[{
+          FractionBox["\[Pi]", "4"], "\[LongEqual]", 
+          SuperscriptBox["45", "\[EmptySmallCircle]"]}], HoldForm], 
+       TraditionalForm], {0.25, 0.08}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        RowBox[{
+          FractionBox["\[Pi]", "4"], "\[LongEqual]", 
+          SuperscriptBox["45", "\[EmptySmallCircle]"]}], HoldForm], 
+       TraditionalForm], {0.91, 0.75}], {14}, StripOnInput -> False]},
+  PlotRange->{{-0.1, 1.1}, {-0.1, 1.1}}]], "Output",
+ CellChangeTimes->{{3.8973786089439793`*^9, 3.8973788420559063`*^9}},
+ CellLabel->
+  "Out[342]=",ExpressionUUID->"fa0d1d05-476d-4234-9ec7-640890699150"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Line", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "2.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AspectRatio", "->", "0.7"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"0", "-", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"0.5", "-", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1.5", "+", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{
+            RowBox[{"Pi", "/", "3"}], "==", 
+            SuperscriptBox["60", "\[EmptySmallCircle]"]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0.32", ",", "0.08"}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{
+            RowBox[{"Pi", "/", "3"}], "==", 
+            SuperscriptBox["60", "\[EmptySmallCircle]"]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"1", "-", "0.23"}]}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{
+            RowBox[{"Pi", "/", "3"}], "==", 
+            SuperscriptBox["60", "\[EmptySmallCircle]"]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"2", "-", "0.3"}], ",", "0.08"}], "}"}]}], "]"}], ",", 
+        "14"}], "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<st3.pdf\>\"", ",", "\"\<st3.svg\>\""}], "}"}], ",", "%"}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.897379729211912*^9, 3.897379882846306*^9}, {
+  3.897379922530107*^9, 3.897380021433329*^9}, {3.89738120547468*^9, 
+  3.897381209318141*^9}, {3.8973812500169287`*^9, 3.897381269949445*^9}},
+ CellLabel->
+  "In[500]:=",ExpressionUUID->"b9d74174-adae-48d7-a8d6-fb916ac64ce7"],
+
+Cell[BoxData[
+ GraphicsBox[LineBox[{{0, 0}, {2, 0}, {1, 1}, {0, 0}}],
+  AspectRatio->0.7,
+  Epilog->{
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {1, -0.05}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {0.45, 0.55}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {1.55, 0.55}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        RowBox[{
+          FractionBox["\[Pi]", "3"], "\[LongEqual]", 
+          SuperscriptBox["60", "\[EmptySmallCircle]"]}], HoldForm], 
+       TraditionalForm], {0.32, 0.08}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        RowBox[{
+          FractionBox["\[Pi]", "3"], "\[LongEqual]", 
+          SuperscriptBox["60", "\[EmptySmallCircle]"]}], HoldForm], 
+       TraditionalForm], {1, 0.77}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        RowBox[{
+          FractionBox["\[Pi]", "3"], "\[LongEqual]", 
+          SuperscriptBox["60", "\[EmptySmallCircle]"]}], HoldForm], 
+       TraditionalForm], {1.7, 0.08}], {14}, StripOnInput -> False]},
+  PlotRange->{{-0.1, 2.1}, {-0.1, 1.1}}]], "Output",
+ CellChangeTimes->{{3.8973797723767967`*^9, 3.897379883236115*^9}, {
+   3.89737993159921*^9, 3.897380021804793*^9}, 3.897381210027795*^9, {
+   3.897381250652927*^9, 3.89738127025426*^9}},
+ CellLabel->
+  "Out[500]=",ExpressionUUID->"a8b0c303-dd41-4219-907a-1be0ca13ce91"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Line", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", "Thick", ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], ",",
+    "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", 
+      RowBox[{"FaceForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"White", ",", 
+         RowBox[{"Opacity", "[", "0", "]"}]}], "]"}], "]"}], ",", 
+      RowBox[{"EdgeForm", "[", "Blue", "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1.08", ",", "0.08"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "2.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AspectRatio", "->", "0.7"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{"1.5", ",", 
+            RowBox[{"0", "-", "0.06"}]}], "}"}]}], "]"}], ",", "25"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", 
+            RowBox[{"0", "-", "0.06"}]}], "}"}]}], "]"}], ",", "25"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"0.5", "-", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1.5", "+", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "25"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{"Pi", "/", "3"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0.2", ",", "0.08"}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           SuperscriptBox["30", "\[EmptySmallCircle]"], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1.1", ",", 
+            RowBox[{"1", "-", "0.2"}]}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{"Pi", "/", "6"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "-", "0.08"}], ",", 
+            RowBox[{"1", "-", "0.2"}]}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           SuperscriptBox["60", "\[EmptySmallCircle]"], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"2", "-", "0.2"}], ",", "0.06"}], "}"}]}], "]"}], ",", 
+        "14"}], "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<st4.pdf\>\"", ",", "\"\<st4.svg\>\""}], "}"}], ",", "%"}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8973802016736803`*^9, 3.897380332411276*^9}, {
+  3.897380389736257*^9, 3.897380611244399*^9}},
+ CellLabel->
+  "In[480]:=",ExpressionUUID->"efb3289f-8157-4279-a16d-c3c1fef9e9b4"],
+
+Cell[BoxData[
+ GraphicsBox[{LineBox[{{0, 0}, {2, 0}, {1, 1}, {0, 0}}], 
+   {RGBColor[0, 0, 1], Thickness[Large], 
+    LineBox[{{1, 0}, {2, 0}, {1, 1}, {1, 0}}]}, 
+   {Thickness[Large], EdgeForm[RGBColor[0, 0, 1]], FaceForm[{GrayLevel[1], 
+    Opacity[0]}], RectangleBox[{1, 0}, {1.08, 0.08}]}},
+  AspectRatio->0.7,
+  Epilog->{
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {1.5, -0.06}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {0.5, -0.06}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {0.45, 0.55}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {1.55, 0.55}], {25}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        FractionBox["\[Pi]", "3"], HoldForm], TraditionalForm], {0.2, 
+      0.08}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        SuperscriptBox["30", "\[EmptySmallCircle]"], HoldForm], 
+       TraditionalForm], {1.1, 0.8}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        FractionBox["\[Pi]", "6"], HoldForm], TraditionalForm], {0.92, 
+      0.8}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        SuperscriptBox["60", "\[EmptySmallCircle]"], HoldForm], 
+       TraditionalForm], {1.8, 0.06}], {14}, StripOnInput -> False]},
+  PlotRange->{{-0.1, 2.1}, {-0.1, 1.1}}]], "Output",
+ CellChangeTimes->{{3.8973805492842073`*^9, 3.897380611727378*^9}, 
+   3.897380773631756*^9},
+ CellLabel->
+  "Out[480]=",ExpressionUUID->"dcbbf68f-828d-4b96-8fa7-8e761cdd8056"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Line", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", "Thick", ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], ",",
+    "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", 
+      RowBox[{"FaceForm", "[", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"White", ",", 
+         RowBox[{"Opacity", "[", "0", "]"}]}], "]"}], "]"}], ",", 
+      RowBox[{"EdgeForm", "[", "Blue", "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1.08", ",", "0.08"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "2.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AspectRatio", "->", "0.7"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Epilog", "->", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", "3", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "-", "0.12"}], ",", "0.5"}], "}"}]}], "]"}], ",", 
+        "20"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{"1.5", ",", 
+            RowBox[{"0", "-", "0.06"}]}], "}"}]}], "]"}], ",", "20"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", 
+            RowBox[{"0", "-", "0.06"}]}], "}"}]}], "]"}], ",", "20"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"0.5", "-", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "20"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"2", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1.5", "+", "0.05"}], ",", 
+            RowBox[{"0.5", "+", "0.05"}]}], "}"}]}], "]"}], ",", "20"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{"Pi", "/", "3"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0.2", ",", "0.08"}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           SuperscriptBox["30", "\[EmptySmallCircle]"], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1.1", ",", 
+            RowBox[{"1", "-", "0.2"}]}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           RowBox[{"Pi", "/", "6"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "-", "0.08"}], ",", 
+            RowBox[{"1", "-", "0.2"}]}], "}"}]}], "]"}], ",", "14"}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"HoldForm", "[", 
+           SuperscriptBox["60", "\[EmptySmallCircle]"], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"2", "-", "0.2"}], ",", "0.06"}], "}"}]}], "]"}], ",", 
+        "14"}], "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<st5.pdf\>\"", ",", "\"\<st5.svg\>\""}], "}"}], ",", "%"}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.897380749995659*^9, 3.897380804206416*^9}},
+ CellLabel->
+  "In[486]:=",ExpressionUUID->"45e4a9d8-8c9b-4edd-bbc0-287af242066a"],
+
+Cell[BoxData[
+ GraphicsBox[{LineBox[{{0, 0}, {2, 0}, {1, 1}, {0, 0}}], 
+   {RGBColor[0, 0, 1], Thickness[Large], 
+    LineBox[{{1, 0}, {2, 0}, {1, 1}, {1, 0}}]}, 
+   {Thickness[Large], EdgeForm[RGBColor[0, 0, 1]], FaceForm[{GrayLevel[1], 
+    Opacity[0]}], RectangleBox[{1, 0}, {1.08, 0.08}]}},
+  AspectRatio->0.7,
+  Epilog->{
+    StyleBox[
+     InsetBox[
+      FormBox[
+       SqrtBox["3"], TraditionalForm], {0.88, 0.5}], {20}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {1.5, -0.06}], {20}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["1", TraditionalForm], {0.5, -0.06}], {20}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {0.45, 0.55}], {20}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox["2", TraditionalForm], {1.55, 0.55}], {20}, StripOnInput -> 
+     False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        FractionBox["\[Pi]", "3"], HoldForm], TraditionalForm], {0.2, 
+      0.08}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        SuperscriptBox["30", "\[EmptySmallCircle]"], HoldForm], 
+       TraditionalForm], {1.1, 0.8}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        FractionBox["\[Pi]", "6"], HoldForm], TraditionalForm], {0.92, 
+      0.8}], {14}, StripOnInput -> False], 
+    StyleBox[
+     InsetBox[
+      FormBox[
+       TagBox[
+        SuperscriptBox["60", "\[EmptySmallCircle]"], HoldForm], 
+       TraditionalForm], {1.8, 0.06}], {14}, StripOnInput -> False]},
+  PlotRange->{{-0.1, 2.1}, {-0.1, 1.1}}]], "Output",
+ CellChangeTimes->{{3.897380768412979*^9, 3.8973808048843107`*^9}},
+ CellLabel->
+  "Out[486]=",ExpressionUUID->"3c7194e9-33ac-4bbe-bc01-342a8c63eaa0"]
+}, Open  ]]
+},
+WindowSize->{808, 747},
+WindowMargins->{{260, Automatic}, {16, Automatic}},
+FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d73233ea-3b17-432f-bb3d-92c1e3aa3a59"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 276, 6, 30, "Input",ExpressionUUID->"4d058cfe-6e99-4ab6-a18d-8f50fcf781d2"],
+Cell[CellGroupData[{
+Cell[859, 30, 2797, 83, 262, "Input",ExpressionUUID->"f990eb40-dcca-4704-859d-6e7f6b6c8348"],
+Cell[3659, 115, 830, 21, 377, "Output",ExpressionUUID->"0f94aace-0228-4e6b-b920-44ac6ffc9a0d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4526, 141, 4522, 132, 356, "Input",ExpressionUUID->"4bf9aa82-8745-4ee0-84c1-abd68ad6d2d5"],
+Cell[9051, 275, 1548, 43, 377, "Output",ExpressionUUID->"fa0d1d05-476d-4234-9ec7-640890699150"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10636, 323, 3596, 102, 295, "Input",ExpressionUUID->"b9d74174-adae-48d7-a8d6-fb916ac64ce7"],
+Cell[14235, 427, 1583, 45, 269, "Output",ExpressionUUID->"a8b0c303-dd41-4219-907a-1be0ca13ce91"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15855, 477, 4969, 144, 398, "Input",ExpressionUUID->"efb3289f-8157-4279-a16d-c3c1fef9e9b4"],
+Cell[20827, 623, 1765, 52, 269, "Output",ExpressionUUID->"dcbbf68f-828d-4b96-8fa7-8e761cdd8056"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22629, 680, 5232, 152, 419, "Input",ExpressionUUID->"45e4a9d8-8c9b-4edd-bbc0-287af242066a"],
+Cell[27864, 834, 1873, 56, 269, "Output",ExpressionUUID->"3c7194e9-33ac-4bbe-bc01-342a8c63eaa0"]
+}, Open  ]]
+}
+]
+*)
+

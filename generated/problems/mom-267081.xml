@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="267081">
+<statement>
+<p>
+Subtract.  Simplify if possible.</p>
+<p>
+<m>\displaystyle\frac{{{2}{a}^{{2}}-{16}{a}+{73}}}{{{a}^{{2}}-{8}{a}-{9}}}-\frac{{{a}^{{2}}+{a}+{1}}}{{{a}^{{2}}-{8}{a}-{9}}}=</m><fillin characters="20" />  
+
+</p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{{a}-{8}}}{{{a}+{1}}}</m></li></ul></p><p>Since the denominators are the same, we can subtract the numerators:
+</p><tabular>
+  <row><cell><m>\displaystyle\frac{{{2}{a}^{{2}}-{16}{a}+{73}}}{{{a}^{{2}}-{8}{a}-{9}}}-\frac{{{a}^{{2}}+{a}+{1}}}{{{a}^{{2}}-{8}{a}-{9}}}</m></cell><cell><m>\displaystyle=</m></cell><cell><m>\displaystyle\frac{{{\left({2}{a}^{{2}}-{16}{a}+{73}\right)}-{\left({a}^{{2}}+{a}+{1}\right)}}}{{{a}^{{2}}-{8}{a}-{9}}}</m></cell><cell></cell></row>
+  <row><cell></cell><cell><m>\displaystyle=</m></cell><cell><m>\displaystyle\frac{{{a}^{{2}}-{17}{a}+{72}}}{{{a}^{{2}}-{8}{a}-{9}}}</m></cell></row>
+  <row><cell>We can try to factor numerator and denominator to simplify:</cell></row>
+  <row><cell></cell><cell><m>\displaystyle=</m></cell><cell><m>\displaystyle\frac{{{\left({a}-{8}\right)}{\left({a}-{9}\right)}}}{{{\left({a}+{1}\right)}{\left({a}-{9}\right)}}}</m></cell></row>
+  <row><cell>Then remove the common factor:</cell></row>
+  <row><cell></cell><cell><m>\displaystyle=</m></cell><cell><m>\displaystyle\frac{{{a}-{8}}}{{{a}+{1}}}</m></cell></row>
+</tabular>
+</solution>
+</myopenmath>
+
