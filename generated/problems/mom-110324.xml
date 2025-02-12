@@ -7,35 +7,35 @@
 <li><m>\displaystyle{f{{\left({x}\right)}}}=-\sqrt{{{x}}}</m></li> 
 <li><m>\displaystyle{f{{\left({x}\right)}}}=-\sqrt{{-{x}}}</m></li> 
 </ol></p>
-<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  shifted right 1 units</p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}+{1}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}-{1}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{1}}}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{1}}}</m></li> 
+<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  shifted left 4 units</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{4}}}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{4}}}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}+{4}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}-{4}</m></li> 
 </ol></p>
-<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  shifted down 1 units</p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}-{1}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{1}}}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}+{1}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{1}}}</m></li> 
+<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  shifted down 2 units</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{2}}}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}-{2}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}+{2}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{2}}}</m></li> 
 </ol></p>
-<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  shifted right 3 units and shifted down 3 units.</p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{3}}}-{3}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{3}}}+{3}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{3}}}+{3}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{3}}}-{3}</m></li> 
+<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  shifted right 4 units and shifted up 2 units.</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{4}}}-{2}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{4}}}-{2}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{4}}}+{2}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{4}}}+{2}</m></li> 
 </ol></p>
-<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  stretched vertically by a factor of 5.</p>
-<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\frac{{1}}{{5}}\sqrt{{{x}}}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}={5}\sqrt{{{x}}}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{\frac{{1}}{{5}}{x}}}</m></li> 
-<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{5}{x}}}</m></li> 
+<p>The graph of <m>\displaystyle{f{{\left({x}\right)}}}</m>  stretched vertically by a factor of 3.</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{3}{x}}}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}={3}\sqrt{{{x}}}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{\frac{{1}}{{3}}{x}}}</m></li> 
+<li><m>\displaystyle{f{{\left({x}\right)}}}=\frac{{1}}{{3}}\sqrt{{{x}}}</m></li> 
 </ol></p>
 
 
 </statement>
 <solution>
-<p><ul><li>A: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{-{x}}}</m></li><li>C: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{1}}}</m></li><li>A: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}-{1}</m></li><li>D: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{3}}}-{3}</m></li><li>B: <m>\displaystyle{f{{\left({x}\right)}}}={5}\sqrt{{{x}}}</m></li></ul></p>
+<p><ul><li>A: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{-{x}}}</m></li><li>B: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}+{4}}}</m></li><li>B: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}}}-{2}</m></li><li>D: <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{x}-{4}}}+{2}</m></li><li>B: <m>\displaystyle{f{{\left({x}\right)}}}={3}\sqrt{{{x}}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

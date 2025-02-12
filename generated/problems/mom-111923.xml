@@ -2,14 +2,14 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="111923">
 <statement>
 <p>
-Evaluate the expression completely: <m>\displaystyle{\left({2}^{{3}}\cdot{2}^{{2}}\right)}^{{2}}</m>.
+Evaluate the expression completely: <m>\displaystyle{\left({2}^{{2}}\cdot{2}^{{2}}\right)}^{{3}}</m>.
 </p>
 <p>
 Your answer is  <fillin characters="10" />   
 </p>
 </statement>
 <solution>
-<p><ul><li>1024</li></ul></p>
+<p><ul><li>4096</li></ul></p>
 </solution>
 </myopenmath>
 
