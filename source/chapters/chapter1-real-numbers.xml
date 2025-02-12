@@ -3,10 +3,7 @@
 
 <section xml:id="section-integers-rational-reals">
     <title>Integers, Rationals, and Reals</title>
-    <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
-    <myopenmath problem="1541765" />
-    <myopenmath problem="110324" />
-    <myopenmath problem="111923" />
+    
     <p>A <term>real number</term> is a number that represents a location on the continuous number line. We refer to the collection of all real numbers as the <term>set of real numbers</term> and denote this by the symbol <m>\mathbb{R}</m>.
     <image source="images/thirdparty/realnumberline" width="50%"/>
     Within the set of real numbers are special categories of numbers you should be familiar with. The <term>set of natural numbers</term> includes the counting numbers and zero:

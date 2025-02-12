@@ -48,6 +48,7 @@
       </colophon> 
     </frontmatter> -->
 
+    <xi:include href="./chapters/chapter0-testing.xml"/>
     <xi:include href="./chapters/chapter1-real-numbers.xml" />         
     <xi:include href="./chapters/chapter2-exponents.xml" />
     <xi:include href="./chapters/chapter3-simplifying-expressions.xml" />
