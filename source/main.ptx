@@ -48,15 +48,15 @@
       </colophon> 
     </frontmatter> -->
 
-    <xi:include href="./chapters/realnumbers.xml" />         
-    <xi:include href="./chapters/exponents.xml" />
-    <xi:include href="./chapters/simplifying.xml" />
-    <xi:include href="./chapters/solving.xml" />
-    <xi:include href="./chapters/graphing.xml" />
-    <xi:include href="./chapters/functions.xml" />
-    <xi:include href="./chapters/explog.xml" />
-    <xi:include href="./chapters/trig-1.xml" />
-    <xi:include href="./chapters/trig-2.xml" />
+    <xi:include href="./chapters/chapter1-real-numbers.xml" />         
+    <xi:include href="./chapters/chapter2-exponents.xml" />
+    <xi:include href="./chapters/chapter3-simplifying-expressions.xml" />
+    <xi:include href="./chapters/chapter4-solving-equations.xml" />
+    <xi:include href="./chapters/chapter5-graphing.xml" />
+    <xi:include href="./chapters/chapter6-functions.xml" />
+    <xi:include href="./chapters/chapter7-exponentials-logarithms.xml" />
+    <xi:include href="./chapters/chapter8-triangle-trig.xml" />
+    <xi:include href="./chapters/chapter9-circle-trig.xml" />
    <!--  <backmatter xml:id="backmatter">
       <title>Backmatter</title>
 
