@@ -6,8 +6,8 @@ var ptx_lunr_docs = [
   "url": "sec-myopenmath.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Plaing with My Open Math",
-  "body": " Plaing with My Open Math  "
+  "title": "Playing with My Open Math",
+  "body": " Playing with My Open Math  "
 },
 {
   "id": "section-integers-rational-reals",
