@@ -2,7 +2,7 @@
     <title>Testing Space</title>
     
     <section xml:id="sec-myopenmath">
-        <title>Plaing with My Open Math</title>        
+        <title>Playing with My Open Math</title>          
     </section>
     <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
     <example>
