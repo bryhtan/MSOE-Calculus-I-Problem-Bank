@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="15963">
+<statement>
+<image width="26%"  pi:generated="problems/images/15963-rightriangle.gif" /><p>
+Note: Triangle may not be drawn to scale.</p>
+<p>
+Suppose a = 8 and b = 11.</p>
+<p>
+Find an exact value or give at least two decimal places: </p>
+<p>
+sin(A) = <fillin characters="20" />   </p>
+<p>
+cos(A) = <fillin characters="20" />   </p>
+<p>
+tan(A) = <fillin characters="20" />    </p>
+<p>
+sec(A) = <fillin characters="20" />   </p>
+<p>
+csc(A) = <fillin characters="20" />   </p>
+<p>
+cot(A) = <fillin characters="20" />   
+</p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{{8}\sqrt{{{185}}}}}{{185}}</m></li><li><m>\displaystyle\frac{{{11}\sqrt{{{185}}}}}{{185}}</m></li><li><m>\displaystyle\frac{{8}}{{11}}</m></li><li><m>\displaystyle\frac{{\sqrt{{{185}}}}}{{11}}</m></li><li><m>\displaystyle\frac{{\sqrt{{{185}}}}}{{8}}</m></li><li><m>\displaystyle\frac{{11}}{{8}}</m></li></ul></p>
+</solution>
+</myopenmath>
+
