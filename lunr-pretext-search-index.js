@@ -7,7 +7,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Playing with My Open Math",
-  "body": " Playing with My Open Math  "
+  "body": " Playing with My Open Math  This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID   This is problem with Question ID 154765.     This is a problem with Question ID 110324.     This is a problem with Question ID 111923.    "
+},
+{
+  "id": "sec-myopenmath-3",
+  "level": "2",
+  "url": "sec-myopenmath.html#sec-myopenmath-3",
+  "type": "Example",
+  "number": "1.1",
+  "title": "",
+  "body": " This is problem with Question ID 154765.   "
+},
+{
+  "id": "sec-myopenmath-4",
+  "level": "2",
+  "url": "sec-myopenmath.html#sec-myopenmath-4",
+  "type": "Example",
+  "number": "1.2",
+  "title": "",
+  "body": " This is a problem with Question ID 110324.   "
+},
+{
+  "id": "sec-myopenmath-5",
+  "level": "2",
+  "url": "sec-myopenmath.html#sec-myopenmath-5",
+  "type": "Example",
+  "number": "1.3",
+  "title": "",
+  "body": " This is a problem with Question ID 111923.   "
 },
 {
   "id": "section-integers-rational-reals",
