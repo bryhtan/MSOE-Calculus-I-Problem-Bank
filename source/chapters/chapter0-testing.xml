@@ -3,28 +3,30 @@
     
     <section xml:id="sec-myopenmath">
         <title>Playing with My Open Math</title>        
-    </section>
+    
     <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
-    <example>
+        <example>
         <p>
             This is problem with Question ID 154765.
         </p>
         <myopenmath problem="1541765" />    
-    </example>
+        </example>
     
-    <example>
+        <example>
         <p>
             This is a problem with Question ID 110324.
         </p>
         <myopenmath problem="110324" />    
-    </example>
+        </example>    
 
-    <example>
+        <example>
         <p>
             This is a problem with Question ID 111923.
         </p>
         <myopenmath problem="111923" />    
-    </example>
+        </example>
+    </section>
+    
     
     
 </chapter>
