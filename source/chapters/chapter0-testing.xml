@@ -7,6 +7,13 @@
     <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
         <example>
         <p>
+            This is problem with Question ID 15963.
+        </p>
+        <myopenmath problem="15963" />    
+        </example>
+        
+        <example>
+        <p>
             This is problem with Question ID 154765.
         </p>
         <myopenmath problem="1541765" />    
