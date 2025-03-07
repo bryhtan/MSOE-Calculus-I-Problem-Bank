@@ -1,0 +1,58 @@
+WARNING : Using CLI version 2.14.0 but project's `requirements.txt`
+WARNING : is configured to use 1.5.2. Consider either installing
+WARNING : CLI version 1.5.2 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.14.0.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : Generating any needed assets.
+INFO    : Generating any needed assets.
+INFO    : downloading MyOpenMath static problems from /workspaces/MSOE-Calculus-I-Problem-Bank/source/main.ptx for placement in /workspaces/MSOE-Calculus-I-Problem-Bank/generated-assets/problems
+INFO    : XSL conversion of /workspaces/MSOE-Calculus-I-Problem-Bank/source/main.ptx by /home/vscode/.ptx/2.14.0/core/xsl/extract-mom.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING:   the requested HTML index page cannot be constructed since "jumpstart" is not an @xml:id anywhere in the document.  Defaults will be used instead
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/vscode/.ptx/2.14.0/core/xsl/extract-mom.xsl
+INFO    : downloading MOM #15963 to /workspaces/MSOE-Calculus-I-Problem-Bank/generated-assets/problems/mom-15963.xml...
+INFO    : downloading MOM #1541765 to /workspaces/MSOE-Calculus-I-Problem-Bank/generated-assets/problems/mom-1541765.xml...
+INFO    : downloading MOM #110324 to /workspaces/MSOE-Calculus-I-Problem-Bank/generated-assets/problems/mom-110324.xml...
+INFO    : downloading MOM #111923 to /workspaces/MSOE-Calculus-I-Problem-Bank/generated-assets/problems/mom-111923.xml...
+INFO    : MyOpenMath static problem download complete
+INFO    : Removing temporary directory /tmp/ptx-rgp3brz5
+INFO    : Finished generating assets.
+
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/MSOE-Calculus-I-Problem-Bank/output/web.
+INFO    : discovering source file's directory name: /workspaces/MSOE-Calculus-I-Problem-Bank/source
+INFO    : verifying and expanding input directory: /workspaces/MSOE-Calculus-I-Problem-Bank/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MSOE-Calculus-I-Problem-Bank/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MSOE-Calculus-I-Problem-Bank/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MSOE-Calculus-I-Problem-Bank/assets
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.5.10
+INFO    : Downloading Runestone Services, version 7.5.10
+INFO    : Extracting Runestone Services from archive file
+INFO    : XSL conversion of /workspaces/MSOE-Calculus-I-Problem-Bank/source/main.ptx by /home/vscode/.ptx/2.14.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING:   the requested HTML index page cannot be constructed since "jumpstart" is not an @xml:id anywhere in the document.  Defaults will be used instead
+INFO    : successful application of /home/vscode/.ptx/2.14.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /workspaces/MSOE-Calculus-I-Problem-Bank/source/main.ptx to HTML in /tmp/ptx-pvdh6qr7
+INFO    : XSL conversion of /workspaces/MSOE-Calculus-I-Problem-Bank/source/main.ptx by /home/vscode/.ptx/2.14.0/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING:   the requested HTML index page cannot be constructed since "jumpstart" is not an @xml:id anywhere in the document.  Defaults will be used instead
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "titlepage" element inside the "frontmatter" (author, editor, credit, date, and event) should now be placed in "frontmatter/bibinfo".  To ensure a title page is created, put only the empty element "titlepage-items" inside "titlepage".  Until you move these elements, we will try to honor your intent. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2024-07-12) the html/css/@style publication file entry has been deprecated for replacement by @theme. See the Guide for theme options.
+INFO    : * --------------
+INFO    : successful application of /home/vscode/.ptx/2.14.0/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-pvdh6qr7
+INFO    : Removing temporary directory /tmp/ptx-hj9utxhy
+INFO    : 
+Success! Run `pretext view` to see the results.
+
+INFO    : 
