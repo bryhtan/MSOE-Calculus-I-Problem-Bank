@@ -1,15 +1,13 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Derivative Rules</title>
+    &#xA;<title>Derivative Rules</title>
 
-        <title>Derivatives of Polynomials and Exponential Functions</title>        
+    &#xA;<title>Derivatives of Polynomials and Exponential Functions</title>        
 
-        <statement> 
+        <theorem xml:id="power-rule"> 
             <title>The Power Rule</title>
-            <p>
-                If <m>n</m> is any realy number, then 
-                <me> \frac{d}{dx}(x^n) = nx^{n-1} </me>
-            </p>
-        </statement>
+        <p>If <m>n</m> is any realy number, then 
+                <me> \frac{d}{dx}(x^n) = nx^{n-1} </me></p>
+        </theorem>
   
     <p> I can find the derivative of a function using the limit definition.  Need to know
 
