@@ -1,19 +1,25 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
-    &#xA;<title>Derivative Rules</title>
-
-    &#xA;<title>Derivatives of Polynomials and Exponential Functions</title>        
+    <title>Derivative Rules</title>
+        <theorem xml:id="lim-def-deriv"> 
+            <title>The Limit Definition of the Derivative</title>
+        <p>If <m>f(x)</m> is a function, then the derivative of <m>f</m> is defined as
+                <me> f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me></p>
+        </theorem>
 
         <theorem xml:id="power-rule"> 
             <title>The Power Rule</title>
         <p>If <m>n</m> is any realy number, then 
                 <me> \frac{d}{dx}(x^n) = nx^{n-1} </me></p>
         </theorem>
-  
-    <p> I can find the derivative of a function using the limit definition.  Need to know
+    <objectives> 
+        <ul>
+            <li>I can find the derivative of a function using the limit definition.  Need to know
 
-        <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me>
-    </p>
-        
+                <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me> </li>
+            <li>Something else</li>
+            <li>Something else</li>
+        </ul>
+    </objectives>    
         <example>
         <myopenmath problem="1557374" />    
         </example>
