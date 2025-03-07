@@ -13,7 +13,7 @@
     </latex-image-preamble>
   </docinfo>
 
-  <book xml:id="jumpstart">
+  <book xml:id="calc-prep">
     <title>Calculus Preperation Workbook</title>
 
  <frontmatter xml:id="frontmatter">
@@ -47,7 +47,7 @@
       </colophon> 
     </frontmatter> -->
 
-    <xi:include href="./chapters/chapter0-testing.xml"/>
+    <xi:include href="./chapters/chapter-3.xml"/>
    
    <!--  <backmatter xml:id="backmatter">
       <title>Backmatter</title>
