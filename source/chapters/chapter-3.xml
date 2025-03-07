@@ -4,6 +4,14 @@
     <section xml:id="sec-3-1">
 
         <title>Derivatives of Polynomials and Exponential Functions</title>        
+
+        <statement> 
+            <title>The Power Rule</title>
+            <p>
+                If <m>n</m> is any realy number, then 
+                <md> \frac{d}{dx}(x^n) = nx^{n-1} </md>
+            </p>
+        </statement>
   
     <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
         
