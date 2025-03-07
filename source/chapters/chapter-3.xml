@@ -1,49 +1,107 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Derivative Rules</title>
-    
-    <section xml:id="sec-3-1">
-
-        <title>Derivatives of Polynomials and Exponential Functions</title>        
-
-        <statement> 
-            <title>The Power Rule</title>
-            <p>
-                If <m>n</m> is any realy number, then 
-                <md> \frac{d}{dx}(x^n) = nx^{n-1} </md>
-            </p>
-        </statement>
+    <title>Exam 2 Review</title>
   
-    <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
+    <p>
+        I can find the derivative of a function using the limit definition.
+    </p>
         
-        <example>
-        <p>
-            This is problem with Question ID 15963.
-        </p>
-        <myopenmath problem="15963" />    
-        </example>
-        
-        <example>
-        <p>
-            This is problem with Question ID 154765.
-        </p>
-        <myopenmath problem="1541765" />    
-        </example>
-    
-        <example>
-        <p>
-            This is a problem with Question ID 110324.
-        </p>
-        <myopenmath problem="110324" />    
-        </example>    
+    <p>
+        Need to know
 
-        <example>
-        <p>
-            This is a problem with Question ID 111923.
-        </p>
-        <myopenmath problem="111923" />    
-        </example>
-    </section>
-    
-    
-    
+        <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me>
+    </p>
+
+    <example>
+        <myopenmath problem="1556416" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1556026" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1556425" />    
+    </example>
+     
+    <p>
+        I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  <lb />
+    </p>
+
+    <pre>
+        <b> Textbook problems Section 2.7: </b> 49 - 56;
+
+        <b> Textbook problems Section 2.8: </b> 12 - 15, 36 - 40
+    </pre>
+
+    <p>
+        I can find an equation for a tangent line to a function at a point using the derivative.
+    </p>
+
+    <example>
+        <myopenmath problem="1559694" />    
+    </example>
+
+    <p>
+        I can use the graph of a function to determine the behavior of its derivative, including constructing a graph of the dereivative and identifying points of non-differentiability.
+    </p>
+
+    <pre>
+        Textbook problems Section 2.8: 1 - 11, 41 - 44
+    </pre>
+
+    <p>
+        I can determine the behavior of a function given the graph of its derivative, including identifying points of non-differentiability.
+    </p>
+
+    <pre>
+        Problems from review worksheet.
+    </pre>
+
+    <p>
+        I can find the derivative of algebraic, trigonometric, exponential, logarithmic, and inverse trigonometric functions.
+    </p>
+
+    <example>
+        <myopenmath problem="1558434" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1557374" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1557421" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1557411" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1557388" />    
+    </example>
+
+    <p>
+        I can apply basic differentiation rules including power, product, quotient and chain rules to find derivatives of a given function.
+    </p>
+
+    <example>
+        <myopenmath problem="1559746" />    
+    </example>
+
+
+    <p>
+        I can find higher-order derivatives.
+    </p>
+
+    <p>
+        I can find derivatives using implicit differentitation.
+    </p>
+
+    <p>
+        I can find derivatives using logarithmic differentiation.
+    </p>
+
+
+
 </chapter>
