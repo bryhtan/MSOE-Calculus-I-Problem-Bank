@@ -1,11 +1,12 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Testing Space</title>
+    <title>Derivative Rules</title>
     
-    <section xml:id="sec-myopenmath">
+    <section xml:id="sec-3-1">
 
-        <title>Playing with My Open Math</title>        
+        <title>Derivatives of Polynomials and Exponential Functions</title>        
   
     <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
+        
         <example>
         <p>
             This is problem with Question ID 15963.
