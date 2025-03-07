@@ -21,10 +21,9 @@
         <author>
           <!-- <department>Mathematics Department</department> -->
           <institution>Milwaukee School of Engineering</institution>
-          <!-- <personname>Niles Armstrong, Zachary Bryhtan, Adam Buck, Anthony van Groningen*, Dylan Heuer</personname> -->
         </author>
         <!-- <date>
-          Summer 2023
+          Spring 2025
         </date> -->
       </titlepage>
     </frontmatter>
@@ -49,15 +48,7 @@
     </frontmatter> -->
 
     <xi:include href="./chapters/chapter0-testing.xml"/>
-    <xi:include href="./chapters/chapter1-real-numbers.xml" />         
-    <xi:include href="./chapters/chapter2-exponents.xml" />
-    <xi:include href="./chapters/chapter3-simplifying-expressions.xml" />
-    <xi:include href="./chapters/chapter4-solving-equations.xml" />
-    <xi:include href="./chapters/chapter5-graphing.xml" />
-    <xi:include href="./chapters/chapter6-functions.xml" />
-    <xi:include href="./chapters/chapter7-exponentials-logarithms.xml" />
-    <xi:include href="./chapters/chapter8-triangle-trig.xml" />
-    <xi:include href="./chapters/chapter9-circle-trig.xml" />
+   
    <!--  <backmatter xml:id="backmatter">
       <title>Backmatter</title>
 
