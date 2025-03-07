@@ -1,7 +1,5 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Derivative Rules</title>
-    
-    <section xml:id="sec-3-1">
 
         <title>Derivatives of Polynomials and Exponential Functions</title>        
 
@@ -9,17 +7,17 @@
             <title>The Power Rule</title>
             <p>
                 If <m>n</m> is any realy number, then 
-                <md> \frac{d}{dx}(x^n) = nx^{n-1} </md>
+                <me> \frac{d}{dx}(x^n) = nx^{n-1} </me>
             </p>
         </statement>
   
-    <p>This is how we can embed a problem from MyOpenMath into the website. All this uses is the problem ID </p>
+    <p> I can find the derivative of a function using the limit definition.  Need to know
+
+        <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me>
+    </p>
         
         <example>
-        <p>
-            This is problem with Question ID 15963.
-        </p>
-        <myopenmath problem="15963" />    
+        <myopenmath problem="1557374" />    
         </example>
         
         <example>
@@ -42,7 +40,6 @@
         </p>
         <myopenmath problem="111923" />    
         </example>
-    </section>
     
     
     
