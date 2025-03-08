@@ -1,4 +1,5 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
+
     <title>Exam 2 Review</title>
   
     <objectives>
@@ -25,8 +26,7 @@
         <myopenmath problem="1556425" />    
     </example>
 
-    <p>
-        I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  <lb />
+      I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  <lb />
     </p>
 
     <pre>
