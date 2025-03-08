@@ -1,0 +1,152 @@
+WARNING : Using CLI version 2.14.0 but project's `requirements.txt`
+WARNING : is configured to use 1.5.2. Consider either installing
+WARNING : CLI version 1.5.2 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.14.0.
+INFO    : Found entry no longer exists 10088
+INFO    : Now preparing local server to preview your project directory `/workspaces/MSOE-Calculus-I-Problem-Bank`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : Running in a codespace, so using a subprocess server.
+INFO    : Starting the server
+INFO    : There are 10 or more servers on file. Cleaning up ...
+INFO    : Found entry no longer exists 10088
+INFO    : Terminating 10088
+INFO    : Terminate failed for 10088.
+ERROR   : process PID not found (pid=10088)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=10088)
+INFO    : Found entry no longer exists 13158
+INFO    : Terminating 13158
+INFO    : Terminate failed for 13158.
+ERROR   : process PID not found (pid=13158)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=13158)
+INFO    : Found entry no longer exists 15908
+INFO    : Terminating 15908
+INFO    : Terminate failed for 15908.
+ERROR   : process PID not found (pid=15908)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=15908)
+INFO    : Found entry no longer exists 16602
+INFO    : Terminating 16602
+INFO    : Terminate failed for 16602.
+ERROR   : process PID not found (pid=16602)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=16602)
+INFO    : Found entry no longer exists 23872
+INFO    : Terminating 23872
+INFO    : Terminate failed for 23872.
+ERROR   : process PID not found (pid=23872)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=23872)
+INFO    : Found entry no longer exists 1194
+INFO    : Terminating 1194
+INFO    : Terminate failed for 1194.
+ERROR   : process PID not found (pid=1194)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=1194)
+INFO    : Found entry no longer exists 4380
+INFO    : Terminating 4380
+INFO    : Terminate failed for 4380.
+ERROR   : process PID not found (pid=4380)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=4380)
+INFO    : Found entry no longer exists 10813
+INFO    : Terminating 10813
+INFO    : Terminate failed for 10813.
+ERROR   : process PID not found (pid=10813)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=10813)
+INFO    : Found entry no longer exists 26762
+INFO    : Terminating 26762
+INFO    : Terminate failed for 26762.
+ERROR   : process PID not found (pid=26762)
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.13/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+    ~~~~~~~~~~^^^^^
+  File "/home/vscode/.local/lib/python3.13/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=26762)
+ERROR   : View encountered an error.  Please report this: process 1592 with laddr 
+INFO    : Found server at localhost:8128
+INFO    : Added server entry 6fc8113fb7 1592 8128 localhost
+
+INFO    : Server will soon be available at https://congenial-succotash-694jjpr7w5wxf5p57-8128.app.github.dev
+INFO    : Opening browser for target `web` at https://congenial-succotash-694jjpr7w5wxf5p57-8128.app.github.dev/output/web
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
