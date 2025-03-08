@@ -2,16 +2,17 @@
     <title>Exam 2 Review</title>
   
     <objectives>
-        <ul>
-        <li> 1. I can find the <term> derivative </term> of a function using the limit definition. </li>
-        </ul>
-    </objectives>
+        1. I can find the derivative  of a function using the limit definition.
         
-    <p>
+        <p>
         Need to know
 
         <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me>
-    </p>
+        </p>
+
+    </objectives>
+        
+    
 
     <example>
         <myopenmath problem="1556416" />    
