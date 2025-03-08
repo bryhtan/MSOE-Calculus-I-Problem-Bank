@@ -1,18 +1,16 @@
 <chapter xml:id="chapter-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Exam 2 Review</title>
   
-    <objectives>
-        1. I can find the derivative  of a function using the limit definition.
+<objectives>
+    <ul>
+    <li> <term>1.</term> I can find the derivative of a function using the limit definition. </li>
+    <li> <term> Section 2.8: </term> 21 - 32 </li>
+    </ul>
+</objectives>
         
-        <p>
-        Need to know
-
-        <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me>
-        </p>
-
-    </objectives>
-        
-    
+    <p>
+        Need to know <me> \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} </me>
+    </p>
 
     <example>
         <myopenmath problem="1556416" />    
@@ -26,43 +24,46 @@
         <myopenmath problem="1556425" />    
     </example>
 
-    <p>
-        I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  <lb />
-    </p>
+<objectives>
+    <ul>
+    <li> <term>2.</term> I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  </li>
+    <li> <term> Section 2.7: </term> 49 - 56; </li>
+    <li> <term> Section 2.8: </term> 12 - 15, 36 - 40 </li>
+    </ul>
+</objectives>
 
-    <pre>
-        <b> Textbook problems Section 2.7: </b> 49 - 56;
-
-        <b> Textbook problems Section 2.8: </b> 12 - 15, 36 - 40
-    </pre>
-
-    <p>
-        I can find an equation for a tangent line to a function at a point using the derivative.
-    </p>
+<objectives>
+    <ul>
+    <li> <term>3.</term> I can find an equation for a tangent line to a function at a point using the derivative. </li>
+    <li> <term> Section 2.7: </term> 5 - 8, 27 - 30; </li>
+    </ul>
+</objectives>
 
     <example>
         <myopenmath problem="1559694" />    
     </example>
 
-    <p>
-        I can use the graph of a function to determine the behavior of its derivative, including constructing a graph of the dereivative and identifying points of non-differentiability.
-    </p>
+<objectives>
+    <ul>
+    <li> <term>4.</term> I can use the graph of a function to determine the behavior of its derivative, including constructing a graph of the dereivative and identifying points of non-differentiability. </li>
+    <li> <term> Section 2.8: </term> 1 - 11, 41 - 44; </li>
+    </ul>
+</objectives>
 
-    <pre>
-        Textbook problems Section 2.8: 1 - 11, 41 - 44
-    </pre>
+<objectives>
+    <ul>
+    <li> <term>6.</term> I can determine the behavior of a function given the graph of its derivative, including identifying points of non-differentiability. </li>
+    <li> <term> Examples given on review day. </term> </li>
+    </ul>
+</objectives>
 
-    <p>
-        I can determine the behavior of a function given the graph of its derivative, including identifying points of non-differentiability.
-    </p>
-
-    <pre>
-        Problems from review worksheet.
-    </pre>
-
-    <p>
-        I can find the derivative of algebraic, trigonometric, exponential, logarithmic, and inverse trigonometric functions.
-    </p>
+<objectives>
+    <ul>
+    <li> <term>6.</term> I can find the derivative of algebraic, trigonometric, exponential, logarithmic, and inverse trigonometric functions. </li>
+    <li> <term> Section 3.3: </term> 1 - 22; </li>
+    <li> <term> Section 3.6: </term> 2 - 12, 63, 78 </li>
+    </ul>
+</objectives> 
 
     <example>
         <myopenmath problem="1558434" />    
@@ -84,26 +85,85 @@
         <myopenmath problem="1557388" />    
     </example>
 
-    <p>
-        I can apply basic differentiation rules including power, product, quotient and chain rules to find derivatives of a given function.
-    </p>
+<objectives>
+    <ul>
+    <li> <term>7.</term> I can apply basic differentiation rules including power, product, quotient and chain rules to find derivatives of a given function. </li>
+    <li> <term> Section 3.1: </term> 3 - 34; </li>
+    <li> <term> Section 3.4: </term> 7 - 52 </li>
+    </ul>
+</objectives> 
 
     <example>
         <myopenmath problem="1559746" />    
     </example>
 
+    <example>
+        <myopenmath problem="1560053" />    
+    </example>
 
-    <p>
-        I can find higher-order derivatives.
-    </p>
+<objectives>
+    <ul>
+    <li> <term>8.</term> I can find higher-order derivatives. </li>
+    <li> <term> Section 3.4: </term> 53 - 56 </li>
+    </ul>
+</objectives> 
 
-    <p>
-        I can find derivatives using implicit differentitation.
-    </p>
+    <example>
+        <myopenmath problem="1560056" />    
+    </example>
 
-    <p>
-        I can find derivatives using logarithmic differentiation.
-    </p>
+    <example>
+        <myopenmath problem="1560057" />    
+    </example>
+
+<objectives>
+    <ul>
+    <li> <term>9.</term>  I am comfortable using various notations for derivatives. </li>
+    </ul>
+</objectives> 
+
+<objectives>
+    <ul>
+    <li> <term>10.</term>  I can find derivatives using implicit differentitation. </li>
+    <li> <term> Section 3.5: </term> 5 - 22 </li>
+    </ul>
+</objectives> 
+
+    <example>
+        <myopenmath problem="1560059" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1560060" />    
+    </example>
+
+<objectives>
+    <ul>
+    <li> <term>11.</term>  I can find derivatives using logarithmic differentiation. </li>
+    <li> <term> Section 3.6: </term> 45 - 56 </li>
+    </ul>
+</objectives>
+
+    <example>
+        <myopenmath problem="1560061" />    
+    </example>
+
+<objectives>
+    <ul>
+    <li> <term>12.</term>  I can determine when to use appropriate differentiation rules, including when to use the power, quotient, and chain rules, as well as using implicit and logarthmic differentiation. </li>
+    <li> <term>Chapter 3 Review </term> (p. 270): 1-20, 22-26, 28-33, 35-46, 48, 50, 53-54 </li>
+    </ul>
+</objectives>
+
+    <example>
+        <myopenmath problem="1560055" />    
+    </example>
+
+    <example>
+        <myopenmath problem="1560062" />    
+    </example>
+
+
 
 
 
