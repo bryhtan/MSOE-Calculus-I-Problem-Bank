@@ -4,11 +4,11 @@
 <p>
 Determine</p>
 <p>
-<m>\displaystyle\quad\frac{{d}}{{{\left.{d}{x}\right.}}}{\left[{5}{e}^{{x}}\right]}=</m>  <fillin characters="20" />  
+<m>\displaystyle\quad\frac{{d}}{{{\left.{d}{x}\right.}}}{\left[-{3}{e}^{{x}}\right]}=</m>  <fillin characters="20" />  
  </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{5}{e}^{{x}}</m></li></ul></p>
+<p><ul><li><m>\displaystyle-{3}{e}^{{x}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1556026">
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 3</p>
-<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{5}{x}+{1}}}</m>.
+<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{2}{x}+{1}}}</m>.
   </p>
 <p>
   Write the definition (do not simplify yet).
@@ -24,7 +24,7 @@
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle\frac{{\sqrt{{{5}{\left({x}+{h}\right)}+{1}}}-{\left(\sqrt{{{5}{x}+{1}}}\right)}}}{{h}}</m></li><li><m>\displaystyle\frac{{1}}{{\sqrt{{{5}{x}+{h}+{1}}}+\sqrt{{{5}{x}+{1}}}}}</m></li><li><m>\displaystyle\frac{{5}}{{{2}\sqrt{{{5}{x}+{1}}}}}</m></li></ul></p>
+<p><ul><li><m>\displaystyle\frac{{\sqrt{{{2}{\left({x}+{h}\right)}+{1}}}-{\left(\sqrt{{{2}{x}+{1}}}\right)}}}{{h}}</m></li><li><m>\displaystyle\frac{{1}}{{\sqrt{{{2}{x}+{h}+{1}}}+\sqrt{{{2}{x}+{1}}}}}</m></li><li><m>\displaystyle\frac{{2}}{{{2}\sqrt{{{2}{x}+{1}}}}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

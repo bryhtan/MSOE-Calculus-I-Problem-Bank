@@ -4,9 +4,9 @@
 <p>
 Find the equation of the tangent line to the curve</p>
 <p>
-<m>\displaystyle\quad{y}={2}{x}^{{2}}+{2}{x}+{2}</m> </p>
+<m>\displaystyle\quad{y}={x}^{{2}}+{4}</m> </p>
 <p>
-at the point <m>\displaystyle{\left({1},{6}\right)}</m>.</p>
+at the point <m>\displaystyle{\left({1},{5}\right)}</m>.</p>
 <p>
 The equation of the tangent line is</p>
 <p>
@@ -15,7 +15,7 @@ The equation of the tangent line is</p>
 </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{y}-{6}={6}{\left({x}-{1}\right)}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{y}-{5}={2}{\left({x}-{1}\right)}</m></li></ul></p>
 </solution>
 </myopenmath>
 
