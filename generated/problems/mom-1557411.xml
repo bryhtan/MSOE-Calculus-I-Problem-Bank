@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1557411">
+<statement>
+<p>
+Determine</p>
+<p>
+<m>\displaystyle\quad\frac{{d}}{{{\left.{d}{x}\right.}}}{\left[{2}{\ln{{\left({x}\right)}}}\right]}=</m>  <fillin characters="20" />  
+ </p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{2}}{{x}}</m></li></ul></p>
+</solution>
+</myopenmath>
+

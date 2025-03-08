@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1557421">
+<statement>
+<p>
+Determine</p>
+<p>
+<m>\displaystyle\quad\frac{{d}}{{{\left.{d}{x}\right.}}}{\left[{5}{e}^{{x}}\right]}=</m>  <fillin characters="20" />  
+ </p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle{5}{e}^{{x}}</m></li></ul></p>
+</solution>
+</myopenmath>
+

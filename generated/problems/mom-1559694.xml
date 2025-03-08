@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1559694">
+<statement>
+<p>
+Find the equation of the tangent line to the curve</p>
+<p>
+<m>\displaystyle\quad{y}={2}{x}^{{2}}+{2}{x}+{2}</m> </p>
+<p>
+at the point <m>\displaystyle{\left({1},{6}\right)}</m>.</p>
+<p>
+The equation of the tangent line is</p>
+<p>
+<fillin characters="20" />  
+
+</p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle{y}-{6}={6}{\left({x}-{1}\right)}</m></li></ul></p>
+</solution>
+</myopenmath>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1557388">
+<statement>
+<p>
+If <m>\displaystyle{f{{\left({x}\right)}}}={{\sec}^{{-{{1}}}}{\left({x}\right)}}</m>, find:</p>
+<p>
+<m>\displaystyle\quad{f}'{\left({x}\right)}</m> = <fillin characters="20" />  
+ </p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{1}}{{{x}\sqrt{{{x}^{{2}}-{1}}}}}</m></li></ul></p>
+</solution>
+</myopenmath>
+

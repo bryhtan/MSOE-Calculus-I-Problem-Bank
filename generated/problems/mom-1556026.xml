@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1556026">
+<statement>
+<p class="seqsep" role="heading" tabindex="-1">Part 1 of 3</p>
+<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}=\sqrt{{{5}{x}+{1}}}</m>.
+  </p>
+<p>
+  Write the definition (do not simplify yet).
+  </p>
+<p>
+  <m>\displaystyle\quad{f}'{\left({x}\right)}=\lim_{{{h}\to{0}}}</m> <fillin characters="20" />  
+  </p>
+<p>
+  <em>Be sure to write the limit in each step when showing work!</em>
+  </p><p class="seqsep" role="heading" tabindex="-1">Part 2 of 3</p>
+  Simplify the expression inside the limit. Input your result just before you substitute <m>\displaystyle{h}={0}</m>
+  <p>
+  <m>\displaystyle\quad=\lim_{{{h}\to{0}}}</m> <fillin characters="20" />  
+  </p><p class="seqsep" role="heading" tabindex="-1">Part 3 of 3</p>
+  Finish by direct substitution.
+  <p>
+  <m>\displaystyle\quad=</m> <fillin characters="20" />  
+  </p>
+
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{\sqrt{{{5}{\left({x}+{h}\right)}+{1}}}-{\left(\sqrt{{{5}{x}+{1}}}\right)}}}{{h}}</m></li><li><m>\displaystyle\frac{{1}}{{\sqrt{{{5}{x}+{h}+{1}}}+\sqrt{{{5}{x}+{1}}}}}</m></li><li><m>\displaystyle\frac{{5}}{{{2}\sqrt{{{5}{x}+{1}}}}}</m></li></ul></p>
+</solution>
+</myopenmath>
+
