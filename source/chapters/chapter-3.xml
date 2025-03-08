@@ -25,20 +25,22 @@
     <example>
         <myopenmath problem="1556425" />    
     </example>
-    <p>
-      I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.
-    </p>
+    <objectives>
+        <ul>
+            <li> 2. I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.</li>
 
-    <pre>
-        <b> Textbook problems Section 2.7: </b> 49 - 56;
+            <li> 
+                <ul>
+                    <li> Textbook problems Section 2.7: 49 - 56;</li>
 
-        <b> Textbook problems Section 2.8: </b> 12 - 15, 36 - 40
-    </pre>
+                    <li> Textbook problems Section 2.8: 12 - 15, 36 - 40</li>
+                </ul>
+            </li>
 
-    <p>
-        I can find an equation for a tangent line to a function at a point using the derivative.
-    </p>
-
+            
+            <li>I can find an equation for a tangent line to a function at a point using the derivative.</li>
+        </ul>
+    </objectives>
     <example>
         <myopenmath problem="1559694" />    
     </example>
