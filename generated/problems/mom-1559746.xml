@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1559746">
 <statement>
-<p>Find the derivative of <m>\displaystyle{f{{\left({x}\right)}}}=\frac{{{\cos{{\left(-{5}{x}\right)}}}+{6}{x}^{{2}}}}{{{x}^{{3}}-{4}{x}^{{2}}-{3}}}</m>
+<p>Find the derivative of <m>\displaystyle{f{{\left({x}\right)}}}=\frac{{{e}^{{-{x}}}+{3}}}{{{x}^{{3}}-{4}{x}-{6}}}</m>
   </p>
 <p>
   <m>\displaystyle\quad{f}'{\left({x}\right)}=</m> <fillin characters="20" />  
@@ -11,7 +11,7 @@
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle\frac{{{\left({x}^{{3}}-{4}{x}^{{2}}-{3}\right)}{\left({5}{\sin{{\left(-{5}{x}\right)}}}+{26}{x}\right)}-{\left({\cos{{\left(-{5}{x}\right)}}}+{6}{x}^{{2}}\right)}{\left({3}{x}^{{2}}-{8}{x}\right)}}}{{\left({x}^{{3}}-{4}{x}^{{2}}-{3}\right)}^{{2}}}</m></li></ul></p>
+<p><ul><li><m>\displaystyle\frac{{{\left({x}^{{3}}-{4}{x}-{6}\right)}{\left(-{e}^{{-{x}}}\right)}-{\left({e}^{{-{x}}}+{3}\right)}{\left({3}{x}^{{2}}-{4}\right)}}}{{\left({x}^{{3}}-{4}{x}-{6}\right)}^{{2}}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

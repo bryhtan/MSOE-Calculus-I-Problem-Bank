@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1557388">
 <statement>
 <p>
-If <m>\displaystyle{f{{\left({x}\right)}}}=-{{\cos}^{{-{{1}}}}{\left({x}\right)}}</m>, find:</p>
+If <m>\displaystyle{f{{\left({x}\right)}}}=-{4}{\text{arccsc}{{\left({x}\right)}}}</m>, find:</p>
 <p>
 <m>\displaystyle\quad{f}'{\left({x}\right)}</m> = <fillin characters="20" />  
  </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle\frac{{1}}{\sqrt{{{1}-{x}^{{2}}}}}</m></li></ul></p>
+<p><ul><li><m>\displaystyle\frac{{4}}{{{x}\sqrt{{{x}^{{2}}-{1}}}}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

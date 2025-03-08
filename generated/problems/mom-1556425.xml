@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1556425">
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 3</p>
-<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}=\frac{{5}}{{{x}-{1}}}</m>.
+<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}=\frac{{5}}{{{x}+{1}}}</m>.
   </p>
 <p>
   Write the definition (do not simplify yet).
@@ -24,7 +24,7 @@
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle\frac{{\frac{{5}}{{{\left({x}+{h}\right)}-{1}}}-{\left(\frac{{5}}{{{x}-{1}}}\right)}}}{{h}}</m></li><li><m>\displaystyle\frac{{5}}{{{\left({x}+{h}-{1}\right)}{\left({x}+{h}\right)}}}</m></li><li><m>\displaystyle\frac{{5}}{{\left({x}-{1}\right)}^{{2}}}</m></li></ul></p>
+<p><ul><li><m>\displaystyle\frac{{\frac{{5}}{{{\left({x}+{h}\right)}+{1}}}-{\left(\frac{{5}}{{{x}+{1}}}\right)}}}{{h}}</m></li><li><m>\displaystyle\frac{{5}}{{{\left({x}+{h}+{1}\right)}{\left({x}+{h}\right)}}}</m></li><li><m>\displaystyle\frac{{5}}{{\left({x}+{1}\right)}^{{2}}}</m></li></ul></p>
 </solution>
 </myopenmath>
 

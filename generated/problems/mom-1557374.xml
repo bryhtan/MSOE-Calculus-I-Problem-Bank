@@ -2,14 +2,14 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1557374">
 <statement>
 <p>
-If <m>\displaystyle{f{{\left({x}\right)}}}={\sin{{\left(-{2}{x}\right)}}}</m>, find:</p>
+If <m>\displaystyle{f{{\left({x}\right)}}}={5}{\sec{{\left({x}\right)}}}</m>, find:</p>
 <p>
 <m>\displaystyle\quad{f}'{\left({x}\right)}</m> = <fillin characters="20" />  
 
 </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle-{2}{\cos{{\left(-{2}{x}\right)}}}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{5}{\sec{{\left({x}\right)}}}{\tan{{\left({x}\right)}}}</m></li></ul></p>
 </solution>
 </myopenmath>
 
