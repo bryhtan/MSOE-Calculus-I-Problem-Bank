@@ -2,9 +2,11 @@
 
     <title>Exam 2 Review</title>
   
-    <p>
-        I can find the derivative of a function using the limit definition.
-    </p>
+    <objectives>
+        <ul>
+        <li> 1. I can find the <term> derivative </term> of a function using the limit definition. </li>
+        </ul>
+    </objectives>
         
     <p>
         Need to know
@@ -23,9 +25,8 @@
     <example>
         <myopenmath problem="1556425" />    
     </example>
-     
-    <p>
-        I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  <lb />
+
+      I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  <lb />
     </p>
 
     <pre>
