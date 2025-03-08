@@ -1,0 +1,16 @@
+WARNING : Using CLI version 2.14.0 but project's `requirements.txt`
+WARNING : is configured to use 1.5.2. Consider either installing
+WARNING : CLI version 1.5.2 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.14.0.
+ERROR   : View encountered an error.  Please report this: process 18067 with laddr 
+ERROR   : View encountered an error.  Please report this: process 18067 with laddr 
+ERROR   : View encountered an error.  Please report this: process 18067 with laddr 
+INFO    : Found server at localhost:8128
+INFO    : Server is already available at https://crispy-palm-tree-q5p494xj4j7f9rqw-8128.app.github.dev
+INFO    : Now opening browser for target `web` at https://crispy-palm-tree-q5p494xj4j7f9rqw-8128.app.github.dev/output/web
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
