@@ -4,8 +4,8 @@
   
 <objectives>
     <ul>
-    <li> <term>1.</term> I can find the derivative of a function using the limit definition. </li>
-    <li> <term> Section 2.8: </term> 21 - 32 </li>
+        <li> <term>1.</term> I can find the derivative of a function using the limit definition. </li>
+        <li> <term> Section 2.8: </term> 21 - 32 </li>
     </ul>
 </objectives>
         
@@ -24,6 +24,7 @@
     <example>
         <myopenmath problem="1556425" />    
     </example>
+    
     <objectives>
         <ul>
             <li> 2. I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.</li>
@@ -66,25 +67,23 @@
 
 <objectives>
     <ul>
-    <li> <term>4.</term> I can use the graph of a function to determine the behavior of its derivative, including constructing a graph of the dereivative and identifying points of non-differentiability. </li>
-    <li> <term> Section 2.8: </term> 1 - 11, 41 - 44; </li>
+        <li> <term>4.</term> I can use the graph of a function to determine the behavior of its derivative, including constructing a graph of the dereivative and identifying points of non-differentiability. </li>
+        <li> <term> Section 2.8: </term> 1 - 11, 41 - 44; </li>
     </ul>
 </objectives>
 
 <objectives>
     <ul>
-
-    <li> <term>5.</term> I can determine the behavior of a function given the graph of its derivative, including identifying points of non-differentiability. </li>
-
-    <li> <term> Examples given on review day. </term> </li>
+        <li> <term>5.</term> I can determine the behavior of a function given the graph of its derivative, including identifying points of non-differentiability. </li>
+        <li> <term> Examples given on review day. </term> </li>
     </ul>
 </objectives>
 
 <objectives>
     <ul>
-    <li> <term>6.</term> I can find the derivative of algebraic, trigonometric, exponential, logarithmic, and inverse trigonometric functions. </li>
-    <li> <term> Section 3.3: </term> 1 - 22; </li>
-    <li> <term> Section 3.6: </term> 2 - 12, 63, 78 </li>
+        <li> <term>6.</term> I can find the derivative of algebraic, trigonometric, exponential, logarithmic, and inverse trigonometric functions. </li>
+        <li> <term> Section 3.3: </term> 1 - 22; </li>
+        <li> <term> Section 3.6: </term> 2 - 12, 63, 78 </li>
     </ul>
 </objectives> 
 
@@ -110,9 +109,9 @@
 
 <objectives>
     <ul>
-    <li> <term>7.</term> I can apply basic differentiation rules including power, product, quotient and chain rules to find derivatives of a given function. </li>
-    <li> <term> Section 3.1: </term> 3 - 34; </li>
-    <li> <term> Section 3.4: </term> 7 - 52 </li>
+        <li> <term>7.</term> I can apply basic differentiation rules including power, product, quotient and chain rules to find derivatives of a given function. </li>
+        <li> <term> Section 3.1: </term> 3 - 34; </li>
+        <li> <term> Section 3.4: </term> 7 - 52 </li>
     </ul>
 </objectives> 
 
@@ -126,8 +125,8 @@
 
 <objectives>
     <ul>
-    <li> <term>8.</term> I can find higher-order derivatives. </li>
-    <li> <term> Section 3.4: </term> 53 - 56 </li>
+        <li> <term>8.</term> I can find higher-order derivatives. </li>
+        <li> <term> Section 3.4: </term> 53 - 56 </li>
     </ul>
 </objectives> 
 
@@ -141,14 +140,14 @@
 
 <objectives>
     <ul>
-    <li> <term>9.</term>  I am comfortable using various notations for derivatives. </li>
+        <li> <term>9.</term>  I am comfortable using various notations for derivatives. </li>
     </ul>
 </objectives> 
 
 <objectives>
     <ul>
-    <li> <term>10.</term>  I can find derivatives using implicit differentitation. </li>
-    <li> <term> Section 3.5: </term> 5 - 22 </li>
+        <li> <term>10.</term>  I can find derivatives using implicit differentitation. </li>
+        <li> <term> Section 3.5: </term> 5 - 22 </li>
     </ul>
 </objectives> 
 
@@ -162,8 +161,8 @@
 
 <objectives>
     <ul>
-    <li> <term>11.</term>  I can find derivatives using logarithmic differentiation. </li>
-    <li> <term> Section 3.6: </term> 45 - 56 </li>
+        <li> <term>11.</term>  I can find derivatives using logarithmic differentiation. </li>
+        <li> <term> Section 3.6: </term> 45 - 56 </li>
     </ul>
 </objectives>
 
@@ -173,8 +172,8 @@
 
 <objectives>
     <ul>
-    <li> <term>12.</term>  I can determine when to use appropriate differentiation rules, including when to use the power, quotient, and chain rules, as well as using implicit and logarthmic differentiation. </li>
-    <li> <term>Chapter 3 Review </term> (p. 270): 1-20, 22-26, 28-33, 35-46, 48, 50, 53-54 </li>
+        <li> <term>12.</term>  I can determine when to use appropriate differentiation rules, including when to use the power, quotient, and chain rules, as well as using implicit and logarthmic differentiation. </li>
+        <li> <term>Chapter 3 Review </term> (p. 270): 1-20, 22-26, 28-33, 35-46, 48, 50, 53-54 </li>
     </ul>
 </objectives>
 
@@ -185,9 +184,5 @@
     <example>
         <myopenmath problem="1560062" />    
     </example>
-
-
-
-
 
 </chapter>
