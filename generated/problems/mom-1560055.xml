@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1560055">
+<statement>
+<p>
+Problem will appear here eventually.<fillin characters="20" />  
+
+</p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{{\left({x}^{{3}}-{4}{x}^{{2}}+{7}\right)}{\left(-{4}{{\sec}^{{2}}{\left(-{4}{x}\right)}}\right)}-{\left({\tan{{\left(-{4}{x}\right)}}}-{5}\right)}{\left({3}{x}^{{2}}-{8}{x}\right)}}}{{\left({x}^{{3}}-{4}{x}^{{2}}+{7}\right)}^{{2}}}</m></li></ul></p>
+</solution>
+</myopenmath>
+

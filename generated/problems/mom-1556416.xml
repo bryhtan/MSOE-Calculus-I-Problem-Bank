@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1556416">
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 3</p>
-<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}={2}{x}^{{2}}</m>.
+<p>Suppose <m>\displaystyle{f{{\left({x}\right)}}}={4}{x}^{{2}}+{4}</m>.
   </p>
 <p>
   Write the definition (do not simplify yet).
@@ -24,7 +24,7 @@
 
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle\frac{{{2}{\left({x}+{h}\right)}^{{2}}-{\left({2}{x}^{{2}}\right)}}}{{h}}</m></li><li><m>\displaystyle{4}{x}+{2}{h}</m></li><li><m>\displaystyle{4}{x}</m></li></ul></p>
+<p><ul><li><m>\displaystyle\frac{{{4}{\left({x}+{h}\right)}^{{2}}+{4}-{\left({4}{x}^{{2}}+{4}\right)}}}{{h}}</m></li><li><m>\displaystyle{8}{x}+{4}{h}</m></li><li><m>\displaystyle{8}{x}</m></li></ul></p>
 </solution>
 </myopenmath>
 

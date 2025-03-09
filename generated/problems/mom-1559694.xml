@@ -4,9 +4,9 @@
 <p>
 Find the equation of the tangent line to the curve</p>
 <p>
-<m>\displaystyle\quad{y}={x}^{{2}}-{3}{x}-{3}</m> </p>
+<m>\displaystyle\quad{y}={3}{x}^{{2}}-{5}{x}-{4}</m> </p>
 <p>
-at the point <m>\displaystyle{\left(-{3},{15}\right)}</m>.</p>
+at the point <m>\displaystyle{\left(-{3},{38}\right)}</m>.</p>
 <p>
 The equation of the tangent line is</p>
 <p>
@@ -15,7 +15,7 @@ The equation of the tangent line is</p>
 </p>
 </statement>
 <solution>
-<p><ul><li><m>\displaystyle{y}-{15}=-{9}{\left({x}+{3}\right)}</m></li></ul></p>
+<p><ul><li><m>\displaystyle{y}-{38}=-{23}{\left({x}+{3}\right)}</m></li></ul></p>
 </solution>
 </myopenmath>
 

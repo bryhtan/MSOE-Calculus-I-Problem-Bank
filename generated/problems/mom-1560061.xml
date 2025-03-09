@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1560061">
+<statement>
+<p>
+Problem will appear here eventually.<fillin characters="20" />  
+
+</p>
+</statement>
+<solution>
+<p><ul><li><m>\displaystyle\frac{{{\left({x}^{{3}}-{3}{x}^{{2}}+{1}\right)}{\left(-{5}{e}^{{-{5}{x}}}\right)}-{\left({e}^{{-{5}{x}}}+{10}\right)}{\left({3}{x}^{{2}}-{6}{x}\right)}}}{{\left({x}^{{3}}-{3}{x}^{{2}}+{1}\right)}^{{2}}}</m></li></ul></p>
+</solution>
+</myopenmath>
+
