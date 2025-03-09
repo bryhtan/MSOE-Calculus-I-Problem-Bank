@@ -27,36 +27,38 @@
     <objectives>
         <ul>
             <li> 2. I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.</li>
+        </ul>
+    </objectives>
 
-<objectives>
-    <ul>
-    <li> <term>2.</term> I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  </li>
-    <li> <term> Section 2.7: </term> 49 - 56; </li>
-    <li> <term> Section 2.8: </term> 12 - 15, 36 - 40 </li>
-    </ul>
-</objectives>
+    <objectives>
+        <ul>
+            <li> <term>2.</term> I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  </li>
+            <li> <term> Section 2.7: </term> 49 - 56; </li>
+            <li> <term> Section 2.8: </term> 12 - 15, 36 - 40 </li>
+        </ul>
+    </objectives>
 
-<objectives>
-    <ul>
-    <li> <term>3.</term> I can find an equation for a tangent line to a function at a point using the derivative. </li>
-    <li> <term> Section 2.7: </term> 5 - 8, 27 - 30; </li>
-    </ul>
-</objectives>
+    <objectives>
+        <ul>
+            <li> <term>3.</term> I can find an equation for a tangent line to a function at a point using the derivative. </li>
+            <li> <term> Section 2.7: </term> 5 - 8, 27 - 30; </li>
+        </ul>
+    </objectives>
 
-<objectives>
-    <ul>
-    <li> <term>2.</term> I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  </li>
-    <li> <term> Section 2.7: </term> 49 - 56; </li>
-    <li> <term> Section 2.8: </term> 12 - 15, 36 - 40 </li>
-    </ul>
-</objectives>
+    <objectives>
+        <ul>
+            <li> <term>2.</term> I can interpret the derivative as an instantaneous rate of change and as the slope of a tangent line.  </li>
+            <li> <term> Section 2.7: </term> 49 - 56; </li>
+            <li> <term> Section 2.8: </term> 12 - 15, 36 - 40 </li>
+        </ul>
+    </objectives>
 
-<objectives>
-    <ul>
-    <li> <term>3.</term> I can find an equation for a tangent line to a function at a point using the derivative. </li>
-    <li> <term> Section 2.7: </term> 5 - 8, 27 - 30; </li>
-    </ul>
-</objectives>
+    <objectives>
+        <ul>
+            <li> <term>3.</term> I can find an equation for a tangent line to a function at a point using the derivative. </li>
+            <li> <term> Section 2.7: </term> 5 - 8, 27 - 30; </li>
+        </ul>
+    </objectives>
 
     <example>
         <myopenmath problem="1559694" />    
